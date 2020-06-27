@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faPlus  } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => {
-    const initialPercentage = ((document.documentElement.scrollHeight )/100).toFixed(0)
+    const initialPercentage = ((document.documentElement.scrollHeight + document.body.clientHeight )/100).toFixed(0)
     const [scrollPercent, setScrollPercent] = useState(initialPercentage)
 
     useEffect(() => {
