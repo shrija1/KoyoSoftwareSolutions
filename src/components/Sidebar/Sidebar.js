@@ -8,12 +8,16 @@ import { faCoffee, faPlus  } from '@fortawesome/free-solid-svg-icons'
 const Sidebar = () => {
     const [scrollPercent, setScrollPercent] = useState(0)
 
-    console.log(document.documentElement.scrollHeight);
+    const currentPage = document.documentElement.scrollHeight;
+    const client = document.documentElement.clientHeight;
+
+    console.log(currentPage);
+    console.log("client",client);
 
     useEffect(() => {
         function onScroll() {
             
-            const result = ((document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100)
+            const result = ((document.documentElement.scrollTop + document.body.scrollTop + document.documentElement.clientHeight) / (document.documentElement.scrollHeight ) * 100)
             const perfectResult = result>99.8 ? 100 : result.toFixed(0)
             setScrollPercent(perfectResult)
         }
