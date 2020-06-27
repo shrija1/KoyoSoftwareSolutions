@@ -1,18 +1,20 @@
 import React, {useState, useEffect} from 'react';
 import './Sidebar.css'
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCoffee, faPlus  } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => {
     const [scrollPercent, setScrollPercent] = useState(0)
 
-    
+    console.log(document.documentElement.scrollHeight);
 
     useEffect(() => {
         function onScroll() {
+            
             const result = ((document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100)
-            const perfectResult = result>99.8 ? 100 : result.toFixed(2)
+            const perfectResult = result>99.8 ? 100 : result.toFixed(0)
             setScrollPercent(perfectResult)
         }
     
@@ -55,10 +57,9 @@ const Sidebar = () => {
             <button className="socialIcons plusIcon">
                 <a href="#"><FontAwesomeIcon icon={faPlus} /></a>
             </button>
+            <br/>
+            <CircularProgressbar value={scrollPercent} text={`${scrollPercent}%`} />
             
-            <button className="percentageIcon">
-                <p>{scrollPercent}%</p>
-            </button>
         </div>
     );
 }
