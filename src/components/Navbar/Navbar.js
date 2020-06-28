@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import logo from '../../img/logo/softsiteLogo1.png'
+import logo from '../../img/logo/softsiteLogo3.png'
 
 function Navbar() {
     return (

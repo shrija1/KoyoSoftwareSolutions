@@ -1,7 +1,52 @@
 import React from 'react'
 import './Services.css'
+import ServiceTemplate from './ServiceTemplate'
 
 function Services() {
+    const items = [
+        {
+            classAdd: '',
+            data_aos_delay: '100',
+            icon: 'bxl-dribbble',
+            title: 'Lorem Ipsum',
+            description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore'
+        },
+        {
+            classAdd: 'mt-4 mt-md-0',
+            data_aos_delay: '200',
+            icon: 'bx-file',
+            title: 'Sed ut perspiciatis',
+            description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore'
+        },
+        {
+            classAdd: 'mt-4 mt-lg-0',
+            data_aos_delay: '300',
+            icon: 'bx-tachometer',
+            title: 'Magni Dolores',
+            description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia'
+        },
+        {
+            classAdd: 'mt-4',
+            data_aos_delay: '100',
+            icon: 'bx-world',
+            title: 'Nemo Enim',
+            description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis'
+        },
+        {
+            classAdd: 'mt-4',
+            data_aos_delay: '200',
+            icon: 'bx-slideshow',
+            title: 'Dele cardo',
+            description: 'Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur'
+        },
+        {
+            classAdd: 'mt-4',
+            data_aos_delay: '300',
+            icon: 'bx-arch',
+            title: 'Divera don',
+            description: 'Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur'
+        }
+    ]
     return (
         <section id="services" className="services">
             <div className="container" data-aos="fade-up">
@@ -12,53 +57,10 @@ function Services() {
                 </div>
 
                 <div className="row">
-                <div className="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                    <div className="icon-box">
-                    <div className="icon"><i className="bx bxl-dribbble"></i></div>
-                    <h4><a href="">Lorem Ipsum</a></h4>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-                    </div>
-                </div>
 
-                <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-                    <div className="icon-box">
-                    <div className="icon"><i className="bx bx-file"></i></div>
-                    <h4><a href="">Sed ut perspiciatis</a></h4>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                    </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-                    <div className="icon-box">
-                    <div className="icon"><i className="bx bx-tachometer"></i></div>
-                    <h4><a href="">Magni Dolores</a></h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                    </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div className="icon-box">
-                    <div className="icon"><i className="bx bx-world"></i></div>
-                    <h4><a href="">Nemo Enim</a></h4>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                    </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div className="icon-box">
-                    <div className="icon"><i className="bx bx-slideshow"></i></div>
-                    <h4><a href="">Dele cardo</a></h4>
-                    <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-                    </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div className="icon-box">
-                    <div className="icon"><i className="bx bx-arch"></i></div>
-                    <h4><a href="">Divera don</a></h4>
-                    <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-                    </div>
-                </div>
+                    {
+                        items.map(item => <ServiceTemplate item={item} />)
+                    }
 
                 </div>
 

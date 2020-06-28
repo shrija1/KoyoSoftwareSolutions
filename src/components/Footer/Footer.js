@@ -11,6 +11,7 @@ import amex from '../../img/payment/payment-icon-amex.svg'
 import paymentGateway from '../../img/payment/paymentGateway.png'
 import { animateScroll as scroll } from 'react-scroll';
 import logo from '../../img/logo/softsiteLogo.svg'
+import logo1 from '../../img/logo/softsiteLogo3.png'
 
 function Footer() {
     const ScrollTo = function() {
@@ -25,7 +26,7 @@ function Footer() {
 
                     <div className="col-lg-3 col-md-6">
                         <div className="footer-info">
-                            <img src={logo} alt="SoftSite Logo" />
+                            <img src={logo1} alt="SoftSite Logo" />
                             <p>
                                 Abcdef 123 T. Abcdef Teafa Yadfe <br/>
                                 TT, 12345, India<br/><br/>
