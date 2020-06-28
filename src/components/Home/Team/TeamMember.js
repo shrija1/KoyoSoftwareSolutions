@@ -2,9 +2,7 @@ import React from 'react'
 import './Team.css'
 
 const Team = (props) => {
-    
     const {data_aos_delay, img, name, title} = props.member
-
 
     return (
         <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
