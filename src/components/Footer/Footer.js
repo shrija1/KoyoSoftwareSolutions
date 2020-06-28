@@ -1,6 +1,13 @@
 import React from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
+import paypal from '../../img/payment/payment-icon-paypal.svg'
+import googlepay from '../../img/payment/payment-icon-googlepay.svg'
+import applepay from '../../img/payment/payment-icon-applepay.svg'
+import visa from '../../img/payment/payment-icon-visa.svg'
+import mastercard from '../../img/payment/payment-icon-mastercard.svg'
+import discover from '../../img/payment/payment-icon-discover.svg'
+import amex from '../../img/payment/payment-icon-amex.svg'
 
 function Footer() {
     return (
@@ -66,16 +73,30 @@ function Footer() {
                 </div>
 
                 <div className="container">
-                <div className="copyright">
+                {/* <div className="copyright">
                     &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
+                </div> */}
+                
                 </div>
-                <div className="credits">
-                     {/* All the links in the footer should remain intact. 
-                     You can delete the links only if you purchased the pro version. 
-                     Licensing information: https://bootstrapmade.com/license/ 
-                     Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/  */}
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
+
+                
+                <div class="column100 credits text-center">  
+                    <a href="/">©2020 TTS</a>  
+                    <span class="sep">|</span>  
+                    <a href="#">Terms</a>  
+                    <span class="sep">|</span>  
+                    <a href="#">Privacy Policy</a>
+                    <span class="footer-address"> Abcdef 123 T. Abcdef Teafa Yadfe, TT, 12345 | 123.456.7891</span>
                 </div>
+                <div class="section-footer-payments">
+                    <div class="payment-badge"><img src={paypal} alt=""/></div>
+                    <div class="payment-badge"><img src={googlepay} alt=""/></div>
+                    <div class="payment-badge"><img src={applepay} alt=""/></div>
+                    <div class="payment-badge"><img src={visa} alt=""/></div>
+                    <div class="payment-badge"><img src={mastercard} alt=""/></div>
+                    <div class="payment-badge"><img src={discover} alt=""/></div>
+                    <div class="payment-badge"><img src={amex} alt=""/></div>
                 </div>
             </footer>
 
@@ -84,6 +105,7 @@ function Footer() {
                 <i className="ri-arrow-up-line"></i>
             </a>
             {/* <div id="preloader"></div> */}
+            
         </div>
     )
 }

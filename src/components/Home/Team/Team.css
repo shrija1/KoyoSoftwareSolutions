@@ -34,7 +34,7 @@
     transition: color 0.3s;
     color: #151515;
     margin: 0 3px;
-    padding-top: 7px;
+    /* padding-top: 7px; */
     border-radius: 4px;
     width: 36px;
     height: 36px;
