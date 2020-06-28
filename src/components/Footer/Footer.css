@@ -10,7 +10,7 @@
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background: #151515;
+    background: #3a3a3a;
   }
   
   #preloader:before {
@@ -19,8 +19,8 @@
     top: calc(50% - 0px);
     left: calc(50% - 30px);
     border: 6px solid #ffc451;
-    border-top-color: #151515;
-    border-bottom-color: #151515;
+    border-top-color: #3a3a3a;
+    border-bottom-color: #3a3a3a;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -53,14 +53,14 @@
 # Footer
 --------------------------------------------------------------*/
 #footer {
-    background: black;
+    background: #151515;
     padding: 0 0 30px 0;
     color: #fff;
     font-size: 14px;
 }
 
 #footer .footer-top {
-    background: #151515;
+    background: #3a3a3a;
     border-bottom: 1px solid #222222;
     padding: 60px 0 30px 0;
 }
@@ -107,7 +107,7 @@
 
 #footer .footer-top .social-links a:hover {
     background: #ffc451;
-    color: #151515;
+    color: #3a3a3a;
     text-decoration: none;
 }
 
@@ -181,13 +181,30 @@
     font-size: 16px;
     padding: 0 20px;
     background: #ffc451;
-    color: #151515;
+    color: #3a3a3a;
     transition: 0.3s;
     border-radius: 0 4px 4px 0;
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
     background: #ffcd6b;
+}
+
+.footer-newsletter img{
+    padding: 25px;
+    width: 100%;
+}
+
+.footer-info img {
+    width: 100%;
+    margin-left: -15px;
+}
+
+@media (max-width: 768px){
+    .footer-info img {
+        max-width: 50%;
+        margin-left: -15px;
+    }
 }
 
 #footer .copyright {

@@ -8,8 +8,14 @@ import visa from '../../img/payment/payment-icon-visa.svg'
 import mastercard from '../../img/payment/payment-icon-mastercard.svg'
 import discover from '../../img/payment/payment-icon-discover.svg'
 import amex from '../../img/payment/payment-icon-amex.svg'
+import paymentGateway from '../../img/payment/paymentGateway.png'
+import { animateScroll as scroll } from 'react-scroll';
+import logo from '../../img/logo/softsiteLogo.svg'
 
 function Footer() {
+    const ScrollTo = function() {
+        scroll.scrollToTop();
+    }
     return (
         <div>
             <footer id="footer">
@@ -19,11 +25,11 @@ function Footer() {
 
                     <div className="col-lg-3 col-md-6">
                         <div className="footer-info">
-                            <h3>Gp<span>.</span></h3>
+                            <img src={logo} alt="SoftSite Logo" />
                             <p>
-                                A108 Adam Street <br/>
-                                NY 535022, USA<br/><br/>
-                                <strong>Phone:</strong> +1 5589 55488 55<br/>
+                                Abcdef 123 T. Abcdef Teafa Yadfe <br/>
+                                TT, 12345, India<br/><br/>
+                                <strong>Phone:</strong> +91 1234 45678 91<br/>
                                 <strong>Email:</strong> info@example.com<br/>
                             </p>
                             <div className="social-links mt-3">
@@ -44,17 +50,19 @@ function Footer() {
                             <li><i className="bx bx-chevron-right"></i> <a href="#">Services</a></li>
                             <li><i className="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
                             <li><i className="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
                             </ul>
                         </div>
 
                         <div className="col-lg-3 col-md-6 footer-links">
                             <h4>Our Services</h4>
                             <ul>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="#">GeM</a></li>
                             <li><i className="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="#">E-Marketing</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="#">Business Productivity Services</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="#">Machine Learning</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="#">Professionals Toolbox</a></li>
                             </ul>
                         </div>
 
@@ -65,7 +73,7 @@ function Footer() {
                                 <input type="email" name="email" />
                                 <input type="submit" value="Subscribe" />
                             </form>
-
+                            <img src={paymentGateway} alt="paymentGateway" />
                         </div>
 
                         </div>
@@ -83,13 +91,13 @@ function Footer() {
                 
                 <div class="column100 credits text-center">  
                     <a href="/">©2020 TTS</a>  
-                    <span class="sep">|</span>  
+                    <span class="sep"> | </span>  
                     <a href="#">Terms</a>  
-                    <span class="sep">|</span>  
+                    <span class="sep"> | </span>  
                     <a href="#">Privacy Policy</a>
                     <span class="footer-address"> Abcdef 123 T. Abcdef Teafa Yadfe, TT, 12345 | 123.456.7891</span>
                 </div>
-                <div class="section-footer-payments">
+                {/* <div class="section-footer-payments">
                     <div class="payment-badge"><img src={paypal} alt=""/></div>
                     <div class="payment-badge"><img src={googlepay} alt=""/></div>
                     <div class="payment-badge"><img src={applepay} alt=""/></div>
@@ -97,11 +105,11 @@ function Footer() {
                     <div class="payment-badge"><img src={mastercard} alt=""/></div>
                     <div class="payment-badge"><img src={discover} alt=""/></div>
                     <div class="payment-badge"><img src={amex} alt=""/></div>
-                </div>
+                </div> */}
             </footer>
 
             {/* Back to top */}
-            <a href="#" className="back-to-top">
+            <a href="#" className="back-to-top" onClick={ScrollTo}>
                 <i className="ri-arrow-up-line"></i>
             </a>
             {/* <div id="preloader"></div> */}

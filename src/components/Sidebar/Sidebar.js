@@ -4,6 +4,7 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faPlus  } from '@fortawesome/free-solid-svg-icons'
+import { animateScroll as scroll } from 'react-scroll';
 
 const Sidebar = () => {
     const initialPercentage = ((document.documentElement.scrollHeight + document.body.clientHeight )/100).toFixed(0)
@@ -19,6 +20,10 @@ const Sidebar = () => {
     
         return window.addEventListener("scroll", onScroll)
     }, [scrollPercent])
+
+    const ScrollTo = function() {
+        scroll.scrollToBottom();
+    }
 
     return (
         <div class="sidenav sidebar">
@@ -53,8 +58,12 @@ const Sidebar = () => {
                 </a>
             </button>
             <hr style={{width: '50px'}}/>
-            <button className="socialIcons plusIcon">
-                <a href="#"><FontAwesomeIcon icon={faPlus} /></a>
+            <button className="socialIcons plusIcon" onClick={ScrollTo}>
+                <a href="#">
+                    {/* <FontAwesomeIcon icon={faPlus} /> */}
+                    <i className="ri-arrow-down-line" aria-hidden="true"></i>
+                </a>
+
             </button>
             <br/>
             <CircularProgressbar value={scrollPercent} text={`${scrollPercent}%`} />
