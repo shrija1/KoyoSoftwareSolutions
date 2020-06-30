@@ -1,9 +1,36 @@
 import React from 'react'
 import './Features.css'
 import features from '../../../img/features.jpg'
+import FeatureTemplate from './FeatureTemplate'
 
 
 function Features() {
+    const data = [
+        {
+            classDiv: 'mt-lg-0',
+            icon: 'bx-receipt',
+            title: 'Est labore ad',
+            description: 'Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip'
+        },
+        {
+            classDiv: '',
+            icon: 'bx-cube-alt',
+            title: 'Harum esse qui',
+            description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt'
+        },
+        {
+            classDiv: '',
+            icon: 'bx-images',
+            title: 'Aut occaecati',
+            description: 'Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere'
+        },
+        {
+            classDiv: '',
+            icon: 'bx-shield',
+            title: 'Beatae veritatis',
+            description: 'Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta'
+        },
+    ]
     return (
         <section id="features" className="features">
             <div className="container" data-aos="fade-up">
@@ -11,26 +38,9 @@ function Features() {
                 <div className="row">
                     <div className="image col-lg-6" style={{backgroundImage: `url(${features})`}} data-aos="fade-right"></div>
                     <div className="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-                        <div className="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                            <i className="bx bx-receipt"></i>
-                            <h4>Est labore ad</h4>
-                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                        </div>
-                        <div className="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-                            <i className="bx bx-cube-alt"></i>
-                            <h4>Harum esse qui</h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                        </div>
-                        <div className="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-                            <i className="bx bx-images"></i>
-                            <h4>Aut occaecati</h4>
-                            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                        </div>
-                        <div className="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-                            <i className="bx bx-shield"></i>
-                            <h4>Beatae veritatis</h4>
-                            <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                        </div>
+                        {
+                            data.map(element => <FeatureTemplate data={element}/>)
+                        }
                     </div>
                 </div>
 

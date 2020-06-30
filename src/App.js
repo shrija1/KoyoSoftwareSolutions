@@ -37,6 +37,7 @@ function App() {
               <Footer />
             </Route>
 
+
             <Route path='/account'>
               <Registration/>
             </Route>
@@ -70,9 +71,6 @@ function App() {
             <Route path='/contact'>
               <Contact/>
             </Route>
-
-
-
 
 
             <Route path='/portfolio'>

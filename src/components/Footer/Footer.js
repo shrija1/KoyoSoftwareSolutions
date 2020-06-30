@@ -46,9 +46,9 @@ function Footer() {
                         <div className="col-lg-2 col-md-6 footer-links">
                             <h4>Useful Links</h4>
                             <ul>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="/about">About us</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="/chat">Chat</a></li>
                             <li><i className="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
                             <li><i className="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
                             <li><i className="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
@@ -58,12 +58,12 @@ function Footer() {
                         <div className="col-lg-3 col-md-6 footer-links">
                             <h4>Our Services</h4>
                             <ul>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">GeM</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">E-Marketing</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">Business Productivity Services</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">Machine Learning</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">Professionals Toolbox</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="/gem">GeM</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="/webDevelopment">Web Development</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="/e-marketing">E-Marketing</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="/businessPS">Business Productivity Services</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="/machineLearning">Machine Learning</a></li>
+                            <li><i className="bx bx-chevron-right"></i> <a href="/professionalsToolbox">Professionals Toolbox</a></li>
                             </ul>
                         </div>
 
