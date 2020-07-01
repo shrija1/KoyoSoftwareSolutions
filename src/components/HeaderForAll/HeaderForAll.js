@@ -4,7 +4,7 @@ import './HeaderForAll.css'
 
 function HeaderForAll(props) {
     return (
-        <section id="hero" className="d-flex align-items-center justify-content-center">
+        <section id="hero1" className="d-flex align-items-center justify-content-center">
             <div className="container" data-aos="fade-up">
 
             <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
