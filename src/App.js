@@ -20,6 +20,8 @@ import Chat from './components/Chat/Chat';
 import About from './components/Home/About/About';
 import Cart from './components/Cart/Cart';
 import Contact from './components/Home/Contact/Contact';
+import AboutPage from './components/AboutPage/AboutPage';
+import HeaderForAll from './components/HeaderForAll/HeaderForAll';
 
 
 function App() {
@@ -63,13 +65,19 @@ function App() {
               <Chat/>
             </Route>
             <Route path='/about'>
-              <About/>
+              <Navbar/>
+              <HeaderForAll title='About'/>
+              <AboutPage/>
+              <Footer/>
             </Route>
             <Route path='/cart'>
               <Cart/>
             </Route>
             <Route path='/contact'>
-              <Contact/>
+              <Navbar/>
+              <HeaderForAll title='About'/>
+              <AboutPage/>
+              <Footer/>
             </Route>
 
 

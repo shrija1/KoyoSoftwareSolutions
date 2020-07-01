@@ -31,11 +31,13 @@ function Footer() {
                                 Abcdef 123 T. Abcdef Teafa Yadfe <br/>
                                 TT, 12345, India<br/><br/>
                                 <strong>Phone:</strong> +91 1234 45678 91<br/>
+                                <strong>WhatsApp:</strong> +91 1234 45678 91<br/>
                                 <strong>Email:</strong> info@example.com<br/>
                             </p>
                             <div className="social-links mt-3">
                                 <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
                                 <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
+                                <a href="#" className="youtube"><i className="bx bxl-youtube"></i></a>
                                 <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
                                 <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
                                 <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
