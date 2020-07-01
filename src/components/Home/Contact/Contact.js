@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contact.css'
-// import contactPhp from '../../Forms/contact.php'
+import contactPhp from '../../Forms/contact.php'
 import { Email, Item, Span, A, renderEmail } from 'react-html-email'
 
 
