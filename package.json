@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.0",
     "elevator.js": "^1.0.1",
+    "firebase": "^7.15.5",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-circular-progressbar": "^2.0.3",

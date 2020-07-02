@@ -13,7 +13,7 @@ function Navbar() {
             <nav className="nav-menu d-none d-lg-block">
                 <ul>
                 <li className="active"><a href="/">Home</a></li>
-                <li><a href="#">Registration</a></li>
+                <li><a href="/account">Registration</a></li>
                 <li className="drop-down"><a href="">Products</a>
                     <ul>
                         <li><a href="/gem">GeM</a></li>
