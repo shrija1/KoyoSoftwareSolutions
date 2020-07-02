@@ -115,7 +115,7 @@ function Footer() {
             <a href="#" className="back-to-top" onClick={ScrollTo}>
                 <i className="ri-arrow-up-line"></i>
             </a>
-            {/* <div id="preloader"></div> */}
+            <div id="preloader"></div>
             
         </div>
     )
