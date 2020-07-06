@@ -41,28 +41,38 @@ function App() {
 
 
             <Route path='/account'>
+              <Navbar/>
+              <HeaderForAll title='Account'/>
               <Registration/>
+              <Footer />
             </Route>
             <Route path='/gem'>
               <GeM/>
+              <Footer />
             </Route>
             <Route path='/webDevelopment'>
               <WebDevelopment/>
+              <Footer />
             </Route>
             <Route path='/e-marketing'>
               <EMarketing/>
+              <Footer />
             </Route>
             <Route path='/businessPS'>
               <BusinessProductivityServices/>
+              <Footer />
             </Route>
             <Route path='/machineLearning'>
               <MachineLearning/>
+              <Footer />
             </Route>
             <Route path='/professionalsToolbox'>
               <ProfessionalsToolbox/>
+              <Footer />
             </Route>
             <Route path='/chat'>
               <Chat/>
+              <Footer />
             </Route>
             <Route path='/about'>
               <Navbar/>
@@ -72,6 +82,7 @@ function App() {
             </Route>
             <Route path='/cart'>
               <Cart/>
+              <Footer />
             </Route>
             <Route path='/contact'>
               <Navbar/>

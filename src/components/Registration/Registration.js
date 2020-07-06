@@ -88,8 +88,8 @@ const Registration = () => {
     }
 
     return (
-        <div>
-            <div className= "naveBer">
+        <div style={{margin: '100px 0px', textAlign: 'center'}}>
+            <div >
                 {
                     user.googleSignIn  ? <button onClick={handleSignOutGoogle} >Sign out google</button> :
                     <button onClick={handleSignInGoogle} >Sign In google</button>
@@ -99,7 +99,7 @@ const Registration = () => {
                 }
             </div>
             
-            <div className="owner">
+            <div >
                 {
                     user.googleSignIn && <div>
                     <p>Welcome, {user.name}</p>
