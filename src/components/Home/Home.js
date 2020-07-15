@@ -11,6 +11,7 @@ import Team from './Team/Team'
 import Contact from './Contact/Contact'
 
 function Home() {
+    
     return (
         <main id="main">
             <About/>

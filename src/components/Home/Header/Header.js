@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Header.css'
 import HeaderElement from './HeaderElement'
 
 function Header() {
+    // fetch('https://api.proarif.com/softsite/Home/HeaderElement.json')
+    // .then(response => response.json())
+    // .then(json => console.log(json))
+
+
+    
+
+
+    // console.log(data1)
+
     const data = [
         {
             classBox: '',

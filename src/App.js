@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import PageNotFound from './components/PageNotFound/PageNotFound';
@@ -22,9 +22,17 @@ import Cart from './components/Cart/Cart';
 import Contact from './components/Home/Contact/Contact';
 import AboutPage from './components/AboutPage/AboutPage';
 import HeaderForAll from './components/HeaderForAll/HeaderForAll';
+import Admin from './components/Admin/Admin';
+import AdminDashboard from './components/AdminDashboard/AdminDashboard';
+import AdminDashboardLogin from './components/AdminDashboard/AdminDashboardLogin';
 
 
 function App() {
+   useEffect(() => {
+    fetch('http://localhost:3000/data')
+        .then(response => response.json())
+        .then(json => console.log(json))
+  }, [])
   return (
     <div className="">
       <Sidebar/>
@@ -89,6 +97,21 @@ function App() {
               <HeaderForAll title='About'/>
               <AboutPage/>
               <Footer/>
+            </Route>
+
+            <Route path='/admin'>
+              <Navbar/>
+              <HeaderForAll title='Admin Login Page'/>
+              {/* <Admin/> */}
+              <AdminDashboardLogin/>
+              <Footer/>
+            </Route>
+
+            <Route path='/dashboard'>
+              {/* <Navbar/> */}
+              {/* <HeaderForAll title='Dashboard'/> */}
+              <AdminDashboard/>
+              <Footer />
             </Route>
 
 

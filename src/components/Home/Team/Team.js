@@ -34,7 +34,7 @@ function Team() {
         }
     ]
 
-    console.log(members[0].name)
+    // console.log(members[0].name)
     return (
         <section id="team" className="team">
         <div className="container" data-aos="fade-up">
