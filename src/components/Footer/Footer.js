@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
 import paypal from '../../img/payment/payment-icon-paypal.svg'
@@ -14,9 +14,20 @@ import logo from '../../img/logo/softsiteLogo.svg'
 import logo1 from '../../img/logo/softsiteLogo3.png'
 
 function Footer() {
+    const [dataFooter, setDataFooter] = useState([])
     const ScrollTo = function() {
         scroll.scrollToTop();
     }
+    useEffect(() => {
+        fetch('http://localhost:4400/getDataFooter')
+            .then(response => response.json())
+            .then(json => {
+                // console.log(json)
+                json.map(data => setDataFooter(data))
+            })
+    }, [])
+    const {email, phone, whatsapp} = dataFooter
+
     return (
         <div>
             <footer id="footer">
@@ -28,11 +39,11 @@ function Footer() {
                         <div className="footer-info">
                             <img src={logo1} alt="SoftSite Logo" />
                             <p>
-                                Abcdef 123 T. Abcdef Teafa Yadfe <br/>
+                                Abcdef 123 T. Abcdef Teafa Yadfe 
                                 TT, 12345, India<br/><br/>
-                                <strong>Phone:</strong> +91 1234 45678 91<br/>
-                                <strong>WhatsApp:</strong> +91 1234 45678 91<br/>
-                                <strong>Email:</strong> info@example.com<br/>
+                                <strong>Phone:</strong> {phone}<br/>
+                                <strong>WhatsApp:</strong> {whatsapp}<br/>
+                                <strong>Email:</strong> {email}<br/>
                             </p>
                             <div className="social-links mt-3">
                                 <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>

@@ -25,14 +25,18 @@ import HeaderForAll from './components/HeaderForAll/HeaderForAll';
 import Admin from './components/Admin/Admin';
 import AdminDashboard from './components/AdminDashboard/AdminDashboard';
 import AdminDashboardLogin from './components/AdminDashboard/AdminDashboardLogin';
+// import connectDatabase from '../src/node-mysql/connectDatabase'
 
 
 function App() {
-   useEffect(() => {
-    fetch('http://localhost:3000/data')
-        .then(response => response.json())
-        .then(json => console.log(json))
-  }, [])
+  // useEffect(() => {
+  //   fetch('http://localhost:4400/getData')
+  //       .then(response => response.json())
+  //       .then(json => console.log(json))
+  // }, [])
+
+
+
   return (
     <div className="">
       <Sidebar/>
