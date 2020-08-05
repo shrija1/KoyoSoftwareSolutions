@@ -16,14 +16,13 @@ function Navbar() {
                 <li><a href="/account">Registration</a></li>
                 <li className="drop-down"><a href="">Products</a>
                     <ul>
-                        <li><a href="/gem">GeM</a></li>
-                        <li className="drop-down"><a href="/webDevelopment">Web Development</a>
+                        <li className="drop-down"><a href="#">GeM</a>
                             <ul>
-                                <li><a href="#">product 2.1</a></li>
-                                <li><a href="#">product 2.2</a></li>
-                                <li><a href="#">product 2.3</a></li>
+                                <li><a href="/BuyerServices">BuyerServices</a></li>
+                                <li><a href="/SellerServices">SellerServices</a></li>
                             </ul>
                         </li>
+                        <li><a href="/webDevelopment">Web Development</a></li>
                         <li><a href="/e-marketing">E-Marketing</a></li>
                         <li><a href="/businessPS">Business Productivity Services</a></li>
                         <li><a href="/machineLearning">Machine Learning</a></li>

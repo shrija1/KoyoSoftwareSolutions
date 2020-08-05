@@ -30,31 +30,31 @@ const Sidebar = () => {
             <button className="socialIcons">
                 <a href="#">
                     {/* <FontAwesomeIcon icon={faCoffee} /> */}
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i className="fa fa-facebook" aria-hidden="true"></i>
                 </a>
             </button>
             <br/>
             <button className="socialIcons">
                 <a href="#">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i className="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </button>
             <br/>
             <button className="socialIcons">
                 <a href="#">
-                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    <i className="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </button>
             <br/>
             <button className="socialIcons">
                 <a href="#">
-                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    <i className="fa fa-pinterest-p" aria-hidden="true"></i>
                 </a>
             </button>
             <br/>
             <button className="socialIcons">
                 <a href="#">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i className="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
             </button>
             <hr style={{width: '50px'}}/>

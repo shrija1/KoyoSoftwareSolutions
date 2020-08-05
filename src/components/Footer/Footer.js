@@ -18,12 +18,13 @@ function Footer() {
     const ScrollTo = function() {
         scroll.scrollToTop();
     }
-    useEffect(() => {
-        fetch('http://localhost:4400/getDataFooter')
+    useEffect( () => {
+        fetch('http://localhost:4400/footer')
             .then(response => response.json())
-            .then(json => {
-                // console.log(json)
-                json.map(data => setDataFooter(data))
+            .then(data => {
+                // console.log(data.data[0])
+                // setDataFooter(data.data[0])
+                data.data.map(element => setDataFooter(element))
             })
     }, [])
     const {email, phone, whatsapp} = dataFooter

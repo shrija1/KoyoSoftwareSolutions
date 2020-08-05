@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import { useHistory } from 'react-router-dom';
 
 function Copyright() {
   return (
@@ -48,9 +49,29 @@ const useStyles = makeStyles((theme) => ({
 
 function AdminDashboardLogin() {
   const classes = useStyles();
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [email, setEmail] = useState('')
+  let history = useHistory();
+  
+  const onsubmit = e => {
+      e.preventDefault()
+      const email = e.target.email.value
+      const password = e.target.password.value
+      setEmail(email)
+      if (email === 'admin@tts.com' && password === 'admin') {
+          setIsLoggedIn(true);
+          history.push("/dashboard");
+      } else if (email === 'admin@tts.com') {
+          alert('password wrong')
+      } else if (password === 'admin') {
+          alert('email wrong')
+      } else {
+          alert('email and password wrong')
+      }
+  }
 
   return (
-    <Container component="main" maxWidth="xs">
+    <Container component="main" maxWidth="xs" >
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
@@ -59,7 +80,7 @@ function AdminDashboardLogin() {
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
-        <form className={classes.form} noValidate>
+        <form className={classes.form} onSubmit={onsubmit} noValidate>
           <TextField
             variant="outlined"
             margin="normal"
@@ -102,7 +123,7 @@ function AdminDashboardLogin() {
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link href="/account" variant="body2">
                 {"Don't have an account? Sign Up"}
               </Link>
             </Grid>

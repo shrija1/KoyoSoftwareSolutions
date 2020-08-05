@@ -5,7 +5,7 @@ const AboutPage = () => {
         <div>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-md-2' style={{ backgroundColor: 'lightgray' }}>
+                    <div className='col-md-2' style={{ backgroundColor: 'black' }}>
                         <nav class="nav flex-column" id='vertical'>
                             <a class="nav-link active" href="#">Contact</a>
                             <a class="nav-link" href="#">Company History</a>

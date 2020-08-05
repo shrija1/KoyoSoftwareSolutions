@@ -117,7 +117,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function AdminDashboard() {
+function Orders() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {
@@ -201,4 +201,4 @@ function AdminDashboard() {
   );
 }
 
-export default AdminDashboard;
+export default Orders;

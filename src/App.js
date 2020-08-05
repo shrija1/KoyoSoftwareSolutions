@@ -10,7 +10,8 @@ import Home from './components/Home/Home';
 import PortfolioDetails from './components/PortfolioDetails/PortfolioDetails';
 import NavbarOfPortfolio from './components/PortfolioDetails/NavbarOfPortfolio';
 import Registration from './components/Registration/Registration';
-import GeM from './components/Products/GeM/GeM';
+import BuyerServices from './components/Products/BuyerServices/BuyerServices';
+import SellerServices from './components/Products/SellerServices/SellerServices';
 import WebDevelopment from './components/Products/WebDevelopment/WebDevelopment';
 import EMarketing from './components/Products/EMarketing/EMarketing';
 import BusinessProductivityServices from './components/Products/BusinessProductivityServices/BusinessProductivityServices';
@@ -23,8 +24,10 @@ import Contact from './components/Home/Contact/Contact';
 import AboutPage from './components/AboutPage/AboutPage';
 import HeaderForAll from './components/HeaderForAll/HeaderForAll';
 import Admin from './components/Admin/Admin';
-import AdminDashboard from './components/AdminDashboard/AdminDashboard';
-import AdminDashboardLogin from './components/AdminDashboard/AdminDashboardLogin';
+import AdminDashboard from './components/Dashboard/AdminDashboard/AdminDashboard';
+import AdminDashboardLogin from './components/Dashboard/AdminDashboard/AdminDashboardLogin';
+
+
 // import connectDatabase from '../src/node-mysql/connectDatabase'
 
 
@@ -58,8 +61,16 @@ function App() {
               <Registration/>
               <Footer />
             </Route>
-            <Route path='/gem'>
-              <GeM/>
+            <Route path='/BuyerServices'>
+              <Navbar/>
+              <HeaderForAll title='BuyerServices'/>
+              <BuyerServices/>
+              <Footer />
+            </Route>
+            <Route path='/SellerServices'>
+              <Navbar/>
+              <HeaderForAll title='SellerServices'/>
+              <SellerServices/>
               <Footer />
             </Route>
             <Route path='/webDevelopment'>
@@ -111,17 +122,15 @@ function App() {
               <Footer/>
             </Route>
 
-            <Route path='/dashboard'>
-              {/* <Navbar/> */}
-              {/* <HeaderForAll title='Dashboard'/> */}
-              <AdminDashboard/>
-              <Footer />
-            </Route>
-
 
             <Route path='/portfolio'>
               <NavbarOfPortfolio/>
               <PortfolioDetails/>
+              <Footer />
+            </Route>
+
+            <Route path='/dashboard'>
+              <AdminDashboard/>
               <Footer />
             </Route>
 
