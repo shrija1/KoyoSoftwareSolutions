@@ -11,7 +11,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-
+// import axios from 'axios'
 
 const useStyles = makeStyles((theme) => ({
     formControl: {
@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const AddPopup = (props) => {
+    
+
     const [productId, setProductId] = useState(null)
     const classes = useStyles();
     // const [gender, setGender] = useState('');
@@ -43,23 +45,62 @@ const AddPopup = (props) => {
     //     )
     // }
 
+    const [selectedFile, setSelectedFile] = useState(null)
 
+    const onChangeHandler = event => {
+        console.log(event.target.files[0])
+        setSelectedFile(event.target.files[0])
+        // console.log(event.target.files[0].name)
+        // fetch('http://localhost:4400/uploadImage', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'image/png'
+        //     },
+        //     body: event.target.files[0]
+        // })
+    }
+    const [imageFile, setImageFile] = useState({fileName: ''})
+    const onClickUpload = () => {
+        console.log(selectedFile)
+        // fetch('http://localhost:4400/uploadImage', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'image/png'
+        //     },
+        //     body: selectedFile
+        // })
+        const myFileInputs = document.querySelector("input[type='file']")
+ 
+        const formData = new FormData()
+        formData.append('myFile', myFileInputs.files[0])
+ 
+        fetch('http://localhost:4500/uploadfile', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            setImageFile({fileName: data.originalname})
+        })
+    }
 
     const handleAdd = (data) => {
         const formData = new FormData(data.target)
         const productDetails = {}
+        formData.append('image', selectedFile)
         data.preventDefault()
 
         for (let entry of formData.entries()) {
             productDetails[entry[0]] = entry[1]
         }
-        productDetails['img'] = "url"
+        productDetails['img'] = selectedFile.name
 
         console.log(productDetails);
         fetch('http://localhost:4400/addBuyerServices', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'multipart/form-data'
             },
             body: JSON.stringify(productDetails)
         })
@@ -79,12 +120,7 @@ const AddPopup = (props) => {
         })
     }
 
-    const [selectedFile, setSelectedFile] = useState(null)
-
-    const onChangeHandler = event => {
-        console.log(event.target.files[0])
-        setSelectedFile(event.target.files[0])
-    }
+    
 
     
     return (
@@ -104,21 +140,30 @@ const AddPopup = (props) => {
                     <br />
 
                     {/* form data */}
-                    <form method="post" onSubmit={handleAdd} id="input-wrapper">
+                    <form method="post" id="input-wrapper">
                     <div class="d-flex justify-content-between" >
-                        {/* <div className="form-group" style={{ width: '45%' }}>
-                            <input
-                                type="file"
-                                className="form-control"
-                                name="img"
-                                id="img"
-                                placeholder="image"
-                                onChange={onChangeHandler}
-                                // defaultValue={props.img}
-                                // readonly="readonly"
-                            />
-                        </div> */}
                         <div className="form-group" style={{ width: '45%' }}>
+                            {/* <form method="POST" action="http://localhost:4400/uploadImage" enctype="multipart/form-data"> */}
+                            {/* <div> */}
+                                <input
+                                    type="file"
+                                    className="form-control"
+                                    name="img"
+                                    id="img"
+                                    placeholder="image"
+                                    onChange={onChangeHandler}
+                                />
+                            {/* </form> */}
+                            {/* </div> */}
+                            {/* <button className="form-control" onClick={onClickUpload}>Upload</button> */}
+                        </div>
+                        <div className="form-group" style={{ width: '45%' }}>
+                                {/* <input type="submit" value="Upload" className="form-control" onClick={onClickUpload} /> */}
+                            {/* <img src="" alt=""/> */}
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between" >
+                    <div className="form-group" style={{ width: '45%' }}>
                             <input
                                 type="text"
                                 className="form-control"
@@ -129,8 +174,6 @@ const AddPopup = (props) => {
                                 // readonly="readonly"
                             />
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between" >
                         <div className="form-group" style={{ width: '45%' }}>
                             <input
                                 type="text"
@@ -142,6 +185,8 @@ const AddPopup = (props) => {
                                 // readonly="readonly"
                             />
                         </div>
+                    </div>
+                    <div class="d-flex justify-content-between" >
                         <div className="form-group" style={{ width: '45%' }}>
                             <input
                                 type="text"
@@ -153,8 +198,6 @@ const AddPopup = (props) => {
                                 // readonly="readonly"
                             />
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-between" >
                         <div className="form-group" style={{ width: '45%' }}>
                             <input
                                 type="text"
@@ -187,7 +230,7 @@ const AddPopup = (props) => {
                     </form> */}
                     <div>
                         <div className="text-center">
-                            <button type="submit" className="addPopupBtn">Submit</button>
+                            <button type="submit" className="addPopupBtn" onClick={handleAdd}>Submit</button>
                         </div>
                     </div>
                     </form>

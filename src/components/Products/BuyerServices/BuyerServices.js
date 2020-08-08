@@ -21,7 +21,12 @@ const BuyerServices = () => {
     const rows = [];
     for (let i = 0; i < products.length; i++) {
         const e = products[i];
-        const row = createData(pychons, e.title, e.description, e.price, e.stock)
+        if (e.img == '' || e.img == 'url') {
+            e.img = 'bat.jpg'
+        } else {
+            console.log(e.img)
+        }
+        const row = createData('http://localhost:4400/static/'+e.img, e.title, e.description, e.price, e.stock)
         rows.push(row)
     }
     console.log(rows)
