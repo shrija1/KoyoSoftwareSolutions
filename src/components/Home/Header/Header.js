@@ -54,7 +54,7 @@ function Header() {
             <div className="row mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
                 
                 {
-                    data.map(element => <HeaderElement data={element}/>)
+                    data.map(element => <HeaderElement key={element.name} data={element}/>)
                 }
                 
             </div>

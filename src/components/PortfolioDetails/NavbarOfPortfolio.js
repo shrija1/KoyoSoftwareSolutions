@@ -28,9 +28,9 @@ function NavbarOfPortfolio() {
                         <li><a href="/professionalsToolbox">Professionals Toolbox</a></li>
                     </ul>
                 </li>
-                <li><a href="/chat">Chat</a></li>
+                {/* <li><a href="/chat">Chat</a></li> */}
                 <li><a href="/about">About</a></li>
-                <li><a href="/cart">Cart</a></li>
+                {/* <li><a href="/cart">Cart</a></li> */}
                 <li><a href="/contact">Contact</a></li>
 
                 </ul>

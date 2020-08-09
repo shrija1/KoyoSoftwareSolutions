@@ -1,8 +1,8 @@
 import React from 'react'
 import './PortfolioDetails.css'
 import portfolioDetails1 from '../../img/portfolio/portfolio-details-1.jpg'
-import portfolioDetails2 from '../../img/portfolio/portfolio-details-2.jpg'
-import portfolioDetails3 from '../../img/portfolio/portfolio-details-3.jpg'
+// import portfolioDetails2 from '../../img/portfolio/portfolio-details-2.jpg'
+// import portfolioDetails3 from '../../img/portfolio/portfolio-details-3.jpg'
 
 
 

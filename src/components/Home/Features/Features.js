@@ -39,7 +39,7 @@ function Features() {
                     <div className="image col-lg-6" style={{backgroundImage: `url(${features})`}} data-aos="fade-right"></div>
                     <div className="col-lg-6" data-aos="fade-left" data-aos-delay="100">
                         {
-                            data.map(element => <FeatureTemplate data={element}/>)
+                            data.map(element => <FeatureTemplate key={element.title} data={element}/>)
                         }
                     </div>
                 </div>

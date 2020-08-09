@@ -59,7 +59,7 @@ function Services() {
                 <div className="row">
 
                     {
-                        items.map(item => <ServiceTemplate item={item} />)
+                        items.map(item => <ServiceTemplate key={item.title} item={item} />)
                     }
 
                 </div>

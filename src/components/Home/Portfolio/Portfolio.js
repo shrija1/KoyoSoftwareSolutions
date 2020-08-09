@@ -93,7 +93,7 @@ function Portfolio() {
             <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
             {
-                data.map(element=> <PortfolioTemplate data={element}/>)
+                data.map(element=> <PortfolioTemplate key={element.img} data={element}/>)
             }
             
 

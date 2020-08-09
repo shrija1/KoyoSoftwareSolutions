@@ -43,7 +43,7 @@ function Counts() {
                 <div className="row">
                     {
                         data.map(e => (
-                            <div className="col-md-6 d-md-flex align-items-md-stretch">
+                            <div className="col-md-6 d-md-flex align-items-md-stretch" key={e.title}>
                             <div className="count-box">
                                 <i className={e.icon}></i>
                                 <span data-toggle="counter-up">{e.counter}</span>

@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Navbar.css'
 import logo from '../../img/logo/softsiteLogo3.png'
 
-function Navbar() {
+function Navbar(props) {
+    
+    useEffect(() => {
+        if (props.active !== '') {
+            document.getElementById(props.active).className = "active"
+        }
+    })
     return (
         <header id="header" className="fixed-top ">
 
@@ -12,9 +18,9 @@ function Navbar() {
 
             <nav className="nav-menu d-none d-lg-block">
                 <ul>
-                <li className="active"><a href="/">Home</a></li>
-                <li><a href="/account">Registration</a></li>
-                <li className="drop-down"><a href="">Products</a>
+                <li id="home"><a href="/">Home</a></li>
+                <li id="registration"><a href="/account">Registration</a></li>
+                <li className="drop-down" id="products"><a href="">Products</a>
                     <ul>
                         <li className="drop-down"><a href="#">GeM</a>
                             <ul>
@@ -29,10 +35,10 @@ function Navbar() {
                         <li><a href="/professionalsToolbox">Professionals Toolbox</a></li>
                     </ul>
                 </li>
-                <li><a href="/chat">Chat</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/cart">Cart</a></li>
-                <li><a href="/contact">Contact</a></li>
+                {/* <li><a href="/chat">Chat</a></li> */}
+                <li id="about"><a href="/about">About</a></li>
+                {/* <li><a href="/cart">Cart</a></li> */}
+                <li id="contact"><a href="/contact">Contact</a></li>
 
                 </ul>
             </nav>

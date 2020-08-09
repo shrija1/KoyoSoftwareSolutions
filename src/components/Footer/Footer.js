@@ -104,22 +104,22 @@ function Footer() {
 
 
                 
-                <div class="column100 credits text-center">  
+                <div className="column100 credits text-center">  
                     <a href="/">©2020 TTS</a>  
-                    <span class="sep"> | </span>  
+                    <span className="sep"> | </span>  
                     <a href="#">Terms</a>  
-                    <span class="sep"> | </span>  
+                    <span className="sep"> | </span>  
                     <a href="#">Privacy Policy</a>
-                    <span class="footer-address"> Abcdef 123 T. Abcdef Teafa Yadfe, TT, 12345 | 123.456.7891</span>
+                    <span className="footer-address"> Abcdef 123 T. Abcdef Teafa Yadfe, TT, 12345 | 123.456.7891</span>
                 </div>
-                {/* <div class="section-footer-payments">
-                    <div class="payment-badge"><img src={paypal} alt=""/></div>
-                    <div class="payment-badge"><img src={googlepay} alt=""/></div>
-                    <div class="payment-badge"><img src={applepay} alt=""/></div>
-                    <div class="payment-badge"><img src={visa} alt=""/></div>
-                    <div class="payment-badge"><img src={mastercard} alt=""/></div>
-                    <div class="payment-badge"><img src={discover} alt=""/></div>
-                    <div class="payment-badge"><img src={amex} alt=""/></div>
+                {/* <div className="section-footer-payments">
+                    <div className="payment-badge"><img src={paypal} alt=""/></div>
+                    <div className="payment-badge"><img src={googlepay} alt=""/></div>
+                    <div className="payment-badge"><img src={applepay} alt=""/></div>
+                    <div className="payment-badge"><img src={visa} alt=""/></div>
+                    <div className="payment-badge"><img src={mastercard} alt=""/></div>
+                    <div className="payment-badge"><img src={discover} alt=""/></div>
+                    <div className="payment-badge"><img src={amex} alt=""/></div>
                 </div> */}
             </footer>
 

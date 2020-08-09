@@ -26,7 +26,7 @@ const Sidebar = () => {
     }
 
     return (
-        <div class="sidenav sidebar">
+        <div className="sidenav sidebar">
             <button className="socialIcons">
                 <a href="#">
                     {/* <FontAwesomeIcon icon={faCoffee} /> */}
@@ -34,7 +34,7 @@ const Sidebar = () => {
                 </a>
             </button>
             <br/>
-            <button className="socialIcons">
+            {/* <button className="socialIcons">
                 <a href="#">
                     <i className="fa fa-twitter" aria-hidden="true"></i>
                 </a>
@@ -51,12 +51,24 @@ const Sidebar = () => {
                     <i className="fa fa-pinterest-p" aria-hidden="true"></i>
                 </a>
             </button>
+            <br/> */}
+            <button className="socialIcons">
+                <a href="#">
+                    <i className="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </button>
             <br/>
+            <button className="socialIcons">
+                <a href="#">
+                    <i className="fa fa-comments" aria-hidden="true"></i>
+                </a>
+            </button>
+            {/* <br/>
             <button className="socialIcons">
                 <a href="#">
                     <i className="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
-            </button>
+            </button> */}
             <hr style={{width: '50px'}}/>
             <button className="socialIcons plusIcon" onClick={ScrollTo}>
                 <a href="#">

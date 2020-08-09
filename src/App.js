@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
@@ -41,31 +42,31 @@ function App() {
 
 
   return (
-    <div className="">
+    <div>
       <Sidebar/>
       <div className="mainContent">
         <Router>
           <Switch>
             <Route exact path='/'>
-              <Navbar/>
+              <Navbar active="home"/>
               <Header/>
               <Home/>
               <Footer />
             </Route>
             <Route path='/account'>
-              <Navbar/>
+              <Navbar active="registration"/>
               <HeaderForAll title='Account'/>
               <Registration/>
               <Footer />
             </Route>
             <Route path='/BuyerServices'>
-              <Navbar/>
+              <Navbar active="home"/>
               <HeaderForAll title='BuyerServices'/>
               <BuyerServices/>
               <Footer />
             </Route>
             <Route path='/SellerServices'>
-              <Navbar/>
+              <Navbar active="home"/>
               <HeaderForAll title='SellerServices'/>
               <SellerServices/>
               <Footer />
@@ -90,29 +91,29 @@ function App() {
               <ProfessionalsToolbox/>
               <Footer />
             </Route>
-            <Route path='/chat'>
+            {/* <Route path='/chat'>
               <Chat/>
               <Footer />
-            </Route>
+            </Route> */}
             <Route path='/about'>
-              <Navbar/>
+              <Navbar active="about"/>
               <HeaderForAll title='About'/>
               <AboutPage/>
               <Footer/>
             </Route>
-            <Route path='/cart'>
+            {/* <Route path='/cart'>
               <Cart/>
               <Footer />
-            </Route>
+            </Route> */}
             <Route path='/contact'>
-              <Navbar/>
+              <Navbar active="contact"/>
               <HeaderForAll title='About'/>
               <AboutPage/>
               <Footer/>
             </Route>
 
             <Route path='/admin'>
-              <Navbar/>
+              <Navbar active=""/>
               <HeaderForAll title='Admin Login Page'/>
               {/* <Admin/> */}
               <AdminDashboardLogin/>

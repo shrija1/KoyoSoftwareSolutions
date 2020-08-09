@@ -47,7 +47,7 @@ function Team() {
             <div className="row">
 
                 {
-                    members.map(member => <TeamMember member={member} />)
+                    members.map(member => <TeamMember key={member.title} member={member} />)
                 }
 
                 {/* <TeamMember member={members[0]} />
