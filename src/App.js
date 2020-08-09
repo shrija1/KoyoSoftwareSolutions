@@ -46,15 +46,12 @@ function App() {
       <div className="mainContent">
         <Router>
           <Switch>
-
             <Route exact path='/'>
               <Navbar/>
               <Header/>
               <Home/>
               <Footer />
             </Route>
-
-
             <Route path='/account'>
               <Navbar/>
               <HeaderForAll title='Account'/>
