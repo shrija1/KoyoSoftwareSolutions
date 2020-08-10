@@ -1,26 +1,36 @@
-import React from 'react';
+import React from 'react'
+import './AboutPage.css'
+import ContactAbout from './ContactAbout/ContactAbout'
+import TeamAbout from './TeamAbout/TeamAbout'
+import CompanyHistory from './CompanyHistory/CompanyHistory'
+import CompanyValues from './CompanyValues/CompanyValues'
 
 const AboutPage = () => {
     return (
         <div>
-            <div className='container'>
-                <div className='row'>
-                    <div className='col-md-2' style={{ backgroundColor: 'black' }}>
-                        <nav className="nav flex-column" id='vertical'>
-                            <a className="nav-link active" href="#">Contact</a>
-                            <a className="nav-link" href="#">Company History</a>
-                            <a className="nav-link" href="#">Company Values</a>
-                            <a className="nav-link" href="#">Portfolio</a>
-                            <a className="nav-link" href="#">Clientele</a>
-                            <a className="nav-link" href="#">Team</a>
-                            <a className="nav-link" href="#">Investor Relations</a>
-                        </nav>
+            <div>
+                <div>
+                    <div class="sidenavAbout">
+                        <a href="#about">Contact</a>
+                        <a href="#services">Company History</a>
+                        <a href="#clients">Company Values</a>
+                        <a href="#contact">Portfolio</a>
+                        <a href="#services">Clientele</a>
+                        <a href="#clients">Team</a>
+                        <a href="#contact">Investor Relations</a>
                     </div>
-                    <div className='col-md-10'></div>
+
+                    <div class="mainAbout">
+                        <ContactAbout/>
+                        <CompanyHistory/>
+                        <hr/>
+                        <CompanyValues/>
+                        <TeamAbout/>
+                    </div>
                 </div>
                 <hr/>
                 {/* Map */}
-                <div className="section-title">
+                <div className="container section-title">
                     <h2>Map</h2>
                     <p>Office Location</p>
                     <iframe style={{border:'0', width: '100%', height: '320px', marginTop: '100px'}} 

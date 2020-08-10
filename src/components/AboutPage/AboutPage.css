@@ -1,0 +1,34 @@
+.sidenavAbout {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 10px;
+    background: #4ab8ad;
+    overflow-x: hidden;
+    padding: 8px 0;
+    border-radius: 20%;
+}
+  
+.sidenavAbout a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+}
+  
+.sidenavAbout a:hover {
+    color: #07363f;
+}
+  
+.mainAbout {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenavAbout {padding-top: 15px;}
+    .sidenavAbout a {font-size: 18px;}
+}
