@@ -17,8 +17,8 @@
     color: #151515;
     display: block;
     font-weight: bolder;
-    border-radius: 15px 50px;
-    text-align: center;
+    border-radius: 15px 35px;
+    padding-left: 25%;
 }
   
 .sidenavAbout a:hover {
