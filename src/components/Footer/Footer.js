@@ -36,52 +36,54 @@ function Footer() {
                 <div className="container">
                     <div className="row">
 
-                    <div className="col-lg-3 col-md-6">
-                        <div className="footer-info">
-                            <img src={logo1} alt="SoftSite Logo" />
-                            <p>
-                                Abcdef 123 T. Abcdef Teafa Yadfe 
-                                TT, 12345, India<br/><br/>
-                                <strong>Phone:</strong> {phone}<br/>
-                                <strong>WhatsApp:</strong> {whatsapp}<br/>
-                                <strong>Email:</strong> {email}<br/>
-                            </p>
-                            <div className="social-links mt-3">
-                                <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
-                                <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
-                                <a href="#" className="youtube"><i className="bx bxl-youtube"></i></a>
-                                <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-                                <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
-                                <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
-                            </div>
+                        <div className="col-lg-3 col-md-12">
+                            <div className="footer-info">
+                                <img src={logo1} alt="SoftSite Logo" />
+                                <p style={{fontSize: '16px'}}>
+                                    Abcdef 123 T. Abcdef Teafa Yadfe 
+                                    TT, 12345, India<br/><br/>
+                                    {/* <strong>Phone:</strong> {phone}<br/>
+                                    <strong>WhatsApp:</strong> {whatsapp}<br/>
+                                    <strong>Email:</strong> {email}<br/> */}
+                                    <strong>WhatsApp:</strong> +91234567891<br/>
+                                    <strong>Email:</strong> info@tts.com<br/>
+                                </p>
                             </div>
                         </div>
-
-                        <div className="col-lg-2 col-md-6 footer-links">
-                            <h4>Useful Links</h4>
-                            <ul>
-                            <li><i className="bx bx-chevron-right"></i> <a href="/">Home</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="/about">About us</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="/chat">Chat</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
-                            </ul>
+                        
+                        <div className="col-lg-3 col-md-6 footer-links" style={{paddingTop: '5%'}}>
+                            <h4 style={{paddingLeft: '8%', fontSize: '25px'}}>Useful Links</h4>
+                            <div class="d-flex justify-content-between" style={{fontSize: '16px'}}>
+                                <ul>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="/about">About us</a></li>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="/chat">Chat</a></li>
+                                </ul>
+                                <ul style={{paddingRight: '3%'}}>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-lg-1 col-md-0"></div>
+                        <div className="col-lg-5 col-md-6 footer-links" style={{paddingTop: '5%'}}>
+                            <h4 style={{paddingLeft: '8%', fontSize: '25px'}}>Our Services</h4>
+                            <div class="d-flex justify-content-between" style={{fontSize: '16px'}}>
+                                <ul>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="/gem">GeM</a></li>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="/webDevelopment">Web Development</a></li>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="/e-marketing">E-Marketing</a></li>
+                                </ul>
+                                <ul style={{paddingRight: '5%'}}>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="/businessPS">Business Productivity Services</a></li>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="/machineLearning">Machine Learning</a></li>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="/professionalsToolbox">Professionals Toolbox</a></li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div className="col-lg-3 col-md-6 footer-links">
-                            <h4>Our Services</h4>
-                            <ul>
-                            <li><i className="bx bx-chevron-right"></i> <a href="/gem">GeM</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="/webDevelopment">Web Development</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="/e-marketing">E-Marketing</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="/businessPS">Business Productivity Services</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="/machineLearning">Machine Learning</a></li>
-                            <li><i className="bx bx-chevron-right"></i> <a href="/professionalsToolbox">Professionals Toolbox</a></li>
-                            </ul>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 footer-newsletter">
+                        {/* <div className="col-lg-4 col-md-6 footer-newsletter">
                             <h4>Our Newsletter</h4>
                             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
                             <form action="" method="post">
@@ -89,11 +91,11 @@ function Footer() {
                                 <input type="submit" value="Subscribe" />
                             </form>
                             <img src={paymentGateway} alt="paymentGateway" />
-                        </div>
+                        </div> */}
 
-                        </div>
                     </div>
                 </div>
+            </div>
 
                 <div className="container">
                 {/* <div className="copyright">
@@ -110,7 +112,11 @@ function Footer() {
                     <a href="#">Terms</a>  
                     <span className="sep"> | </span>  
                     <a href="#">Privacy Policy</a>
-                    <span className="footer-address"> Abcdef 123 T. Abcdef Teafa Yadfe, TT, 12345 | 123.456.7891</span>
+                    {/* <span className="footer-address">
+                            <a href="#" className="sociallink"><i className="bx bxl-facebook"></i></a>
+                            <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
+                            <a href="#" className="comments"><i className="fa fa-comments"></i></a>
+                    </span> */}
                 </div>
                 {/* <div className="section-footer-payments">
                     <div className="payment-badge"><img src={paypal} alt=""/></div>
@@ -119,7 +125,6 @@ function Footer() {
                     <div className="payment-badge"><img src={visa} alt=""/></div>
                     <div className="payment-badge"><img src={mastercard} alt=""/></div>
                     <div className="payment-badge"><img src={discover} alt=""/></div>
-                    <div className="payment-badge"><img src={amex} alt=""/></div>
                 </div> */}
             </footer>
 
