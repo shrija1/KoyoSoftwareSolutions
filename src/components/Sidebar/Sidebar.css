@@ -15,12 +15,12 @@
   padding: 5px 8px 5px 8px;
   text-decoration: none;
   font-size: 25px;
-  color: white;
+  color: #151515;
   display: block;
 }
 
 .sidenav a:hover {
-  color: #aeedf8;
+  color: #ffc451;
 }
 
 .mainContent {
@@ -41,7 +41,11 @@
   padding: 3px;
   border-radius: 10px;
   border: none;
-  background-color: #4ab8ad;
+  background-color: #ffc451;
+}
+
+.socialIcons:hover {
+  background-color: #151515;
 }
 
 .plusIcon a{
@@ -67,3 +71,19 @@
   padding: 0px !important;
   margin: 0px !important;
 }
+
+
+
+
+/* .back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #ffc451;
+  color: #151515;
+  transition: all 0.4s;
+} */

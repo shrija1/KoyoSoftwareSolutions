@@ -60,34 +60,44 @@ function App() {
               <Footer />
             </Route>
             <Route path='/BuyerServices'>
-              <Navbar active="home"/>
-              <HeaderForAll title='BuyerServices'/>
+              <Navbar active="services"/>
+              <HeaderForAll title='Buyer Services'/>
               <BuyerServices/>
               <Footer />
             </Route>
             <Route path='/SellerServices'>
-              <Navbar active="home"/>
-              <HeaderForAll title='SellerServices'/>
+              <Navbar active="services"/>
+              <HeaderForAll title='Seller Services'/>
               <SellerServices/>
               <Footer />
             </Route>
             <Route path='/webDevelopment'>
+              <Navbar active="services"/>
+              <HeaderForAll title='Web Development'/>
               <WebDevelopment/>
               <Footer />
             </Route>
             <Route path='/e-marketing'>
+              <Navbar active="services"/>
+              <HeaderForAll title='E-Marketing'/>
               <EMarketing/>
               <Footer />
             </Route>
             <Route path='/businessPS'>
+              <Navbar active="services"/>
+              <HeaderForAll title='Business Productivity Services'/>
               <BusinessProductivityServices/>
               <Footer />
             </Route>
             <Route path='/machineLearning'>
+              <Navbar active="services"/>
+              <HeaderForAll title='Machine Learning'/>
               <MachineLearning/>
               <Footer />
             </Route>
             <Route path='/professionalsToolbox'>
+              <Navbar active="services"/>
+              <HeaderForAll title='Web Development'/>
               <ProfessionalsToolbox/>
               <Footer />
             </Route>
@@ -107,7 +117,7 @@ function App() {
             </Route> */}
             <Route path='/contact'>
               <Navbar active="contact"/>
-              <HeaderForAll title='About'/>
+              <HeaderForAll title='Contact'/>
               <AboutPage/>
               <Footer/>
             </Route>

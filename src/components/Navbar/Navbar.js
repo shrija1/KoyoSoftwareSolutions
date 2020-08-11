@@ -20,7 +20,7 @@ function Navbar(props) {
                     <ul>
                     <li id="home"><a href="/">Home</a></li>
                     <li id="registration"><a href="/account">Registration</a></li>
-                    <li className="drop-down" id="products"><a href="">Products</a>
+                    <li className="drop-down" id="services"><a href="">Services</a>
                         <ul>
                             <li className="drop-down"><a href="#">GeM</a>
                                 <ul>

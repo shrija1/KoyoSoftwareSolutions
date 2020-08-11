@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Sidebar.css'
-import { CircularProgressbar } from 'react-circular-progressbar';
+import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faPlus  } from '@fortawesome/free-solid-svg-icons'
@@ -17,7 +17,7 @@ const Sidebar = () => {
             const perfectResult = result>99.8 ? 100 : result.toFixed(0)
             setScrollPercent(perfectResult)
         }
-    
+
         return window.addEventListener("scroll", onScroll)
     }, [scrollPercent])
 
@@ -78,7 +78,13 @@ const Sidebar = () => {
 
             </button>
             <br/>
-            <CircularProgressbar value={scrollPercent} text={`${scrollPercent}%`} />
+            <CircularProgressbar value={scrollPercent} text={`${scrollPercent}%`} 
+                styles={buildStyles({
+                    // pathColor: `rgba(255, 196, 81, ${scrollPercent / 100})`,
+                    pathColor: '#b37700',
+                    textColor: '#b37700'
+                })}
+            />
             
         </div>
     );

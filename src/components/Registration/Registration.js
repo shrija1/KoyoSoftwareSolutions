@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import './Registration.css'
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from '../../firebase.config';
-
+import googleIcon from '../../img/icon/google.png'
 
 firebase.initializeApp(firebaseConfig)
 
@@ -91,12 +92,18 @@ const Registration = () => {
         <div style={{margin: '100px 0px', textAlign: 'center'}}>
             <div >
                 {
-                    user.googleSignIn  ? <button onClick={handleSignOutGoogle} >Sign out google</button> :
-                    <button onClick={handleSignInGoogle} >Sign In google</button>
+                    user.googleSignIn  ? <button onClick={handleSignOutGoogle} >
+                        <p id="googleIcon" class="d-flex align-items-center justify-content-center"><img src={googleIcon} alt="google icon"/><span style={{color: 'red'}}>Sign Out From Google</span></p>
+                    </button> :
+                    <button onClick={handleSignInGoogle} >
+                        {/* <div id="googleIcon" > */}
+                            <p id="googleIcon" class="d-flex align-items-center justify-content-center"><img src={googleIcon} alt="google icon"/><span>Sign In With Google</span></p>
+                        {/* </div> */}
+                    </button>
                 }
-                {
+                {/* {
                     user.fbSignIn ? <button onClick ={handleSignOutFb}>Sign Out Fb</button> :<button onClick ={handleSignInFb}>Signing With Fb</button>
-                }
+                } */}
             </div>
             
             <div >
@@ -107,13 +114,13 @@ const Registration = () => {
                     <img src={user.photo} alt=""/>
                 </div> 
                 }
-                {
+                {/* {
                     user.fbSignIn && <div>
                         <p>Welcome, {user.name}</p>
                         <p>your email: {user.email}</p>
                         <img src={user.photo} alt=""/>
                     </div>
-                }
+                } */}
                 
             </div>
         </div>
