@@ -54,50 +54,50 @@ function App() {
               <Footer />
             </Route>
             <Route path='/account'>
-              <Navbar active="registration"/>
+              <Navbar active=""/>
               <HeaderForAll title='Account'/>
               <Registration/>
               <Footer />
             </Route>
             <Route path='/BuyerServices'>
-              <Navbar active="services"/>
+              <Navbar active=""/>
               <HeaderForAll title='Buyer Services'/>
               <BuyerServices/>
               <Footer />
             </Route>
             <Route path='/SellerServices'>
-              <Navbar active="services"/>
+              <Navbar active=""/>
               <HeaderForAll title='Seller Services'/>
               <SellerServices/>
               <Footer />
             </Route>
             <Route path='/webDevelopment'>
-              <Navbar active="services"/>
+              <Navbar active=""/>
               <HeaderForAll title='Web Development'/>
               <WebDevelopment/>
               <Footer />
             </Route>
             <Route path='/e-marketing'>
-              <Navbar active="services"/>
+              <Navbar active=""/>
               <HeaderForAll title='E-Marketing'/>
               <EMarketing/>
               <Footer />
             </Route>
             <Route path='/businessPS'>
-              <Navbar active="services"/>
+              <Navbar active=""/>
               <HeaderForAll title='Business Productivity Services'/>
               <BusinessProductivityServices/>
               <Footer />
             </Route>
             <Route path='/machineLearning'>
-              <Navbar active="services"/>
+              <Navbar active=""/>
               <HeaderForAll title='Machine Learning'/>
               <MachineLearning/>
               <Footer />
             </Route>
             <Route path='/professionalsToolbox'>
-              <Navbar active="services"/>
-              <HeaderForAll title='Web Development'/>
+              <Navbar active=""/>
+              <HeaderForAll title='Professionals Toolbox'/>
               <ProfessionalsToolbox/>
               <Footer />
             </Route>

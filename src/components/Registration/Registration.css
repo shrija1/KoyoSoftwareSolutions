@@ -1,7 +1,8 @@
 #googleIcon {
     /* border: 2px solid red; */
-    border-radius: 5%;
-    width: 100%;
+    border-radius: 15px;
+    width: 350px;
+    height: 80px;
 }
 #googleIcon img{
     width: 1em;

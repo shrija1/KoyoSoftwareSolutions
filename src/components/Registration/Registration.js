@@ -90,14 +90,16 @@ const Registration = () => {
 
     return (
         <div style={{margin: '100px 0px', textAlign: 'center'}}>
-            <div >
+            <div className="container">
                 {
-                    user.googleSignIn  ? <button onClick={handleSignOutGoogle} >
-                        <p id="googleIcon" class="d-flex align-items-center justify-content-center"><img src={googleIcon} alt="google icon"/><span style={{color: 'red'}}>Sign Out From Google</span></p>
+                    user.googleSignIn  ? <button onClick={handleSignOutGoogle} id="googleIcon" class="d-flex align-items-center justify-content-center" style={{margin: '0 auto'}}>
+                        <img src={googleIcon} alt="google icon"/><span style={{color: 'red'}}>Sign Out From Google</span>
                     </button> :
-                    <button onClick={handleSignInGoogle} >
+                    <button onClick={handleSignInGoogle} id="googleIcon" class="d-flex align-items-center justify-content-center"  style={{margin: '0 auto'}}>
                         {/* <div id="googleIcon" > */}
-                            <p id="googleIcon" class="d-flex align-items-center justify-content-center"><img src={googleIcon} alt="google icon"/><span>Sign In With Google</span></p>
+                            {/* <p id="googleIcon" class="d-flex align-items-center justify-content-center"> */}
+                                <img src={googleIcon} alt="google icon"/><span>Sign In With Google</span>
+                            {/* </p> */}
                         {/* </div> */}
                     </button>
                 }

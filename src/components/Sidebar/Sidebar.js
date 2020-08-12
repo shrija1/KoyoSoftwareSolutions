@@ -78,6 +78,7 @@ const Sidebar = () => {
 
             </button>
             <br/>
+            <p id="circularProgressBar">
             <CircularProgressbar value={scrollPercent} text={`${scrollPercent}%`} 
                 styles={buildStyles({
                     // pathColor: `rgba(255, 196, 81, ${scrollPercent / 100})`,
@@ -85,6 +86,7 @@ const Sidebar = () => {
                     textColor: '#b37700'
                 })}
             />
+            </p>
             
         </div>
     );
