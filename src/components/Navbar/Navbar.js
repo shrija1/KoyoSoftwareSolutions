@@ -19,7 +19,7 @@ function Navbar(props) {
                 <nav className="nav-menu d-none d-lg-block collapse navbar-collapse" id="navbarNav1">
                     <ul>
                     <li id="home"><a href="/">Home</a></li>
-                    <li id="registration"><a href="/account">Registration</a></li>
+                    {/* <li id="registration"><a href="/account">Registration</a></li> */}
                     <li className="drop-down" id="services"><a href="">Services</a>
                         <ul>
                             <li className="drop-down"><a href="#">GeM</a>
@@ -47,7 +47,7 @@ function Navbar(props) {
                     {/* <i className="navbar-toggler-icon"></i> */}
                     <i className="ri-arrow-down-line" aria-hidden="true"></i>
                 </button>
-                <a href="/account" className="get-started-btn scrollto">Account</a>
+                <a href="/account" className="get-started-btn scrollto">Sign In</a>
 <br/>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
