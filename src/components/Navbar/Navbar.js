@@ -36,7 +36,7 @@ function Navbar(props) {
                         </ul>
                     </li>
                     {/* <li><a href="/chat">Chat</a></li> */}
-                    <li className="drop-down" id="about"><a href="">Portfolio</a>
+                    <li className="drop-down" id="portfolio"><a href="">Portfolio</a>
                         <ul>
                             <li><a href="">All</a></li>
                             <li><a href="">Websites</a></li>
