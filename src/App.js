@@ -27,6 +27,8 @@ import HeaderForAll from './components/HeaderForAll/HeaderForAll';
 import Admin from './components/Admin/Admin';
 import AdminDashboard from './components/Dashboard/AdminDashboard/AdminDashboard';
 import AdminDashboardLogin from './components/Dashboard/AdminDashboard/AdminDashboardLogin';
+import Portfolio from './components/Home/Portfolio/Portfolio';
+import PortfolioPage from './components/PortfolioPage/PortfolioPage';
 
 
 // import connectDatabase from '../src/node-mysql/connectDatabase'
@@ -111,6 +113,12 @@ function App() {
               <AboutPage/>
               <Footer/>
             </Route>
+            <Route path='/portfolio'>
+              <Navbar active="portfolio"/>
+              <HeaderForAll title='Portfolio'/>
+              <PortfolioPage/>
+              <Footer/>
+            </Route>
             {/* <Route path='/cart'>
               <Cart/>
               <Footer />
@@ -131,7 +139,7 @@ function App() {
             </Route>
 
 
-            <Route path='/portfolio'>
+            <Route path='/portfolioDetails'>
               <NavbarOfPortfolio/>
               <PortfolioDetails/>
               <Footer />
