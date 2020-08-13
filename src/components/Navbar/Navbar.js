@@ -154,11 +154,11 @@ function Navbar(props) {
                     <Button onClick={handleSignInGoogle} style={{backgroundColor: 'transparent', border: 'none'}}>
                         <img src={googleSignin} alt="Google Signin" width="200px"/>
                     </Button>
-                    <br/>
+                    {/* <br/>
                     <br/>
                     <Button onClick={handleSignInLinkedIn} style={{backgroundColor: 'transparent', border: 'none'}}>
                         <img src={linkedInSignin} alt="linkedIn Signin" width="200px"/>
-                    </Button>
+                    </Button> */}
                 </Modal.Body>
                 <Modal.Footer style={{justifyContent: 'center'}}>
                     {
