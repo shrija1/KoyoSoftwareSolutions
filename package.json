@@ -12,6 +12,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "auth0-js": "^9.13.4",
     "bootstrap": "^4.5.2",
     "elevator.js": "^1.0.1",
     "express": "^4.17.1",
