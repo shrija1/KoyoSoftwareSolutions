@@ -4,6 +4,7 @@ import * as firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from '../../firebase.config';
 import googleIcon from '../../img/icon/google.png'
+import Popup from "reactjs-popup"
 
 firebase.initializeApp(firebaseConfig)
 
@@ -125,6 +126,8 @@ const Registration = () => {
                 } */}
                 
             </div>
+
+
         </div>
     );
 }
