@@ -148,7 +148,7 @@ function Navbar(props) {
 
             <Modal show={show} onHide={handleModel} animation={true}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Please choose one</Modal.Title>
+                    <Modal.Title>Sign in with</Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={{textAlign: 'center'}}>
                     <Button onClick={handleSignInGoogle} style={{backgroundColor: 'transparent', border: 'none'}}>
