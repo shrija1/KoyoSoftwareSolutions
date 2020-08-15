@@ -1,82 +1,107 @@
 .sidenav {
-  width: 60px;
-  position: fixed;
-  z-index: 1;
-  top: 70px;
-  right: 1px;
-  /* background: #fff; */
-  overflow-x: hidden;
-  padding: 8px 0;
+    width: 60px;
+    position: fixed;
+    z-index: 1;
+    top: 70px;
+    right: 1px;
+    /* background: #fff; */
+    overflow-x: hidden;
+    padding: 8px 0;
 }
 
 .sidebar a {
-  width: 34px;
-  height: 34px;
-  /* padding: 5px 8px 5px 8px; */
-  text-decoration: none;
-  font-size: 20px;
-  color: #151515;
-  display: block;
+    width: 34px;
+    height: 34px;
+    /* padding: 5px 8px 5px 8px; */
+    text-decoration: none;
+    font-size: 20px;
+    color: #151515;
+    display: block;
 }
 
 .sidenav a:hover {
-  color: #ffc451;
+    color: #ffc451;
 }
 
 .mainContent {
-  /* margin-right: 80px;  */
-  /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
-  /* padding: 0px 10px; */
+    /* margin-right: 80px;  */
+    /* Same width as the sidebar + left position in px */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    /* padding: 0px 10px; */
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
-
 .socialIcons {
-  margin: 5px;
-  padding: 3px;
-  border-radius: 4px;
-  border: none;
-  background-color: #ffc451;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 4px;
+    border: none;
+    background-color: #ffc451;
 }
 
 .socialIcons:hover {
-  background-color: #151515;
+    background-color: #151515;
 }
 
-.plusIcon a{
-  /* padding: 5px 13px 5px 13px; */
+.plusIcon a {
+    /* padding: 5px 13px 5px 13px; */
 }
 
-.percentageIcon{
-  height: 30px;
-  width: 30px;
-  margin: 3px;
-  padding: 3px;
-  right: 5px;
-  /* border-radius: 50%; */
-  /* border: 3px solid red; */
-  /* border: 3px solid black; */
-  /* border-color: ; */
-  /* border-left: 3px solid green; */
-  /* background-color: rgba(0, 0, 0, 0); */
+.percentageIcon {
+    height: 30px;
+    width: 30px;
+    margin: 3px;
+    padding: 3px;
+    right: 5px;
+    /* border-radius: 50%; */
+    /* border: 3px solid red; */
+    /* border: 3px solid black; */
+    /* border-color: ; */
+    /* border-left: 3px solid green; */
+    /* background-color: rgba(0, 0, 0, 0); */
 }
 
 .percentageIcon p {
-  /* color: gray; */
-  /* font-size: small; */
-  padding: 0px !important;
-  margin: 0px !important;
+    /* color: gray; */
+    /* font-size: small; */
+    padding: 0px !important;
+    margin: 0px !important;
 }
 
-
-#circularProgressBar{
-  margin-right: 10px;
+.chat-button {
+    animation: mymove infinite 2s;
+    animation-delay: 1s;
+    animation-duration: 60s;
 }
+
+@keyframes mymove {
+    0% {
+        transform: scale(1, 1);
+    }
+    1% {
+        transform: scale(1.5, 1.5);
+    }
+    2% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+#circularProgressBar {
+    margin-right: 10px;
+}
+
 
 /* .back-to-top i {
   display: flex;
