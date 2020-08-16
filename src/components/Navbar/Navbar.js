@@ -157,7 +157,7 @@ function Navbar(props) {
                 </Modal.Header> */}
                 {
                     user.googleSignIn ? <div style={{textAlign: 'center', padding: '50px'}}>
-                        <img src={user.photo} alt="Logout" width="50px" style={{ borderRadius: '50%' }} />
+                        <img src={user.photo} alt="Photo" width="50px" style={{ borderRadius: '50%' }} />
                         <p>Welcome, {user.name}</p>
                         <p>{user.email}</p>
                         <br/>
