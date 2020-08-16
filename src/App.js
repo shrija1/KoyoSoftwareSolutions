@@ -21,17 +21,13 @@ import ProfessionalsToolbox from './components/Products/ProfessionalsToolbox/Pro
 import Chat from './components/Chat/Chat';
 import About from './components/Home/About/About';
 import Cart from './components/Cart/Cart';
-import Contact from './components/Home/Contact/Contact';
+import ContactPage from './components/ContactPage/ContactPage';
 import AboutPage from './components/AboutPage/AboutPage';
 import HeaderForAll from './components/HeaderForAll/HeaderForAll';
 import Admin from './components/Admin/Admin';
 import AdminDashboard from './components/Dashboard/AdminDashboard/AdminDashboard';
 import AdminDashboardLogin from './components/Dashboard/AdminDashboard/AdminDashboardLogin';
-import Portfolio from './components/Home/Portfolio/Portfolio';
 import PortfolioPage from './components/PortfolioPage/PortfolioPage';
-
-
-// import connectDatabase from '../src/node-mysql/connectDatabase'
 
 
 function App() {
@@ -40,8 +36,6 @@ function App() {
   //       .then(response => response.json())
   //       .then(json => console.log(json))
   // }, [])
-
-
 
   return (
     <div>
@@ -126,7 +120,7 @@ function App() {
             <Route path='/contact'>
               <Navbar active="contact"/>
               <HeaderForAll title='Contact'/>
-              <AboutPage/>
+              <ContactPage/>
               <Footer/>
             </Route>
 

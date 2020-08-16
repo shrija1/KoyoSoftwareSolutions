@@ -3,7 +3,6 @@ import './AboutPage.css'
 import ContactAbout from './ContactAbout/ContactAbout'
 import TeamAbout from './TeamAbout/TeamAbout'
 import CompanyHistory from './CompanyHistory/CompanyHistory'
-import CompanyValues from './CompanyValues/CompanyValues'
 
 const AboutPage = () => {
     return (
@@ -23,8 +22,6 @@ const AboutPage = () => {
                     <div class="mainAbout">
                         <ContactAbout/>
                         <CompanyHistory/>
-                        <hr/>
-                        <CompanyValues/>
                         <TeamAbout/>
                     </div>
                 </div>

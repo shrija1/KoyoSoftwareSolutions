@@ -5,8 +5,11 @@ import { Button, Modal } from 'react-bootstrap'
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from '../../firebase.config';
-import googleSignin from '../../img/icon/googleSignin.png'
-import linkedInSignin from '../../img/icon/linkedinSignin.png'
+import facebook from '../../img/social/facebook.png'
+import google from '../../img/social/google.png'
+import twitter from '../../img/social/twitter.png'
+import linkedIn from '../../img/social/linkedin.png'
+import logout from '../../img/social/logout.png'
 
 function Navbar(props) {
     const [show, setShow] = useState(false)
@@ -111,8 +114,10 @@ function Navbar(props) {
                     {/* <i className="navbar-toggler-icon"></i> */}
                     <i className="ri-arrow-down-line" aria-hidden="true"></i>
                 </button>
-                {/* <a href="/account" className="get-started-btn scrollto">Sign In</a> */}
-                <a href='#' className="get-started-btn scrollto" onClick={handleModel} >Sign In</a>
+                {
+                    user.googleSignIn ? <a href='#' className="get-started-btn scrollto" onClick={handleModel} >{user.name}</a>
+                    : <a href='#' className="get-started-btn scrollto" onClick={handleModel} >Sign In</a>
+                }
 <br/>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
@@ -145,30 +150,50 @@ function Navbar(props) {
                 </div>
             </div>
 
-
-            <Modal show={show} onHide={handleModel} animation={true}>
-                <Modal.Header closeButton>
-                    <Modal.Title>Please choose one</Modal.Title>
-                </Modal.Header>
-                <Modal.Body style={{textAlign: 'center'}}>
-                    <Button onClick={handleSignInGoogle} style={{backgroundColor: 'transparent', border: 'none'}}>
-                        <img src={googleSignin} alt="Google Signin" width="200px"/>
+            
+            <Modal show={show} onHide={handleModel} animation={true} className="d-flex align-items-center" >
+                {/* <Modal.Header closeButton>
+                    <Modal.Title>Sign in with</Modal.Title>
+                </Modal.Header> */}
+                {
+                    user.googleSignIn ? <div style={{textAlign: 'center', padding: '50px'}}>
+                        <img src={user.photo} alt="Logout" width="50px" style={{ borderRadius: '50%' }} />
+                        <p>Welcome, {user.name}</p>
+                        <p>{user.email}</p>
+                        <br/>
+                        {/* <button onClick={handleSignOutGoogle}>Sign Out</button> */}
+                        <Button onClick={handleSignOutGoogle} style={{backgroundColor: 'transparent', border: 'none'}}>
+                            <img src={logout} alt="Logout" width="100px"/>
+                        </Button>
+                    </div> 
+                   :
+                <Modal.Body closeButton style={{textAlign: 'center', padding: '50px'}}>
+                    <h3>Sign in with</h3> <br/>
+                    <Button style={{backgroundColor: 'transparent', border: 'none'}}>
+                        <img src={facebook} alt="Facebook SignIn" width="300px"/>
                     </Button>
-                    {/* <br/>
                     <br/>
-                    <Button onClick={handleSignInLinkedIn} style={{backgroundColor: 'transparent', border: 'none'}}>
-                        <img src={linkedInSignin} alt="linkedIn Signin" width="200px"/>
-                    </Button> */}
+                    <Button onClick={handleSignInGoogle} style={{backgroundColor: 'transparent', border: 'none'}}>
+                        <img src={google} alt="Google SignIn" width="300px"/>
+                    </Button>
+                    <br/>
+                    <Button style={{backgroundColor: 'transparent', border: 'none'}}>
+                        <img src={twitter} alt="Twitter SignIn" width="300px"/>
+                    </Button>
+                    <br/>
+                    <Button style={{backgroundColor: 'transparent', border: 'none'}}>
+                        <img src={linkedIn} alt="LinkedIn SignIn" width="300px"/>
+                    </Button>
                 </Modal.Body>
-                <Modal.Footer style={{justifyContent: 'center'}}>
+                 }
+                {/* <Modal.Footer style={{justifyContent: 'center'}}>
                     {
                         user.googleSignIn && <div style={{textAlign: 'center'}}>
                             <p>Welcome, {user.name}</p>
                             <p>Your email: {user.email}</p>
-                            {/* <img src={user.photo} alt=""/> */}
                         </div> 
                     }
-                </Modal.Footer>
+                </Modal.Footer> */}
             </Modal>
 
 

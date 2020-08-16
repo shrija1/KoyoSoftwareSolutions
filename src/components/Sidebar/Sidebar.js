@@ -58,7 +58,7 @@ const Sidebar = () => {
                 </a>
             </button>
             <br/>
-            <button className="socialIcons">
+            <button className="socialIcons chat-button">
                 <a href="#">
                     <i className="fa fa-comments" aria-hidden="true"></i>
                 </a>
