@@ -114,7 +114,7 @@ const Navbar = (props) => {
                     <ul>
                     <li id="home"><a href="/">Home</a></li>
                     {/* <li id="registration"><a href="/account">Registration</a></li> */}
-                    <li className="drop-down" id="services"><a href="">Services</a>
+                    <li className="drop-down" id="services"><a href="/services">Services</a>
                         <ul>
                             <li className="drop-down"><a href="#">GeM</a>
                                 <ul>
@@ -144,7 +144,10 @@ const Navbar = (props) => {
                     <i className="ri-arrow-down-line" aria-hidden="true"></i>
                 </button>
                 {
-                    user.googleSignIn ? <a href='#' className="get-started-btn scrollto" onClick={handleModel} style={{border: 'none'}}>Hi, {user.name}</a>
+                    user.googleSignIn ? <div>
+                    <a href='#' className="get-started-btn scrollto" onClick={handleModel} style={{border: 'none', display: 'inline'}}>Hi, {user.name}</a>
+                    <a href='#' className="get-started-btn scrollto" onClick={handleSignOutGoogle} style={{display: 'inline', marginLeft: '2px', padding: '5px 12px 8px 12px'}}>Logout</a>
+                    </div>
                     : <a href='#' className="get-started-btn scrollto" onClick={handleModel} >Sign In</a>
                 }
 <br/>
@@ -181,22 +184,21 @@ const Navbar = (props) => {
 
             
             <Modal show={show} onHide={handleModel} animation={true} className="d-flex align-items-center" >
-                {/* <Modal.Header closeButton>
-                    <Modal.Title>Sign in with</Modal.Title>
-                </Modal.Header> */}
+                <Modal.Header closeButton style={{borderBottom: '0px'}}>
+                    {/* <Modal.Title>Sign in with</Modal.Title> */}
+                </Modal.Header>
                 {
-                    (user.googleSignIn ) ? <div style={{textAlign: 'center', padding: '50px'}}>
-                        <img src={user.photo} alt="Photo" width="50px" style={{ borderRadius: '50%' }} />
+                    (user.googleSignIn ) ? <div style={{textAlign: 'center', padding: '0px 50px 50px 50px'}}>
+                        <img src={user.photo} alt="Profile" width="50px" style={{ borderRadius: '50%' }} />
                         <p>Welcome, {user.name}</p>
                         <p>{user.email}</p>
-                        <br/>
-                        {/* <button onClick={handleSignOutGoogle}>Sign Out</button> */}
+                        {/* <br/>
                         <Button onClick={handleSignOutGoogle} style={{backgroundColor: 'transparent', border: 'none'}}>
                             <img src={logout} alt="Logout" width="100px"/>
-                        </Button>
+                        </Button> */}
                     </div> 
                    :
-                <Modal.Body closeButton style={{textAlign: 'center', padding: '50px'}}>
+                <Modal.Body closeButton style={{textAlign: 'center', padding: '0px 50px 50px 50px'}}>
                     <h3>Sign in with</h3> <br/>
                     <Button style={{backgroundColor: 'transparent', border: 'none'}}>
                         <img src={facebook} alt="Facebook SignIn" width="300px"/>

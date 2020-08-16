@@ -14,12 +14,7 @@ function Contact() {
             <p>Contact Us</p>
             </div>
 
-            <div>
-            <iframe style={{border:'0', width: '100%', height: '270px'}} 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3369.2642564899743!2d75.50407131517214!3d32.38527728109204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDIzJzA3LjAiTiA3NcKwMzAnMjIuNSJF!5e0!3m2!1sen!2sus!4v1596982748456!5m2!1sen!2sus" 
-                frameborder="0" allowfullscreen>
-            </iframe>
-            </div>
+            
 
             <div className="row mt-5">
 
@@ -79,6 +74,13 @@ function Contact() {
 
             </div>
 
+            </div>
+<br/><br/>
+            <div>
+                <iframe style={{border:'0', width: '100%', height: '270px'}} 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3369.2642564899743!2d75.50407131517214!3d32.38527728109204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDIzJzA3LjAiTiA3NcKwMzAnMjIuNSJF!5e0!3m2!1sen!2sus!4v1596982748456!5m2!1sen!2sus" 
+                    frameborder="0" allowfullscreen>
+                </iframe>
             </div>
 
         </div>
