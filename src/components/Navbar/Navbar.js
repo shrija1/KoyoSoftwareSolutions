@@ -11,8 +11,13 @@ import twitter from '../../img/social/twitter.png'
 import linkedIn from '../../img/social/linkedin.png'
 import logout from '../../img/social/logout.png'
 
-function Navbar(props) {
+const Navbar = (props) => {
     const [show, setShow] = useState(false)
+    // user from local storage
+    let ttsGoogleSignIn = localStorage.getItem('ttsGoogleSignIn')
+    console.log(ttsGoogleSignIn)
+    // || userLocal.ttsGoogleSignIn
+    const [checked, setChecked] = useState(true)
 
     const [user, setUser] = useState({
         googleSignIn: false,
@@ -22,6 +27,20 @@ function Navbar(props) {
         photo: ''
     })
     const GoogleProvider = new firebase.auth.GoogleAuthProvider();
+
+    // useEffect(() => {
+        if (ttsGoogleSignIn && checked) {
+            setUser({
+                googleSignIn: true,
+                linkedInSignIn: false,
+                name: localStorage.getItem('ttsUsername'),
+                email: localStorage.getItem('ttsEmail'),
+                photo: localStorage.getItem('ttsPhoto')
+            })
+            setChecked(false)
+            console.log(user)
+        }
+    // }, ttsGoogleSignIn)
 
     const handleSignInGoogle = () => {
         firebase.auth().signInWithPopup(GoogleProvider)
@@ -36,6 +55,11 @@ function Navbar(props) {
                 photo: photoURL
             }
             setUser(signInUserGoogle);
+            // set user to local storage
+            localStorage.setItem('ttsGoogleSignIn', true);
+            localStorage.setItem('ttsUsername', displayName);
+            localStorage.setItem('ttsEmail', email);
+            localStorage.setItem('ttsPhoto', photoURL);
         })
         .catch(err =>{
             console.log(err);
@@ -53,13 +77,18 @@ function Navbar(props) {
                 photo: ''
             }
             setUser(signOutUserGoogle);
+            // remove all from local storage
+            // localStorage.clear();
+
+            // remove user from local storage
+            localStorage.removeItem('ttsGoogleSignIn');
+            localStorage.removeItem('ttsUsername');
+            localStorage.removeItem('ttsEmail');
+            localStorage.removeItem('ttsPhoto');
         })
         // .catch(err =>{})
     }
 
-    const handleSignInLinkedIn = () => {
-        // 
-    }
 
 
     useEffect(() => {
@@ -115,7 +144,7 @@ function Navbar(props) {
                     <i className="ri-arrow-down-line" aria-hidden="true"></i>
                 </button>
                 {
-                    user.googleSignIn ? <a href='#' className="get-started-btn scrollto" onClick={handleModel} >{user.name}</a>
+                    user.googleSignIn ? <a href='#' className="get-started-btn scrollto" onClick={handleModel} style={{border: 'none'}}>Hi, {user.name}</a>
                     : <a href='#' className="get-started-btn scrollto" onClick={handleModel} >Sign In</a>
                 }
 <br/>
@@ -156,7 +185,7 @@ function Navbar(props) {
                     <Modal.Title>Sign in with</Modal.Title>
                 </Modal.Header> */}
                 {
-                    user.googleSignIn ? <div style={{textAlign: 'center', padding: '50px'}}>
+                    (user.googleSignIn ) ? <div style={{textAlign: 'center', padding: '50px'}}>
                         <img src={user.photo} alt="Photo" width="50px" style={{ borderRadius: '50%' }} />
                         <p>Welcome, {user.name}</p>
                         <p>{user.email}</p>
