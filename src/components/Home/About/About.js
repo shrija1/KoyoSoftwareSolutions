@@ -12,21 +12,20 @@ function About() {
                     <img src={about} className="img-fluid" alt=""/>
                 </div>
                 <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-                <h3>{WebText.home.introductionHeading}</h3>
+                <h3>{WebText.home.about.introductionHeading}</h3>
                     <p className="font-italic">
-                    {WebText.home.introductionText}
+                    {WebText.home.about.introductionText}
                     </p>
                     <ul className="ulContent">
-                    <li><i className="ri-check-double-line"></i> {WebText.home.introductionCheckList1}</li>
-                    <li><i className="ri-check-double-line"></i> {WebText.home.introductionCheckList2}</li>
-                    <li><i className="ri-check-double-line"></i> {WebText.home.introductionCheckList3}</li>
+                    <li><i className="ri-check-double-line"></i> {WebText.home.about.introductionCheckList1}</li>
+                    <li><i className="ri-check-double-line"></i> {WebText.home.about.introductionCheckList2}</li>
+                    <li><i className="ri-check-double-line"></i> {WebText.home.about.introductionCheckList3}</li>
                     </ul>
                     <p>
-                    {WebText.home.introductionEndingText}
+                    {WebText.home.about.introductionEndingText}
                     </p>
                 </div>
                 </div>
-
             </div>
         </section>
     )

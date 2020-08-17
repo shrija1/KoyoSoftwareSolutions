@@ -14,14 +14,14 @@ function Header() {
 
             <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
                 <div className="col-xl-6 col-lg-8">
-                <h1>{WebText.home.heading}<span>.</span></h1>
-                <h2>{WebText.home.headerText}</h2>
+                <h1>{WebText.home.header.heading}<span>.</span></h1>
+                <h2>{WebText.home.header.headerText}</h2>
                 </div>
             </div>
 
             <div className="row mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
                 {
-                    WebText.home.headerCardsData.map(element => <HeaderElement key={element.name} data={element}/>)
+                    WebText.home.header.headerCardsData.map(element => <HeaderElement key={element.name} data={element}/>)
                 }
             </div>
 
