@@ -16,8 +16,6 @@ const Navbar = (props) => {
     const [show, setShow] = useState(false)
     // user from local storage
     let ttsGoogleSignIn = localStorage.getItem('ttsGoogleSignIn')
-    console.log(ttsGoogleSignIn)
-    // || userLocal.ttsGoogleSignIn
     const [checked, setChecked] = useState(true)
 
     const [user, setUser] = useState({
@@ -110,38 +108,31 @@ const Navbar = (props) => {
 
                 <a href="/" className="logo"><img src={logo} alt="SoftSite" className="img-fluid"/></a>
 
-                {/* <nav className="navbar navbar-expand-md nav-menu"> */}
                 <nav className="nav-menu d-none d-lg-block collapse navbar-collapse" id="navbarNav1">
                     <ul>
-                    <li id="home"><a href="/">{WebText.home.navbar.navItems.item1}</a></li>
-                    {/* <li id="registration"><a href="/account">Registration</a></li> */}
-                    <li className="drop-down" id="services"><a href="/services">{WebText.home.navbar.navItems.item2.main}</a>
-                        <ul>
-                            <li className="drop-down"><a href="#/">{WebText.home.navbar.navItems.item2.item1.main}</a>
-                                <ul>
-                                    <li><a href="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</a></li>
-                                    <li><a href="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/webDevelopment">{WebText.home.navbar.navItems.item2.item2}</a></li>
-                            <li><a href="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</a></li>
-                            <li><a href="/businessPS">{WebText.home.navbar.navItems.item2.item4}</a></li>
-                            <li><a href="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</a></li>
-                            <li><a href="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</a></li>
-                        </ul>
-                    </li>
-                    {/* <li><a href="/chat">Chat</a></li> */}
-                    <li id="portfolio"><a href="/portfolio">{WebText.home.navbar.navItems.item3}</a>
-                    </li>
-                    <li id="about"><a href="/about">{WebText.home.navbar.navItems.item4}</a></li>
-                    {/* <li><a href="/cart">Cart</a></li> */}
-                    <li id="contact"><a href="/contact">{WebText.home.navbar.navItems.item5}</a></li>
-
+                        <li id="home"><a href="/">{WebText.home.navbar.navItems.item1}</a></li>
+                        <li className="drop-down" id="services"><a href="/services">{WebText.home.navbar.navItems.item2.main}</a>
+                            <ul>
+                                <li className="drop-down"><a href="#/">{WebText.home.navbar.navItems.item2.item1.main}</a>
+                                    <ul>
+                                        <li><a href="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</a></li>
+                                        <li><a href="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/webDevelopment">{WebText.home.navbar.navItems.item2.item2}</a></li>
+                                <li><a href="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</a></li>
+                                <li><a href="/businessPS">{WebText.home.navbar.navItems.item2.item4}</a></li>
+                                <li><a href="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</a></li>
+                                <li><a href="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</a></li>
+                            </ul>
+                        </li>
+                        <li id="portfolio"><a href="/portfolio">{WebText.home.navbar.navItems.item3}</a></li>
+                        <li id="about"><a href="/about">{WebText.home.navbar.navItems.item4}</a></li>
+                        <li id="contact"><a href="/contact">{WebText.home.navbar.navItems.item5}</a></li>
                     </ul>
                 </nav>
 
                 <button id="navBtn" className="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    {/* <i className="navbar-toggler-icon"></i> */}
                     <i className="ri-arrow-down-line" aria-hidden="true"></i>
                 </button>
                 {
@@ -154,8 +145,9 @@ const Navbar = (props) => {
 <br/>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
-                        <li id="home" className="nav-item"><a className="nav-link" href="/">{WebText.home.navbar.navItems.item1}</a></li>
-                        {/* <li id="registration" className="nav-item"><a className="nav-link" href="/account">Registration</a></li> */}
+                        <li id="home" className="nav-item">
+                            <a className="nav-link" href="/">{WebText.home.navbar.navItems.item1}</a>
+                        </li>
                         <li className="drop-down nav-item dropdown" id="products">
                             <a className="nav-link dropdown-toggle" href="/services" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 {WebText.home.navbar.navItems.item2.main}
@@ -228,9 +220,6 @@ const Navbar = (props) => {
                     }
                 </Modal.Footer> */}
             </Modal>
-
-
-
         </header>
     )
 }
