@@ -152,62 +152,105 @@ if(WebsiteText===null){
                 description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                 btnText: "Call To Action"
             },
-            countsListData: [
-                {
-                    icon: 'icofont-simple-smile',
-                    counter: 65,
-                    title: 'Happy Clients',
-                    description: 'consequuntur voluptas nostrum aliquid ipsam architecto ut.'
-                },
-                {
-                    icon: 'icofont-document-folder',
-                    counter: 85,
-                    title: 'Projects',
-                    description: 'adipisci atque cum quia aspernatur totam laudantium et quia dere tan'
-                },
-                {
-                    icon: 'icofont-clock-time',
-                    counter: 12,
-                    title: 'Years of experience',
-                    description: 'aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel'
-                },
-                {
-                    icon: 'icofont-award',
-                    counter: 15,
-                    title: 'Awards',
-                    description: 'rerum asperiores dolor alias quo reprehenderit eum et nemo pad der'
-                }
-            ],
-            teamListData: [
-                {
-                    data_aos_delay: "100",
-                    img: team1,
-                    name: "Walter White",
-                    title: "Chief Executive Officer"
-                },
-                {
-                    data_aos_delay: "200",
-                    img: team2,
-                    name: "Sarah Jhonson",
-                    title: "Product Manager"
-                },
-                {
-                    data_aos_delay: "300",
-                    img: team3,
-                    name: "William Anderson",
-                    title: "CTO"
-                },
-                {
-                    data_aos_delay: "400",
-                    img: team4,
-                    name: "Amanda Jepson",
-                    title: "Accountant"
-                }
-            ]
+            counts: {
+                title: "Voluptatem dignissimos provident quasi",
+                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit",
+                countsListData: [
+                    {
+                        icon: 'icofont-simple-smile',
+                        counter: 65,
+                        title: 'Happy Clients',
+                        description: 'consequuntur voluptas nostrum aliquid ipsam architecto ut.'
+                    },
+                    {
+                        icon: 'icofont-document-folder',
+                        counter: 85,
+                        title: 'Projects',
+                        description: 'adipisci atque cum quia aspernatur totam laudantium et quia dere tan'
+                    },
+                    {
+                        icon: 'icofont-clock-time',
+                        counter: 12,
+                        title: 'Years of experience',
+                        description: 'aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel'
+                    },
+                    {
+                        icon: 'icofont-award',
+                        counter: 15,
+                        title: 'Awards',
+                        description: 'rerum asperiores dolor alias quo reprehenderit eum et nemo pad der'
+                    }
+                ],
+            },
+            team: {
+                title: "Team",
+                description: "Check our Team",
+                teamListData: [
+                    {
+                        data_aos_delay: "100",
+                        img: team1,
+                        name: "Walter White",
+                        title: "Chief Executive Officer"
+                    },
+                    {
+                        data_aos_delay: "200",
+                        img: team2,
+                        name: "Sarah Jhonson",
+                        title: "Product Manager"
+                    },
+                    {
+                        data_aos_delay: "300",
+                        img: team3,
+                        name: "William Anderson",
+                        title: "CTO"
+                    },
+                    {
+                        data_aos_delay: "400",
+                        img: team4,
+                        name: "Amanda Jepson",
+                        title: "Accountant"
+                    }
+                ]
+            }
         },
         aboutUsHeading:{
             heading:"",
             headerText:"",
+        },
+        footer: {
+            address: "Abcdef 123 T. Abcdef Teafa Yadfe TT, 12345, India",
+            whatsapp: {
+                name: "WhatsApp:",
+                number: "+91234567891"
+            },
+            email: {
+                name: "Email:",
+                email: "info@tts.com"
+            },
+            part1: {
+                title: "Useful Links",
+                item1: "Home",
+                item2: "About us",
+                item3: "Chat",
+                item4: "Terms of service",
+                item5: "Privacy policy",
+                item6: "FAQ"
+            },
+            part2: {
+                title: "Our Services",
+                item1: "GeM",
+                item2: "Web Development",
+                item3: "E-Marketing",
+                item4: "Business Productivity Services",
+                item5: "Machine Learning",
+                item6: "Professionals Toolbox"
+            },
+            lastPart: {
+                copyright: "©",
+                company: "TTS",
+                terms: "Terms",
+                policy: "Privacy Policy"
+            }
         }
     }
 }

@@ -9,14 +9,14 @@ const Team = () => {
         <div className="container" data-aos="fade-up">
 
             <div className="section-title">
-            <h2>Team</h2>
-            <p>Check our Team</p>
+            <h2>{WebText.home.team.title}</h2>
+            <p>{WebText.home.team.description}</p>
             </div>
 
             <div className="row">
 
             {
-                WebText.home.teamListData.map(member => <TeamMember key={member.title} member={member} />)
+                WebText.home.team.teamListData.map(member => <TeamMember key={member.title} member={member} />)
             }
 
             </div>
