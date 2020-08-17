@@ -1,8 +1,44 @@
-var WebsiteText=null;
+import team1 from './img/team/team-1.jpg'
+import team2 from './img/team/team-2.jpg'
+import team3 from './img/team/team-3.jpg'
+import team4 from './img/team/team-4.jpg'
+
+
+let WebsiteText=null;
 if(WebsiteText===null){
     WebsiteText={
         home:{
-            heading:"this is the home heading",
+            navbar: {
+                navItems: {
+                    item1: "Home",
+                    item2: {
+                        main: "Services",
+                        item1: {
+                            main: "GeM",
+                            item1: "Buyer Services",
+                            item2: "Seller Services"
+                        },
+                        item2: "Web Development",
+                        item3: "E-Marketing",
+                        item4: "Business Productivity Services",
+                        item5: "Machine Learning",
+                        item6: "Professionals Toolbox"
+                    },
+                    item3: "Portfolio",
+                    item4: "About",
+                    item5: "Contact",
+                },
+                greeting: "Hi, ",
+                btn: {
+                    signIn: "Sign In",
+                    logout: "Logout"
+                },
+                popup: {
+                    greeting: "Welcome, ",
+                    heading: "Sign in with"
+                }
+            },
+            heading:"This is the home heading",
             headerText:"We are team of talanted digital marketers",
             headerCardsData: [
                 {
@@ -37,7 +73,7 @@ if(WebsiteText===null){
             introductionCheckList2:"Duis aute irure dolor in reprehenderit in voluptate velit.",
             introductionCheckList3:"Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.",
             introductionEndingText:"Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
-            featuresListData:[
+            featuresListData: [
                 {
                     classDiv: 'mt-lg-0',
                     icon: 'bx-receipt',
@@ -62,6 +98,107 @@ if(WebsiteText===null){
                     title: 'Beatae veritatis',
                     description: 'Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta'
                 },
+            ],
+            servicesListData: [
+                {
+                    classAdd: '',
+                    data_aos_delay: '100',
+                    icon: 'bxl-dribbble',
+                    title: 'Lorem Ipsum',
+                    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore'
+                },
+                {
+                    classAdd: 'mt-4 mt-md-0',
+                    data_aos_delay: '200',
+                    icon: 'bx-file',
+                    title: 'Sed ut perspiciatis',
+                    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore'
+                },
+                {
+                    classAdd: 'mt-4 mt-lg-0',
+                    data_aos_delay: '300',
+                    icon: 'bx-tachometer',
+                    title: 'Magni Dolores',
+                    description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia'
+                },
+                {
+                    classAdd: 'mt-4',
+                    data_aos_delay: '100',
+                    icon: 'bx-world',
+                    title: 'Nemo Enim',
+                    description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis'
+                },
+                {
+                    classAdd: 'mt-4',
+                    data_aos_delay: '200',
+                    icon: 'bx-slideshow',
+                    title: 'Dele cardo',
+                    description: 'Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur'
+                },
+                {
+                    classAdd: 'mt-4',
+                    data_aos_delay: '300',
+                    icon: 'bx-arch',
+                    title: 'Divera don',
+                    description: 'Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur'
+                }
+            ],
+            CallToActionData: {
+                heading: "Call To Action",
+                description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                btnText: "Call To Action"
+            },
+            countsListData: [
+                {
+                    icon: 'icofont-simple-smile',
+                    counter: 65,
+                    title: 'Happy Clients',
+                    description: 'consequuntur voluptas nostrum aliquid ipsam architecto ut.'
+                },
+                {
+                    icon: 'icofont-document-folder',
+                    counter: 85,
+                    title: 'Projects',
+                    description: 'adipisci atque cum quia aspernatur totam laudantium et quia dere tan'
+                },
+                {
+                    icon: 'icofont-clock-time',
+                    counter: 12,
+                    title: 'Years of experience',
+                    description: 'aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel'
+                },
+                {
+                    icon: 'icofont-award',
+                    counter: 15,
+                    title: 'Awards',
+                    description: 'rerum asperiores dolor alias quo reprehenderit eum et nemo pad der'
+                }
+            ],
+            teamListData: [
+                {
+                    data_aos_delay: "100",
+                    img: team1,
+                    name: "Walter White",
+                    title: "Chief Executive Officer"
+                },
+                {
+                    data_aos_delay: "200",
+                    img: team2,
+                    name: "Sarah Jhonson",
+                    title: "Product Manager"
+                },
+                {
+                    data_aos_delay: "300",
+                    img: team3,
+                    name: "William Anderson",
+                    title: "CTO"
+                },
+                {
+                    data_aos_delay: "400",
+                    img: team4,
+                    name: "Amanda Jepson",
+                    title: "Accountant"
+                }
             ]
         },
         aboutUsHeading:{
@@ -71,4 +208,4 @@ if(WebsiteText===null){
     }
 }
 
-export default WebsiteText
+export default WebsiteText;

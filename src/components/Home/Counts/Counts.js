@@ -1,33 +1,8 @@
 import React from 'react'
 import './Counts.css'
+import WebText from '../../../TextData';
 
 function Counts() {
-    const data = [
-        {
-            icon: 'icofont-simple-smile',
-            counter: 65,
-            title: 'Happy Clients',
-            description: 'consequuntur voluptas nostrum aliquid ipsam architecto ut.'
-        },
-        {
-            icon: 'icofont-document-folder',
-            counter: 85,
-            title: 'Projects',
-            description: 'adipisci atque cum quia aspernatur totam laudantium et quia dere tan'
-        },
-        {
-            icon: 'icofont-clock-time',
-            counter: 12,
-            title: 'Years of experience',
-            description: 'aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel'
-        },
-        {
-            icon: 'icofont-award',
-            counter: 15,
-            title: 'Awards',
-            description: 'rerum asperiores dolor alias quo reprehenderit eum et nemo pad der'
-        }
-    ]
     return (
         <section id="counts" className="counts">
         <div className="container" data-aos="fade-up">
@@ -42,7 +17,7 @@ function Counts() {
                 </p>
                 <div className="row">
                     {
-                        data.map(e => (
+                        WebText.home.countsListData.map(e => (
                             <div className="col-md-6 d-md-flex align-items-md-stretch" key={e.title}>
                             <div className="count-box">
                                 <i className={e.icon}></i>

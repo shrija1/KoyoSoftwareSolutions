@@ -10,6 +10,7 @@ import google from '../../img/social/google.png'
 import twitter from '../../img/social/twitter.png'
 import linkedIn from '../../img/social/linkedin.png'
 import logout from '../../img/social/logout.png'
+import WebText from '../../TextData'
 
 const Navbar = (props) => {
     const [show, setShow] = useState(false)
@@ -112,29 +113,29 @@ const Navbar = (props) => {
                 {/* <nav className="navbar navbar-expand-md nav-menu"> */}
                 <nav className="nav-menu d-none d-lg-block collapse navbar-collapse" id="navbarNav1">
                     <ul>
-                    <li id="home"><a href="/">Home</a></li>
+                    <li id="home"><a href="/">{WebText.home.navbar.navItems.item1}</a></li>
                     {/* <li id="registration"><a href="/account">Registration</a></li> */}
-                    <li className="drop-down" id="services"><a href="/services">Services</a>
+                    <li className="drop-down" id="services"><a href="/services">{WebText.home.navbar.navItems.item2.main}</a>
                         <ul>
-                            <li className="drop-down"><a href="#">GeM</a>
+                            <li className="drop-down"><a href="#/">{WebText.home.navbar.navItems.item2.item1.main}</a>
                                 <ul>
-                                    <li><a href="/BuyerServices">BuyerServices</a></li>
-                                    <li><a href="/SellerServices">SellerServices</a></li>
+                                    <li><a href="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</a></li>
+                                    <li><a href="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/webDevelopment">Web Development</a></li>
-                            <li><a href="/e-marketing">E-Marketing</a></li>
-                            <li><a href="/businessPS">Business Productivity Services</a></li>
-                            <li><a href="/machineLearning">Machine Learning</a></li>
-                            <li><a href="/professionalsToolbox">Professionals Toolbox</a></li>
+                            <li><a href="/webDevelopment">{WebText.home.navbar.navItems.item2.item2}</a></li>
+                            <li><a href="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</a></li>
+                            <li><a href="/businessPS">{WebText.home.navbar.navItems.item2.item4}</a></li>
+                            <li><a href="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</a></li>
+                            <li><a href="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</a></li>
                         </ul>
                     </li>
                     {/* <li><a href="/chat">Chat</a></li> */}
-                    <li id="portfolio"><a href="/portfolio">Portfolio</a>
+                    <li id="portfolio"><a href="/portfolio">{WebText.home.navbar.navItems.item3}</a>
                     </li>
-                    <li id="about"><a href="/about">About</a></li>
+                    <li id="about"><a href="/about">{WebText.home.navbar.navItems.item4}</a></li>
                     {/* <li><a href="/cart">Cart</a></li> */}
-                    <li id="contact"><a href="/contact">Contact</a></li>
+                    <li id="contact"><a href="/contact">{WebText.home.navbar.navItems.item5}</a></li>
 
                     </ul>
                 </nav>
@@ -145,39 +146,40 @@ const Navbar = (props) => {
                 </button>
                 {
                     user.googleSignIn ? <div>
-                    <a href='#' className="get-started-btn scrollto" onClick={handleModel} style={{border: 'none', display: 'inline'}}>Hi, {user.name}</a>
-                    <a href='#' className="get-started-btn scrollto" onClick={handleSignOutGoogle} style={{display: 'inline', marginLeft: '2px', padding: '5px 12px 8px 12px'}}>Logout</a>
+                    <a href='#/' className="get-started-btn scrollto" onClick={handleModel} style={{border: 'none', display: 'inline'}}>{WebText.home.navbar.greeting} {user.name}</a>
+                    <a href='#/' className="get-started-btn scrollto" onClick={handleSignOutGoogle} style={{display: 'inline', marginLeft: '2px', padding: '5px 12px 8px 12px'}}>{WebText.home.navbar.btn.logout}</a>
                     </div>
-                    : <a href='#' className="get-started-btn scrollto" onClick={handleModel} >Sign In</a>
+                    : <a href='#/' className="get-started-btn scrollto" onClick={handleModel} >{WebText.home.navbar.btn.signIn}</a>
                 }
 <br/>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
-                        <li id="home" className="nav-item"><a className="nav-link" href="/">Home</a></li>
-                        <li id="registration" className="nav-item"><a className="nav-link" href="/account">Registration</a></li>
-                        <li className="drop-down" id="products" className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Products
+                        <li id="home" className="nav-item"><a className="nav-link" href="/">{WebText.home.navbar.navItems.item1}</a></li>
+                        {/* <li id="registration" className="nav-item"><a className="nav-link" href="/account">Registration</a></li> */}
+                        <li className="drop-down nav-item dropdown" id="products">
+                            <a className="nav-link dropdown-toggle" href="/services" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {WebText.home.navbar.navItems.item2.main}
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item dropdown" href="#">
-                                    <a className="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        GeM
+                            <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a className="dropdown-item dropdown" href="#/">
+                                    <a className="nav-link dropdown-toggle" href="#/" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    {WebText.home.navbar.navItems.item2.item1.main}
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                                        <a class="dropdown-item" href="#">BuyerServices</a>
-                                        <a class="dropdown-item" href="#">SellerServices</a>
+                                    <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                        <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item1.item1}</a>
+                                        <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item1.item2}</a>
                                     </div>
                                 </a>
-                                <a class="dropdown-item" href="#">Web Development</a>
-                                <a class="dropdown-item" href="#">E-Marketing</a>
-                                <a class="dropdown-item" href="#">Business Productivity Services</a>
-                                <a class="dropdown-item" href="#">Machine Learning</a>
-                                <a class="dropdown-item" href="#">Professionals Toolbox</a>
+                                <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item2}</a>
+                                <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item3}</a>
+                                <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item4}</a>
+                                <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item5}</a>
+                                <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item6}</a>
                             </div>
                         </li>
-                        <li id="about" className="nav-item"><a className="nav-link" href="/about">About</a></li>
-                        <li id="contact" className="nav-item"><a className="nav-link" href="/contact">Contact</a></li>
+                        <li id="portfolio"><a href="/portfolio">{WebText.home.navbar.navItems.item3}</a></li>
+                        <li id="about" className="nav-item"><a className="nav-link" href="/about">{WebText.home.navbar.navItems.item4}</a></li>
+                        <li id="contact" className="nav-item"><a className="nav-link" href="/contact">{WebText.home.navbar.navItems.item5}</a></li>
                     </ul>
                 </div>
             </div>
@@ -190,7 +192,7 @@ const Navbar = (props) => {
                 {
                     (user.googleSignIn ) ? <div style={{textAlign: 'center', padding: '0px 50px 50px 50px'}}>
                         <img src={user.photo} alt="Profile" width="50px" style={{ borderRadius: '50%' }} />
-                        <p>Welcome, {user.name}</p>
+                        <p>{WebText.home.navbar.popup.greeting} {user.name}</p>
                         <p>{user.email}</p>
                         {/* <br/>
                         <Button onClick={handleSignOutGoogle} style={{backgroundColor: 'transparent', border: 'none'}}>
@@ -199,7 +201,7 @@ const Navbar = (props) => {
                     </div> 
                    :
                 <Modal.Body closeButton style={{textAlign: 'center', padding: '0px 50px 50px 50px'}}>
-                    <h3>Sign in with</h3> <br/>
+                    <h3>{WebText.home.navbar.popup.heading}</h3> <br/>
                     <Button style={{backgroundColor: 'transparent', border: 'none'}}>
                         <img src={facebook} alt="Facebook SignIn" width="300px"/>
                     </Button>
