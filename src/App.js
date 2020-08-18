@@ -67,7 +67,6 @@ function App() {
             </Route>
             <Route path='/BuyerServices'>
               <Navbar active=""/>
-              <HeaderForAll title='Buyer Services'/>
               <HeaderForAll 
                 title={WebText.BuyerServices.header.title} 
                 description={WebText.BuyerServices.header.description}
