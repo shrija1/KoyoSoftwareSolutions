@@ -15,21 +15,21 @@ import logo1 from '../../img/logo/softsiteLogo3.png'
 import WebText from '../../TextData';
 
 function Footer() {
-    const [dataFooter, setDataFooter] = useState([])
+    // const [dataFooter, setDataFooter] = useState([])
     const thisYear = new Date().getFullYear()
     const ScrollTo = function() {
         scroll.scrollToTop();
     }
-    useEffect( () => {
-        fetch('http://localhost:4400/footer')
-            .then(response => response.json())
-            .then(data => {
-                // console.log(data.data[0])
-                // setDataFooter(data.data[0])
-                data.data.map(element => setDataFooter(element))
-            })
-    }, [])
-    const {email, phone, whatsapp} = dataFooter
+    // useEffect( () => {
+    //     fetch('http://localhost:4400/footer')
+    //         .then(response => response.json())
+    //         .then(data => {
+    //             // console.log(data.data[0])
+    //             // setDataFooter(data.data[0])
+    //             data.data.map(element => setDataFooter(element))
+    //         })
+    // }, [])
+    // const {email, phone, whatsapp} = dataFooter
 
     return (
         <div>
@@ -130,7 +130,7 @@ function Footer() {
             </footer>
 
             {/* Back to top */}
-            <a href="#" className="back-to-top" onClick={ScrollTo}>
+            <a href="#/" className="back-to-top" onClick={ScrollTo}>
                 <i className="ri-arrow-up-line"></i>
             </a>
             <div id="preloader"></div>

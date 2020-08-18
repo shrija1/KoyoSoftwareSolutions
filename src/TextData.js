@@ -1,8 +1,18 @@
+// team
 import team1 from './img/team/team-1.jpg'
 import team2 from './img/team/team-2.jpg'
 import team3 from './img/team/team-3.jpg'
 import team4 from './img/team/team-4.jpg'
-
+// portfolio
+import portfolio1 from './img/portfolio/portfolio-1.jpg'
+import portfolio2 from './img/portfolio/portfolio-2.jpg'
+import portfolio3 from './img/portfolio/portfolio-3.jpg'
+import portfolio4 from './img/portfolio/portfolio-4.jpg'
+import portfolio5 from './img/portfolio/portfolio-5.jpg'
+import portfolio6 from './img/portfolio/portfolio-6.jpg'
+import portfolio7 from './img/portfolio/portfolio-7.jpg'
+import portfolio8 from './img/portfolio/portfolio-8.jpg'
+import portfolio9 from './img/portfolio/portfolio-9.jpg'
 
 let WebsiteText=null;
 if(WebsiteText===null){
@@ -212,6 +222,76 @@ if(WebsiteText===null){
                     }
                 ]
             }
+        },
+        portfolio: {
+            header: {
+                title: "Portfolio Page",
+                description: "We are team of talanted digital marketers"
+            },
+            title: "Portfolio",
+            description: "Check our Portfolio",
+            head: {
+                item1: "All",
+                item2: "App",
+                item3: "Card",
+                item4: "Web"
+            },
+            data : [
+                {
+                    category: 'filter-app',
+                    img: portfolio1,
+                    name: 'App 1',
+                    description: 'App'
+                },
+                {
+                    classAdd: 'filter-web',
+                    img: portfolio2,
+                    name: 'Web 3',
+                    description: 'Web'
+                },
+                {
+                    classAdd: 'filter-app',
+                    img: portfolio3,
+                    name: 'App 2',
+                    description: 'App'
+                },
+                {
+                    classAdd: 'filter-card',
+                    img: portfolio4,
+                    name: 'Card 1',
+                    description: 'Card'
+                },
+                {
+                    classAdd: 'filter-web',
+                    img: portfolio5,
+                    name: 'Web 2',
+                    description: 'Web'
+                },
+                {
+                    classAdd: 'filter-app',
+                    img: portfolio6,
+                    name: 'App 3',
+                    description: 'App'
+                },
+                {
+                    classAdd: 'filter-card',
+                    img: portfolio7,
+                    name: 'Card 1',
+                    description: 'Card'
+                },
+                {
+                    classAdd: 'filter-card',
+                    img: portfolio8,
+                    name: 'Card 3',
+                    description: 'Card'
+                },
+                {
+                    classAdd: 'filter-web',
+                    img: portfolio9,
+                    name: 'Web 3',
+                    description: 'Web'
+                }
+            ]
         },
         aboutUsHeading:{
             heading:"",

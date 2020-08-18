@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-//import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
@@ -28,7 +28,8 @@ import Admin from './components/Admin/Admin';
 import AdminDashboard from './components/Dashboard/AdminDashboard/AdminDashboard';
 import AdminDashboardLogin from './components/Dashboard/AdminDashboard/AdminDashboardLogin';
 import PortfolioPage from './components/PortfolioPage/PortfolioPage';
-
+// textData
+import WebText from './TextData'
 
 function App() {
   // useEffect(() => {
@@ -109,7 +110,10 @@ function App() {
             </Route>
             <Route path='/portfolio'>
               <Navbar active="portfolio"/>
-              <HeaderForAll title='Portfolio'/>
+              <HeaderForAll 
+                title={WebText.portfolio.header.title} 
+                description={WebText.portfolio.header.description}
+              />
               <PortfolioPage/>
               <Footer/>
             </Route>
