@@ -142,6 +142,12 @@
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #navBtn {
+        display: block !important;
+    }
+}
+
 /* Get Startet Button */
 .get-started-btn {
     color: #fff;
@@ -272,4 +278,11 @@
 
 .mobile-nav-active .mobile-nav-toggle i {
     color: #fff;
+}
+
+#navBtn {
+    background-color: transparent;
+}
+#navBtn i{
+    background-color: white;
 }

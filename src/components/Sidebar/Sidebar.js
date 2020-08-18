@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './Sidebar.css'
-import { CircularProgressbar } from 'react-circular-progressbar';
+import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faPlus  } from '@fortawesome/free-solid-svg-icons'
@@ -17,7 +17,7 @@ const Sidebar = () => {
             const perfectResult = result>99.8 ? 100 : result.toFixed(0)
             setScrollPercent(perfectResult)
         }
-    
+
         return window.addEventListener("scroll", onScroll)
     }, [scrollPercent])
 
@@ -26,37 +26,49 @@ const Sidebar = () => {
     }
 
     return (
-        <div class="sidenav sidebar">
+        <div className="sidenav sidebar">
             <button className="socialIcons">
                 <a href="#">
                     {/* <FontAwesomeIcon icon={faCoffee} /> */}
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i className="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </button>
+            <br/>
+            {/* <button className="socialIcons">
+                <a href="#">
+                    <i className="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </button>
             <br/>
             <button className="socialIcons">
                 <a href="#">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i className="fa fa-google-plus" aria-hidden="true"></i>
                 </a>
             </button>
             <br/>
             <button className="socialIcons">
                 <a href="#">
-                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    <i className="fa fa-pinterest-p" aria-hidden="true"></i>
+                </a>
+            </button>
+            <br/> */}
+            <button className="socialIcons">
+                <a href="#">
+                    <i className="fa fa-instagram" aria-hidden="true"></i>
                 </a>
             </button>
             <br/>
-            <button className="socialIcons">
+            <button className="socialIcons chat-button">
                 <a href="#">
-                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    <i className="fa fa-comments" aria-hidden="true"></i>
                 </a>
             </button>
-            <br/>
+            {/* <br/>
             <button className="socialIcons">
                 <a href="#">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <i className="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
-            </button>
+            </button> */}
             <hr style={{width: '50px'}}/>
             <button className="socialIcons plusIcon" onClick={ScrollTo}>
                 <a href="#">
@@ -66,7 +78,15 @@ const Sidebar = () => {
 
             </button>
             <br/>
-            <CircularProgressbar value={scrollPercent} text={`${scrollPercent}%`} />
+            <p id="circularProgressBar">
+            <CircularProgressbar value={scrollPercent} text={`${scrollPercent}%`} 
+                styles={buildStyles({
+                    // pathColor: `rgba(255, 196, 81, ${scrollPercent / 100})`,
+                    pathColor: '#ffc451',
+                    textColor: '#b37700'
+                })}
+            />
+            </p>
             
         </div>
     );
