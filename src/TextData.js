@@ -244,49 +244,49 @@ if(WebsiteText===null){
                     description: 'App'
                 },
                 {
-                    classAdd: 'filter-web',
+                    category: 'filter-web',
                     img: portfolio2,
                     name: 'Web 3',
                     description: 'Web'
                 },
                 {
-                    classAdd: 'filter-app',
+                    category: 'filter-app',
                     img: portfolio3,
                     name: 'App 2',
                     description: 'App'
                 },
                 {
-                    classAdd: 'filter-card',
+                    category: 'filter-card',
                     img: portfolio4,
                     name: 'Card 1',
                     description: 'Card'
                 },
                 {
-                    classAdd: 'filter-web',
+                    category: 'filter-web',
                     img: portfolio5,
                     name: 'Web 2',
                     description: 'Web'
                 },
                 {
-                    classAdd: 'filter-app',
+                    category: 'filter-app',
                     img: portfolio6,
                     name: 'App 3',
                     description: 'App'
                 },
                 {
-                    classAdd: 'filter-card',
+                    category: 'filter-card',
                     img: portfolio7,
                     name: 'Card 1',
                     description: 'Card'
                 },
                 {
-                    classAdd: 'filter-card',
+                    category: 'filter-card',
                     img: portfolio8,
                     name: 'Card 3',
                     description: 'Card'
                 },
                 {
-                    classAdd: 'filter-web',
+                    category: 'filter-web',
                     img: portfolio9,
                     name: 'Web 3',
                     description: 'Web'

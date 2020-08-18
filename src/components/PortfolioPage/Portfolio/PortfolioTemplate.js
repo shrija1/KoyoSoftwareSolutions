@@ -16,7 +16,7 @@ const PortfolioTemplate = (props) => {
                 <a href={img} data-gall="portfolioGallery" className="venobox" title={name}>
                     <i className="bx bx-plus"></i>
                 </a>
-                <Link to={'/portfolio'} title="More Details">
+                <Link to={'/portfolioDetails'} title="More Details">
                     <i className="bx bx-link"></i>
                 </Link>
                 </div>
