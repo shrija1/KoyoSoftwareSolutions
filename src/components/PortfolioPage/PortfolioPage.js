@@ -6,8 +6,8 @@ import Counts from '../Home/Counts/Counts'
 const PortfolioPage = () => {
     return (
         <div>
-            <Counts/>
             <Portfolio/>
+            <Counts/>
         </div>
     )
 }

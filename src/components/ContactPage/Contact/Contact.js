@@ -20,20 +20,20 @@ function Contact() {
 
             <div className="col-lg-4">
                 <div className="info">
-                <div className="address">
+                <div className="address" style={{paddingTop: '15px'}}>
                     <i className="icofont-google-map"></i>
                     <h4>Location:</h4>
                     <p>Abcdef 123 T. Abcdef Teafa Yadfe <br/>
                         TT, 12345, India</p>
                 </div>
 
-                <div className="email">
+                <div className="email" style={{paddingTop: '35px'}}>
                     <i className="icofont-envelope"></i>
                     <h4>Email:</h4>
                     <p>info@example.com</p>
                 </div>
 
-                <div className="phone">
+                <div className="phone" style={{paddingTop: '35px'}}>
                     <i className="icofont-phone"></i>
                     <h4>Call:</h4>
                     <p>+91 1234 45678 91</p>
@@ -44,7 +44,8 @@ function Contact() {
             </div>
 
             <div className="col-lg-8 mt-5 mt-lg-0">
-
+                <h1 style={{textAlign: 'center', marginBottom: '30px', fontWeight: '800', fontSize: '30px'}}>Send Us Your Queries</h1>
+                
                 <form action={contactPhp} method="post" role="form" className="php-email-form">
                 <div className="form-row">
                     <div className="col-md-6 form-group">

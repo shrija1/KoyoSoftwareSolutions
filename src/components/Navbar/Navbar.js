@@ -149,7 +149,7 @@ const Navbar = (props) => {
                             <a className="nav-link" href="/">{WebText.home.navbar.navItems.item1}</a>
                         </li>
                         <li className="drop-down nav-item dropdown" id="products">
-                            <a className="nav-link dropdown-toggle" href="/services" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a className="nav-link dropdown-toggle" id="services" href="/services" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 {WebText.home.navbar.navItems.item2.main}
                             </a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

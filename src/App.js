@@ -56,45 +56,76 @@ function App() {
               <Registration/>
               <Footer />
             </Route>
+            <Route path='/services'>
+              <Navbar active=""/>
+              <HeaderForAll 
+                title={WebText.servicesPage.header.title} 
+                description={WebText.servicesPage.header.description}
+              />
+              <h1>services</h1>
+              <Footer />
+            </Route>
             <Route path='/BuyerServices'>
               <Navbar active=""/>
               <HeaderForAll title='Buyer Services'/>
+              <HeaderForAll 
+                title={WebText.BuyerServices.header.title} 
+                description={WebText.BuyerServices.header.description}
+              />
               <BuyerServices/>
               <Footer />
             </Route>
             <Route path='/SellerServices'>
               <Navbar active=""/>
-              <HeaderForAll title='Seller Services'/>
+              <HeaderForAll 
+                title={WebText.SellerServices.header.title} 
+                description={WebText.SellerServices.header.description}
+              />
               <SellerServices/>
               <Footer />
             </Route>
             <Route path='/webDevelopment'>
               <Navbar active=""/>
-              <HeaderForAll title='Web Development'/>
+              <HeaderForAll 
+                title={WebText.webDevelopment.header.title} 
+                description={WebText.webDevelopment.header.description}
+              />
               <WebDevelopment/>
               <Footer />
             </Route>
             <Route path='/e-marketing'>
               <Navbar active=""/>
-              <HeaderForAll title='E-Marketing'/>
+              <HeaderForAll 
+                title={WebText.eMarketing.header.title} 
+                description={WebText.eMarketing.header.description}
+              />
               <EMarketing/>
               <Footer />
             </Route>
             <Route path='/businessPS'>
               <Navbar active=""/>
-              <HeaderForAll title='Business Productivity Services'/>
+              <HeaderForAll 
+                title={WebText.businessPS.header.title} 
+                description={WebText.businessPS.header.description}
+              />
               <BusinessProductivityServices/>
               <Footer />
             </Route>
             <Route path='/machineLearning'>
               <Navbar active=""/>
-              <HeaderForAll title='Machine Learning'/>
+              <HeaderForAll 
+                title={WebText.machineLearning.header.title} 
+                description={WebText.machineLearning.header.description}
+              />
               <MachineLearning/>
               <Footer />
             </Route>
             <Route path='/professionalsToolbox'>
               <Navbar active=""/>
-              <HeaderForAll title='Professionals Toolbox'/>
+              <HeaderForAll 
+                title={WebText.professionalsToolbox.header.title} 
+                description={WebText.professionalsToolbox.header.description}
+              />
               <ProfessionalsToolbox/>
               <Footer />
             </Route>
@@ -104,7 +135,10 @@ function App() {
             </Route> */}
             <Route path='/about'>
               <Navbar active="about"/>
-              <HeaderForAll title='About'/>
+              <HeaderForAll 
+                title={WebText.aboutPage.header.title} 
+                description={WebText.aboutPage.header.description}
+              />
               <AboutPage/>
               <Footer/>
             </Route>
@@ -123,7 +157,10 @@ function App() {
             </Route> */}
             <Route path='/contact'>
               <Navbar active="contact"/>
-              <HeaderForAll title='Contact'/>
+              <HeaderForAll 
+                title={WebText.contactPage.header.title} 
+                description={WebText.contactPage.header.description}
+              />
               <ContactPage/>
               <Footer/>
             </Route>

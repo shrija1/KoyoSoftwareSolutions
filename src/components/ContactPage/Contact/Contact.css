@@ -5,6 +5,7 @@
 .contact .info {
     width: 100%;
     background: #fff;
+    adding-top: 20px;
 }
 
 .contact .info i {

@@ -1,5 +1,6 @@
-import React from 'react'
-import './CompanyHistory.css'
+import React from 'react';
+import './CompanyHistory.css';
+import WebText from '../../../TextData';
 
 const CompanyHistory = () => {
     return (
@@ -7,9 +8,9 @@ const CompanyHistory = () => {
         <div className="container" data-aos="zoom-in">
 
             <div className="text-center">
-            <h3>Call To Action</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a className="cta-btn" href="/#">Call To Action</a>
+            <h3>{WebText.aboutPage.companyHistory.heading}</h3>
+            <p>{WebText.aboutPage.companyHistory.description}</p>
+            <a className="cta-btn" href="/#">{WebText.aboutPage.companyHistory.btnText}</a>
             </div>
 
         </div>

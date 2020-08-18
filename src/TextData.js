@@ -293,9 +293,165 @@ if(WebsiteText===null){
                 }
             ]
         },
-        aboutUsHeading:{
-            heading:"",
-            headerText:"",
+        aboutPage:{
+            header: {
+                title: "About Us",
+                description: "We are team of talanted digital marketers"
+            },
+            leftSidebar: {
+                item1: "Contact",
+                item2: "History",
+                item3: "Values",
+                item4: "Portfolio",
+                item5: "Clientele",
+                item6: "Team",
+                item7: "Investor",
+            },
+            contactAbout: {
+                title: "Services",
+                description: "Check our Services",
+                data: [
+                    {
+                        classAdd: '',
+                        data_aos_delay: '100',
+                        icon: 'bxl-dribbble',
+                        title: 'Lorem Ipsum',
+                        description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore'
+                    },
+                    {
+                        classAdd: 'mt-4 mt-md-0',
+                        data_aos_delay: '200',
+                        icon: 'bx-file',
+                        title: 'Sed ut perspiciatis',
+                        description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore'
+                    },
+                    {
+                        classAdd: 'mt-4 mt-lg-0',
+                        data_aos_delay: '300',
+                        icon: 'bx-tachometer',
+                        title: 'Magni Dolores',
+                        description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia'
+                    },
+                    {
+                        classAdd: 'mt-4',
+                        data_aos_delay: '100',
+                        icon: 'bx-world',
+                        title: 'Nemo Enim',
+                        description: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis'
+                    },
+                    {
+                        classAdd: 'mt-4',
+                        data_aos_delay: '200',
+                        icon: 'bx-slideshow',
+                        title: 'Dele cardo',
+                        description: 'Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur'
+                    },
+                    {
+                        classAdd: 'mt-4',
+                        data_aos_delay: '300',
+                        icon: 'bx-arch',
+                        title: 'Divera don',
+                        description: 'Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur'
+                    }
+                ]
+            },
+            companyHistory: {
+                heading: "Call To Action",
+                description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                btnText: "Call To Action"
+            },
+            teamAbout: {
+                title: "Team",
+                description: "Check our Team",
+                teamListData: [
+                    {
+                        data_aos_delay: "100",
+                        img: team1,
+                        name: "Walter White",
+                        title: "Chief Executive Officer"
+                    },
+                    {
+                        data_aos_delay: "200",
+                        img: team2,
+                        name: "Sarah Jhonson",
+                        title: "Product Manager"
+                    },
+                    {
+                        data_aos_delay: "300",
+                        img: team3,
+                        name: "William Anderson",
+                        title: "CTO"
+                    },
+                    {
+                        data_aos_delay: "400",
+                        img: team4,
+                        name: "Amanda Jepson",
+                        title: "Accountant"
+                    }
+                ]
+            },
+            map: {
+                title: "Map",
+                description: "Office Location",
+            }
+        },
+        contactPage: {
+            header: {
+                title: "Contact",
+                description: "We are team of talanted digital marketers"
+            },
+            head: {
+                title: "Map",
+                description: "Office Location",
+            }
+        },
+        servicesPage: {
+            header: {
+                title: "Services",
+                description: "We are team of talanted digital marketers"
+            }
+        },
+        BuyerServices: {
+            header: {
+                title: "Buyer Services",
+                description: "We are team of talanted digital marketers"
+            }
+        },
+        SellerServices: {
+            header: {
+                title: "Seller Services",
+                description: "We are team of talanted digital marketers"
+            }
+        },
+        webDevelopment: {
+            header: {
+                title: "Web Development",
+                description: "We are team of talanted digital marketers"
+            }
+        },
+        eMarketing: {
+            header: {
+                title: "E-Marketing",
+                description: "We are team of talanted digital marketers"
+            }
+        },
+        businessPS: {
+            header: {
+                title: "Business Productivity Services",
+                description: "We are team of talanted digital marketers"
+            }
+        },
+        machineLearning: {
+            header: {
+                title: "Machine Learning",
+                description: "We are team of talanted digital marketers"
+            }
+        },
+        professionalsToolbox: {
+            header: {
+                title: "Professionals Toolbox",
+                description: "We are team of talanted digital marketers"
+            }
         },
         footer: {
             address: "Abcdef 123 T. Abcdef Teafa Yadfe TT, 12345, India",
