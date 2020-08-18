@@ -13,6 +13,8 @@ import portfolio6 from './img/portfolio/portfolio-6.jpg'
 import portfolio7 from './img/portfolio/portfolio-7.jpg'
 import portfolio8 from './img/portfolio/portfolio-8.jpg'
 import portfolio9 from './img/portfolio/portfolio-9.jpg'
+// buyer services
+import pychons from './img/BuyerServices/Morder pychons.png'
 
 let WebsiteText=null;
 if(WebsiteText===null){
@@ -415,7 +417,31 @@ if(WebsiteText===null){
             header: {
                 title: "Buyer Services",
                 description: "We are team of talanted digital marketers"
-            }
+            },
+            title: "Select Services",
+            data : [
+                {
+                    "img": pychons,
+                    "title": "Product Name",
+                    "description": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
+                    "price": "$120",
+                    "stock": "60 Available"
+                },
+                {
+                    "img": pychons,
+                    "title": "Product Name",
+                    "description": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
+                    "price": "$120",
+                    "stock": "60 Available"
+                },
+                {
+                    "img": pychons,
+                    "title": "Product Name2",
+                    "description": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
+                    "price": "$120",
+                    "stock": "60 Available"
+                }
+            ]
         },
         SellerServices: {
             header: {
