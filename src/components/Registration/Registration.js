@@ -4,7 +4,7 @@ import * as firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from '../../firebase.config';
 import googleIcon from '../../img/icon/google.png'
-import Popup from "reactjs-popup"
+// import Popup from "reactjs-popup"
 
 firebase.initializeApp(firebaseConfig)
 
@@ -53,41 +53,41 @@ const Registration = () => {
     }
 
  
-    const provider = new firebase.auth.FacebookAuthProvider();
+    // const provider = new firebase.auth.FacebookAuthProvider();
 
-    const handleSignInFb = () =>{
-        firebase.auth().signInWithPopup(provider)
-        .then(res =>{
-            const fbPicture = res.additionalUserInfo.profile.picture.data.url;
-            const {name, email} = res.additionalUserInfo.profile
-            const fbSignIn = {
-                googleSignIn: false,
-                fbSignIn: true,
-                name: name,
-                email: email,
-                photo: fbPicture
-            }
-            setUser(fbSignIn);
-        })
-        .catch(err =>{
-            console.log(err);
-            console.log(err.message);
-        })
-    }
-    const handleSignOutFb = () =>{
-        firebase.auth().signOut()
-        .then(res =>{
-            const signOutUserFb = {
-                googleSignIn: false,
-                fbSignIn: false,
-                name: '',
-                email: '',
-                photo: ''
-           }
-           setUser(signOutUserFb);
-        })
-        // .catch(err =>{})
-    }
+    // const handleSignInFb = () =>{
+    //     firebase.auth().signInWithPopup(provider)
+    //     .then(res =>{
+    //         const fbPicture = res.additionalUserInfo.profile.picture.data.url;
+    //         const {name, email} = res.additionalUserInfo.profile
+    //         const fbSignIn = {
+    //             googleSignIn: false,
+    //             fbSignIn: true,
+    //             name: name,
+    //             email: email,
+    //             photo: fbPicture
+    //         }
+    //         setUser(fbSignIn);
+    //     })
+    //     .catch(err =>{
+    //         console.log(err);
+    //         console.log(err.message);
+    //     })
+    // }
+    // const handleSignOutFb = () =>{
+    //     firebase.auth().signOut()
+    //     .then(res =>{
+    //         const signOutUserFb = {
+    //             googleSignIn: false,
+    //             fbSignIn: false,
+    //             name: '',
+    //             email: '',
+    //             photo: ''
+    //        }
+    //        setUser(signOutUserFb);
+    //     })
+    //     // .catch(err =>{})
+    // }
 
     return (
         <div style={{margin: '100px 0px', textAlign: 'center'}}>

@@ -13,9 +13,9 @@ function NavbarOfPortfolio() {
                 <ul>
                 <li className="active"><a href="/">Home</a></li>
                 <li><a href="/account">Registration</a></li>
-                <li className="drop-down"><a href="">Products</a>
+                <li className="drop-down"><a href="/#">Products</a>
                     <ul>
-                    <li className="drop-down"><a href="#">GeM</a>
+                    <li className="drop-down"><a href="/#">GeM</a>
                             <ul>
                                 <li><a href="/BuyerServices">BuyerServices</a></li>
                                 <li><a href="/SellerServices">SellerServices</a></li>

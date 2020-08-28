@@ -1,5 +1,5 @@
-import React from 'react'
-import './TeamAbout.css'
+import React from 'react';
+import './TeamAbout.css';
 
 const TeamAboutMember = (props) => {
     const {data_aos_delay, img, name, title} = props.member
@@ -10,10 +10,10 @@ const TeamAboutMember = (props) => {
             <div className="member-img">
                 <img src={img} className="img-fluid" alt=""/>
                 <div className="social">
-                <a href=""><i className="icofont-twitter"></i></a>
-                <a href=""><i className="icofont-facebook"></i></a>
-                <a href=""><i className="icofont-instagram"></i></a>
-                <a href=""><i className="icofont-linkedin"></i></a>
+                <a href="/#"><i className="icofont-twitter"></i></a>
+                <a href="/#"><i className="icofont-facebook"></i></a>
+                <a href="/#"><i className="icofont-instagram"></i></a>
+                <a href="/#"><i className="icofont-linkedin"></i></a>
                 </div>
             </div>
             <div className="member-info">
@@ -25,4 +25,4 @@ const TeamAboutMember = (props) => {
     )
 }
 
-export default TeamAboutMember
+export default TeamAboutMember;

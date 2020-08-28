@@ -1,28 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './EditPopup.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWindowClose } from '@fortawesome/free-solid-svg-icons'
-import { useForm } from 'react-hook-form';
-import TableContainer from '@material-ui/core/TableContainer';
-import Paper from '@material-ui/core/Paper';
-import { makeStyles } from '@material-ui/core/styles';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
+// import { makeStyles } from '@material-ui/core/styles';
+// import { useForm } from 'react-hook-form';
+// import TableContainer from '@material-ui/core/TableContainer';
+// import Paper from '@material-ui/core/Paper';
+// import InputLabel from '@material-ui/core/InputLabel';
+// import MenuItem from '@material-ui/core/MenuItem';
+// import FormHelperText from '@material-ui/core/FormHelperText';
+// import FormControl from '@material-ui/core/FormControl';
+// import Select from '@material-ui/core/Select';
 
 
-const useStyles = makeStyles((theme) => ({
-    formControl: {
-        border: '1px solid gray',
-    },
-}));
+// const useStyles = makeStyles((theme) => ({
+//     formControl: {
+//         border: '1px solid gray',
+//     },
+// }));
 
 const EditPopup = (props) => {
-    const [productId, setProductId] = useState(null)
+    // const [productId, setProductId] = useState(null)
+    const productId = null;
     const [formData, updateFormData] = React.useState(props);
-    const classes = useStyles();
+    // const classes = useStyles();
     // const [gender, setGender] = useState('');
 
     const handleChange = (event) => {

@@ -3,13 +3,13 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import DashboardIcon from '@material-ui/icons/Dashboard';
-import PeopleIcon from '@material-ui/icons/People';
-import TodayIcon from '@material-ui/icons/Today';
-import DescriptionIcon from '@material-ui/icons/Description';
+// import PeopleIcon from '@material-ui/icons/People';
+// import TodayIcon from '@material-ui/icons/Today';
+// import DescriptionIcon from '@material-ui/icons/Description';
 import SettingsIcon from '@material-ui/icons/Settings';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
-import {Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const mainListItems = (
     <div>

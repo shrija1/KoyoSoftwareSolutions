@@ -8,7 +8,7 @@ const HeaderElement = (props) => {
         <div className={classAdd}>
             <div className="icon-box">
                 <i className={icon}></i>
-                <h3><a href="">{name}</a></h3>
+                <h3><a href="/#">{name}</a></h3>
             </div>
         </div>
     );

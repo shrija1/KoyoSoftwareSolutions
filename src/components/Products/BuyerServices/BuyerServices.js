@@ -1,13 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './BuyerServices.css'
 // import ProductCard from '../ProductCard/ProductCard'
 import WebText from '../../../TextData'
 
 import ProductCard from '../ProductCard/ProductCard';
 
-function createData(img, title, description, price, stock) {
-    return { img, title, description, price, stock };
-}
+// function createData(img, title, description, price, stock) {
+//     return { img, title, description, price, stock };
+// }
 
 const BuyerServices = () => {
     // const [products, setProducts] = useState([]);
@@ -38,7 +38,7 @@ const BuyerServices = () => {
                     <h1 className="text-center text-magenda">{WebText.BuyerServices.title}</h1>
                     <div className="row my-5">
                         {
-                            WebText.BuyerServices.data.map(element=> <ProductCard data={element}/>)
+                            WebText.BuyerServices.data.map(element=> <ProductCard  key={element.title} data={element}/>)
                             // rows.map(element=> <ProductCard data={element}/>)
                         }
                     </div>

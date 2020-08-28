@@ -429,7 +429,7 @@ if(WebsiteText===null){
                 },
                 {
                     "img": pychons,
-                    "title": "Product Name",
+                    "title": "Product Name1",
                     "description": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
                     "price": "$120",
                     "stock": "60 Available"

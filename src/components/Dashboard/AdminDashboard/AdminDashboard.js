@@ -3,45 +3,45 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Drawer from '@material-ui/core/Drawer';
-import Box from '@material-ui/core/Box';
+// import Box from '@material-ui/core/Box';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
+// import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
-import Badge from '@material-ui/core/Badge';
+// import Badge from '@material-ui/core/Badge';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import MenuIcon from '@material-ui/icons/Menu';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import NotificationsIcon from '@material-ui/icons/Notifications';
+// import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+// import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, Logout } from './listItems';
 import './AdminDashboard.css'
-import Home from '../../Home/Home';
+// import Home from '../../Home/Home';
 import RecentAppointments from './RecentAppointments';
-import TodayIcon from '@material-ui/icons/Today';
-import ProductCard from '../../Products/ProductCard/ProductCard';
+// import TodayIcon from '@material-ui/icons/Today';
+// import ProductCard from '../../Products/ProductCard/ProductCard';
 import pychons from '../../../img/BuyerServices/Morder pychons.png'
 import money from '../../../img/BuyerServices/money.svg'
 import product from '../../../img/BuyerServices/product.svg'
 import buy from '../../../img/BuyerServices/buy.svg'
 import AddPopup from '../AddPopup/AddPopup';
 
-const Copyright = () => {
-    return (
-        <Typography variant="body2" color="textSecondary" align="center">
-            {'Copyright © '}
-            <Link color="inherit" href="https://material-ui.com/">
-                Your Website
-            </Link>{' '}
-            {new Date().getFullYear()}
-            {'.'}
-        </Typography>
-    );
-}
+// const Copyright = () => {
+//     return (
+//         <Typography variant="body2" color="textSecondary" align="center">
+//             {'Copyright © '}
+//             <Link color="inherit" href="https://material-ui.com/">
+//                 Your Website
+//             </Link>{' '}
+//             {new Date().getFullYear()}
+//             {'.'}
+//         </Typography>
+//     );
+// }
 
 const drawerWidth = 240;
 
@@ -156,29 +156,30 @@ const AdminDashboard = () => {
                 setAppointments(data)
             })
     }, [])
+    console.log(appointments)
     // const rows1 = [];
-    let countPending = 0
-    let countTodaysAppointments = 0
-    let totalAppointments = 0
-    let countTotalPatients = 0
-    const dateFromId0 = String(new Date()).split(' ')
-    const dateFromId = `${dateFromId0[1]} ${dateFromId0[2]}, ${dateFromId0[3]}   (${dateFromId0[5]})`
-    for (let i = 0; i < appointments.length; i++) {
-        const e = appointments[i];
-        if (e.action === 'Pending'){
-            countPending += 1
-        }
-        if (e.action === 'Approved'){
-            countTotalPatients += 1
-        }
-        if (e.date === dateFromId) {
-            countTodaysAppointments += 1
-        }
-        totalAppointments += 1
+    // let countPending = 0
+    // let countTodaysAppointments = 0
+    // let totalAppointments = 0
+    // let countTotalPatients = 0
+    // const dateFromId0 = String(new Date()).split(' ')
+    // const dateFromId = `${dateFromId0[1]} ${dateFromId0[2]}, ${dateFromId0[3]}   (${dateFromId0[5]})`
+    // for (let i = 0; i < appointments.length; i++) {
+    //     const e = appointments[i];
+    //     if (e.action === 'Pending'){
+    //         countPending += 1
+    //     }
+    //     if (e.action === 'Approved'){
+    //         countTotalPatients += 1
+    //     }
+    //     if (e.date === dateFromId) {
+    //         countTodaysAppointments += 1
+    //     }
+    //     totalAppointments += 1
         
-        // const row1 = createData(e.date, e.time, e.name, e.phone, 'View', e.action)
-        // rows1.push(row1)
-    }
+    //     // const row1 = createData(e.date, e.time, e.name, e.phone, 'View', e.action)
+    //     // rows1.push(row1)
+    // }
 
 
     const [showPopup, setShowPopup] = useState(false)

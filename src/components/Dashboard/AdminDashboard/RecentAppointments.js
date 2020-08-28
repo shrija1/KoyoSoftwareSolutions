@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -23,12 +23,12 @@ const useStyles = makeStyles({
     }
 });
 
-function createData(_id, img, title, description, price, stock) {
-    return { _id, img, title, description, price, stock };
-}
+// function createData(_id, img, title, description, price, stock) {
+//     return { _id, img, title, description, price, stock };
+// }
 
 //get data
-const rows = [];
+// const rows = [];
 // fetch('http://localhost:4400/getBuyerServices')
 // .then(res => res.json())
 // .then(data => {

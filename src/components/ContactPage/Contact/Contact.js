@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.css'
 import contactPhp from '../../Forms/contact.php'
-import { Email, Item, Span, A, renderEmail } from 'react-html-email'
+// import { Email, Item, Span, A, renderEmail } from 'react-html-email'
 
 
 function Contact() {
@@ -46,7 +46,7 @@ function Contact() {
             <div className="col-lg-8 mt-5 mt-lg-0">
                 <h1 style={{textAlign: 'center', marginBottom: '30px', fontWeight: '800', fontSize: '30px'}}>Send Us Your Queries</h1>
                 
-                <form action={contactPhp} method="post" role="form" className="php-email-form">
+                <form action={contactPhp} method="post" className="php-email-form">
                 <div className="form-row">
                     <div className="col-md-6 form-group">
                     <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />

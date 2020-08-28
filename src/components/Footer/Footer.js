@@ -1,16 +1,16 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import './Footer.css'
-import { Link } from 'react-router-dom'
-import paypal from '../../img/payment/payment-icon-paypal.svg'
-import googlepay from '../../img/payment/payment-icon-googlepay.svg'
-import applepay from '../../img/payment/payment-icon-applepay.svg'
-import visa from '../../img/payment/payment-icon-visa.svg'
-import mastercard from '../../img/payment/payment-icon-mastercard.svg'
-import discover from '../../img/payment/payment-icon-discover.svg'
-import amex from '../../img/payment/payment-icon-amex.svg'
-import paymentGateway from '../../img/payment/paymentGateway.png'
+// import { Link } from 'react-router-dom'
+// import paypal from '../../img/payment/payment-icon-paypal.svg'
+// import googlepay from '../../img/payment/payment-icon-googlepay.svg'
+// import applepay from '../../img/payment/payment-icon-applepay.svg'
+// import visa from '../../img/payment/payment-icon-visa.svg'
+// import mastercard from '../../img/payment/payment-icon-mastercard.svg'
+// import discover from '../../img/payment/payment-icon-discover.svg'
+// import amex from '../../img/payment/payment-icon-amex.svg'
+// import paymentGateway from '../../img/payment/paymentGateway.png'
+// import logo from '../../img/logo/softsiteLogo.svg'
 import { animateScroll as scroll } from 'react-scroll';
-import logo from '../../img/logo/softsiteLogo.svg'
 import logo1 from '../../img/logo/softsiteLogo3.png'
 import WebText from '../../TextData';
 
@@ -61,9 +61,9 @@ function Footer() {
                                     <li><i className="bx bx-chevron-right"></i> <a href="/chat">{WebText.footer.part1.item3}</a></li>
                                 </ul>
                                 <ul style={{paddingRight: '3%'}}>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="#">{WebText.footer.part1.item4}</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="#">{WebText.footer.part1.item5}</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="#">{WebText.footer.part1.item6}</a></li>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="/#">{WebText.footer.part1.item4}</a></li>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="/#">{WebText.footer.part1.item5}</a></li>
+                                    <li><i className="bx bx-chevron-right"></i> <a href="/#">{WebText.footer.part1.item6}</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -110,9 +110,9 @@ function Footer() {
                 <div className="column100 credits text-center">  
                     <a href="/">{WebText.footer.lastPart.copyright}{thisYear} {WebText.footer.lastPart.company}</a>  
                     <span className="sep"> | </span>  
-                    <a href="#">{WebText.footer.lastPart.terms}</a>  
+                    <a href="/#">{WebText.footer.lastPart.terms}</a>  
                     <span className="sep"> | </span>  
-                    <a href="#">{WebText.footer.lastPart.policy}</a>
+                    <a href="/#">{WebText.footer.lastPart.policy}</a>
                     {/* <span className="footer-address">
                             <a href="#" className="sociallink"><i className="bx bxl-facebook"></i></a>
                             <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
@@ -130,7 +130,7 @@ function Footer() {
             </footer>
 
             {/* Back to top */}
-            <a href="#/" className="back-to-top" onClick={ScrollTo}>
+            <a href="/#" className="back-to-top" onClick={ScrollTo}>
                 <i className="ri-arrow-up-line"></i>
             </a>
             <div id="preloader"></div>

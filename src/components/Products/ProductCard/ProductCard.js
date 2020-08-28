@@ -4,8 +4,7 @@ import money from '../../../img/BuyerServices/money.svg'
 import product from '../../../img/BuyerServices/product.svg'
 import buy from '../../../img/BuyerServices/buy.svg'
 
-const ProductCard = (props) => {
-    const {img, title, description, price, stock } = props.data
+const ProductCard = ({ img, title, description, price, stock }) => {
     return (
         <div className="col-md-4 mb-3">
             <div className="single-course">

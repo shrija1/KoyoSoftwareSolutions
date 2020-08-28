@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react';
 import './Sidebar.css'
 import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faPlus  } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee, faPlus  } from '@fortawesome/free-solid-svg-icons'
 import { animateScroll as scroll } from 'react-scroll';
 
 const Sidebar = () => {
@@ -28,7 +28,7 @@ const Sidebar = () => {
     return (
         <div className="sidenav sidebar">
             <button className="socialIcons">
-                <a href="#">
+                <a href="/#">
                     {/* <FontAwesomeIcon icon={faCoffee} /> */}
                     <i className="fa fa-facebook" aria-hidden="true"></i>
                 </a>
@@ -53,13 +53,13 @@ const Sidebar = () => {
             </button>
             <br/> */}
             <button className="socialIcons">
-                <a href="#">
+                <a href="/#">
                     <i className="fa fa-instagram" aria-hidden="true"></i>
                 </a>
             </button>
             <br/>
             <button className="socialIcons chat-button">
-                <a href="#">
+                <a href="/#">
                     <i className="fa fa-comments" aria-hidden="true"></i>
                 </a>
             </button>
@@ -71,11 +71,10 @@ const Sidebar = () => {
             </button> */}
             <hr style={{width: '50px'}}/>
             <button className="socialIcons plusIcon" onClick={ScrollTo}>
-                <a href="#">
+                <a href="/#">
                     {/* <FontAwesomeIcon icon={faPlus} /> */}
                     <i className="ri-arrow-down-line" aria-hidden="true"></i>
                 </a>
-
             </button>
             <br/>
             <p id="circularProgressBar">

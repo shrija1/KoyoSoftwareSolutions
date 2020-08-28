@@ -4,12 +4,12 @@ import logo from '../../img/logo/softsiteLogo3.png'
 import { Button, Modal } from 'react-bootstrap'
 import * as firebase from "firebase/app";
 import "firebase/auth";
-import firebaseConfig from '../../firebase.config';
+// import firebaseConfig from '../../firebase.config';
 import facebook from '../../img/social/facebook.png'
 import google from '../../img/social/google.png'
 import twitter from '../../img/social/twitter.png'
 import linkedIn from '../../img/social/linkedin.png'
-import logout from '../../img/social/logout.png'
+// import logout from '../../img/social/logout.png'
 import WebText from '../../TextData'
 import { NavItem } from "react-bootstrap";
 
@@ -150,7 +150,7 @@ const Navbar = (props) => {
                             <a className="nav-link" href="/">{WebText.home.navbar.navItems.item1}</a>
                         </li>
                         <li className="drop-down nav-item dropdown" id="products">
-                            <a className="nav-link dropdown-toggle" id="services" href="/services" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a className="nav-link dropdown-toggle" href="/services" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 {WebText.home.navbar.navItems.item2.main}
                             </a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

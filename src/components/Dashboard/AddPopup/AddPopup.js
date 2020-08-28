@@ -2,37 +2,37 @@ import React, { useState } from 'react';
 import './AddPopup.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWindowClose } from '@fortawesome/free-solid-svg-icons'
-import { useForm } from 'react-hook-form';
-import TableContainer from '@material-ui/core/TableContainer';
-import Paper from '@material-ui/core/Paper';
-import { makeStyles } from '@material-ui/core/styles';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
+// import { makeStyles } from '@material-ui/core/styles';
+// import { useForm } from 'react-hook-form';
+// import TableContainer from '@material-ui/core/TableContainer';
+// import Paper from '@material-ui/core/Paper';
+// import InputLabel from '@material-ui/core/InputLabel';
+// import MenuItem from '@material-ui/core/MenuItem';
+// import FormHelperText from '@material-ui/core/FormHelperText';
+// import FormControl from '@material-ui/core/FormControl';
+// import Select from '@material-ui/core/Select';
 // import axios from 'axios'
 
-const useStyles = makeStyles((theme) => ({
-    formControl: {
-        border: '1px solid gray',
-    },
-}));
+// const useStyles = makeStyles((theme) => ({
+//     formControl: {
+//         border: '1px solid gray',
+//     },
+// }));
 
 const AddPopup = (props) => {
     
 
     const [productId, setProductId] = useState(null)
-    const classes = useStyles();
+    // const classes = useStyles();
     // const [gender, setGender] = useState('');
 
-    const handleChange = (event) => {
+    // const handleChange = (event) => {
         // setGender(event.target.value);
-    };
+    // };
     
     // upload image
-    const [image, setImage] = useState('')
-    const [loading, setLoading] = useState(false)
+    // const [image, setImage] = useState('')
+    // const [loading, setLoading] = useState(false)
 
     // const uploadImage = async (e) => {
     //     const files = e.target.files
@@ -59,31 +59,31 @@ const AddPopup = (props) => {
         //     body: event.target.files[0]
         // })
     }
-    const [imageFile, setImageFile] = useState({fileName: ''})
-    const onClickUpload = () => {
-        console.log(selectedFile)
-        // fetch('http://localhost:4400/uploadImage', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'image/png'
-        //     },
-        //     body: selectedFile
-        // })
-        const myFileInputs = document.querySelector("input[type='file']")
+    // const [imageFile, setImageFile] = useState({fileName: ''})
+    // const onClickUpload = () => {
+    //     console.log(selectedFile)
+    //     // fetch('http://localhost:4400/uploadImage', {
+    //     //     method: 'POST',
+    //     //     headers: {
+    //     //         'Content-Type': 'image/png'
+    //     //     },
+    //     //     body: selectedFile
+    //     // })
+    //     const myFileInputs = document.querySelector("input[type='file']")
  
-        const formData = new FormData()
-        formData.append('myFile', myFileInputs.files[0])
+    //     const formData = new FormData()
+    //     formData.append('myFile', myFileInputs.files[0])
  
-        fetch('http://localhost:4500/uploadfile', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-            setImageFile({fileName: data.originalname})
-        })
-    }
+    //     fetch('http://localhost:4500/uploadfile', {
+    //         method: 'POST',
+    //         body: formData
+    //     })
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         console.log(data)
+    //         setImageFile({fileName: data.originalname})
+    //     })
+    // }
 
     const handleAdd = (data) => {
         const formData = new FormData(data.target)
@@ -112,7 +112,7 @@ const AddPopup = (props) => {
                 alert('An error occurred.')
                 return Promise.reject('An error occurred.');
             }
-            res.json()
+            // res.json()
         })
         .then(data => {
             setProductId(data._id)
