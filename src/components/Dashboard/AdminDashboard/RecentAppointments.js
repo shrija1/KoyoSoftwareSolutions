@@ -29,18 +29,18 @@ function createData(_id, img, title, description, price, stock) {
 
 //get data
 const rows = [];
-fetch('http://localhost:4400/getBuyerServices')
-.then(res => res.json())
-.then(data => {
-    // console.log(data.length)
-    // displayProducts(data)
-    for (let i = 0; i < data.length; i++) {
-        const e = data[i];
-        // console.log(e);
-        const row = createData(e._id, e.img, e.title, e.description, e.price, e.stock)
-        rows.push(row)
-    }  
-})
+// fetch('http://localhost:4400/getBuyerServices')
+// .then(res => res.json())
+// .then(data => {
+//     // console.log(data.length)
+//     // displayProducts(data)
+//     for (let i = 0; i < data.length; i++) {
+//         const e = data[i];
+//         // console.log(e);
+//         const row = createData(e._id, e.img, e.title, e.description, e.price, e.stock)
+//         rows.push(row)
+//     }  
+// })
 
 // const rows = [
 //     createData('https://betanews.com/wp-content/uploads/2015/02/Container-software-box.jpg', 'Product Name', 'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.', '$120', '60 Available'),
@@ -63,21 +63,21 @@ const RecentAppointments = () => {
     const classes = useStyles();
     let rowCount = 0;
 
-    const [appointments, setAppointments] = useState([]);
-    useEffect(() => {
-        fetch('http://localhost:4400/getBuyerServices')
-            .then(res => res.json())
-            .then(data => {
-                setAppointments(data.data)
-                // console.log(data.data)
-            })
-    }, [])
+    // const [appointments, setAppointments] = useState([]);
+    // useEffect(() => {
+    //     fetch('http://localhost:4400/getBuyerServices')
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             setAppointments(data.data)
+    //             // console.log(data.data)
+    //         })
+    // }, [])
     const rows1 = [];
-    for (let i = 0; i < appointments.length; i++) {
-        const e = appointments[i];
-        const row1 = createData(e._id, e.img, e.title, e.description, e.price, e.stock)
-        rows1.push(row1)
-    }
+    // for (let i = 0; i < appointments.length; i++) {
+    //     const e = appointments[i];
+    //     const row1 = createData(e._id, e.img, e.title, e.description, e.price, e.stock)
+    //     rows1.push(row1)
+    // }
 
     const [showPopup, setShowPopup] = useState(false)
 

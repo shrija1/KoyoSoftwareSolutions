@@ -11,6 +11,7 @@ import twitter from '../../img/social/twitter.png'
 import linkedIn from '../../img/social/linkedin.png'
 import logout from '../../img/social/logout.png'
 import WebText from '../../TextData'
+import { NavItem } from "react-bootstrap";
 
 const Navbar = (props) => {
     const [show, setShow] = useState(false)
@@ -153,7 +154,7 @@ const Navbar = (props) => {
                                 {WebText.home.navbar.navItems.item2.main}
                             </a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a className="dropdown-item dropdown" href="#/">
+                                <NavItem className="dropdown-item dropdown" href="#/">
                                     <a className="nav-link dropdown-toggle" href="#/" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {WebText.home.navbar.navItems.item2.item1.main}
                                     </a>
@@ -161,7 +162,7 @@ const Navbar = (props) => {
                                         <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item1.item1}</a>
                                         <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item1.item2}</a>
                                     </div>
-                                </a>
+                                </NavItem>
                                 <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item2}</a>
                                 <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item3}</a>
                                 <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item4}</a>

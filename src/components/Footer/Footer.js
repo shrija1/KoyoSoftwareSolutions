@@ -54,7 +54,7 @@ function Footer() {
                         
                         <div className="col-lg-3 col-md-6 footer-links" style={{paddingTop: '5%'}}>
                             <h4 style={{paddingLeft: '8%', fontSize: '25px'}}>{WebText.footer.part1.title}</h4>
-                            <div class="d-flex justify-content-between" style={{fontSize: '16px'}}>
+                            <div className="d-flex justify-content-between" style={{fontSize: '16px'}}>
                                 <ul>
                                     <li><i className="bx bx-chevron-right"></i> <a href="/">{WebText.footer.part1.item1}</a></li>
                                     <li><i className="bx bx-chevron-right"></i> <a href="/about">{WebText.footer.part1.item2}</a></li>
@@ -70,7 +70,7 @@ function Footer() {
                         <div className="col-lg-1 col-md-0"></div>
                         <div className="col-lg-5 col-md-6 footer-links" style={{paddingTop: '5%'}}>
                             <h4 style={{paddingLeft: '8%', fontSize: '25px'}}>{WebText.footer.part2.title}</h4>
-                            <div class="d-flex justify-content-between" style={{fontSize: '16px'}}>
+                            <div className="d-flex justify-content-between" style={{fontSize: '16px'}}>
                                 <ul>
                                     <li><i className="bx bx-chevron-right"></i> <a href="/gem">{WebText.footer.part2.item1}</a></li>
                                     <li><i className="bx bx-chevron-right"></i> <a href="/webDevelopment">{WebText.footer.part2.item2}</a></li>

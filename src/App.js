@@ -18,13 +18,11 @@ import EMarketing from './components/Products/EMarketing/EMarketing';
 import BusinessProductivityServices from './components/Products/BusinessProductivityServices/BusinessProductivityServices';
 import MachineLearning from './components/Products/MachineLearning/MachineLearning';
 import ProfessionalsToolbox from './components/Products/ProfessionalsToolbox/ProfessionalsToolbox';
-import Chat from './components/Chat/Chat';
-import About from './components/Home/About/About';
-import Cart from './components/Cart/Cart';
+import Services from './components/Home/Services/Services'
 import ContactPage from './components/ContactPage/ContactPage';
 import AboutPage from './components/AboutPage/AboutPage';
 import HeaderForAll from './components/HeaderForAll/HeaderForAll';
-import Admin from './components/Admin/Admin';
+// import Admin from './components/Admin/Admin';
 import AdminDashboard from './components/Dashboard/AdminDashboard/AdminDashboard';
 import AdminDashboardLogin from './components/Dashboard/AdminDashboard/AdminDashboardLogin';
 import PortfolioPage from './components/PortfolioPage/PortfolioPage';
@@ -62,7 +60,7 @@ function App() {
                 title={WebText.servicesPage.header.title} 
                 description={WebText.servicesPage.header.description}
               />
-              <h1>services</h1>
+              <Services/>
               <Footer />
             </Route>
             <Route path='/BuyerServices'>
