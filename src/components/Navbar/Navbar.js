@@ -179,7 +179,7 @@ const Navbar = (props) => {
 
             
             <Modal show={show} onHide={handleModel} animation={true} className="d-flex align-items-center" >
-                <Modal.Header closeButton style={{borderBottom: '0px'}}>
+                <Modal.Header closebutton style={{borderBottom: '0px'}}>
                     {/* <Modal.Title>Sign in with</Modal.Title> */}
                 </Modal.Header>
                 {
@@ -193,7 +193,7 @@ const Navbar = (props) => {
                         </Button> */}
                     </div> 
                    :
-                <Modal.Body closeButton style={{textAlign: 'center', padding: '0px 50px 50px 50px'}}>
+                <Modal.Body closebutton style={{textAlign: 'center', padding: '0px 50px 50px 50px'}}>
                     <h3>{WebText.home.navbar.popup.heading}</h3> <br/>
                     <Button style={{backgroundColor: 'transparent', border: 'none'}}>
                         <img src={facebook} alt="Facebook SignIn" width="300px"/>

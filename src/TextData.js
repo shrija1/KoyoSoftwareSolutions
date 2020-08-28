@@ -391,10 +391,6 @@ if(WebsiteText===null){
                         title: "Accountant"
                     }
                 ]
-            },
-            map: {
-                title: "Map",
-                description: "Office Location",
             }
         },
         contactPage: {
@@ -402,7 +398,26 @@ if(WebsiteText===null){
                 title: "Contact",
                 description: "We are team of talanted digital marketers"
             },
-            head: {
+            contact: {
+                title: "Contact",
+                description: "Contact Us",
+                address: {
+                    icon1: "icofont-google-map",
+                    title1: "Location:",
+                    info1: "Abcdef 123 T. Abcdef Teafa Yadfe, TT, 12345, India",
+                    icon2: "icofont-envelope",
+                    title2: "Email:",
+                    info2: "info@example.com",
+                    icon3: "icofont-phone",
+                    title3: "Call:",
+                    info3: "+91 1234 45678 91",
+                },
+                form: {
+                    title: "Send Us Your Queries",
+                    btn: "Send Message"
+                }
+            },
+            map: {
                 title: "Map",
                 description: "Office Location",
             }
@@ -429,7 +444,7 @@ if(WebsiteText===null){
                 },
                 {
                     "img": pychons,
-                    "title": "Product Name1",
+                    "title": "Product Name",
                     "description": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.",
                     "price": "$120",
                     "stock": "60 Available"
