@@ -286,3 +286,13 @@
 #navBtn i{
     background-color: white;
 }
+
+.navActive {
+    background: #333333;
+}
+.navDeactive {
+    background: transparent;
+}
+#secondNavServices a:hover {
+    background: transparent;
+}

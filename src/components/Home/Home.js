@@ -5,7 +5,7 @@ import Features from './Features/Features'
 // import Services from './Services/Services'
 import Portfolio from '../PortfolioPage/Portfolio/Portfolio'
 import CallToAction from './CallToAction/CallToAction'
-import Counts from './Counts/Counts'
+// import Counts from './Counts/Counts'
 // import Testimonials from './Testimonials/Testimonials'
 import Team from './Team/Team'
 
@@ -19,7 +19,7 @@ function Home() {
             {/* <Services/> */}
             <Portfolio/>
             <CallToAction/>
-            <Counts/>
+            {/* <Counts/> */}
             {/* <Testimonials/> */}
             <Team/>
         </main>

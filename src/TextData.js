@@ -391,6 +391,9 @@ if(WebsiteText===null){
                         title: "Accountant"
                     }
                 ]
+            },
+            joinBtn: {
+                btnText: "Join"
             }
         },
         contactPage: {

@@ -11,9 +11,9 @@ import twitter from '../../img/social/twitter.png'
 import linkedIn from '../../img/social/linkedin.png'
 // import logout from '../../img/social/logout.png'
 import WebText from '../../TextData'
-import { NavItem } from "react-bootstrap";
+// import { NavItem } from "react-bootstrap";
 
-const Navbar = (props) => {
+const Navbar1 = (props) => {
     const [show, setShow] = useState(false)
     // user from local storage
     let ttsGoogleSignIn = localStorage.getItem('ttsGoogleSignIn')
@@ -101,6 +101,25 @@ const Navbar = (props) => {
         setShow(!show)
     }
 
+    const [clickedNav, setClickedNav] = useState(false)
+    const nav2Active = () => {
+        // if (clickedNav) {
+        //     setClickedNav(false)
+        // } else {
+        //     setClickedNav(true)
+        // }
+
+        clickedNav ? setClickedNav(false) : setClickedNav(true)
+    }
+
+    // useState(() => {
+    //     if (clickedNav === true) {
+    //         document.getElementById("header").className='navActive'
+    //     } else {
+    //         document.getElementById("header").className="navDeactive"
+    //     }
+    // })
+
 
     return (
         <header id="header" className="fixed-top">
@@ -112,7 +131,8 @@ const Navbar = (props) => {
                 <nav className="nav-menu d-none d-lg-block collapse navbar-collapse" id="navbarNav1">
                     <ul>
                         <li id="home"><a href="/">{WebText.home.navbar.navItems.item1}</a></li>
-                        <li className="drop-down" id="services"><a href="/services">{WebText.home.navbar.navItems.item2.main}</a>
+                        <li className="drop-down" id="services">
+                            <a href="/services">{WebText.home.navbar.navItems.item2.main}</a>
                             <ul>
                                 <li className="drop-down"><a href="#/">{WebText.home.navbar.navItems.item2.item1.main}</a>
                                     <ul>
@@ -133,9 +153,9 @@ const Navbar = (props) => {
                     </ul>
                 </nav>
 
-                <button id="navBtn" className="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i className="ri-arrow-down-line" aria-hidden="true"></i>
-                </button>
+                
+
+                {/* <p>
                 {
                     user.googleSignIn ? <div>
                     <a href='#/' className="get-started-btn scrollto" onClick={handleModel} style={{border: 'none', display: 'inline'}}>{WebText.home.navbar.greeting} {user.name}</a>
@@ -143,31 +163,34 @@ const Navbar = (props) => {
                     </div>
                     : <a href='#/' className="get-started-btn scrollto" onClick={handleModel} >{WebText.home.navbar.btn.signIn}</a>
                 }
+                </p> */}
+                
 <br/>
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
+                    <br/>
+                    <ul className="navbar-nav nav-menu" style={{textAlign: 'right'}}>
                         <li id="home" className="nav-item">
-                            <a className="nav-link" href="/">{WebText.home.navbar.navItems.item1}</a>
+                            <a className="nav-link secondNav" href="/">{WebText.home.navbar.navItems.item1}</a>
                         </li>
-                        <li className="drop-down nav-item dropdown" id="products">
+                        <li className="drop-down nav-item dropdown" id="secondNavServices">
                             <a className="nav-link dropdown-toggle" href="/services" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 {WebText.home.navbar.navItems.item2.main}
                             </a>
-                            <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <NavItem className="dropdown-item dropdown" href="#/">
+                            <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style={{background: '#333333'}}>
+                                <a className="dropdown-item dropdown" href="#/">
                                     <a className="nav-link dropdown-toggle" href="#/" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {WebText.home.navbar.navItems.item2.item1.main}
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                                        <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item1.item1}</a>
-                                        <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item1.item2}</a>
+                                        <a className="dropdown-item" href="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</a>
+                                        <a className="dropdown-item" href="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</a>
                                     </div>
-                                </NavItem>
-                                <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item2}</a>
-                                <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item3}</a>
-                                <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item4}</a>
-                                <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item5}</a>
-                                <a className="dropdown-item" href="#/">{WebText.home.navbar.navItems.item2.item6}</a>
+                                </a>
+                                <a className="dropdown-item" href="/webDevelopment">{WebText.home.navbar.navItems.item2.item2}</a>
+                                <a className="dropdown-item" href="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</a>
+                                <a className="dropdown-item" href="/businessPS">{WebText.home.navbar.navItems.item2.item4}</a>
+                                <a className="dropdown-item" href="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</a>
+                                <a className="dropdown-item" href="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</a>
                             </div>
                         </li>
                         <li id="portfolio"><a href="/portfolio">{WebText.home.navbar.navItems.item3}</a></li>
@@ -175,7 +198,37 @@ const Navbar = (props) => {
                         <li id="contact" className="nav-item"><a className="nav-link" href="/contact">{WebText.home.navbar.navItems.item5}</a></li>
                     </ul>
                 </div>
+
+                <p>
+                <button id="navBtn" 
+                    className="navbar-toggler d-block d-md-none" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarNav" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"
+                    style={{marginTop: '11px'}}
+                    onClick={nav2Active}
+                >
+                    {/* <i className="fa fa-menu" aria-hidden="true"></i> */}
+                    <div style={{width: '25px', height: '3px', backgroundColor: 'white', margin: '4px 0'}}></div>
+                    <div style={{width: '25px', height: '3px', backgroundColor: 'white', margin: '4px 0'}}></div>
+                    <div style={{width: '25px', height: '3px', backgroundColor: 'white', margin: '4px 0'}}></div> 
+                </button>
+                </p>
+                <p>
+                {
+                    user.googleSignIn ? <div>
+                    <a href='/#' className="get-started-btn scrollto" onClick={handleModel} style={{border: 'none', display: 'inline'}}>{WebText.home.navbar.greeting} {user.name}</a>
+                    <a href='/#' className="get-started-btn scrollto" onClick={handleSignOutGoogle} style={{display: 'inline', marginLeft: '2px', padding: '5px 12px 8px 12px'}}>{WebText.home.navbar.btn.logout}</a>
+                    </div>
+                    : <a href='/#' className="get-started-btn scrollto" onClick={handleModel} >{WebText.home.navbar.btn.signIn}</a>
+                }
+                </p>
+
             </div>
+                
 
             
             <Modal show={show} onHide={handleModel} animation={true} className="d-flex align-items-center" >
@@ -225,4 +278,4 @@ const Navbar = (props) => {
     )
 }
 
-export default Navbar
+export default Navbar1

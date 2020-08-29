@@ -24,6 +24,11 @@ const AboutPage = () => {
                         <ContactAbout/>
                         <CompanyHistory/>
                         <TeamAbout/>
+                        <div className="container text-right joinDivAbout">
+                            <button type="submit" className="joinBtnAbout">
+                                {WebText.aboutPage.joinBtn.btnText}
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
