@@ -296,3 +296,12 @@
 #secondNavServices a:hover {
     background: transparent;
 }
+
+@media only screen and (max-width: 768px) {
+    #navbarNav, #header {
+        background: black;
+    }
+    #header.header-scrolled, #header.header-inner-pages {
+        background: black;
+    }
+}

@@ -13,6 +13,7 @@ import linkedIn from '../../img/social/linkedin.png'
 import WebText from '../../TextData'
 // import { NavItem } from "react-bootstrap";
 
+import { Link } from  'react-router-dom';
 
 const Navbar1 = (props) => {
     const [show, setShow] = useState(false)
@@ -126,6 +127,23 @@ const Navbar1 = (props) => {
         <header id="header" className="fixed-top">
 
             <div className="container d-flex justify-content-between">
+                <p>
+                    <button id="navBtn" 
+                        className="navbar-toggler d-block d-md-none" 
+                        type="button" 
+                        data-toggle="collapse" 
+                        data-target="#navbarNav" 
+                        aria-controls="navbarNav" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation"
+                        style={{marginTop: '11px'}}
+                        onClick={nav2Active}
+                    >
+                        <div style={{width: '25px', height: '3px', backgroundColor: 'white', margin: '4px 0'}}></div>
+                        <div style={{width: '25px', height: '3px', backgroundColor: 'white', margin: '4px 0'}}></div>
+                        <div style={{width: '25px', height: '3px', backgroundColor: 'white', margin: '4px 0'}}></div> 
+                    </button>
+                </p>
 
                 <a href="/" className="logo"><img src={logo} alt="SoftSite" className="img-fluid"/></a>
 
@@ -135,7 +153,7 @@ const Navbar1 = (props) => {
                         <li className="drop-down" id="services">
                             <a href="/services">{WebText.home.navbar.navItems.item2.main}</a>
                             <ul>
-                                <li className="drop-down"><a href="#/">{WebText.home.navbar.navItems.item2.item1.main}</a>
+                                <li className="drop-down"><Link>{WebText.home.navbar.navItems.item2.item1.main}</Link>
                                     <ul>
                                         <li><a href="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</a></li>
                                         <li><a href="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</a></li>
@@ -155,21 +173,11 @@ const Navbar1 = (props) => {
                 </nav>
 
                 
-
-                {/* <p>
-                {
-                    user.googleSignIn ? <div>
-                    <a href='#/' className="get-started-btn scrollto" onClick={handleModel} style={{border: 'none', display: 'inline'}}>{WebText.home.navbar.greeting} {user.name}</a>
-                    <a href='#/' className="get-started-btn scrollto" onClick={handleSignOutGoogle} style={{display: 'inline', marginLeft: '2px', padding: '5px 12px 8px 12px'}}>{WebText.home.navbar.btn.logout}</a>
-                    </div>
-                    : <a href='#/' className="get-started-btn scrollto" onClick={handleModel} >{WebText.home.navbar.btn.signIn}</a>
-                }
-                </p> */}
                 
 <br/>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <br/>
-                    <ul className="navbar-nav nav-menu" style={{textAlign: 'right'}}>
+                    <ul className="navbar-nav nav-menu" style={{textAlign: 'left'}}>
                         <li id="home" className="nav-item">
                             <a className="nav-link secondNav" href="/">{WebText.home.navbar.navItems.item1}</a>
                         </li>
@@ -179,7 +187,7 @@ const Navbar1 = (props) => {
                             </a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style={{background: '#333333'}}>
                                 <a className="dropdown-item dropdown" href="/#" >
-                                    <a className="nav-link dropdown-toggle" href="#/" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {WebText.home.navbar.navItems.item2.item1.main}
                                     </a>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
@@ -201,31 +209,13 @@ const Navbar1 = (props) => {
                 </div>
 
                 <p>
-                <button id="navBtn" 
-                    className="navbar-toggler d-block d-md-none" 
-                    type="button" 
-                    data-toggle="collapse" 
-                    data-target="#navbarNav" 
-                    aria-controls="navbarNav" 
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation"
-                    style={{marginTop: '11px'}}
-                    onClick={nav2Active}
-                >
-                    {/* <i className="fa fa-menu" aria-hidden="true"></i> */}
-                    <div style={{width: '25px', height: '3px', backgroundColor: 'white', margin: '4px 0'}}></div>
-                    <div style={{width: '25px', height: '3px', backgroundColor: 'white', margin: '4px 0'}}></div>
-                    <div style={{width: '25px', height: '3px', backgroundColor: 'white', margin: '4px 0'}}></div> 
-                </button>
-                </p>
-                <p>
-                {
-                    user.googleSignIn ? <div>
-                    <a href='/#' className="get-started-btn scrollto" onClick={handleModel} style={{border: 'none', display: 'inline'}}>{WebText.home.navbar.greeting} {user.name}</a>
-                    <a href='/#' className="get-started-btn scrollto" onClick={handleSignOutGoogle} style={{display: 'inline', marginLeft: '2px', padding: '5px 12px 8px 12px'}}>{WebText.home.navbar.btn.logout}</a>
-                    </div>
-                    : <a href='/#' className="get-started-btn scrollto" onClick={handleModel} >{WebText.home.navbar.btn.signIn}</a>
-                }
+                    {
+                        user.googleSignIn ? <div>
+                        <a href='/#' className="get-started-btn scrollto" onClick={handleModel} style={{border: 'none', display: 'inline'}}>{WebText.home.navbar.greeting} {user.name}</a>
+                        <a href='/#' className="get-started-btn scrollto" onClick={handleSignOutGoogle} style={{display: 'inline', marginLeft: '2px', padding: '5px 12px 8px 12px'}}>{WebText.home.navbar.btn.logout}</a>
+                        </div>
+                        : <a href='/#' className="get-started-btn scrollto" onClick={handleModel} >{WebText.home.navbar.btn.signIn}</a>
+                    }
                 </p>
 
             </div>
