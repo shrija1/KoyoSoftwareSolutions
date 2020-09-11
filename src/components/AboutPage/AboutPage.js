@@ -4,6 +4,7 @@ import ContactAbout from './ContactAbout/ContactAbout'
 import TeamAbout from './TeamAbout/TeamAbout'
 import CompanyHistory from './CompanyHistory/CompanyHistory'
 import WebText from '../../TextData'
+import { Link } from 'react-router-dom';
 
 const AboutPage = () => {
     return (
@@ -24,11 +25,14 @@ const AboutPage = () => {
                         <ContactAbout/>
                         <CompanyHistory/>
                         <TeamAbout/>
-                        <div className="container text-right joinDivAbout">
-                            <button type="submit" className="joinBtnAbout">
-                                {WebText.aboutPage.joinBtn.btnText}
-                            </button>
-                        </div>
+                        
+                        <Link to='/join'>
+                            <div className="container text-right joinDivAbout">
+                                <button type="submit" className="joinBtnAbout">
+                                    {WebText.aboutPage.joinBtn.btnText}
+                                </button>
+                            </div>
+                        </Link>
                     </div>
                 </div>
             </div>

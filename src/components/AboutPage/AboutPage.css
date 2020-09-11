@@ -38,8 +38,8 @@
 }
 
 .joinDivAbout {
-    margin-top: -30px;
-    margin-bottom: 30px;
+    margin-top: -50px;
+    margin-bottom: 40px;
 }
 .joinBtnAbout {
     /* border: 2px solid #151515; */
@@ -49,7 +49,7 @@
     background-color: #ffc451;
     color: #151515;
     font-size: 20px;
-    box-shadow: 5px 5px 30px gray;
+    /* box-shadow: 5px 5px 30px gray; */
 }
 .joinBtnAbout:hover {
     color: #ffc451;

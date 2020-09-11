@@ -26,6 +26,8 @@ import HeaderForAll from './components/HeaderForAll/HeaderForAll';
 import AdminDashboard from './components/Dashboard/AdminDashboard/AdminDashboard';
 import AdminDashboardLogin from './components/Dashboard/AdminDashboard/AdminDashboardLogin';
 import PortfolioPage from './components/PortfolioPage/PortfolioPage';
+import Join from './components/Join/Join';
+
 // textData
 import WebText from './TextData'
 
@@ -152,6 +154,12 @@ function App() {
               <Cart/>
               <Footer />
             </Route> */}
+            <Route path='/join'>
+              <Navbar active=""/>
+              <HeaderForAll title='Join Team'/>
+              <Join />
+              <Footer />
+            </Route>
             <Route path='/contact'>
               <Navbar active="contact"/>
               <HeaderForAll 

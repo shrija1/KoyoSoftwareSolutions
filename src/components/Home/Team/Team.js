@@ -2,6 +2,7 @@ import React from 'react'
 import './Team.css'
 import TeamMember from './TeamMember'
 import WebText from '../../../TextData';
+import { Link } from 'react-router-dom';
 
 const Team = () => {
     return (
@@ -22,6 +23,13 @@ const Team = () => {
             </div>
 
         </div>
+        <Link to='/join'>
+            <div className="container text-right joinDivHome">
+                <button type="submit" className="joinBtnHome">
+                    {WebText.aboutPage.joinBtn.btnText}
+                </button>
+            </div>
+        </Link>
         </section>
     )
 }

@@ -82,3 +82,22 @@
     opacity: 1;
     bottom: 15px;
 }
+
+.joinDivHome {
+    /* margin-top: -30px; */
+    margin-bottom: 40px;
+}
+.joinBtnHome {
+    /* border: 2px solid #151515; */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: #ffc451;
+    color: #151515;
+    font-size: 20px;
+    /* box-shadow: 5px 5px 30px gray; */
+}
+.joinBtnHome:hover {
+    color: #ffc451;
+    background-color: #151515;
+}
