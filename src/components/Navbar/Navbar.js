@@ -13,6 +13,7 @@ import linkedIn from '../../img/social/linkedin.png'
 import WebText from '../../TextData'
 // import { NavItem } from "react-bootstrap";
 
+
 const Navbar1 = (props) => {
     const [show, setShow] = useState(false)
     // user from local storage
@@ -177,7 +178,7 @@ const Navbar1 = (props) => {
                                 {WebText.home.navbar.navItems.item2.main}
                             </a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style={{background: '#333333'}}>
-                                <a className="dropdown-item dropdown" href="#/">
+                                <a className="dropdown-item dropdown" href="/#" >
                                     <a className="nav-link dropdown-toggle" href="#/" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {WebText.home.navbar.navItems.item2.item1.main}
                                     </a>
