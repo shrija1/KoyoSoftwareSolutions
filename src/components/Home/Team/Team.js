@@ -21,15 +21,16 @@ const Team = () => {
             }
 
             </div>
-
         </div>
-        <Link to='/join'>
-            <div className="container text-right joinDivHome">
-                <button type="submit" className="joinBtnHome">
-                    {WebText.aboutPage.joinBtn.btnText}
-                </button>
-            </div>
-        </Link>
+        <div data-aos="fade-up">
+            <Link to='/join'>
+                <div className="container text-right joinDivHome">
+                    <button type="submit" className="joinBtnHome">
+                        {WebText.aboutPage.joinBtn.btnText}
+                    </button>
+                </div>
+            </Link>
+        </div>
         </section>
     )
 }
