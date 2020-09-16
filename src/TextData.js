@@ -393,7 +393,21 @@ if(WebsiteText===null){
                 ]
             },
             joinBtn: {
-                btnText: "Join"
+                btnText: "Apply"
+            }
+        },
+        joinPage: {
+            header: {
+                title: "Apply",
+                description: "We are team of talanted digital marketers"
+            },
+            home: {
+                title: "Team",
+                description: "JOIN OUR TEAM"
+            },
+            form: {
+                text1: "Please Fill Up This Form Now",
+                text2: "Please choose one"
             }
         },
         contactPage: {

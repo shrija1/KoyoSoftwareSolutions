@@ -156,7 +156,10 @@ function App() {
             </Route> */}
             <Route path='/join'>
               <Navbar active=""/>
-              <HeaderForAll title='Join Team'/>
+              <HeaderForAll 
+                title={WebText.joinPage.header.title}
+                description={WebText.joinPage.header.description}
+              />
               <Join />
               <Footer />
             </Route>

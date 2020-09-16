@@ -10,12 +10,12 @@ const Join = () => {
         <section>
             <div className="container" data-aos="fade-up">
                 <div className="section-title">
-                    <h2>{WebText.home.team.title}</h2>
-                    <p>{WebText.home.team.description}</p>
+                    <h2>{WebText.joinPage.home.title}</h2>
+                    <p>{WebText.joinPage.home.description}</p>
                 </div>
 
                 <div style={{textAlign: 'center', margin: '50px 0px'}}>
-                    <h1 style={{margin: '50px 0px'}}>{isJob || isIntern ? 'Please Fill Up This Form Now' : 'Please choose one'}</h1>
+                    <h1 style={{margin: '50px 0px'}}>{isJob || isIntern ? WebText.joinPage.form.text1 : WebText.joinPage.form.text2}</h1>
                     {
                         !isJob && !isIntern &&
                         <div>
@@ -28,7 +28,7 @@ const Join = () => {
                 {
                     isJob && 
                     <iframe 
-                        title="Intern"
+                        title="Job"
                         src="https://docs.google.com/forms/d/e/1FAIpQLSerYW2y5ddzv39sdhnAFF1GEZfjeKh_kIEGkIgfZrGtWjPHOg/viewform?embedded=true" 
                         width="100%" 
                         height="900px" 
