@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Navbar.css'
 import logo from '../../img/logo/softsiteLogo3.png'
-import { Button, Modal } from 'react-bootstrap'
+import { Button, Modal, Nav } from 'react-bootstrap'
 import * as firebase from "firebase/app";
 import "firebase/auth";
 // import firebaseConfig from '../../firebase.config';
@@ -13,9 +13,10 @@ import linkedIn from '../../img/social/linkedin.png'
 import WebText from '../../TextData'
 // import { NavItem } from "react-bootstrap";
 
-import { Link } from  'react-router-dom';
+import { Link, useRouteMatch } from  'react-router-dom';
 
 const Navbar1 = (props) => {
+    let match = useRouteMatch();
     const [show, setShow] = useState(false)
     // user from local storage
     let ttsGoogleSignIn = localStorage.getItem('ttsGoogleSignIn')
@@ -145,30 +146,30 @@ const Navbar1 = (props) => {
                     </button>
                 </p>
 
-                <a href="/" className="logo"><img src={logo} alt="SoftSite" className="img-fluid"/></a>
+                <Link to="/" className="logo"><img src={logo} alt="SoftSite" className="img-fluid"/></Link>
 
                 <nav className="nav-menu d-none d-lg-block collapse navbar-collapse" id="navbarNav1">
                     <ul>
-                        <li id="home"><a href="/">{WebText.home.navbar.navItems.item1}</a></li>
+                        <li id="home"><Link to="/">{WebText.home.navbar.navItems.item1}</Link></li>
                         <li className="drop-down" id="services">
-                            <a href="/services">{WebText.home.navbar.navItems.item2.main}</a>
+                            <Link to="/services">{WebText.home.navbar.navItems.item2.main}</Link>
                             <ul>
-                                <li className="drop-down"><Link>{WebText.home.navbar.navItems.item2.item1.main}</Link>
+                                <li className="drop-down"><Link to="#">{WebText.home.navbar.navItems.item2.item1.main}</Link>
                                     <ul>
-                                        <li><a href="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</a></li>
-                                        <li><a href="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</a></li>
+                                        <li><Link to="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</Link></li>
+                                        <li><Link to="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</Link></li>
                                     </ul>
                                 </li>
-                                <li><a href="/webDevelopment">{WebText.home.navbar.navItems.item2.item2}</a></li>
-                                <li><a href="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</a></li>
-                                <li><a href="/businessPS">{WebText.home.navbar.navItems.item2.item4}</a></li>
-                                <li><a href="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</a></li>
-                                <li><a href="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</a></li>
+                                <li><Link to="/webDevelopment">{WebText.home.navbar.navItems.item2.item2}</Link></li>
+                                <li><Link to="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</Link></li>
+                                <li><Link to="/businessPS">{WebText.home.navbar.navItems.item2.item4}</Link></li>
+                                <li><Link to="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</Link></li>
+                                <li><Link to="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</Link></li>
                             </ul>
                         </li>
-                        <li id="portfolio"><a href="/portfolio">{WebText.home.navbar.navItems.item3}</a></li>
-                        <li id="about"><a href="/about">{WebText.home.navbar.navItems.item4}</a></li>
-                        <li id="contact"><a href="/contact">{WebText.home.navbar.navItems.item5}</a></li>
+                        <li id="portfolio"><Link to="/portfolio">{WebText.home.navbar.navItems.item3}</Link></li>
+                        <li id="about"><Link to="/about">{WebText.home.navbar.navItems.item4}</Link></li>
+                        <li id="contact"><Link to="/contact">{WebText.home.navbar.navItems.item5}</Link></li>
                     </ul>
                 </nav>
 
@@ -179,42 +180,45 @@ const Navbar1 = (props) => {
                     <br/>
                     <ul className="navbar-nav nav-menu" style={{textAlign: 'left'}}>
                         <li id="home" className="nav-item">
-                            <a className="nav-link secondNav" href="/">{WebText.home.navbar.navItems.item1}</a>
+                            <Link className="nav-link secondNav" to="/">{WebText.home.navbar.navItems.item1}</Link>
                         </li>
                         <li className="drop-down nav-item dropdown" id="secondNavServices">
-                            <a className="nav-link dropdown-toggle" href="/services" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <Link className="nav-link dropdown-toggle" to="/services" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 {WebText.home.navbar.navItems.item2.main}
-                            </a>
+                            </Link>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style={{background: '#333333'}}>
-                                <a className="dropdown-item dropdown" href="/#" >
-                                    <a className="nav-link dropdown-toggle" href="#/" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <Link className="dropdown-item dropdown" to="/#" >
+                                    <Nav.Link as={Link} to="#" className="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     {WebText.home.navbar.navItems.item2.item1.main}
-                                    </a>
+                                    </Nav.Link>
+                                    {/* <Link className="nav-link dropdown-toggle" to="/#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    {WebText.home.navbar.navItems.item2.item1.main}
+                                    </Link> */}
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                                        <a className="dropdown-item" href="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</a>
-                                        <a className="dropdown-item" href="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</a>
+                                        <Link className="dropdown-item" to="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</Link>
+                                        <Link className="dropdown-item" to="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</Link>
                                     </div>
-                                </a>
-                                <a className="dropdown-item" href="/webDevelopment">{WebText.home.navbar.navItems.item2.item2}</a>
-                                <a className="dropdown-item" href="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</a>
-                                <a className="dropdown-item" href="/businessPS">{WebText.home.navbar.navItems.item2.item4}</a>
-                                <a className="dropdown-item" href="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</a>
-                                <a className="dropdown-item" href="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</a>
+                                </Link>
+                                <Link className="dropdown-item" to="/webDevelopment">{WebText.home.navbar.navItems.item2.item2}</Link>
+                                <Link className="dropdown-item" to="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</Link>
+                                <Link className="dropdown-item" to="/businessPS">{WebText.home.navbar.navItems.item2.item4}</Link>
+                                <Link className="dropdown-item" to="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</Link>
+                                <Link className="dropdown-item" to="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</Link>
                             </div>
                         </li>
-                        <li id="portfolio"><a href="/portfolio">{WebText.home.navbar.navItems.item3}</a></li>
-                        <li id="about" className="nav-item"><a className="nav-link" href="/about">{WebText.home.navbar.navItems.item4}</a></li>
-                        <li id="contact" className="nav-item"><a className="nav-link" href="/contact">{WebText.home.navbar.navItems.item5}</a></li>
+                        <li id="portfolio"><Link to="/portfolio">{WebText.home.navbar.navItems.item3}</Link></li>
+                        <li id="about" className="nav-item"><Link className="nav-link" to="/about">{WebText.home.navbar.navItems.item4}</Link></li>
+                        <li id="contact" className="nav-item"><Link className="nav-link" to="/contact">{WebText.home.navbar.navItems.item5}</Link></li>
                     </ul>
                 </div>
 
                 <p>
                     {
                         user.googleSignIn ? <div>
-                        <a href='/#' className="get-started-btn scrollto" onClick={handleModel} style={{border: 'none', display: 'inline'}}>{WebText.home.navbar.greeting} {user.name}</a>
-                        <a href='/#' className="get-started-btn scrollto" onClick={handleSignOutGoogle} style={{display: 'inline', marginLeft: '2px', padding: '5px 12px 8px 12px'}}>{WebText.home.navbar.btn.logout}</a>
+                        <Link to='/#' className="get-started-btn scrollto" onClick={handleModel} style={{border: 'none', display: 'inline'}}>{WebText.home.navbar.greeting} {user.name}</Link>
+                        <Link to='/#' className="get-started-btn scrollto" onClick={handleSignOutGoogle} style={{display: 'inline', marginLeft: '2px', padding: '5px 12px 8px 12px'}}>{WebText.home.navbar.btn.logout}</Link>
                         </div>
-                        : <a href='/#' className="get-started-btn scrollto" onClick={handleModel} >{WebText.home.navbar.btn.signIn}</a>
+                        : <Link to='/#' className="get-started-btn scrollto" onClick={handleModel} >{WebText.home.navbar.btn.signIn}</Link>
                     }
                 </p>
 

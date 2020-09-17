@@ -1,10 +1,14 @@
 import React from 'react';
+import WebText from '../../../TextData';
 
 const MachineLearning = () => {
     return (
-        <div>
-            <h1>MachineLearning page</h1>
-        </div>
+        <section className="container" data-aos="fade-up">
+            <div className="section-title" style={{margin: '50px 0px'}}>
+                <h2>{WebText.machineLearningPage.title}</h2>
+                <p>{WebText.machineLearningPage.description}</p>
+            </div>
+        </section>
     );
 }
 

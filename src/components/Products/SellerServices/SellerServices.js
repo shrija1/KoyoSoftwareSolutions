@@ -1,10 +1,14 @@
 import React from 'react';
+import WebText from '../../../TextData';
 
 const SellerServices = () => {
     return (
-        <div>
-            <h1>SellerServices page</h1>
-        </div>
+        <section className="container" data-aos="fade-up">
+            <div className="section-title" style={{margin: '50px 0px'}}>
+                <h2>{WebText.sellerServicesPage.title}</h2>
+                <p>{WebText.sellerServicesPage.description}</p>
+            </div>
+        </section>
     );
 }
 

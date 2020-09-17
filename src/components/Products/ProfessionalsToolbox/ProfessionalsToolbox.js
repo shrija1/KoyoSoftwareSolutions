@@ -1,10 +1,14 @@
 import React from 'react';
+import WebText from '../../../TextData';
 
 const ProfessionalsToolbox = () => {
     return (
-        <div>
-            <h1>ProfessionalsToolbox page</h1>
-        </div>
+        <section className="container" data-aos="fade-up">
+            <div className="section-title" style={{margin: '50px 0px'}}>
+                <h2>{WebText.professionalsToolboxPage.title}</h2>
+                <p>{WebText.professionalsToolboxPage.description}</p>
+            </div>
+        </section>
     );
 }
 

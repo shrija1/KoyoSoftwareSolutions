@@ -39,7 +39,7 @@ function App() {
   // }, [])
 
   return (
-    <div>
+    <>
       <Sidebar/>
       <div className="mainContent">
         <Router>
@@ -201,7 +201,7 @@ function App() {
           </Switch>
         </Router>
       </div>
-    </div>
+    </>
   );
 }
 

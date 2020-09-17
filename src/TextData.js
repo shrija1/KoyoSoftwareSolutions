@@ -225,6 +225,30 @@ if(WebsiteText===null){
                 ]
             }
         },
+        sellerServicesPage: {
+            title: "Services",
+            description: "Seller Services Page",
+        },
+        webDevelopmentPage: {
+            title: "Services",
+            description: "Web Development Page",
+        },
+        eMarketingPage: {
+            title: "Services",
+            description: "E-Marketing Page",
+        },
+        businessProductivityServicesPage: {
+            title: "Services",
+            description: "Business Productivity Services Page",
+        },
+        machineLearningPage: {
+            title: "Services",
+            description: "Machine Learning Page",
+        },
+        professionalsToolboxPage: {
+            title: "Services",
+            description: "Professionals Toolbox Page",
+        },
         portfolio: {
             header: {
                 title: "Portfolio Page",
