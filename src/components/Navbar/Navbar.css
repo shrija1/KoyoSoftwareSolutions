@@ -163,8 +163,13 @@
 
 @media (max-width: 768px) {
     .get-started-btn {
-        margin: 0 48px 0 0;
         padding: 7px 20px 8px 20px;
+    }
+}
+
+@media (max-width: 376px) {
+    .get-started-btn {
+        padding: 6px 17px 7px 17px;
     }
 }
 
@@ -293,6 +298,13 @@
     background: transparent;
 }
 
+.toggleIcon {
+    width: 25px;
+    height: 3px;
+    background-color: #ffc581;
+    margin: 4px 0;
+}
+
 @media only screen and (min-width: 991px) {
     .nav-menu .drop-down > a:after {
         content: "\ea99";
@@ -302,11 +314,14 @@
 }
 
 @media only screen and (max-width: 991px) {
-    #navbarNav, #header {
-        background: black;
+    #navbarNav {
+        background: transparent;
+    }
+    #header {
+        background: rgba(0, 0, 0, 0.6);
     }
     #header.header-scrolled, #header.header-inner-pages {
-        background: black;
+        background: rgba(0, 0, 0, 0.6);
     }
     .nav-menu .drop-down > a:after {
         /* content: " "; */
