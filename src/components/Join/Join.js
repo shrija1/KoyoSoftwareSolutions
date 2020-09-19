@@ -57,7 +57,7 @@ const Join = () => {
                     title="Apply Form"
                     src="https://docs.google.com/forms/d/e/1FAIpQLSe8TFjcPYNOGnndIkAMm1Jr-UWJbnR5xyH8GUFkzx_zglNIRw/viewform?embedded=true" 
                     width="100%" 
-                    height="900px" 
+                    height="1000px" 
                     frameborder="0" 
                     marginheight="0" 
                     marginwidth="0"

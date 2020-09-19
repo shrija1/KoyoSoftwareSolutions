@@ -17,6 +17,10 @@ import { Link } from  'react-router-dom';
 
 const Navbar1 = (props) => {
     const [show, setShow] = useState(false)
+
+
+    
+
     // user from local storage
     let ttsGoogleSignIn = localStorage.getItem('ttsGoogleSignIn')
     const [checked, setChecked] = useState(true)
@@ -103,7 +107,7 @@ const Navbar1 = (props) => {
         setShow(!show)
     }
 
-    const [clickedNav, setClickedNav] = useState(false)
+    // const [isHideNav, setIsHideNav] = useState(true)
     const nav2Active = () => {
         // if (clickedNav) {
         //     setClickedNav(false)
@@ -111,8 +115,12 @@ const Navbar1 = (props) => {
         //     setClickedNav(true)
         // }
 
-        clickedNav ? setClickedNav(false) : setClickedNav(true)
+        document.getElementById('navbarNav').style.display = 'block';
+        // setIsHideNav(false)
+
     }
+
+    const nav2Deactive = () => document.getElementById('navbarNav').style.display = 'none';
 
     // useState(() => {
     //     if (clickedNav === true) {
@@ -121,6 +129,27 @@ const Navbar1 = (props) => {
     //         document.getElementById("header").className="navDeactive"
     //     }
     // }, [clickedNav])
+
+
+    const [offset, setOffset] = useState(0);
+    useEffect(() => {
+        window.onscroll = () => {
+          setOffset(window.pageYOffset)
+        }
+    }, []);
+
+    // if (offset>20) document.getElementById('navbarNav').style.height = '20px';
+
+    
+
+    window.addEventListener('scroll', () => {
+        document.getElementById('navbarNav').style.display = 'none';
+    }, true);
+
+    //     // setIsHideNav(false)
+    // } else {
+    //     document.getElementById('navbarNav').style.display = 'block';
+    // }
 
 
     return (
@@ -191,7 +220,7 @@ const Navbar1 = (props) => {
             </div>
 
             {/* mobile nav */}
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div className="collapse navbar-collapse" id="navbarNav" >
                 <ul className="navbar-nav nav-menu" style={{textAlign: 'left', marginLeft: '15%'}}>
                     <li id="home" className="nav-item">
                         <button
@@ -199,6 +228,7 @@ const Navbar1 = (props) => {
                             data-toggle="collapse" 
                             data-target="#navbarNav" 
                             aria-controls="navbarNav" 
+                            onClick={nav2Deactive}
                         >
                             <Link className="nav-link secondNav" to="/">{WebText.home.navbar.navItems.item1}</Link>
                         </button>
@@ -223,6 +253,7 @@ const Navbar1 = (props) => {
                                 data-target="#navbarNav" 
                                 aria-controls="navbarNav" 
                                 style={{textAlign: 'left'}}
+                                onClick={nav2Deactive}
                             >
                                 <Link className="dropdown-item" to="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</Link>
                                 <Link className="dropdown-item" to="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</Link>
@@ -240,6 +271,7 @@ const Navbar1 = (props) => {
                             data-toggle="collapse" 
                             data-target="#navbarNav" 
                             aria-controls="navbarNav" 
+                            onClick={nav2Deactive}
                         >
                             <Link to="/portfolio">{WebText.home.navbar.navItems.item3}</Link>
                         </button>
@@ -250,6 +282,7 @@ const Navbar1 = (props) => {
                             data-toggle="collapse" 
                             data-target="#navbarNav" 
                             aria-controls="navbarNav" 
+                            onClick={nav2Deactive}
                         >
                             <Link className="nav-link" to="/about">{WebText.home.navbar.navItems.item4}</Link>
                         </button>
@@ -259,7 +292,7 @@ const Navbar1 = (props) => {
                             className="navbar-toggler"
                             data-toggle="collapse" 
                             data-target="#navbarNav" 
-                            aria-controls="navbarNav" 
+                            onClick={nav2Deactive}
                         >
                             <Link className="nav-link" to="/contact">{WebText.home.navbar.navItems.item5}</Link>
                         </button>

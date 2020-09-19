@@ -1,7 +1,7 @@
 #header {
     transition: all 0.5s;
     z-index: 997;
-    padding: 15px 0;
+    padding: 10px 0;
 }
   
 #header.header-scrolled, #header.header-inner-pages {
@@ -28,6 +28,12 @@
 
 #header .logo img {
     max-height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        padding: 0px 0;
+    }    
 }
 
 /*--------------------------------------------------------------
@@ -322,6 +328,10 @@
     }
     #header.header-scrolled, #header.header-inner-pages {
         background: rgba(0, 0, 0, 0.6);
+    }
+    #navbarNav {
+        overflow: scroll;
+        overflow-x: hidden;
     }
     .nav-menu .drop-down > a:after {
         /* content: " "; */
