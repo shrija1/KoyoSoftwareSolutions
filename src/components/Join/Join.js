@@ -14,7 +14,7 @@ const Join = () => {
                     <p>{WebText.joinPage.home.description}</p>
                 </div>
 
-                <div style={{textAlign: 'center', margin: '50px 0px'}}>
+                {/* <div style={{textAlign: 'center', margin: '50px 0px'}}>
                     <h1 style={{margin: '50px 0px'}}>{isJob || isIntern ? WebText.joinPage.form.text1 : WebText.joinPage.form.text2}</h1>
                     {
                         !isJob && !isIntern &&
@@ -23,9 +23,9 @@ const Join = () => {
                             <button className="internBtn" onClick={() => setIsIntern(true)}>Intern</button>
                         </div>
                     }
-                </div>
+                </div> */}
 
-                {
+                {/* {
                     isJob && 
                     <iframe 
                         title="Job"
@@ -36,9 +36,9 @@ const Join = () => {
                         marginheight="0" 
                         marginwidth="0"
                     >Loading…</iframe>
-                }
+                } */}
 
-                {
+                {/* {
                     isIntern && 
                     <iframe 
                         title="Intern"
@@ -49,7 +49,19 @@ const Join = () => {
                         marginheight="0" 
                         marginwidth="0"
                     >Loading…</iframe>
-                }
+                } */}
+
+                <br/>
+                <br/>
+                <iframe 
+                    title="Apply Form"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSe8TFjcPYNOGnndIkAMm1Jr-UWJbnR5xyH8GUFkzx_zglNIRw/viewform?embedded=true" 
+                    width="100%" 
+                    height="900px" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                >Loading…</iframe>
                 
             </div>
         </section>

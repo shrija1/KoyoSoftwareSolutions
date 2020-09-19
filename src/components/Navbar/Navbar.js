@@ -103,7 +103,7 @@ const Navbar1 = (props) => {
         setShow(!show)
     }
 
-    // const [clickedNav, setClickedNav] = useState(false)
+    const [clickedNav, setClickedNav] = useState(false)
     const nav2Active = () => {
         // if (clickedNav) {
         //     setClickedNav(false)
@@ -111,7 +111,7 @@ const Navbar1 = (props) => {
         //     setClickedNav(true)
         // }
 
-        // clickedNav ? setClickedNav(false) : setClickedNav(true)
+        clickedNav ? setClickedNav(false) : setClickedNav(true)
     }
 
     // useState(() => {
@@ -192,37 +192,78 @@ const Navbar1 = (props) => {
 
             {/* mobile nav */}
             <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav nav-menu" style={{textAlign: 'center'}}>
+                <ul className="navbar-nav nav-menu" style={{textAlign: 'left', marginLeft: '15%'}}>
                     <li id="home" className="nav-item">
-                        <Link className="nav-link secondNav" to="/">{WebText.home.navbar.navItems.item1}</Link>
+                        <button
+                            className="navbar-toggler"
+                            data-toggle="collapse" 
+                            data-target="#navbarNav" 
+                            aria-controls="navbarNav" 
+                        >
+                            <Link className="nav-link secondNav" to="/">{WebText.home.navbar.navItems.item1}</Link>
+                        </button>
                     </li>
                     <li className="drop-down nav-item dropdown" id="secondNavServices">
                         <Link className="nav-link dropdown-toggle" to="/services" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {WebText.home.navbar.navItems.item2.main}
+                            <span style={{paddingLeft: '13px'}}>{WebText.home.navbar.navItems.item2.main}</span>
                         </Link>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style={{background: '#333333'}}>
-                            <Link className="dropdown-item dropdown" to="/#" >
+                            {/* <Link className="dropdown-item dropdown" to="/#" >
                                 <Nav.Link as={Link} to="#" className="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                {WebText.home.navbar.navItems.item2.item1.main}
+                                    {WebText.home.navbar.navItems.item2.item1.main}
                                 </Nav.Link>
-                                {/* <Link className="nav-link dropdown-toggle" to="/#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                {WebText.home.navbar.navItems.item2.item1.main}
-                                </Link> */}
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
                                     <Link className="dropdown-item" to="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</Link>
                                     <Link className="dropdown-item" to="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</Link>
                                 </div>
-                            </Link>
-                            <Link className="dropdown-item" to="/webDevelopment">{WebText.home.navbar.navItems.item2.item2}</Link>
-                            <Link className="dropdown-item" to="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</Link>
-                            <Link className="dropdown-item" to="/businessPS">{WebText.home.navbar.navItems.item2.item4}</Link>
-                            <Link className="dropdown-item" to="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</Link>
-                            <Link className="dropdown-item" to="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</Link>
+                            </Link> */}
+                            <button
+                                className="navbar-toggler"
+                                data-toggle="collapse" 
+                                data-target="#navbarNav" 
+                                aria-controls="navbarNav" 
+                                style={{textAlign: 'left'}}
+                            >
+                                <Link className="dropdown-item" to="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</Link>
+                                <Link className="dropdown-item" to="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</Link>
+                                <Link className="dropdown-item" to="/webDevelopment">{WebText.home.navbar.navItems.item2.item2}</Link>
+                                <Link className="dropdown-item" to="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</Link>
+                                <Link className="dropdown-item" to="/businessPS">{WebText.home.navbar.navItems.item2.item4}</Link>
+                                <Link className="dropdown-item" to="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</Link>
+                                <Link className="dropdown-item" to="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</Link>
+                            </button>
                         </div>
                     </li>
-                    <li id="portfolio"><Link to="/portfolio">{WebText.home.navbar.navItems.item3}</Link></li>
-                    <li id="about" className="nav-item"><Link className="nav-link" to="/about">{WebText.home.navbar.navItems.item4}</Link></li>
-                    <li id="contact" className="nav-item"><Link className="nav-link" to="/contact">{WebText.home.navbar.navItems.item5}</Link></li>
+                    <li id="portfolio">
+                        <button
+                            className="navbar-toggler"
+                            data-toggle="collapse" 
+                            data-target="#navbarNav" 
+                            aria-controls="navbarNav" 
+                        >
+                            <Link to="/portfolio">{WebText.home.navbar.navItems.item3}</Link>
+                        </button>
+                    </li>
+                    <li id="about" className="nav-item">
+                        <button
+                            className="navbar-toggler"
+                            data-toggle="collapse" 
+                            data-target="#navbarNav" 
+                            aria-controls="navbarNav" 
+                        >
+                            <Link className="nav-link" to="/about">{WebText.home.navbar.navItems.item4}</Link>
+                        </button>
+                    </li>
+                    <li id="contact" className="nav-item">
+                        <button
+                            className="navbar-toggler"
+                            data-toggle="collapse" 
+                            data-target="#navbarNav" 
+                            aria-controls="navbarNav" 
+                        >
+                            <Link className="nav-link" to="/contact">{WebText.home.navbar.navItems.item5}</Link>
+                        </button>
+                    </li>
                 </ul>
             </div>
                 
