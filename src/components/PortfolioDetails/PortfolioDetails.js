@@ -17,7 +17,7 @@ function PortfolioDetails() {
           <div class="container">
     
             <div class="d-flex justify-content-between align-items-center">
-              <h2>Portfolio Details</h2>
+              <h2>Portfolio Details are here</h2>
               <ol>
                 <li><a href="/" style={ { color: '#ffd584' }}>Home</a></li>
                 <li>Portfolio Details</li>

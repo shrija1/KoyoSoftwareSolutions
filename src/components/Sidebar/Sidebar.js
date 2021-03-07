@@ -28,9 +28,9 @@ const Sidebar = () => {
     return (
         <div className="sidenav sidebar">
             <button className="socialIcons">
-                <a href="/#">
+                <a href="https://wa.me/9867910690" target="_blank">
                     {/* <FontAwesomeIcon icon={faCoffee} /> */}
-                    <i className="fa fa-facebook" aria-hidden="true"></i>
+                    <i className="fa fa-whatsapp" aria-hidden="true"></i>
                 </a>
             </button>
             <br/>
@@ -53,29 +53,12 @@ const Sidebar = () => {
             </button>
             <br/> */}
             <button className="socialIcons">
-                <a href="/#">
-                    <i className="fa fa-instagram" aria-hidden="true"></i>
+                <a href="mailto:ttsjk.kjstt@gmail.com" target="_blank">
+                    <i className="fa fa-envelope" aria-hidden="true"></i>
                 </a>
             </button>
             <br/>
-            <button className="socialIcons chat-button">
-                <a href="/#">
-                    <i className="fa fa-comments" aria-hidden="true"></i>
-                </a>
-            </button>
-            {/* <br/>
-            <button className="socialIcons">
-                <a href="#">
-                    <i className="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-            </button> */}
-            <hr style={{width: '50px'}}/>
-            <button className="socialIcons plusIcon" onClick={ScrollTo}>
-                <a href="/#">
-                    {/* <FontAwesomeIcon icon={faPlus} /> */}
-                    <i className="ri-arrow-down-line" aria-hidden="true"></i>
-                </a>
-            </button>
+            <br/><br/>
             <br/>
             <p id="circularProgressBar">
             <CircularProgressbar value={scrollPercent} text={`${scrollPercent}%`} 

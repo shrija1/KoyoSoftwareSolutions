@@ -2,7 +2,7 @@ import React from 'react'
 import './About.css'
 import about from '../../../img/about.jpg'
 import WebText from '../../../TextData';
-
+import {Jumbotron,Button} from 'react-bootstrap';
 function About() {
     return (
         <section id="about" className="about">
@@ -16,6 +16,7 @@ function About() {
                     <p className="font-italic">
                     {WebText.home.about.introductionText}
                     </p>
+                    
                     <ul className="ulContent">
                     <li><i className="ri-check-double-line"></i> {WebText.home.about.introductionCheckList1}</li>
                     <li><i className="ri-check-double-line"></i> {WebText.home.about.introductionCheckList2}</li>

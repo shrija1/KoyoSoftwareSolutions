@@ -1,8 +1,7 @@
 // team
-import team1 from './img/team/team-1.jpg'
-import team2 from './img/team/team-2.jpg'
-import team3 from './img/team/team-3.jpg'
-import team4 from './img/team/team-4.jpg'
+import team1 from './components/Home/Images/ft1.jpg'
+import team2 from './components/Home/Images/ft2.jpg'
+import team3 from './components/Home/Images/ft3.jpg'
 // portfolio
 import portfolio1 from './img/portfolio/portfolio-1.jpg'
 import portfolio2 from './img/portfolio/portfolio-2.jpg'
@@ -36,9 +35,8 @@ if(WebsiteText===null){
                         item5: "Machine Learning",
                         item6: "Professionals Toolbox"
                     },
-                    item3: "Portfolio",
-                    item4: "About",
-                    item5: "Contact",
+                    item3: "About",
+                    item4: "Contact",
                 },
                 greeting: "Hi, ",
                 btn: {
@@ -51,68 +49,63 @@ if(WebsiteText===null){
                 }
             },
             header: {
-                heading:"This is the home heading",
-                headerText:"We are team of talanted digital marketers",
+                heading:"Tawi Tech Solutions",
+                headerText:"Problem Solvers, Bespoke Software Solutions Engineers",
                 headerCardsData: [
                     {
                         classBox: '',
                         icon: 'ri-store-line',
-                        name: 'Lorem Ipsum'
+                        name: 'Web Design'
                     },
                     {
                         classBox: '',
                         icon: 'ri-bar-chart-box-line',
-                        name: 'Dolor Sitema'
-                    },
-                    {
-                        classBox: 'mt-4 mt-md-0',
-                        icon: 'ri-calendar-todo-line',
-                        name: 'Sedare Perspiciatis'
+                        name: 'AI & Robotics'
                     },
                     {
                         classBox: 'mt-4 mt-xl-0',
                         icon: 'ri-paint-brush-line',
-                        name: 'Magni Dolores'
+                        name: 'Learn and Code'
                     },
                     {
                         classBox: 'mt-4 mt-xl-0',
                         icon: 'ri-database-2-line',
-                        name: 'Nemos Enimade'
-                    }
+                        name: 'Branding Solutions'
+                    } 
                 ]
             },
             about: {
-                introductionHeading:"Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.",
-                introductionText:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua.",
-                introductionCheckList1:"Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                introductionCheckList2:"Duis aute irure dolor in reprehenderit in voluptate velit.",
-                introductionCheckList3:"Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.",
-                introductionEndingText:"Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident",
+                introductionHeading:"About Us",
+                introductionText:"We make secure, efficient, SEO-friendly websites for information ans e-Commerce.",
+                introductionCheckList1:"Our solutions include Website design, OCR for Arabic/English invoices and ID cards, Vehicle number plate recognition, Chatbots for customer service, Project-based coding classes, Graphics design, and one-stop solution for tendering on GeM.",
+                introductionCheckList2:"We cater to a broad range of industries - Government, Hospitality, NGO, Pharmacy, Professionals, Restaurants, Speciality Food Retailers",
+                introductionCheckList3:"Free consultation and etimate preparation.",
+                introductionEndingText:"Call or write to check how we can help you.",
             },
             featuresListData: [
                 {
                     classDiv: 'mt-lg-0',
                     icon: 'bx-receipt',
-                    title: 'Est labore ad',
-                    description: 'Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip'
+                    title: 'Web Design Services',
+                    description: 'We make secure, efficient, SEO-friendly websites for static display and eCommerce. We can also convert your WordPress website into a cost-effective Anroid app.'
                 },
                 {
                     classDiv: '',
                     icon: 'bx-cube-alt',
-                    title: 'Harum esse qui',
-                    description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt'
+                    title: 'AI & Robotics',
+                    description: 'We deliver bespoke solutions for chatbots, OCR for English and Arabic ID cards, OCR for accountants, Automated vehicle number plate reading, AI-driven user-adapted landing pages, pop-ups and loading time optimization.'
                 },
                 {
                     classDiv: '',
                     icon: 'bx-images',
-                    title: 'Aut occaecati',
-                    description: 'Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere'
+                    title: 'Learn and Code',
+                    description: 'We deliver short-duration courses of 1-6 week duration. we focus on two segments: 11-14 year olds with no prior experience and, professionals or university students who are keen on acquiring hands-on experience using real-life data in AI, machine learning and image processing. We focus on learning-by-doing with 80% project work and 20% theory.'
                 },
                 {
                     classDiv: '',
                     icon: 'bx-shield',
-                    title: 'Beatae veritatis',
-                    description: 'Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta'
+                    title: 'Branding Solutions',
+                    description: 'We help you build your corporate identity by designing cover pages and display pictures for your social media platforms, visiting cards, logos, stickers or mock-ups for product packaging that resonate with your corporate strategy, have a high recall value and are unique.'
                 },
             ],
             servicesListData: [
@@ -160,9 +153,9 @@ if(WebsiteText===null){
                 }
             ],
             CallToActionData: {
-                heading: "Call To Action",
-                description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                btnText: "Call To Action"
+                heading: "Get a free Quote",
+                description: "You have an IT solution need. Send us a message, call us or simply drop by for a time and price estimate to support your decision",
+                btnText: "Contact Us"
             },
             counts: {
                 title: "Voluptatem dignissimos provident quasi",
@@ -201,27 +194,24 @@ if(WebsiteText===null){
                     {
                         data_aos_delay: "100",
                         img: team1,
-                        name: "Walter White",
-                        title: "Chief Executive Officer"
+                        name: "Amit Agarwal, PhD",
+                        title: "Chief Executive Officer",
+                        description:'He holds a PhD in Electrical Engineering from Nanyang Tech University and an MS in Financial Math from the London School of Economics. He is responsible for delivering the human, technology and execution infrastructure clients expect of TTS. He is an amateur food chemist.'
                     },
                     {
                         data_aos_delay: "200",
                         img: team2,
-                        name: "Sarah Jhonson",
-                        title: "Product Manager"
+                        name: "Bhavyam Goyal",
+                        title: "Solution Architect",
+                        description:'He holds a Masters in Computer Science. He is a full stack developer. He mentors teams for delivery on client projects in machile learning, web and mobile technologies.'
                     },
                     {
                         data_aos_delay: "300",
                         img: team3,
-                        name: "William Anderson",
-                        title: "CTO"
+                        name: "Maryam Esmaiel",
+                        title: "Technology Manager",
+                        description:'She holds a Bachelors in Artificial Intelligence from the University of Damascus. At TTS she leads product development for Learn and Code, manages projects in Optical Character Recognition for Latin and Arabic scripts and leads idea generation for Graphics Design projects. She likes cats, mattah and Artificial Intelligence.'
                     },
-                    {
-                        data_aos_delay: "400",
-                        img: team4,
-                        name: "Amanda Jepson",
-                        title: "Accountant"
-                    }
                 ]
             }
         },
@@ -393,27 +383,21 @@ if(WebsiteText===null){
                     {
                         data_aos_delay: "100",
                         img: team1,
-                        name: "Walter White",
+                        name: "Amit Agarwal, PhD",
                         title: "Chief Executive Officer"
                     },
                     {
                         data_aos_delay: "200",
                         img: team2,
-                        name: "Sarah Jhonson",
-                        title: "Product Manager"
+                        name: "Bhavyam Goyal",
+                        title: "Solution Architect"
                     },
                     {
                         data_aos_delay: "300",
                         img: team3,
-                        name: "William Anderson",
-                        title: "CTO"
+                        name: "Maryam Esmaiel",
+                        title: "Technology Manager"
                     },
-                    {
-                        data_aos_delay: "400",
-                        img: team4,
-                        name: "Amanda Jepson",
-                        title: "Accountant"
-                    }
                 ]
             },
             joinBtn: {

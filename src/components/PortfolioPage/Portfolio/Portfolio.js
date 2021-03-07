@@ -9,7 +9,7 @@ const Portfolio = () => {
         <div className="container" data-aos="fade-up">
 
             <div className="section-title">
-            <h2>{WebText.portfolio.title}</h2>
+            <h2> Checking Text hbdhb{WebText.portfolio.title}</h2>
             <p>{WebText.portfolio.description}</p>
             </div>
 

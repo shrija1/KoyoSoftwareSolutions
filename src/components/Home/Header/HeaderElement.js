@@ -4,11 +4,12 @@ import './Header.css'
 const HeaderElement = (props) => {
     const {classBox, icon, name} = props.data;
     const classAdd = "col-xl-2 col-md-4 col-6 " + classBox
+    const link=props.link;
     return (
         <div className={classAdd}>
             <div className="icon-box">
                 <i className={icon}></i>
-                <h3><a href="/#">{name}</a></h3>
+                <h3><a href={'#'+link}>{name}</a></h3>
             </div>
         </div>
     );

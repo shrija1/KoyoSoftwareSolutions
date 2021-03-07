@@ -2,7 +2,7 @@ import React from 'react';
 import './Team.css';
 
 const Team = (props) => {
-    const {data_aos_delay, img, name, title} = props.member
+    const {data_aos_delay, img, name, title,description} = props.member
 
     return (
         <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
@@ -18,7 +18,8 @@ const Team = (props) => {
             </div>
             <div className="member-info">
                 <h4>{name}</h4>
-                <span>{title}</span>
+                <span><b>{title}</b></span>
+                <span>{description}</span>
             </div>
             </div>
         </div>

@@ -13,15 +13,15 @@ function Header() {
             <div className="container" data-aos="fade-up">
 
             <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-                <div className="col-xl-6 col-lg-8">
-                <h1>{WebText.home.header.heading}<span>.</span></h1>
+                <div className="col-xl-8 col-lg-8">
+                <h1>{WebText.home.header.heading}</h1>
                 <h2>{WebText.home.header.headerText}</h2>
                 </div>
             </div>
 
             <div className="row mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
                 {
-                    WebText.home.header.headerCardsData.map(element => <HeaderElement key={element.name} data={element}/>)
+                    WebText.home.header.headerCardsData.map((element,index) => <HeaderElement key={element.name} data={element} link={'f'+(index).toString()}/>)
                 }
             </div>
 
