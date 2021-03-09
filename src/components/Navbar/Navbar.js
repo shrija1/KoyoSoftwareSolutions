@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './Navbar.css'
-import logo from '../../img/logo/softsiteLogo3.png'
+import logo from '../../img/logo/tawn_tech.png'
 import { Button, Modal, Nav } from 'react-bootstrap'
 import * as firebase from "firebase/app";
 import "firebase/auth";

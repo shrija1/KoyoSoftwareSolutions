@@ -11,7 +11,7 @@ import './Footer.css'
 // import paymentGateway from '../../img/payment/paymentGateway.png'
 // import logo from '../../img/logo/softsiteLogo.svg'
 import { animateScroll as scroll } from 'react-scroll';
-import logo1 from '../../img/logo/softsiteLogo3.png'
+import logo1 from '../../img/logo/tawn_tech.png'
 import WebText from '../../TextData';
 
 function Footer() {

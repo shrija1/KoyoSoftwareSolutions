@@ -60,7 +60,7 @@ if(WebsiteText===null){
                     {
                         classBox: '',
                         icon: 'ri-bar-chart-box-line',
-                        name: 'AI & Robotics'
+                        name: 'AI & Machine Learning'
                     },
                     {
                         classBox: 'mt-4 mt-xl-0',
@@ -520,32 +520,27 @@ if(WebsiteText===null){
             }
         },
         footer: {
-            address: "Abcdef 123 T. Abcdef Teafa Yadfe TT, 12345, India",
+            address: "Ward # 17, Radio Station Road, Kathua, J&K U.T., India 184101",
             whatsapp: {
                 name: "WhatsApp:",
-                number: "+91234567891"
+                number: "+91 98679 10690"
             },
             email: {
                 name: "Email:",
-                email: "info@tts.com"
+                email: "ttsjk.kjstt@gmail.com"
             },
             part1: {
                 title: "Useful Links",
-                item1: "Home",
-                item2: "About us",
-                item3: "Chat",
-                item4: "Terms of service",
-                item5: "Privacy policy",
-                item6: "FAQ"
+                item1: "Blog",
+                item2: "Jobs",
+                item3: "FAQ",
             },
             part2: {
                 title: "Our Services",
-                item1: "GeM",
-                item2: "Web Development",
-                item3: "E-Marketing",
-                item4: "Business Productivity Services",
-                item5: "Machine Learning",
-                item6: "Professionals Toolbox"
+                item1: "Web Design",
+                item2: "AI & Machine Learning",
+                item3: "Learn and Code",
+                item4: "Branding Solutions",
             },
             lastPart: {
                 copyright: "©",

@@ -10,8 +10,8 @@ const Team = (props) => {
             <div className="member-img">
                 <img src={img} className="img-fluid" alt=""/>
                 <div className="social">
-                <a href="/#"><i className="icofont-twitter"></i></a>
-                <a href="/#"><i className="icofont-facebook"></i></a>
+                {/* <a href="/#"><i className="icofont-twitter"></i></a> */}
+                {/* <a href="/#"><i className="icofont-facebook"></i></a> */}
                 <a href="/#"><i className="icofont-instagram"></i></a>
                 <a href="/#"><i className="icofont-linkedin"></i></a>
                 </div>
