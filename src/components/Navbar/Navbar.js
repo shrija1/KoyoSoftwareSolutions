@@ -187,17 +187,17 @@ const Navbar1 = (props) => {
                         <li className="drop-down" id="services">
                             <Link to="/services">{WebText.home.navbar.navItems.item2.main}</Link>
                             <ul>
-                                <li className="drop-down"><Link to="#">{WebText.home.navbar.navItems.item2.item1.main}</Link>
+                                {/* <li className="drop-down"><Link to="#">{WebText.home.navbar.navItems.item2.item1.main}</Link>
                                     <ul>
                                         <li><Link to="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</Link></li>
                                         <li><Link to="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</Link></li>
                                     </ul>
-                                </li>
+                                </li> */}
                                 <li><Link to="/webDevelopment">{WebText.home.navbar.navItems.item2.item2}</Link></li>
                                 <li><Link to="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</Link></li>
                                 <li><Link to="/businessPS">{WebText.home.navbar.navItems.item2.item4}</Link></li>
                                 <li><Link to="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</Link></li>
-                                <li><Link to="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</Link></li>
+                                
                             </ul>
                         </li>
                         <li id="portfolio"><Link to="/portfolio">{WebText.home.navbar.navItems.item3}</Link></li>
@@ -255,13 +255,13 @@ const Navbar1 = (props) => {
                                 style={{textAlign: 'left'}}
                                 onClick={nav2Deactive}
                             >
-                                <Link className="dropdown-item" to="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</Link>
-                                <Link className="dropdown-item" to="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</Link>
+                                {/* <Link className="dropdown-item" to="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</Link> */}
+                                {/* <Link className="dropdown-item" to="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</Link> */}
                                 <Link className="dropdown-item" to="/webDevelopment">{WebText.home.navbar.navItems.item2.item2}</Link>
                                 <Link className="dropdown-item" to="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</Link>
                                 <Link className="dropdown-item" to="/businessPS">{WebText.home.navbar.navItems.item2.item4}</Link>
                                 <Link className="dropdown-item" to="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</Link>
-                                <Link className="dropdown-item" to="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</Link>
+                                {/* <Link className="dropdown-item" to="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</Link> */}
                             </button>
                         </div>
                     </li>

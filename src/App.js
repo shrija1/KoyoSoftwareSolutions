@@ -83,7 +83,7 @@ function App() {
               <SellerServices/>
               <Footer />
             </Route>
-            <Route path='/webDevelopment'>
+            <Route path='/webDesign'>
               <Navbar active=""/>
               <HeaderForAll 
                 title={WebText.webDevelopment.header.title} 
@@ -92,7 +92,7 @@ function App() {
               <WebDevelopment/>
               <Footer />
             </Route>
-            <Route path='/e-marketing'>
+            <Route path='/aiAndml'>
               <Navbar active=""/>
               <HeaderForAll 
                 title={WebText.eMarketing.header.title} 
@@ -101,7 +101,7 @@ function App() {
               <EMarketing/>
               <Footer />
             </Route>
-            <Route path='/businessPS'>
+            <Route path='/learnAndCode'>
               <Navbar active=""/>
               <HeaderForAll 
                 title={WebText.businessPS.header.title} 
@@ -110,7 +110,7 @@ function App() {
               <BusinessProductivityServices/>
               <Footer />
             </Route>
-            <Route path='/machineLearning'>
+            <Route path='/brandingSolutions'>
               <Navbar active=""/>
               <HeaderForAll 
                 title={WebText.machineLearning.header.title} 

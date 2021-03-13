@@ -24,16 +24,15 @@ if(WebsiteText===null){
                     item1: "Home",
                     item2: {
                         main: "Services",
-                        item1: {
-                            main: "GeM",
-                            item1: "Buyer Services",
-                            item2: "Seller Services"
-                        },
-                        item2: "Web Development",
-                        item3: "E-Marketing",
-                        item4: "Business Productivity Services",
-                        item5: "Machine Learning",
-                        item6: "Professionals Toolbox"
+                        // item1: {
+                        //     main: "GeM",
+                        //     item1: "Buyer Services",
+                        //     item2: "Seller Services"
+                        // },
+                        item2: "Web Design",
+                        item3: "AI and ML",
+                        item4: "Learn and Code",
+                        item5: "Branding Solutions",
                     },
                     item3: "About",
                     item4: "Contact",
@@ -50,7 +49,7 @@ if(WebsiteText===null){
             },
             header: {
                 heading:"Tawi Tech Solutions",
-                headerText:"Problem Solvers, Bespoke Software Solutions Engineers",
+                headerText:"Problem Solvers. Bespoke Software Solutions Engineers",
                 headerCardsData: [
                     {
                         classBox: '',
@@ -60,7 +59,7 @@ if(WebsiteText===null){
                     {
                         classBox: '',
                         icon: 'ri-bar-chart-box-line',
-                        name: 'AI & Machine Learning'
+                        name: 'AI and ML'
                     },
                     {
                         classBox: 'mt-4 mt-xl-0',
@@ -87,25 +86,41 @@ if(WebsiteText===null){
                     classDiv: 'mt-lg-0',
                     icon: 'bx-receipt',
                     title: 'Web Design Services',
-                    description: 'We make secure, efficient, SEO-friendly websites for static display and eCommerce. We can also convert your WordPress website into a cost-effective Anroid app.'
+                    description: 'We make secure, efficient, SEO-friendly websites for static display and eCommerce. We can also convert your WordPress website into a cost-effective Anroid app.\
+                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel\
+                                 erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.\
+                                 In at libero sed nunc venenatis imperdiet sed ornare turpis',
+                    link: '/webDesign'
+
                 },
                 {
                     classDiv: '',
                     icon: 'bx-cube-alt',
-                    title: 'AI & Robotics',
-                    description: 'We deliver bespoke solutions for chatbots, OCR for English and Arabic ID cards, OCR for accountants, Automated vehicle number plate reading, AI-driven user-adapted landing pages, pop-ups and loading time optimization.'
+                    title: 'AI and Machine Learning',
+                    description: 'We deliver bespoke solutions for chatbots, OCR for English and Arabic ID cards, OCR for accountants, Automated vehicle number plate reading, AI-driven user-adapted landing pages, pop-ups and loading time optimization.\
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel\
+                                  erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.\
+                                   In at libero sed nunc venenatis imperdiet sed ornare turpis',
+                    link: '/aiAndml'
                 },
                 {
                     classDiv: '',
                     icon: 'bx-images',
                     title: 'Learn and Code',
-                    description: 'We deliver short-duration courses of 1-6 week duration. we focus on two segments: 11-14 year olds with no prior experience and, professionals or university students who are keen on acquiring hands-on experience using real-life data in AI, machine learning and image processing. We focus on learning-by-doing with 80% project work and 20% theory.'
+                    description: 'We deliver short-duration courses of 1-6 week duration. we focus on two segments: 11-14 year olds with no prior experience and, professionals or university students who are keen on acquiring hands-on experience using real-life data in AI, machine learning and image processing. We focus on learning-by-doing with 80% project work and 20% theory.\
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel\
+                                erisque enim ligula venenatis dolor. Maecenas nisl est, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet',
+                    link:'/learnAndCode'
                 },
                 {
                     classDiv: '',
                     icon: 'bx-shield',
                     title: 'Branding Solutions',
-                    description: 'We help you build your corporate identity by designing cover pages and display pictures for your social media platforms, visiting cards, logos, stickers or mock-ups for product packaging that resonate with your corporate strategy, have a high recall value and are unique.'
+                    description: 'We help you build your corporate identity by designing cover pages and display pictures for your social media platforms, visiting cards, logos, stickers or mock-ups for product packaging that resonate with your corporate strategy, have a high recall value and are unique.\
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel\
+                                erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum\
+                                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nun sed ullamcorper ipsum',
+                    link:'/brandingSolutions'
                 },
             ],
             servicesListData: [

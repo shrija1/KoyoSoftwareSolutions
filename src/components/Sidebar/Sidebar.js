@@ -10,7 +10,7 @@ const Sidebar = () => {
     const initialPercentage = ((document.documentElement.scrollHeight + document.body.clientHeight )/100).toFixed(0)
     const [scrollPercent, setScrollPercent] = useState(initialPercentage)
 
-    useEffect(() => {
+    useEffect(() => { 
         function onScroll() {
             
             const result = ((document.documentElement.scrollTop + document.body.scrollTop + document.documentElement.clientHeight) / (document.documentElement.scrollHeight ) * 100)
