@@ -1,7 +1,7 @@
 .sidenav {
     width: 80px;
     position: fixed;
-    z-index: 1;
+    z-index: 11;
     top: 90px;
     right: 1px;
     /* background: #fff; */
@@ -13,15 +13,26 @@
     width: 36px;
     height: 36px;
     /* padding: 5px 8px 5px 8px; */
+    color: #ffb03b;
+
     text-decoration: none;
     font-size: 20px;
-    color: #151515;
+  padding:0;
     display: block;
 }
 
-.sidenav a:hover {
-    color: #ffc451;
+.sidebar :hover {
+    background-color: #ffb03b;
 }
+.sidenav a:hover {
+    color:black;
+  
+}
+#circularprogressbar :hover{
+    
+    background-color: violet;
+}
+
 
 .mainContent {
     /* margin-right: 80px;  */
@@ -31,31 +42,20 @@
     /* padding: 0px 10px; */
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
-}
 
 .socialIcons {
     margin: 5px;
-    margin-left: 15px;
+    margin-left: 20px;
     padding: 3px;
-    border-radius: 4px;
-    border: none;
-    background-color: #ffc451;
+    background-color: transparent;
+    color:  #ffb03b;
+    border-radius: 6px;
+    border:2px solid  #ffb03b;
+    
+    z-index: 11;
+    
 }
 
-.socialIcons:hover {
-    background-color: #151515;
-}
-
-.plusIcon a {
-    /* padding: 5px 13px 5px 13px; */
-}
 
 .percentageIcon {
     height: 30px;
@@ -70,6 +70,124 @@
     /* border-left: 3px solid green; */
     /* background-color: rgba(0, 0, 0, 0); */
 }
+
+
+
+#circularProgressBar {
+
+    background-color: transparent;
+}
+
+
+#circularProgressBar :hover {
+
+    background-color: transparent;
+}
+
+.CircularProgressbar {
+    width: 95% !important;
+    vertical-align: middle;
+    padding-left: 20px;
+    background-color: transparent;
+}
+@media screen and (max-height: 700px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+       
+    }
+    .sidenav  {
+        
+        width: 50px;
+    }
+    .sidebar
+    {
+        width: 70px;
+    }
+    #circularProgressBar {
+       width: 100%;
+       padding-left:10px;
+       background-color: transparent;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .sidenav {
+        padding-top: 15px;
+        
+    }
+    .sidenav a {
+        font-size: 20px;
+        padding-bottom: 5px;
+       
+    }
+    .sidenav  {
+        
+        width: 50px;
+      
+    }
+
+    .sidebar a {
+        padding-left: 0px;
+        width: 26px;
+        height: 26px;
+        padding-bottom: 5px;
+     
+    }
+
+  
+.socialIcons {
+
+    margin-left: 13px;
+ 
+    color: pink;
+    
+}
+
+#circularProgressBar {
+    margin-right: 1px;
+    background-color: transparent;
+}
+
+
+.CircularProgressbar {
+    width: 100% !important;
+    vertical-align: middle;
+    padding-left: 2px;
+    
+    background-color: transparent;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+	font-size: 1rem;
+}
+.percentageIcon {
+    height: 60px;
+    width: 60px;
+    margin: 3px;
+    padding: 3px;
+    right: 5px;
+    /* border-radius: 50%; */
+    /* border: 3px solid red; */
+    /* border: 3px solid black; */
+    /* border-color: ; */
+    /* border-left: 3px solid green; */
+    /* background-color: rgba(0, 0, 0, 0); */
+}
+
+    
+}
+
+
+
+
+.plusIcon a {
+    /* padding: 5px 13px 5px 13px; */
+}
+
 
 .percentageIcon p {
     /* color: gray; */
@@ -99,15 +217,7 @@
     }
 }
 
-#circularProgressBar {
-    margin-right: 10px;
-}
 
-.CircularProgressbar {
-    width: 90% !important;
-    vertical-align: middle;
-    padding-left: 5px;
-}
 
 /* .back-to-top i {
   display: flex;

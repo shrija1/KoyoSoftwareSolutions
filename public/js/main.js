@@ -1,11 +1,83 @@
 /**
-* Template Name: Gp - v2.1.0
+* Template Name: Gp - v2.2.1
 * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+
+document.addEventListener('DOMContentLoaded', function(event) {
+
+
+  var elms1 = document.querySelectorAll("[id='flip-card-btn-turn-to-back']");
+
+  for(var i = 0; i < elms1.length; i++) 
+    elms1[i].style.visibility='visible'; // <-- whatever you need to do here.
+
+    
+  var elms2 = document.querySelectorAll("[id='flip-card-btn-turn-to-front']");
+
+  for( i = 0; i < elms2.length; i++) 
+    elms2[i].style.visibility='visible';
+
+  
+    var elms3 = document.querySelectorAll("[id='flip-card']");
+
+elms1[0].onclick= function(){
+  elms3[0].classList.toggle('do-flip');
+}
+
+elms2[0].onclick= function(){
+  elms3[0].classList.toggle('do-flip');
+}
+
+
+
+elms1[1].onclick= function(){
+  elms3[1].classList.toggle('do-flip');
+}
+
+elms2[1].onclick= function(){
+  elms3[1].classList.toggle('do-flip');
+}
+
+elms1[2].onclick= function(){
+  elms3[2].classList.toggle('do-flip');
+}
+
+elms2[2].onclick= function(){
+  elms3[2].classList.toggle('do-flip');
+}
+
+elms1[3].onclick= function(){
+  elms3[3].classList.toggle('do-flip');
+}
+
+elms2[3].onclick= function(){
+  elms3[3].classList.toggle('do-flip');
+}
+
+elms1[4].onclick= function(){
+  elms3[4].classList.toggle('do-flip');
+}
+
+elms2[4].onclick= function(){
+  elms3[4].classList.toggle('do-flip');
+}
+elms1[5].onclick= function(){
+  elms3[5].classList.toggle('do-flip');
+}
+
+elms2[5].onclick= function(){
+  elms3[5].classList.toggle('do-flip');
+}
+});
+
+
 !(function($) {
   "use strict";
+
+
 
   // Preloader
   $(window).on('load', function() {

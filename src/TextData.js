@@ -48,27 +48,27 @@ if(WebsiteText===null){
                 }
             },
             header: {
-                heading:"Tawi Tech Solutions",
+                heading:"Koyo Software Solutions",
                 headerText:"Problem Solvers. Bespoke Software Solutions Engineers",
                 headerCardsData: [
                     {
                         classBox: '',
-                        icon: 'ri-store-line',
+                        icon: '../Images/Web Icon/Web Design icon.svg',
                         name: 'Web Design'
                     },
                     {
                         classBox: '',
-                        icon: 'ri-bar-chart-box-line',
+                        icon: '../Images/Web Icon/AI&ML.svg',
                         name: 'AI and ML'
                     },
                     {
                         classBox: 'mt-4 mt-xl-0',
-                        icon: 'ri-paint-brush-line',
+                        icon: '../Images/Web Icon/Code Camp icon.svg',
                         name: 'Learn and Code'
                     },
                     {
                         classBox: 'mt-4 mt-xl-0',
-                        icon: 'ri-database-2-line',
+                        icon: '../Images/Web Icon/Branding Solutions icon.svg',
                         name: 'Branding Solutions'
                     } 
                 ]
@@ -81,6 +81,7 @@ if(WebsiteText===null){
                 introductionCheckList3:"Free consultation and etimate preparation.",
                 introductionEndingText:"Call or write to check how we can help you.",
             },
+          
             featuresListData: [
                 {
                     classDiv: 'mt-lg-0',
