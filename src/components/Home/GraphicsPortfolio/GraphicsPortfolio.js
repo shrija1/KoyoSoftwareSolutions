@@ -41,15 +41,15 @@ import icecream5 from '../Images/MenuCard/icecream5.jpg';
 import icecream6 from '../Images/MenuCard/icecream6.jpg';
 
 
-import pink1 from '../Images/Vinyl Wrapper/1.jpg';
-import pink2 from '../Images/Vinyl Wrapper/3.jpg';
-import green1 from '../Images/Vinyl Wrapper/1green.jpg';
-import orange1 from '../Images/Vinyl Wrapper/3orange.jpg';
-import red1 from '../Images/Vinyl Wrapper/1red.jpg';
-import brown1 from '../Images/Vinyl Wrapper/11.jpg';
-import cream1 from '../Images/Vinyl Wrapper/2.jpg';
-import blue1 from '../Images/Vinyl Wrapper/1blue.jpg';
-import maroon1 from '../Images/Vinyl Wrapper/maroon1.jpg';
+import pink1 from '../Images/Vinyl-Wrapper/1.jpg';
+import pink2 from '../Images/Vinyl-Wrapper/3.jpg';
+import green1 from '../Images/Vinyl-Wrapper/1green.jpg';
+import orange1 from '../Images/Vinyl-Wrapper/3orange.jpg';
+import red1 from '../Images/Vinyl-Wrapper/1red.jpg';
+import brown1 from '../Images/Vinyl-Wrapper/11.jpg';
+import cream1 from '../Images/Vinyl-Wrapper/2.jpg';
+import blue1 from '../Images/Vinyl-Wrapper/1blue.jpg';
+import maroon1 from '../Images/Vinyl-Wrapper/maroon1.jpg';
 
 
 
