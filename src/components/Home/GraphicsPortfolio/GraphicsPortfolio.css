@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+
+.Graphics .first
+{
+  padding-bottom: 40px;
+  padding-top: 3%;
+}
+.Graphics .category
+{
+  position: absolute;
+ left: 40%;
+
+  text-align: center;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+  0px -4px 10px rgba(255,255,255,0.3);
+  
+}
+ .Graphics .graphicscontainer
+ {
+ 
+   width: 85%;
+   margin: auto;
+ }
+.Graphics .first .left
+{
+  
+  background-color: #0d0d0d;
+  width: 580px;
+  padding-left: 4%;
+padding-top: 4%;
+  height: 650px;
+
+
+border-radius: 7px;
+background-image: linear-gradient(to bottom, #f4ecd8, #f2d9a8, #f1c578, #f2af49, #f4960c);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-left: 8%;
+}
+
+
+.Graphics .first .right
+{
+  background-color: #0d0d0d;
+  width: 580px;
+  padding-left: 4%;
+padding-top: 6%;
+  height: 650px;
+
+  margin-left: 4%;
+border-radius: 4px;
+background-image: linear-gradient(to bottom, #f4ecd8, #f2d9a8, #f1c578, #f2af49, #f4960c);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+
+
+.Graphics .second
+{
+
+  padding-left: 45px;
+ 
+}
+ 
+.Graphics .myImg /*ratio 2:1*/
+{
+  height: 100px;
+  width:200px;
+  position: relative;
+  left:60px;
+  top:20px;
+  z-index: 5;
+ 
+}
+
+ 
+.Graphics .myImg1 /* ratio 3:2*/
+{
+  height: 140px;
+  width:180px;
+ top:20px;
+  position: relative;
+ 
+}
+
+.Graphics .myImg2 /*ratio 3:4*/
+{
+  height: 200px;
+  width:150px;
+  position: relative;
+  top:170px;
+z-index: 2;
+
+}
+
+
+.Graphics .myImg3 /* ratio 5:3*/
+{
+  height: 150px;
+  width:250px;
+  position: relative;
+  left: 40px;
+  bottom: 70px;
+
+}
+
+
+.Graphics .myImg4 /*ratio 1:1 */
+{
+  height: 200px;
+  width:200px;
+  position: relative;
+  right: 40px;
+
+}
+
+
+.Graphics .myImg5 /* ratio : 4:3*/
+{
+  position: relative;
+  height: 150px;
+  width:200px;
+bottom: 100px;
+}
+
+.Graphics .myImg6 /*ration 16:9*/
+{
+  height: 163px;
+  width:290px;
+  position: relative;
+  right:50px;
+}
+
+.Graphics .myImg7 /*ratio : 2:3*/
+{
+  height: 150px;
+  width:100px;
+  position: relative;
+  bottom: 520px;
+  left: 380px;
+
+}
+
+.Graphics .myImg8 /*ratio : 3:5*/
+{
+  height: 120px;
+  width:90px;
+  position: relative;
+  bottom: 160px;
+  right: 50px;
+
+}
+
+.Graphics .myImg9 /*ratio : 1:2*/
+{
+  height: 200px;
+  width:100px;
+  position: relative;
+  bottom: 210px;
+  left: 230px;
+}
+
+
+
+#mydiv {
+  top: 50%;
+  left: 50%;
+ width:100%;
+  height:100%;
+ margin-top:-24%; /*set to a negative number 1/2 of your height*/
+  margin-left: -50%; /*set to a negative number 1/2 of your width*/
+  border: 1px solid #f2af49;
+  background-color: #f3f3f3;
+  position:fixed;
+  z-index: 1;
+  display: none;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(250, 246, 246, 0.8); /* Black w/ opacity */
+}
+
+
+
+
+.myImg88
+{
+  padding:0%;
+  border-radius: 2px;
+ border:solid #f2af49 2px;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ 
+}
+.myImg88:hover {  z-index:10000;cursor: pointer;  padding: 0 !important;-webkit-transform: scale(1.38);
+	transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ 
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+   /* Location of the box */
+  left: 0;
+ 
+  width: auto; /* Full width */
+  height: auto; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(250, 245, 245, 0.9); /* Black w/ opacity */
+}
+
+
+#description
+{
+  display: none;
+  height: 170px;
+  width: 460px;
+  
+  background-image: linear-gradient(to top, #f4960c, #f3a93d, #f2ba61, #f2ca84, #f2d9a8);
+
+  border-radius: 6px;
+  z-index: 2;
+  margin-left: 34.8%;
+  position: relative;
+  padding: 0.7%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#description .title
+{
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#description .content 
+{
+  padding: 1.5%;
+  text-align: justify;
+  justify-content: center;
+  font-size: 15px;
+  font-family: 'PT Sans', sans-serif;
+  
+  
+}
+
+#description .links
+{
+font-size: 17px;
+text-align: right;
+font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+ 
+  height: 500px;
+  top: 12%;
+z-index: 1;
+
+  
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  margin-top: 9%;
+  text-align: center;
+  color: black;
+  padding: 10px 0;
+  height: 150px;
+  
+ 
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation: zoom 0.3s forwards;
+}
+
+@keyframes zoom {
+  from {height: 0px;width: 0px;} 
+  to {height: 500px;width: auto;}
+}
+
+
+/* The Close Button */
+.closee {
+  position:absolute;
+  left:80%;
+  bottom:84%;
+
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.closee:hover,
+.closee:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal 
+{
+
+  height:100px ;
+}
