@@ -5,6 +5,8 @@
 --------------------------------------------------------------*/
 
 
+
+
 #flip-card #downn img
 {
   height: 25px;
@@ -23,6 +25,8 @@
   perspective: 900px;
   margin: 0 auto;
 }
+
+
 
 #flip-card button{
  
@@ -213,7 +217,6 @@ margin:auto;
 }
 .portfolio .portfolio-item {
     margin-bottom: 0px;
-
   }
   
   .portfolio #portfolio-flters {
@@ -341,10 +344,6 @@ margin:auto;
 }
     
   }
-
-
-
-
 
   @media only screen and (max-width: 800px) {
  
@@ -488,8 +487,8 @@ margin:auto;
   width: 1600px;
  
 }
-    
-  }
+
+}
 
 
 

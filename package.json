@@ -18,6 +18,8 @@
     "express-fileupload": "^1.1.9",
     "firebase": "^7.15.5",
     "firebase-tools": "^9.6.0",
+    "lightbox2": "^2.11.3",
+    "mdbreact": "^5.0.2",
     "mongodb": "^3.5.9",
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",

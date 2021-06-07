@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
   var elms1 = document.querySelectorAll("[id='flip-card-btn-turn-to-back']");
 
   for(var i = 0; i < elms1.length; i++) 
-    elms1[i].style.visibility='visible'; // <-- whatever you need to do here.
+  
+    elms1[i].style.visibility='visible'; 
 
     
   var elms2 = document.querySelectorAll("[id='flip-card-btn-turn-to-front']");
@@ -30,6 +31,23 @@ elms1[0].onclick= function(){
 elms2[0].onclick= function(){
   elms3[0].classList.toggle('do-flip');
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -72,6 +90,8 @@ elms2[5].onclick= function(){
   elms3[5].classList.toggle('do-flip');
 }
 });
+
+
 
 
 !(function($) {

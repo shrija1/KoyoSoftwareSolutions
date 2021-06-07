@@ -11,6 +11,10 @@ import CallToAction from './CallToAction/CallToAction'
 import Team from './Team/Team'
 import Slider from './Slider/Slider'
 import Portfolio from './Portfolio/Portfolio'
+import GraphicsPortfolio from './GraphicsPortfolio/GraphicsPortfolio'
+import ApplicationForm from './ApplicationForm/ApplicationForm'
+import InputSkills from './ApplicationForm/InputSkills'
+
 
 
 
@@ -21,9 +25,11 @@ function Home() {
            
             <Slider/>
             <Portfolio/>
-         
+            <GraphicsPortfolio/>
+            <ApplicationForm/>
+            
             <Client/>
-            <Features/>
+            
             
             {/* <Services/> */}
             {/* <Portfolio/> */}
