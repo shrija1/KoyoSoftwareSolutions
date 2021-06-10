@@ -6,6 +6,7 @@ import { useState } from "react";
 import InputSkills from './InputSkills'
 import { EventAvailable, RecordVoiceOverSharp } from '@material-ui/icons';
 
+
 const customStyles2 = {
   content: {
     top: '50%',
@@ -28,6 +29,9 @@ const customStyles2 = {
   }
 };
 
+
+
+
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
 //Modal.setAppElement('#yourAppElement')
 
@@ -35,7 +39,8 @@ function ApplicationForm() {
 
 
   const [modalIsOpen2, setIsOpen2] = useState(false);
-
+  const [modalIsOpen1, setIsOpen1] = useState(false);
+    const [modalIsOpen3, setIsOpen3] = useState(false);
   const [applicationDetails, setApplicationDetails] = useState({
     applicantname: "",
     applicantemail: "",
@@ -132,7 +137,8 @@ function ApplicationForm() {
 
 
     setIsOpen2(true);
-
+     setIsOpen1(false);
+      setIsOpen3(false);
     console.log(modalIsOpen2);
     console.log("submitted");
   }
@@ -150,8 +156,154 @@ function ApplicationForm() {
 
 
 
+
+
+
+function openModal1() {
+
+
+    setIsOpen1(true);
+setIsOpen2(false);
+   setIsOpen3(false);
+    console.log(modalIsOpen2);
+    console.log("submitted");
+ 
+  }
+
+  function closeModal1() {
+    setIsOpen1(false);
+    setErr("")
+
+  }
+
+
+
+
+
+
+
+function openModal3() {
+
+
+    setIsOpen3(true);
+ setIsOpen1(false);
+  setIsOpen2(false);
+    console.log(modalIsOpen2);
+    console.log("submitted");
+   
+  }
+
+  function closeModal3() {
+    setIsOpen3(false);
+    setErr("")
+
+  }
+
+
+
+
+
+
   return (
     <>
+
+
+<Modal
+        isOpen={modalIsOpen1}
+        onRequestClose={closeModal1}
+        className="Modal"
+        overlayClassName="Overlay"
+        contentLabel="Example Modal1"
+
+      >
+
+<button type="button" className="close" data-dismiss="modal" aria-hidden="true" onClick={closeModal1}>x</button>
+<div className="md-stepper-horizontal yellow">
+    <div className="md-step active">
+      <div className="md-step-circle" onClick={openModal2}><span>1</span></div>
+  
+      <div className="md-step-bar-left"></div>
+      <div className="md-step-bar-right"></div>
+    </div>
+    <div className="md-step active">
+      <div className="md-step-circle" onClick={openModal1}><span>2</span></div>
+     
+      <div className="md-step-optional">Optional</div>
+      <div className="md-step-bar-left"></div>
+      <div className="md-step-bar-right"></div>
+    </div>
+    <div className="md-step ">
+      <div className="md-step-circle" onClick={openModal3}><span>3</span></div>
+   
+      <div className="md-step-bar-left"></div>
+      <div className="md-step-bar-right"></div>
+    </div>
+  
+  </div>
+
+ Any Other Uploads<br />
+
+          <input type="text" className="form-control form-control-sm  " id="otherurls1" placeholder="Portfolio URL"></input><br />
+          <input type="text" className="form-control form-control-sm " id="otherurls2" placeholder="Project URL"></input><br />
+          <input type="text" className="form-control form-control-sm  " id="otherurls3" placeholder="Website URL"></input><br />
+          <input type="text" className="form-control form-control-sm " id="otherurls4" placeholder="Photo URL"></input><br />
+          <input type="text" className="form-control form-control-sm  " id="otherurls5" placeholder="Video URL"></input><br />
+
+
+
+     <InputSkills />
+     <br/>
+
+      </Modal>
+
+
+
+
+
+<Modal
+        isOpen={modalIsOpen3}
+   
+        onRequestClose={closeModal3}
+       
+        contentLabel="Example Modal3"
+        
+        className="Modal2"
+        overlayClassName="Overlay2"
+      >
+<button type="button" className="close" data-dismiss="modal" aria-hidden="true" onClick={closeModal3}>x</button>
+<div className="md-stepper-horizontal yellow">
+    <div className="md-step active">
+      <div className="md-step-circle" onClick={openModal2}><span>1</span></div>
+  
+      <div className="md-step-bar-left"></div>
+      <div className="md-step-bar-right"></div>
+    </div>
+    <div className="md-step active">
+      <div className="md-step-circle" onClick={openModal1}><span>2</span></div>
+     
+      <div className="md-step-optional">Optional</div>
+      <div className="md-step-bar-left"></div>
+      <div className="md-step-bar-right"></div>
+    </div>
+    <div className="md-step active">
+      <div className="md-step-circle" onClick={openModal3}><span>3</span></div>
+   
+      <div className="md-step-bar-left"></div>
+      <div className="md-step-bar-right"></div>
+    </div>
+  
+  </div>
+   <div className="notice">Information in<span style={{ color: 'red' }}> red </span>is mandatory<span style={{ color: 'red' }}> * </span></div><br />
+   <div className="form-group">
+          
+            <input type="file"  className="form-control-file border border-danger rounded" id="exampleFormControlFile1" />
+          </div>
+
+<button type="submit" className="btn btn-warning btn-sm float-right" onClick={openModal1}>Submit</button>
+      </Modal>
+
+
+
 
 
 
@@ -159,27 +311,54 @@ function ApplicationForm() {
         isOpen={modalIsOpen2}
         onAfterOpen={afterOpenModal2}
         onRequestClose={closeModal2}
-        style={customStyles2}
+        
         contentLabel="Example Modal2"
-
+      className="Modal"
+           overlayClassName="Overlay"
+     
+   
       >
 
-        <h4 id="title2" className="text-center">Enter Application Details  <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onClick={closeModal2}>x</button></h4>
+  <button type="button" className="close" data-dismiss="modal" aria-hidden="true" onClick={closeModal2}>x</button>
+        <div className="md-stepper-horizontal yellow">
+    <div className="md-step active">
+      <div className="md-step-circle" onClick={openModal2}><span>1</span></div>
+  
+      <div className="md-step-bar-left"></div>
+      <div className="md-step-bar-right"></div>
+    </div>
+    <div className="md-step ">
+      <div className="md-step-circle" onClick={openModal1}><span>2</span></div>
+     
+      <div className="md-step-optional">Optional</div>
+      <div className="md-step-bar-left"></div>
+      <div className="md-step-bar-right"></div>
+    </div>
+    <div className="md-step ">
+      <div className="md-step-circle" onClick={openModal3}><span>3</span></div>
+   
+      <div className="md-step-bar-left"></div>
+      <div className="md-step-bar-right"></div>
+    </div>
+  
+  </div>
+  
+        <h5 id="title2" className="text-center">Details</h5>
         <div className="notice">Information in<span style={{ color: 'red' }}> red </span>is mandatory<span style={{ color: 'red' }}> * </span></div><br />
         <form action="" onSubmit={handleSubmit} formNoValidate>
-          <div class="form-row">
+          <div className="form-row">
             <div className="col">
-              <div class="form-group ">
+              <div className="form-group ">
 
-                <input type="text" name="applicantname" class="form-control form-control-sm border border-danger" id="exampleInputname2" placeholder="Name" value={applicationDetails.applicantname} onChange={handleInput} />
+                <input type="text" name="applicantname" className="form-control form-control-sm border border-danger" id="exampleInputname2" placeholder="Name" value={applicationDetails.applicantname} onChange={handleInput} />
               </div>
             </div>
 
 
             <div className="col">
-              <div class="form-group ">
+              <div className="form-group ">
 
-                <input type="email" name="applicantemail" class="form-control form-control-sm border border-danger" id="exampleInputEmail2" placeholder="Email ID" onChange={handleInput} value={applicationDetails.applicantemail} />
+                <input type="email" name="applicantemail" className="form-control form-control-sm border border-danger" id="exampleInputEmail2" placeholder="Email ID" onChange={handleInput} value={applicationDetails.applicantemail} />
                 <div className="feedback">
 
                   {errEmail}
@@ -190,12 +369,13 @@ function ApplicationForm() {
           </div>
 
           <br />
-          <div class="form-row">
+          <div className="form-row">
             <div className="col">
               Availibility
                  </div>
-            <div class="form-group w-50 p-0">
-              <select name="available_inhours" class=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
+ <div className="col">
+            <div className="form-group w-100 p-0">
+              <select name="available_inhours" className=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
                 <option value="" selected>Hours/Week</option>
                 <option value="1">10</option>
                 <option value="2">15</option>
@@ -204,18 +384,15 @@ function ApplicationForm() {
                 <option value="5">Full Time</option>
               </select>
             </div>
-
-          </div>
-
+</div>
 
 
 
-          <div class="form-row">
             <div className="col">
 
-            </div>
-            <div class="form-group w-50 p-0">
-              <select name="available_inmonths" class="selectpicker form-control-sm form-control  border border-danger" id="selectboxmonths" value={applicationDetails.available_inmonths} onChange={handleInput} data-width="200px">
+           
+            <div className="form-group w-100 p-0">
+              <select name="available_inmonths" className="selectpicker form-control-sm form-control  border border-danger" id="selectboxmonths" value={applicationDetails.available_inmonths} onChange={handleInput} data-width="200px">
                 <option selected value="">Months</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -229,13 +406,9 @@ function ApplicationForm() {
 
 
           </div>
+</div>
 
-
-          <div class="form-group">
-            <label for="exampleFormControlFile1">Upload CV</label>
-            <input type="file" class="form-control-file border border-danger" id="exampleFormControlFile1" />
-          </div>
-
+       
           <div className="feedback">
 
             {err}
@@ -250,14 +423,7 @@ function ApplicationForm() {
           <br />
 
 
-                  Any Other Uploads<br />
-
-          <input type="text" class="form-control form-control-sm  " id="otherurls1" placeholder="Portfolio URL"></input><br />
-          <input type="text" class="form-control form-control-sm " id="otherurls2" placeholder="Project URL"></input><br />
-          <input type="text" class="form-control form-control-sm  " id="otherurls3" placeholder="Website URL"></input><br />
-          <input type="text" class="form-control form-control-sm " id="otherurls4" placeholder="Photo URL"></input><br />
-          <input type="text" class="form-control form-control-sm  " id="otherurls5" placeholder="Video URL"></input><br />
-
+                 
 
 
 
@@ -274,13 +440,13 @@ function ApplicationForm() {
 
         Rate Your Skills<br/>
 
-         <div class="form-row">
+         <div className="form-row">
             <div className="col">
             
               Skill 1
                  </div>
-            <div class="form-group w-50 p-0">
-              <select name="available_inhours" class=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
+            <div className="form-group w-50 p-0">
+              <select name="available_inhours" className=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
                 <option value="" selected>Rate your skill</option>
                 <option value="1">⭐</option>
                 <option value="2">⭐⭐</option>
@@ -292,12 +458,12 @@ function ApplicationForm() {
 
           </div>
 
-           <div class="form-row">
+           <div className="form-row">
             <div className="col">
               Skill 2
                  </div>
-            <div class="form-group w-50 p-0">
-              <select name="available_inhours" class=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
+            <div className="form-group w-50 p-0">
+              <select name="available_inhours" className=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
                 <option value="" selected>Rate your skill</option>
                 <option value="1">⭐</option>
                 <option value="2">⭐⭐</option>
@@ -309,12 +475,12 @@ function ApplicationForm() {
 
           </div>
 
-           <div class="form-row">
+           <div className="form-row">
             <div className="col">
               Skill 3
                  </div>
-            <div class="form-group w-50 p-0">
-              <select name="available_inhours" class=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
+            <div className="form-group w-50 p-0">
+              <select name="available_inhours" className=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
                 <option value="" selected>Rate your skill</option>
                 <option value="1">⭐</option>
                 <option value="2">⭐⭐</option>
@@ -326,12 +492,12 @@ function ApplicationForm() {
 
           </div>
 
-           <div class="form-row">
+           <div className="form-row">
             <div className="col">
               Skill 4
                  </div>
-            <div class="form-group w-50 p-0">
-              <select name="available_inhours" class=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
+            <div className="form-group w-50 p-0">
+              <select name="available_inhours" className=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
                 <option value="" selected>Rate your skill</option>
                 <option value="1">⭐</option>
                 <option value="2">⭐⭐</option>
@@ -343,10 +509,25 @@ function ApplicationForm() {
 
           </div>
 
-          <InputSkills />
-        <br /> <button type="submit" class="btn btn-warning btn-sm float-right">Submit</button>
+     
+        <br /> 
         <br /><br />
       </Modal>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -391,11 +572,12 @@ function ApplicationForm() {
 
               <div className="centerbuttonform" >
 
-                <div class="col-md-12 text-center">
+                <div className="col-md-12 text-center">
 
-                  <button type="button" class="btn btn-warning btn-sm" onClick={openModal2}>Apply here</button>  
+                  <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button>  
+                
                 </div>
-                <div className="deadline">
+                  <div className="deadline">
                 DeadLine : MMMM,DD,YYYY</div>
               </div>
             </div>
@@ -415,9 +597,9 @@ function ApplicationForm() {
 
               <div className="centerbuttonform" >
 
-                <div class="col-md-12 text-center">
+                <div className="col-md-12 text-center">
 
-                  <button type="button" class="btn btn-warning btn-sm" onClick={openModal2}>Apply here</button>
+                  <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button>
                 </div>
                 <div className="deadline">
                 DeadLine : MMMM,DD,YYYY</div>
@@ -440,9 +622,9 @@ function ApplicationForm() {
 
               <div className="centerbuttonform" >
 
-                <div class="col-md-12 text-center">
+                <div className="col-md-12 text-center">
 
-                  <button type="button" class="btn btn-warning btn-sm" onClick={openModal2}>Apply here</button>
+                  <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button>
                 </div>
                 <div className="deadline">
                 DeadLine : MMMM,DD,YYYY</div>
@@ -466,9 +648,9 @@ function ApplicationForm() {
 
               <div className="centerbuttonform" >
 
-                <div class="col-md-12 text-center">
+                <div className="col-md-12 text-center">
 
-                  <button type="button" class="btn btn-warning btn-sm" onClick={openModal2}>Apply here</button>
+                  <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button>
                 </div>
                 <div className="deadline">
                 DeadLine : MMMM,DD,YYYY</div>
@@ -490,9 +672,9 @@ function ApplicationForm() {
 
               <div className="centerbuttonform" >
 
-                <div class="col-md-12 text-center">
+                <div className="col-md-12 text-center">
 
-                  <button type="button" class="btn btn-warning btn-sm" onClick={openModal2}>Apply here</button>
+                  <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button>
                 </div>
                 <div className="deadline">
                 DeadLine : MMMM,DD,YYYY</div>
@@ -516,9 +698,9 @@ function ApplicationForm() {
 
               <div className="centerbuttonform" >
 
-                <div class="col-md-12 text-center">
+                <div className="col-md-12 text-center">
 
-                  <button type="button" class="btn btn-warning btn-sm" onClick={openModal2}>Apply here</button>
+                  <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button>
                 </div>
                 <div className="deadline">
                 DeadLine : MMMM,DD,YYYY</div>

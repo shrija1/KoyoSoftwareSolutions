@@ -54,7 +54,7 @@ class InputSkills extends Component {
             <>
                 Add Other Skill (Maximum 6)
 
-                <div className="skill border border-danger" >
+                <div className="skill border round" >
                     <div className="consistui">
                         <ul>
                             {skills.map((skill, i) => {
