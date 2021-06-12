@@ -5,7 +5,10 @@ import './ApplicationForm.css';
 import { useState } from "react";
 import InputSkills from './InputSkills'
 import { EventAvailable, RecordVoiceOverSharp } from '@material-ui/icons';
-
+import { faBullseye, faSlidersH } from '@fortawesome/free-solid-svg-icons';
+import cross from '../Images/cross.png';
+import ModalVideo from 'react-modal-video'
+import desiFirangiL from '../Images/Banner/desiFirangi-L.jpg';
 
 const customStyles2 = {
   content: {
@@ -40,7 +43,11 @@ function ApplicationForm() {
 
   const [modalIsOpen2, setIsOpen2] = useState(false);
   const [modalIsOpen1, setIsOpen1] = useState(false);
-    const [modalIsOpen3, setIsOpen3] = useState(false);
+  const [modalIsOpen3, setIsOpen3] = useState(false);
+  const [modalIsOpen4, setIsOpen4] = useState(false);
+  const [isOpen5, setOpen5] = useState(false)
+
+
   const [applicationDetails, setApplicationDetails] = useState({
     applicantname: "",
     applicantemail: "",
@@ -200,7 +207,18 @@ function openModal3() {
   }
 
 
+  function openModal4() {
 
+
+    setIsOpen4(true);
+   
+  }
+
+  function closeModal4() {
+    setIsOpen4(false);
+    
+
+  }
 
 
 
@@ -212,7 +230,7 @@ function openModal3() {
         isOpen={modalIsOpen1}
         onRequestClose={closeModal1}
         className="Modal"
-        overlayClassName="Overlay"
+        overlayclassName="Overlay"
         contentLabel="Example Modal1"
 
       >
@@ -268,7 +286,7 @@ function openModal3() {
         contentLabel="Example Modal3"
         
         className="Modal2"
-        overlayClassName="Overlay2"
+        overlayclassName="Overlay2"
       >
 <button type="button" className="close" data-dismiss="modal" aria-hidden="true" onClick={closeModal3}>x</button>
 <div className="md-stepper-horizontal yellow">
@@ -314,7 +332,7 @@ function openModal3() {
         
         contentLabel="Example Modal2"
       className="Modal"
-           overlayClassName="Overlay"
+           overlayclassName="Overlay"
      
    
       >
@@ -519,6 +537,71 @@ function openModal3() {
 
 
 
+      <Modal
+        isOpen={modalIsOpen4}
+        onRequestClose={closeModal4}
+        contentLabel="Example Modal4"
+        className="Modal4"
+        overlayclassName="Overlay4"
+      >
+ <img className="closeee"  onClick={closeModal4} src={cross} alt="closee"/>
+    
+
+       <div id="carouselExampleIndicators" className="carousel slide" data-ride="false">
+  <ol className="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      {/*<button className="btn btn-primary " onClick={()=> setOpen5(true)}>VIEW DEMO</button><ModalVideo channel='youtube' autoplay isOpen={isOpen5} videoId="L61p2uyiMSo" onClose={() => setOpen5(false)} />*/}
+     
+      
+     
+<img className="d-block " style={{height:'337px',width:'600px'}}src="https://source.unsplash.com/t4wI_Wv6g_k"  alt="First slide"/>
+<a id="play-video" className="video-play-button" href="www.youtube.com"> <span></span></a>   
+    </div>
+    <div className="carousel-item">
+      <img className="d-block " style={{height:'337px',width:'600px'}} src="https://source.unsplash.com/BG1WfIjx1f4" alt="Second slide"/>
+      <a id="play-video" className="video-play-button" href="www.youtube.com"> <span></span></a>   
+    </div>
+    <div className="carousel-item">
+      <img className="d-block  " style={{height:'337px',width:'600px'}} src="https://source.unsplash.com/u1edt5V0ruU" alt="Third slide"/>
+      <a id="play-video" className="video-play-button" href="www.youtube.com"> <span></span></a>   
+    </div>
+  </div>
+  <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="sr-only">Previous</span>
+  </a>
+  <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="sr-only">Next</span>
+  </a>
+</div>
+
+<br/>
+<div className="projdesc">
+<b>Project Background</b>: Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally.
+
+Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard.
+
+Globally, c40 billion coconuts are harvested annually.  This translates into c2 billion climb operations.  Some solutions such a tree climber scooter with an integral human capsule and remotely piloted climbers are available.  However, they have 3 key shortcomings which have prevented their widespread adoption:
+<br/>
+<b>1.</b>	They are not particularly safe to use during rain due to decline in coefficient of friction between the contact surfaces of the machine and the tree trunk from c0.7 to c0.4.  Several coconut growing regions experience over 6 months of rain.
+<br/>
+<b>2.</b>		They do not work on trees with significant trunk curvature.  This is mainly due to the absence of torque management in the plane perpendicular to the instantaneous axis of the trunk.  This does not adversely impact the functionality of robotic climbers but as fully-automated solutions are far from realization, a climber with a human capsule is necessary.  To ensure comfort and prevent sudden swings of the capsule around the trunk’s instantaneous axis, the capsule must remain on the concave part of the trunk during the climb.  Current solutions offer no guarantees.
+<br/>
+<b>3.</b>		Serviceability is poor.  This is due to the absence of design rigour.  The result of this is that the solutions are only locally available which in turn limits economies of scale.
+
+Therefore, instead of taking existing solutions as a beginning point for incremental changes, we will first carry out a first principles-based design followed by simulations to study the individual and joint performance of the various subsystems before fabricating a prototype.
+</div>
+     
+      </Modal>
+
+
 
 
 
@@ -541,6 +624,12 @@ function openModal3() {
               KSS is hiring! We are interested in passionate candidates who can bring their skills, creativity or experience and grow in a problem-solving environment.See the details below.
          </div>
           </div>
+
+
+
+
+
+         
 
 
 
@@ -567,7 +656,7 @@ function openModal3() {
               <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
               ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click <a href="www.youtube.com"> here </a>to know more.</div>
+                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click <button className=" clickhere" onClick={openModal4}>here</button> to know more.</div>
               <div className="duration"><span style={{color:'white',fontStyle:'italic'}}> Duration</span> : 4 Month<span style={{color:'white',fontStyle:'italic'}}>  Skills :</span>CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently</div>
 
               <div className="centerbuttonform" >
@@ -592,7 +681,7 @@ function openModal3() {
               <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
               ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click <a href="www.youtube.com"> here </a>to know more.</div>
+         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click  Click <button className=" clickhere" onClick={openModal4}>here</button>to know more.</div>
               <div className="duration"> <span style={{color:'white',fontStyle:'italic'}}>Duration</span> : 4 Month <span style={{color:'white',fontStyle:'italic'}}> Skills : </span> CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently</div>
 
               <div className="centerbuttonform" >
@@ -617,7 +706,7 @@ function openModal3() {
               <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
               ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click <a href="www.youtube.com"> here </a>to know more.</div>
+         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click  Click <button className=" clickhere" onClick={openModal4}>here</button>to know more.</div>
               <div className="duration"> <span style={{color:'white',fontStyle:'italic'}}>Duration </span>: 4 Month  <span style={{color:'white',fontStyle:'italic'}}> Skills</span> : CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently</div>
 
               <div className="centerbuttonform" >
@@ -643,7 +732,7 @@ function openModal3() {
               <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
               ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
- pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click <a href="www.youtube.com"> here </a>to know more.</div>
+ pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click  Click <button className=" clickhere" onClick={openModal4}>here</button>to know more.</div>
               <div className="duration"><span style={{color:'white',fontStyle:'italic'}}> Duration </span>: 4 Month  <span style={{color:'white',fontStyle:'italic'}}>  Skills</span> : CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently</div>
 
               <div className="centerbuttonform" >
@@ -667,7 +756,7 @@ function openModal3() {
               <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
               ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click <a href="www.youtube.com"> here </a>to know more.</div>
+         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click  Click <button className=" clickhere" onClick={openModal4}>here</button>to know more.</div>
               <div className="duration"> <span style={{color:'white',fontStyle:'italic'}}> Duration</span> : 4 Month <span style={{color:'white',fontStyle:'italic'}}>Skills </span>: CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently</div>
 
               <div className="centerbuttonform" >
@@ -693,7 +782,7 @@ function openModal3() {
               <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
               ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click <a href="www.youtube.com"> here </a>to know more.</div>
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click  Click <button className=" clickhere" onClick={openModal4}>here</button>to know more.</div>
               <div className="duration"> <span style={{color:'white',fontStyle:'italic'}}>Duration</span> : 4 Month <span style={{color:'white',fontStyle:'italic'}}>Skills </span>: CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently</div>
 
               <div className="centerbuttonform" >
@@ -705,7 +794,7 @@ function openModal3() {
                 <div className="deadline">
                 DeadLine : MMMM,DD,YYYY</div>
               </div >
-
+    
 
             </div>
 

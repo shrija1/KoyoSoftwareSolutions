@@ -23,6 +23,7 @@
     "mongodb": "^3.5.9",
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
+    "node-sass": "^6.0.0",
     "react": "^16.14.0",
     "react-bootstrap": "^1.5.1",
     "react-card-flip": "^1.1.1",
@@ -32,6 +33,7 @@
     "react-hook-form": "^6.15.4",
     "react-html-email": "^3.0.0",
     "react-loader-spinner": "^3.1.14",
+    "react-modal-video": "^1.2.7",
     "react-promise-tracker": "^2.1.0",
     "react-responsive-modal": "^5.2.6",
     "react-router-dom": "^5.2.0",
@@ -42,6 +44,8 @@
     "react-scroll-to": "^3.0.0-beta.6",
     "reactjs-popup": "^1.5.0",
     "recharts": "^1.8.5",
+    "sass": "^1.34.1",
+    "sass-loader": "^12.1.0",
     "swiper": "^6.5.8"
   },
   "scripts": {

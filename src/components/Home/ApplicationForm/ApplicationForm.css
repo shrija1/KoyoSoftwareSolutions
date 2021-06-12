@@ -16,6 +16,102 @@ input[type=file]::before {
     margin-right: 33%; 
     padding-right:120px;
 }
+
+.closeee {
+  position:absolute;
+  left:68.5%;
+  bottom:81.5%;
+z-index: 10;
+height: 23px;
+width: 23px;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  border-radius: 8px;
+ cursor: pointer;
+}
+
+
+.video-play-button {
+  position: absolute;
+  z-index: 10;
+  bottom: 32%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: content-box;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #ffc451;
+  border-radius: 50%;
+  padding: 9px 24px 18px 28px;
+}
+.video-play-button:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-30%) translateY(-30%);
+  display: block;
+  width: 65px;
+  height: 65px;
+  background:  #ffc451;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #ffc451;
+  border-radius: 50%;
+  transition: all 200ms;
+  border: solid 4px #fff;
+}
+
+
+.video-play-button span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 18px solid #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+@keyframes pulse-border {
+0% {
+  transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+  opacity: 1;
+}
+100% {
+  transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+  opacity: 0;
+}
+}
+
+.clickhere
+{
+
+
+    color: #FFFFFF;
+    background-color: transparent;
+    border:0px;
+  
+}
+
+
+
 .Modal {
   
   
@@ -70,10 +166,38 @@ width: 40%;
 
 
 
+  .Modal4 {
+  
+  
+    margin-left: 30%;
+    margin-top: 7%;
+    width: 40%;
+      
+      background: #fff;
+      border-radius: 8px;
+    
+      padding: 1.5%;
+      height: 84%;
+     
+    }
+    
+    .Overlay4 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color:rgba(191, 189, 189, 0.75);
+    }
 
 
-
-
+.projdesc
+{
+  
+  height:37%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
 html {
 	-webkit-font-smoothing: antialiased!important;
