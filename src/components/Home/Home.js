@@ -25,7 +25,7 @@ function Home() {
            
             <Slider/>
             <Portfolio/>
-           
+             <GraphicsPortfolio/>
             <ApplicationForm/>
             
             <Client/>

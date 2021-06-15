@@ -28,7 +28,8 @@ function Portfolio() {
           <div className="row" data-aos="fade-up" data-aos-delay="100">
             <div className="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
-                <li data-filter=".filter-restaurant" className="filter-active">Restaurant</li>
+              <li data-filter=".*" className="filter-active">All</li>
+                <li data-filter=".filter-restaurant">Restaurant</li>
                 <li data-filter=".filter-realestate">Real Estate</li>
                 <li data-filter=".filter-ngo">NGO</li>
                 <li data-filter=".filter-portfolio"> Freelancer Portfolio</li>
@@ -42,32 +43,8 @@ function Portfolio() {
 
           <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-        <div className="filter-restaurant filter-q filter-b filter-c filter-d portfolio-item justify-content-center col-lg-12">  
-         <div className="row" data-aos="fade-up" data-aos-delay="100">
-            <div className="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-             
-                <li data-filter=".filter-q" className="filter-active">Food Vehicle</li>
-                <li data-filter=".filter-b">Cafe</li>
-                <li data-filter=".filter-c">Cake</li>
-                <li data-filter=".filter-d">Bakery</li>
-            
-              </ul>
-            </div>
-          </div>
-        
-        
-         </div>
 
-
-
-
-
-
-
-
-
-            <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-q">
+ <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item ">
               <div id="flip-card">
                 <div className="flip-card-front"><iframe src="https://desifirangifoods.web.app/" scrolling="yes" title="W3Schools Free Online Web Tutorials" />
                   <button id="flip-card-btn-turn-to-back"> <img src={Flip} class="img-fluid" alt="" /></button></div>
@@ -90,14 +67,7 @@ function Portfolio() {
 
 
 
-
-
-
-
-
-
-
-          <div className="col-lg-4 col-md-6  col-sm-12 portfolio-item filter-restaurant filter-b">
+          <div className="col-lg-4 col-md-6  col-sm-12 portfolio-item filter-restaurant">
               <div id="flip-card">
                 <div className="flip-card-front"><iframe src="https://realestate-jk.web.app/" scrolling="yes" title="W3Schools Free Online Web Tutorials" />
                   <button id="flip-card-btn-turn-to-back"> <img src={Flip} class="img-fluid" alt="" /></button></div>
@@ -108,7 +78,7 @@ function Portfolio() {
                   <br /><b>Find Out More:</b> <img src={WhatsApp} class="img-fluid" alt="" />  <img src={Email} class="img-fluid" alt="" />   <img src={Call} class="img-fluid" alt="" /></div></p><iframe
                     className="iframe2" src="https://realestate-jk.web.app/ "
                     scrolling="no" title="W3Schools Free Online Web Tutorials" /><button id="flip-card-btn-turn-to-front"> <img src={Flip} class="img-fluid" alt="" /></button></div></div></div>
-{/*
+
              <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-restaurant">
               <div id="flip-card">
                 <div className="flip-card-front"><iframe src="https://demo.w3layouts.com/demos_new/template_demo/20-09-2018/cakes_bakery-demo_Free/190696682/web/index.html" scrolling="yes" title="W3Schools Free Online Web Tutorials" />
@@ -167,7 +137,7 @@ function Portfolio() {
                     scrolling="no" title="W3Schools Free Online Web Tutorials" /><button id="flip-card-btn-turn-to-front"> <img src={Flip} class="img-fluid" alt="" /></button></div></div></div>
 
 
-*/}
+
           </div>
 
         </div>

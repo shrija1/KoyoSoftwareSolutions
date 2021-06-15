@@ -9,35 +9,24 @@ import { faBullseye, faSlidersH } from '@fortawesome/free-solid-svg-icons';
 import cross from '../Images/cross.png';
 import ModalVideo from 'react-modal-video'
 import desiFirangiL from '../Images/Banner/desiFirangi-L.jpg';
+import './modal-video.scss';
 
-const customStyles2 = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    background: '#fff',
-    borderRadius: '8px',
-    width: '550px',
-    padding: '25px',
-    height: '580px',
-    overflow: 'scroll'
-
-
-  },
-  overlay: {
-    backgroundColor: 'rgba(191, 189, 189, 0.75)'
-  }
-};
 
 
 
 
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
 //Modal.setAppElement('#yourAppElement')
+function nofile() {
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar");
 
+  // Add the "show" class to DIV
+  x.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
 function ApplicationForm() {
 
 
@@ -230,7 +219,7 @@ function openModal3() {
         isOpen={modalIsOpen1}
         onRequestClose={closeModal1}
         className="Modal"
-        overlayclassName="Overlay"
+        overlayClassName="Overlay"
         contentLabel="Example Modal1"
 
       >
@@ -286,7 +275,7 @@ function openModal3() {
         contentLabel="Example Modal3"
         
         className="Modal2"
-        overlayclassName="Overlay2"
+        overlayClassName="Overlay2"
       >
 <button type="button" className="close" data-dismiss="modal" aria-hidden="true" onClick={closeModal3}>x</button>
 <div className="md-stepper-horizontal yellow">
@@ -332,7 +321,7 @@ function openModal3() {
         
         contentLabel="Example Modal2"
       className="Modal"
-           overlayclassName="Overlay"
+           overlayClassName="Overlay"
      
    
       >
@@ -341,7 +330,7 @@ function openModal3() {
         <div className="md-stepper-horizontal yellow">
     <div className="md-step active">
       <div className="md-step-circle" onClick={openModal2}><span>1</span></div>
-  
+      
       <div className="md-step-bar-left"></div>
       <div className="md-step-bar-right"></div>
     </div>
@@ -533,17 +522,20 @@ function openModal3() {
       </Modal>
 
 
-
-
-
-
       <Modal
         isOpen={modalIsOpen4}
         onRequestClose={closeModal4}
         contentLabel="Example Modal4"
+        
         className="Modal4"
-        overlayclassName="Overlay4"
+        overlayClassName="Overlay4"
       >
+       <ModalVideo channel='youtube' 
+    
+       isOpen={isOpen5} 
+       videoId="L61p2uyiMSo"
+        onClose={() => setOpen5(false)}
+        className="ModalVid" />
  <img className="closeee"  onClick={closeModal4} src={cross} alt="closee"/>
     
 
@@ -556,19 +548,20 @@ function openModal3() {
 
   <div className="carousel-inner">
     <div className="carousel-item active">
-      {/*<button className="btn btn-primary " onClick={()=> setOpen5(true)}>VIEW DEMO</button><ModalVideo channel='youtube' autoplay isOpen={isOpen5} videoId="L61p2uyiMSo" onClose={() => setOpen5(false)} />*/}
+      {/**/}
      
       
      
-<img className="d-block " style={{height:'337px',width:'600px'}}src="https://source.unsplash.com/t4wI_Wv6g_k"  alt="First slide"/>
-<a id="play-video" className="video-play-button" href="www.youtube.com"> <span></span></a>   
+<img className="d-block  curimage  " src="https://source.unsplash.com/t4wI_Wv6g_k"  alt="First slide"/>
+ 
+<button id="play-video" className="video-play-button"   onClick={()=> setOpen5(true)}><span></span></button> 
     </div>
     <div className="carousel-item">
-      <img className="d-block " style={{height:'337px',width:'600px'}} src="https://source.unsplash.com/BG1WfIjx1f4" alt="Second slide"/>
+      <img className="d-block curimage " src="https://source.unsplash.com/BG1WfIjx1f4" alt="Second slide"/>
       <a id="play-video" className="video-play-button" href="www.youtube.com"> <span></span></a>   
     </div>
     <div className="carousel-item">
-      <img className="d-block  " style={{height:'337px',width:'600px'}} src="https://source.unsplash.com/u1edt5V0ruU" alt="Third slide"/>
+      <img className="d-block  curimage  " src="https://source.unsplash.com/u1edt5V0ruU" alt="Third slide"/>
       <a id="play-video" className="video-play-button" href="www.youtube.com"> <span></span></a>   
     </div>
   </div>
@@ -583,20 +576,25 @@ function openModal3() {
 </div>
 
 <br/>
+<div id="snackbar" className="snackk">The background is simply the text shown.</div>
 <div className="projdesc">
+<div className="projtit">
+<b>Grip Controller optimisation for a coconut tree climbing robotic harvester</b>
+</div>
+<div className="projkey">
+<span style={{color: 'black'}}><b>Keywords:</b></span> <b><i>#Robotics , #CAD, #Simulation, #Controls</i></b>
+</div>
+
 <b>Project Background</b>: Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally.
-
 Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard.
-
-Globally, c40 billion coconuts are harvested annually.  This translates into c2 billion climb operations.  Some solutions such a tree climber scooter with an integral human capsule and remotely piloted climbers are available.  However, they have 3 key shortcomings which have prevented their widespread adoption:
-<br/>
-<b>1.</b>	They are not particularly safe to use during rain due to decline in coefficient of friction between the contact surfaces of the machine and the tree trunk from c0.7 to c0.4.  Several coconut growing regions experience over 6 months of rain.
-<br/>
-<b>2.</b>		They do not work on trees with significant trunk curvature.  This is mainly due to the absence of torque management in the plane perpendicular to the instantaneous axis of the trunk.  This does not adversely impact the functionality of robotic climbers but as fully-automated solutions are far from realization, a climber with a human capsule is necessary.  To ensure comfort and prevent sudden swings of the capsule around the trunk’s instantaneous axis, the capsule must remain on the concave part of the trunk during the climb.  Current solutions offer no guarantees.
-<br/>
-<b>3.</b>		Serviceability is poor.  This is due to the absence of design rigour.  The result of this is that the solutions are only locally available which in turn limits economies of scale.
-
-Therefore, instead of taking existing solutions as a beginning point for incremental changes, we will first carry out a first principles-based design followed by simulations to study the individual and joint performance of the various subsystems before fabricating a prototype.
+Globally, c40 billion coconuts are harvested annually.  This translates into c2 billion climb operations.  Some solutions such a tree climber scooter with an integral human capsule and remotely piloted climbers are available.
+Click <button onClick={nofile} className=" clickhere2" ><i style={{color:'#F19A1E', fontWeight: 'bold'}}>here</i></button> to know more
+<br/><br/><b>Project Brief:</b> Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally.
+Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard.
+Globally, c40 billion coconuts are harvested annually.
+<br/><br/><b>References</b><br/>
+1.<br/>
+2.<br/>
 </div>
      
       </Modal>
