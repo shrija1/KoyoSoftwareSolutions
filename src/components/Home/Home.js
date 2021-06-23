@@ -28,12 +28,12 @@ function Home() {
              <GraphicsPortfolio/>
             <ApplicationForm/>
             
-            <Client/>
+           
             
             
             {/* <Services/> */}
             {/* <Portfolio/> */}
-            <CallToAction/>
+           
             {/* <Counts/> */}
             {/* <Testimonials/> */}
             <Team/>

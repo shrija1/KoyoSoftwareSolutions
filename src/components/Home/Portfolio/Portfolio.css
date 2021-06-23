@@ -92,6 +92,7 @@
   transform: rotateY(-180deg);
 }
 #flip-card-btn-turn-to-back, #flip-card-btn-turn-to-front {
+  
   position: absolute;
   bottom: 5px;
   right: 8px;
@@ -107,6 +108,21 @@
  
 
 }
+
+#flip-btn-load
+{
+  position: absolute;
+left: 260px;
+bottom: 93px;
+height: 30px;
+width: 46px;
+background-color: rgba(252, 186, 3, 0.4);
+font-size: 15px;
+padding:0px;
+font-weight: bold;
+
+}
+
 #flip-card .flip-card-front, #flip-card .flip-card-back{
   width: 100%;
   height: 100%;
@@ -133,7 +149,7 @@
     transform: rotateY(180deg);
 }
 
-w
+
 
 
 #flip-card .flip-card-front p, #flip-card .flip-card-back p {

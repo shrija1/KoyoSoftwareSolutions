@@ -6,15 +6,16 @@ import './Slider.css';
 
 import { Autoplay } from 'swiper';
 
-import AIML from '../Images/AIML.png';
-import WebDesign from '../Images/WebDesign.png';
-import WebDesignMob from '../Images/WebDesignMob.png';
-import CodeCamp from '../Images/CodeCamp.png';
-import BrandingSols from '../Images/BrandingSols.png';
-import AIMLMob from '../Images/AIMLMob.png';
+import AIML from '../Images/AIML.webp';
+import WebDesign from '../Images/WebDesign.webp';
+import CodeCamp from '../Images/CodeCamp.webp';
+import BrandingSols from '../Images/BrandingSols.webp';
 
-import CodeCampMob from '../Images/CodeCampMob.png';
-import BrandingSolsMob from '../Images/BrandingSolsMob.png';
+
+import WebDesignMob from '../Images/WebDesignMob.webp';
+import AIMLMob from '../Images/AIMLMob.webp';
+import CodeCampMob from '../Images/CodeCampMob.webp';
+import BrandingSolsMob from '../Images/BrandingSolsMob.webp';
 
 SwiperCore.use([Navigation, Pagination, Controller, Thumbs]);
 

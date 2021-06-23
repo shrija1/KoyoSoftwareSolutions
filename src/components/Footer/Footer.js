@@ -32,101 +32,74 @@ function Footer() {
     // const {email, phone, whatsapp} = dataFooter
 
     return (
-        <div>
-            <footer id="footer">
-                <div className="footer-top">
-                <div className="container">
-                    <div className="row">
+        <div className="contact">
+          <div className="container " >
+          <div className="section-title">
+            <h2>Contact</h2>
+            <br/>
+          </div>
+          </div>
+          <div id="map-container-google-1" className="z-depth-1-half map-container" style={{height: '350px'}}>
+              
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.8841435256463!2d72.86934941490306!3d19.200261987016756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b73e308faa87%3A0x762c8fa53c6ea895!2sWhispering%20Palms%20Shopping%20Complex%2C%20Akurli%20Rd%2C%20Mira%20Road%20East%2C%20Alika%20Nagar%2C%20Lokhandwala%20Twp%2C%20Kandivali%20East%2C%20Mumbai%2C%20Maharashtra%20400101!5e0!3m2!1sen!2sin!4v1624316535089!5m2!1sen!2sin" frameBorder={0} style={{border: 0,height: '350px',width:'100%'}} loading="lazy" allowFullScreen title="map address" />
+      
+      </div>
+    
 
-                        <div className="col-lg-3 col-md-12">
-                            <div className="footer-info">
-                                <img src={logo1} alt="SoftSite Logo" />
-                                <p style={{fontSize: '16px'}}>
-                                {WebText.footer.address}<br/><br/>
-                                    {/* <strong>Phone:</strong> {phone}<br/>
-                                    <strong>WhatsApp:</strong> {whatsapp}<br/>
-                                    <strong>Email:</strong> {email}<br/> */}
-                                    <strong>{WebText.footer.whatsapp.name}</strong> {WebText.footer.whatsapp.number}<br/>
-                                    <strong>{WebText.footer.email.name}</strong> {WebText.footer.email.email}<br/>
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div className="col-lg-3 col-md-6 footer-links" style={{paddingTop: '5%'}}>
-                            <h4 style={{paddingLeft: '8%', fontSize: '25px'}}>{WebText.footer.part1.title}</h4>
-                            <div className="d-flex justify-content-between" style={{fontSize: '16px'}}>
-                                <ul>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="/">{WebText.footer.part1.item1}</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="/about">{WebText.footer.part1.item2}</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="/chat">{WebText.footer.part1.item3}</a></li>
-                                </ul>
-                                <ul style={{paddingRight: '3%'}}>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="/#">{WebText.footer.part1.item4}</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="/#">{WebText.footer.part1.item5}</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="/#">{WebText.footer.part1.item6}</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-lg-1 col-md-0"></div>
-                        <div className="col-lg-5 col-md-6 footer-links" style={{paddingTop: '5%'}}>
-                            <h4 style={{paddingLeft: '8%', fontSize: '25px'}}>{WebText.footer.part2.title}</h4>
-                            <div className="d-flex justify-content-between" style={{fontSize: '16px'}}>
-                                <ul>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="/gem">{WebText.footer.part2.item1}</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="/webDevelopment">{WebText.footer.part2.item2}</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="/e-marketing">{WebText.footer.part2.item3}</a></li>
-                                </ul>
-                                <ul style={{paddingRight: '5%'}}>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="/businessPS">{WebText.footer.part2.item4}</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="/machineLearning">{WebText.footer.part2.item5}</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="/professionalsToolbox">{WebText.footer.part2.item6}</a></li>
-                                </ul>
-                            </div>
-                        </div>
 
-                        {/* <div className="col-lg-4 col-md-6 footer-newsletter">
-                            <h4>Our Newsletter</h4>
-                            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                            <form action="" method="post">
-                                <input type="email" name="email" />
-                                <input type="submit" value="Subscribe" />
-                            </form>
-                            <img src={paymentGateway} alt="paymentGateway" />
-                        </div> */}
 
-                    </div>
-                </div>
+      <div class="container mt-6 mb-4">
+
+    
+          <div class="row ">
+            <div class="col-lg-6 info">
+              <i class="bi bi-geo-alt d-flex p-2 "></i>
+              
+              <p>1305, 6B, Whispering Palms<br/>Akurli Rd, Kandivali East<br/>Mumbai, Maharashtra, India</p>
+            </div>
+           
+
+            <div class="col-lg-6 info mt-4 mt-lg-0">
+            <i class="bi bi-telephone"></i>
+            
+              <p><br/>+91 98679 10690</p>
             </div>
 
-                <div className="container">
-                {/* <div className="copyright">
-                    &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
-                </div> */}
-                
-                </div>
+        
+</div>
+</div>
+    
+   
+      
+            <footer id="footer">
+       
+            <div className="row justify-content-md-center">
+    <div className="col col-lg-2  priv ">
+      Terms of Service
+    </div>
+    <div className="col col-lg-2  priv">
+      Privacy Policy
+    </div>
+  
+  </div>
+      <div className="container">
+   
 
-
-                
-                <div className="column100 credits text-center">  
-                    <a href="/">{WebText.footer.lastPart.copyright}{thisYear} {WebText.footer.lastPart.company}</a>  
-                    <span className="sep"> | </span>  
-                    <a href="/#">{WebText.footer.lastPart.terms}</a>  
-                    <span className="sep"> | </span>  
-                    <a href="/#">{WebText.footer.lastPart.policy}</a>
-                    {/* <span className="footer-address">
-                            <a href="#" className="sociallink"><i className="bx bxl-facebook"></i></a>
-                            <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-                            <a href="#" className="comments"><i className="fa fa-comments"></i></a>
-                    </span> */}
-                </div>
-                {/* <div className="section-footer-payments">
-                    <div className="payment-badge"><img src={paypal} alt=""/></div>
-                    <div className="payment-badge"><img src={googlepay} alt=""/></div>
-                    <div className="payment-badge"><img src={applepay} alt=""/></div>
-                    <div className="payment-badge"><img src={visa} alt=""/></div>
-                    <div className="payment-badge"><img src={mastercard} alt=""/></div>
-                    <div className="payment-badge"><img src={discover} alt=""/></div>
-                </div> */}
+      <div className="social-links">
+        <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
+        <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
+        <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
+        
+      
+        <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+      </div>
+      <div className="copyright">
+        &copy; Copyright <strong><span>KoyoSoftwareSolutions</span></strong>. All Rights Reserved
+      </div>
+      <div className="credits" >
+        Designed by <a   style={{color: '#ffb03b'}} href="https://bootstrapmade.com/">Koyo Software Solutions</a>
+      </div>
+    </div>
             </footer>
 
             {/* Back to top */}

@@ -95,7 +95,7 @@ function GraphicsPortfolio() {
   return (
 <> 
 
-
+{/*
 <div className="Graphics">
 <div id="mydiv" className="mydivclass">
 
@@ -227,13 +227,13 @@ function GraphicsPortfolio() {
        
        
        </div> 
-*/}
+
 
 </div>
     
     
     
-    {/* The Modal */}
+  
     <div id="myModal" className="modal">
       <span onClick={Open} className="closee"></span>
       <img className="modal-content" id="img01" alt=""/>
@@ -249,7 +249,7 @@ function GraphicsPortfolio() {
 
 
 
-
+*/}
     
     </>
     );

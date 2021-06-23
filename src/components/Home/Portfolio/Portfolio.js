@@ -4,11 +4,18 @@ import Flip from '../Images/flip.png';
 import WhatsApp from '../Images/whatsapp.svg';
 import Email from '../Images/email.svg';
 import Call from '../Images/call.png';
+import desi from '../Images/Capture22.jpg';
+import re from '../Images/re(1).jpg';
 import { ScrollTo } from "react-scroll-to";
 
 import { HashLink as Link } from 'react-router-hash-link';
 
-
+function displayiframe()
+{
+  document.getElementById("babygirl").src="https://desifirangifoods.web.app/";
+  document.getElementById("flip-btn-load").style.visibility="hidden";
+  
+}
 function Portfolio() {
 
 
@@ -19,7 +26,7 @@ function Portfolio() {
 
       <section className="portfolio">
         <div className="container" data-aos="fade-up">
-
+      
           <div className="section-title">
             <h2>Portfolio</h2>
             <p>Check our Portfolio</p>
@@ -28,7 +35,7 @@ function Portfolio() {
           <div className="row" data-aos="fade-up" data-aos-delay="100">
             <div className="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
-              <li data-filter=".*" className="filter-active">All</li>
+              <li data-filter=".filter-latest" className="filter-active">Latest</li>
                 <li data-filter=".filter-restaurant">Restaurant</li>
                 <li data-filter=".filter-realestate">Real Estate</li>
                 <li data-filter=".filter-ngo">NGO</li>
@@ -42,11 +49,12 @@ function Portfolio() {
 
 
           <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+         
 
-
- <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item ">
+ <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-latest">
               <div id="flip-card">
-                <div className="flip-card-front"><iframe src="https://desifirangifoods.web.app/" scrolling="yes" title="W3Schools Free Online Web Tutorials" />
+                <div className="flip-card-front"><iframe src={desi} id="babygirl" loading="lazy" scrolling="yes" title="W3Schools Free Online Web Tutorials" />
+                
                   <button id="flip-card-btn-turn-to-back"> <img src={Flip} class="img-fluid" alt="" /></button></div>
 
                   <div className="flip-card-back"><p>desiFirangi is a modern, dark theme, multilingual food truck website that
@@ -57,39 +65,48 @@ function Portfolio() {
                       <br /><b>Hosting:</b> Antibes, France
                       <br /><b>Find Out More:</b>
                      <img className="contactpic" src={WhatsApp} alt="" />  <img className="contactpic" src={Email} alt="" />   <img className="contactpic" src={Call} class="img-fluid" alt="" />
-                     </div></p><iframe className="iframe2" src="https://desifirangifoods.web.app/" scrolling="no" title="W3Schools Free Online Web Tutorials" />
+                     </div></p><iframe className="iframe2" id="babygirl" src={desi} loading="lazy" scrolling="no" title="W3Schools Free Online Web Tutorials" />
+  
                      <button id="flip-card-btn-turn-to-front"> 
+
                      <img src={Flip} class="img-fluid" alt="" />
                      </button>
+
+                     
                   </div>
+                
                 </div>
+                <button type="button" id="flip-btn-load" className="btn" onClick={displayiframe}>Load</button>
               </div>
 
+              
 
-
-          <div className="col-lg-4 col-md-6  col-sm-12 portfolio-item filter-restaurant">
+          <div className="col-lg-4 col-md-6  col-sm-12 portfolio-item filter-latest">
               <div id="flip-card">
-                <div className="flip-card-front"><iframe src="https://realestate-jk.web.app/" scrolling="yes" title="W3Schools Free Online Web Tutorials" />
+                <div className="flip-card-front"><iframe  src={re} loading="lazy" scrolling="yes" title="W3Schools Free Online Web Tutorials" />
                   <button id="flip-card-btn-turn-to-back"> <img src={Flip} class="img-fluid" alt="" /></button></div>
                 <div className="flip-card-back"><p>
                   RHE is a visual call-to-action oriented real estate website that is suitable for architects, contractors that build prefabricated structures and property sale and rental agents.
                   Use it for compact single-page structure that is easy to search and navigate without having to wade through multiple pages.<div id="downn" ><br /><br /><b>Technologies:</b>  reactJS, BootStrap, JS, CSS
                   <br /><b>Hosting:</b>  J&amp;K, India
                   <br /><b>Find Out More:</b> <img src={WhatsApp} class="img-fluid" alt="" />  <img src={Email} class="img-fluid" alt="" />   <img src={Call} class="img-fluid" alt="" /></div></p><iframe
-                    className="iframe2" src="https://realestate-jk.web.app/ "
-                    scrolling="no" title="W3Schools Free Online Web Tutorials" /><button id="flip-card-btn-turn-to-front"> <img src={Flip} class="img-fluid" alt="" /></button></div></div></div>
-
+                    className="iframe2" src={re}
+                    scrolling="no" title="W3Schools Free Online Web Tutorials" /><button id="flip-card-btn-turn-to-front"> <img src={Flip} class="img-fluid" alt="" /></button>
+                    </div></div>
+                    <button type="button" id="flip-btn-load" className="btn btn-warning " onClick={displayiframe}>Load</button></div>
+{/*
              <div className="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-restaurant">
               <div id="flip-card">
-                <div className="flip-card-front"><iframe src="https://demo.w3layouts.com/demos_new/template_demo/20-09-2018/cakes_bakery-demo_Free/190696682/web/index.html" scrolling="yes" title="W3Schools Free Online Web Tutorials" />
+                <div className="flip-card-front"><iframe  src={Flip} scrolling="yes" title="W3Schools Free Online Web Tutorials" />
                   <button id="flip-card-btn-turn-to-back"> <img src={Flip} class="img-fluid" alt="" /></button></div>
                 <div className="flip-card-back"><p>
                   Cakey Bakey was designed to aid online sale of both, standaardized cakes as well as custom-designed cakes.  A client can thus browse through literally several hundered oferings, check the promotions, arrange a pick-up or a deliery time and make the payment.
                   The website structure is not only suitable for cake shops but also bread shops and florists.<div id="downn" ><br /><br /><b>Technologies:</b>  HTML, CSS, JS, BootStrap, nodeJS, expressJS, mongoDB
                  <br /><b>Hosting:</b>  Sydney, Australia
                   <br /><b>Find Out More:</b> <img src={WhatsApp} class="img-fluid" alt="" />  <img src={Email} class="img-fluid" alt="" />   <img src={Call} class="img-fluid" alt="" /></div></p><iframe
-                    className="iframe2" src="https://demo.w3layouts.com/demos_new/template_demo/20-09-2018/cakes_bakery-demo_Free/190696682/web/index.html "
-                    scrolling="no" title="W3Schools Free Online Web Tutorials" /><button id="flip-card-btn-turn-to-front"> <img src={Flip} class="img-fluid" alt="" /></button></div></div></div>
+                    className="iframe2" src={Flip}
+                    scrolling="no" title="W3Schools Free Online Web Tutorials" /><button id="flip-card-btn-turn-to-front"> <img src={Flip} class="img-fluid" alt="" /></button></div></div>
+                             <button type="button" id="flip-btn-load" className="btn btn-warning " onClick={displayiframe}>Load</button></div>
 
 
 
@@ -137,7 +154,7 @@ function Portfolio() {
                     scrolling="no" title="W3Schools Free Online Web Tutorials" /><button id="flip-card-btn-turn-to-front"> <img src={Flip} class="img-fluid" alt="" /></button></div></div></div>
 
 
-
+*/}
           </div>
 
         </div>
