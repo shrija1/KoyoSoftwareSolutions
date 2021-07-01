@@ -2,25 +2,125 @@
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team {
-    background: #fff;
-    padding: 60px 0;
-}
 
+.checkteam-container
+{
+    width: 80%;
+    margin:auto;
+}
+.team{
+    margin-top: 40px;
+}
 .team .member {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     overflow: hidden;
     border-radius: 5px;
-    background: #fff;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+
+    box-shadow: 0px 2px 15px rgba(54, 39, 39, 0.1);
 }
 
-.team .member .member-img {
-   
+.team  .member-img {
+
     position: relative;
-    overflow: hidden;
+   
+}
+.team .card
+{
+   background-color:  rgba(255,255,255,0.2);
+   height: 40%;
+
+
+
+}
+.team .card-body
+{
+   
+/* box-shadow: 12px 0 15px -4px #888;*/
+ box-shadow: 1px 9px 13px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 9px 13px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 9px 13px 1px rgba(0,0,0,0.75);
+ /*box-shadow: inset 0px 9px 15px rgba(210,210,210);*/
+ 
+}
+.team .card-title 
+{
+    padding: 0px;
+    font-size: 14px;
 }
 
+.team .card-subtitle
+{
+    color: rgb(70,70,70);
+    font-size: 13px;
+}
+.team .card-text
+{
+    overflow: auto;
+    height: 55%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+}
+.team .card-text::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 3px;
+  }
+  
+  /* Track */
+  .team .card-text::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 3px;
+  }
+   
+  /* Handle */
+  .team .card-text::-webkit-scrollbar-thumb {
+    background:#b3b3b3;
+    border-radius: 3px;
+  }
+  
+  /* Handle on hover */
+  .team .card-text::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    border-radius: 3px;
+  }
+
+
+
+
+
+
+
+
+  
+.team .card-link i
+{
+   
+    align-items: center;
+    font-size: 25px;
+    padding:0px;
+    margin: auto;
+    color: #ffc451;
+}
+
+  .team .cardsocial{
+      margin: auto;
+    align-items: center;
+   
+    text-align: center;
+  }
+.team  .teamim {
+    box-shadow: 10px 0 11px -4px #888;
+}
+.team .card{
+ 
+    bottom: 13%;
+    width: 84%;
+    margin: auto;
+}
+.team  .card-text{
+   
+    font-size: 12px;
+    text-align: justify;
+}
 .team .member .social {
     position: absolute;
     left: 0;
@@ -102,3 +202,25 @@
     color: #ffc451;
     background-color: #151515;
 }
+
+@media (min-width: 1500px) and (max-width: 2560px)  {
+    .team .card-title 
+    {
+        padding: 0px;
+        font-size: 1.03vw;
+    }
+    
+    .team .card-subtitle
+    {
+        color: rgb(70,70,70);
+        font-size: 1vw;
+    }
+    .team  .card-text{
+   
+        font-size: 0.95vw;
+        text-align: justify;
+    }
+   }
+
+
+  

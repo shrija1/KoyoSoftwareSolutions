@@ -6,16 +6,16 @@ import './Slider.css';
 
 import { Autoplay } from 'swiper';
 
-import AIML from '../Images/AIML.webp';
-import WebDesign from '../Images/WebDesign.webp';
-import CodeCamp from '../Images/CodeCamp.webp';
-import BrandingSols from '../Images/BrandingSols.webp';
+import AIML from '../../../img/AIML.webp';
+import WebDesign from '../../../img/WebDesign.webp';
+import CodeCamp from '../../../img/CodeCamp.webp';
+import BrandingSols from '../../../img/BrandingSols.webp';
 
 
-import WebDesignMob from '../Images/WebDesignMob.webp';
-import AIMLMob from '../Images/AIMLMob.webp';
-import CodeCampMob from '../Images/CodeCampMob.webp';
-import BrandingSolsMob from '../Images/BrandingSolsMob.webp';
+import WebDesignMob from '../../../img/WebDesignMob.webp';
+import AIMLMob from '../../../img/AIMLMob.webp';
+import CodeCampMob from '../../../img/CodeCampMob.webp';
+import BrandingSolsMob from '../../../img/BrandingSolsMob.webp';
 
 SwiperCore.use([Navigation, Pagination, Controller, Thumbs]);
 
@@ -37,7 +37,7 @@ function Slider() {
 
       <div className=" heading" >Web Services</div>
       <div className="wrapper">
-        <div id="columnmid">We make h hkhjhk secure, efficient, SEO-friendly websites for static display and khjhk secure, efficient, SEO-friendly websites for static display and eCommerce. We can also convert your WordPress website into  </div>
+       
         <div id="column1" >
 
           <img className="responsive"
@@ -78,7 +78,7 @@ function Slider() {
 
       <div className=" heading" >Branding Sols</div>
       <div className="wrapper">
-        <div id="columnmid">We make h hkhjhk secure, efficient, SEO-friendly websites for static display and khjhk secure, efficient, SEO-friendly websites for static display and eCommerce. We can also convert WordPress website into </div>
+     
         <div id="column1" >
           <img className="responsive"
 
@@ -116,7 +116,7 @@ function Slider() {
 
       <div className=" heading" >AI and ML</div>
       <div className="wrapper">
-        <div id="columnmid">We make h hkhjhk secure, efficient, SEO-friendly websites for static display and khjhk secure, efficient, SEO-friendly websites for static display and eCommerce. We can also convert WordPress website into </div>
+      
         <div id="column1" >
           <img className="responsive"
 
@@ -154,7 +154,7 @@ function Slider() {
 
       <div className=" heading" >Coding Camp</div>
       <div className="wrapper">
-        <div id="columnmid">We make h hkhjhk secure, efficient, SEO-friendly websites for static display and khjhk secure, efficient, SEO-friendly websites for static display and eCommerce. We can also convert your WordPress website into </div>
+      
         <div id="column1" >
           <img className="responsive"
 

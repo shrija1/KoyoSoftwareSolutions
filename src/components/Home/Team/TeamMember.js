@@ -5,22 +5,42 @@ const Team = (props) => {
     const {data_aos_delay, img, name, title,description} = props.member
 
     return (
-        <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div className="member" data-aos="fade-up" data-aos-delay={data_aos_delay}>
+    
+        <div className="col-lg-4 col-md-6 mt-4 d-flex align-items-stretch teamm">
+             
             <div className="member-img">
-                <img src={img} className="img-fluid" alt=""/>
+                <img src={img} style={{width:'100%'}}className="img-fluid teamim" alt=""/>
+
+
+                <div className="member" data-aos="fade-up" data-aos-delay={data_aos_delay}>
                 <div className="social">
                 {/* <a href="/#"><i className="icofont-twitter"></i></a> */}
                 {/* <a href="/#"><i className="icofont-facebook"></i></a> */}
-                <a href="/#"><i className="icofont-instagram"></i></a>
+               
                 <a href="/#"><i className="icofont-linkedin"></i></a>
                 </div>
             </div>
+
+            <div className="card" >
+  <div className="card-body">
+    <h5 className="card-title">{name}</h5>
+    <h6 className="card-subtitle mb-2 ">{title}</h6>
+    <div className="cardsocial">
+    <a href="/#" class="card-link"><i className="icofont-envelope"></i></a>
+    <a href="/#" class="card-link"><i className="icofont-linkedin"></i></a>
+    </div>
+    <p className="card-text">{description}
+    </p>
+    
+  </div>
+</div>
+            {/*
             <div className="member-info">
                 <h4>{name}</h4>
                 <span><b>{title}</b></span>
                 <span>{description}</span>
             </div>
+            */}
             </div>
         </div>
     )

@@ -1,14 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import WebText from '../../../TextData';
 import Modal from 'react-modal';
 import './ApplicationForm.css';
 import { useState } from "react";
 import InputSkills from './InputSkills'
-import { EventAvailable, RecordVoiceOverSharp } from '@material-ui/icons';
-import { faBullseye, faSlidersH } from '@fortawesome/free-solid-svg-icons';
+
 import cross from '../Images/cross.png';
 import ModalVideo from 'react-modal-video'
-import desiFirangiL from '../Images/Banner/desiFirangi-L.jpg';
+
 import './modal-video.scss';
 
 
@@ -226,7 +225,7 @@ function openModal3() {
 
 <button type="button" className="close" data-dismiss="modal" aria-hidden="true" onClick={closeModal1}>x</button>
 <div className="md-stepper-horizontal yellow">
-    <div className="md-step active">
+    <div className="md-step ">
       <div className="md-step-circle" onClick={openModal2}><span>1</span></div>
   
       <div className="md-step-bar-left"></div>
@@ -279,13 +278,13 @@ function openModal3() {
       >
 <button type="button" className="close" data-dismiss="modal" aria-hidden="true" onClick={closeModal3}>x</button>
 <div className="md-stepper-horizontal yellow">
-    <div className="md-step active">
+    <div className="md-step ">
       <div className="md-step-circle" onClick={openModal2}><span>1</span></div>
   
       <div className="md-step-bar-left"></div>
       <div className="md-step-bar-right"></div>
     </div>
-    <div className="md-step active">
+    <div className="md-step ">
       <div className="md-step-circle" onClick={openModal1}><span>2</span></div>
      
       <div className="md-step-optional">Optional</div>
@@ -350,14 +349,14 @@ function openModal3() {
   
   </div>
   
-        <h5 id="title2" className="text-center">Details</h5>
+        <h5 id="title2" className="text-center"> </h5>
         <div className="notice">Information in<span style={{ color: 'red' }}> red </span>is mandatory<span style={{ color: 'red' }}> * </span></div><br />
-        <form action="" onSubmit={handleSubmit} formNoValidate>
+        <form action=""  onSubmit={handleSubmit} formNoValidate>
           <div className="form-row">
             <div className="col">
               <div className="form-group ">
 
-                <input type="text" name="applicantname" className="form-control form-control-sm border border-danger" id="exampleInputname2" placeholder="Name" value={applicationDetails.applicantname} onChange={handleInput} />
+                <input type="text" name="applicantname" className="form-control form-control-sm border border-danger" id="exampleInputname2" placeholder="Name*" value={applicationDetails.applicantname} onChange={handleInput} />
               </div>
             </div>
 
@@ -365,7 +364,7 @@ function openModal3() {
             <div className="col">
               <div className="form-group ">
 
-                <input type="email" name="applicantemail" className="form-control form-control-sm border border-danger" id="exampleInputEmail2" placeholder="Email ID" onChange={handleInput} value={applicationDetails.applicantemail} />
+                <input type="email" name="applicantemail" className="form-control form-control-sm border border-danger" id="exampleInputEmail2" placeholder="Email ID*" onChange={handleInput} value={applicationDetails.applicantemail} />
                 <div className="feedback">
 
                   {errEmail}
@@ -383,11 +382,11 @@ function openModal3() {
  <div className="col">
             <div className="form-group w-100 p-0">
               <select name="available_inhours" className=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
-                <option value="" selected>Hours/Week</option>
-                <option value="1">10</option>
-                <option value="2">15</option>
-                <option value="3">20</option>
-                <option value="4">30</option>
+                <option value="" selected>Hours/Week*</option>
+                <option value="1">10 Hr/Week</option>
+                <option value="2">15 Hr/Week</option>
+                <option value="3">20 Hr/Week</option>
+                <option value="4">30 Hr/Week</option>
                 <option value="5">Full Time</option>
               </select>
             </div>
@@ -400,13 +399,13 @@ function openModal3() {
            
             <div className="form-group w-100 p-0">
               <select name="available_inmonths" className="selectpicker form-control-sm form-control  border border-danger" id="selectboxmonths" value={applicationDetails.available_inmonths} onChange={handleInput} data-width="200px">
-                <option selected value="">Months</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">6</option>
-                <option value="6">9</option>
+                <option selected value="">Months*</option>
+                <option value="1">1 Month</option>
+                <option value="2">2 Month</option>
+                <option value="3">3 Month</option>
+                <option value="4">4 Month</option>
+                <option value="5">6 Month</option>
+                <option value="6">9 Month</option>
                 <option value="7">Full Time</option>
               </select>
             </div>
@@ -445,7 +444,7 @@ function openModal3() {
 
 
 
-        Rate Your Skills<br/>
+    
 
          <div className="form-row">
             <div className="col">
@@ -454,7 +453,7 @@ function openModal3() {
                  </div>
             <div className="form-group w-50 p-0">
               <select name="available_inhours" className=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
-                <option value="" selected>Rate your skill</option>
+                <option value="" selected>Rate your skill*</option>
                 <option value="1">⭐</option>
                 <option value="2">⭐⭐</option>
                 <option value="3">⭐⭐⭐</option>
@@ -471,7 +470,7 @@ function openModal3() {
                  </div>
             <div className="form-group w-50 p-0">
               <select name="available_inhours" className=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
-                <option value="" selected>Rate your skill</option>
+                <option value="" selected>Rate your skill*</option>
                 <option value="1">⭐</option>
                 <option value="2">⭐⭐</option>
                 <option value="3">⭐⭐⭐</option>
@@ -488,7 +487,7 @@ function openModal3() {
                  </div>
             <div className="form-group w-50 p-0">
               <select name="available_inhours" className=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
-                <option value="" selected>Rate your skill</option>
+                <option value="" selected>Rate your skill*</option>
                 <option value="1">⭐</option>
                 <option value="2">⭐⭐</option>
                 <option value="3">⭐⭐⭐</option>
@@ -505,7 +504,7 @@ function openModal3() {
                  </div>
             <div className="form-group w-50 p-0">
               <select name="available_inhours" className=" form-control form-control-sm selectpicker form-control border border-danger" id="selectboxhours" onChange={handleInput} data-width="200px">
-                <option value="" selected>Rate your skill</option>
+                <option value="" selected>Rate your skill*</option>
                 <option value="1">⭐</option>
                 <option value="2">⭐⭐</option>
                 <option value="3">⭐⭐⭐</option>
@@ -530,15 +529,15 @@ function openModal3() {
         className="Modal4"
         overlayClassName="Overlay4"
       >
+     
+
        <ModalVideo channel='youtube' 
     
        isOpen={isOpen5} 
        videoId="L61p2uyiMSo"
         onClose={() => setOpen5(false)}
         className="ModalVid" />
- <img className="closeee"  onClick={closeModal4} src={cross} alt="closee"/>
-    
-
+     <img src={cross} className="closeee" alt="close" onClick={closeModal4}/>
        <div id="carouselExampleIndicators" className="carousel slide" data-ride="false">
   <ol className="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -577,6 +576,9 @@ function openModal3() {
 
 <br/>
 <div id="snackbar" className="snackk">The background is simply the text shown.</div>
+
+
+
 <div className="projdesc">
 <div className="projtit">
 <b>Grip Controller optimisation for a coconut tree climbing robotic harvester</b>
@@ -592,9 +594,8 @@ Click <button onClick={nofile} className=" clickhere2" ><i style={{color:'#F19A1
 <br/><br/><b>Project Brief:</b> Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally.
 Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard.
 Globally, c40 billion coconuts are harvested annually.
-<br/><br/><b>References</b><br/>
-1.<br/>
-2.<br/>
+
+
 </div>
      
       </Modal>
@@ -642,160 +643,43 @@ Globally, c40 billion coconuts are harvested annually.
               </ul>
             </div>
           </div>
+       
 <div className="long">
+
           <div className="row portfolio-container joinourteam " data-aos="fade-up" data-aos-delay="200">
 
-            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 portfolio-item filter-webdesign">
+          
+          {WebText.home.projects.projectListData.map((proj) => ( 
+
+<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 portfolio-item filter-webdesign">
 
 
-              <div className="topic">
-                Grip Controller optimisation for a coconut tree climbing robotic harvester<br /></div>
-              <div className="keywords">Keywords: <i>Robotics , CAD, Simulation, Controls</i></div>
-              <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                 pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click <button className=" clickhere" onClick={openModal4}>here</button> to know more.</div>
-              <div className="duration"><span style={{color:'white',fontStyle:'italic'}}> Duration</span> : 4 Month<span style={{color:'white',fontStyle:'italic'}}>  Skills :</span>CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently</div>
+<div className="topic">
+{proj.topic}<br /></div>
+<div className="keywords">Keywords: <i>{proj.keywords}</i></div>
+<div className="jobdescription">{proj.projectdescription} Click <button className=" clickhere" onClick={openModal4}>here</button> to know more.</div>
+<div className="duration"><span style={{color:'#ffc451'}}> Duration</span> : {proj.duration}<span style={{color:'#ffc451'}}>  Skills :</span>{proj.skills}</div>
 
-              <div className="centerbuttonform" >
+<div className="centerbuttonform" >
 
-                <div className="col-md-12 text-center">
+  <div className="col-md-12 text-center">
 
-                  <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button>  
-                
-                </div>
-                  <div className="deadline">
-                DeadLine : MMMM,DD,YYYY</div>
-              </div>
-            </div>
+    <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button>  
+  
+  </div>
+    <div className="deadline">
+  DeadLine : {proj.deadline}</div>
+</div>
+</div>
 
 
-            <div className="col-lg-6 col-md-6 col-xs-12 portfolio-item filter-webdesign">
-               
-
-              <div className="topic">
-                Grip Controller optimisation for a coconut tree climbing robotic harvester<br /></div>
-              <div className="keywords">Keywords: <i>Robotics , CAD, Simulation, Controls</i></div>
-              <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click  Click <button className=" clickhere" onClick={openModal4}>here</button>to know more.</div>
-              <div className="duration"> <span style={{color:'white',fontStyle:'italic'}}>Duration</span> : 4 Month <span style={{color:'white',fontStyle:'italic'}}> Skills : </span> CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently</div>
-
-              <div className="centerbuttonform" >
-
-                <div className="col-md-12 text-center">
-
-                  <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button>
-                </div>
-                <div className="deadline">
-                DeadLine : MMMM,DD,YYYY</div>
-              </div >
 
 
-            </div>
-
-            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 portfolio-item filter-webdesign">
 
 
-              <div className="topic">
-                Grip Controller optimisation for a coconut tree climbing robotic harvester<br /></div>
-              <div className="keywords">Keywords: <i>Robotics , CAD, Simulation, Controls</i></div>
-              <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click  Click <button className=" clickhere" onClick={openModal4}>here</button>to know more.</div>
-              <div className="duration"> <span style={{color:'white',fontStyle:'italic'}}>Duration </span>: 4 Month  <span style={{color:'white',fontStyle:'italic'}}> Skills</span> : CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently</div>
 
-              <div className="centerbuttonform" >
-
-                <div className="col-md-12 text-center">
-
-                  <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button>
-                </div>
-                <div className="deadline">
-                DeadLine : MMMM,DD,YYYY</div>
-              </div >
-
-
-            </div>
-
-
-            <div className="col-lg-6 col-md-6 col-xs-12 portfolio-item filter-webdesign">
-
-
-              <div className="topic">
-                Grip Controller optimisation for a coconut tree climbing robotic harvester<br /></div>
-              <div className="keywords">Keywords: <i>Robotics , CAD, Simulation, Controls</i></div>
-              <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
- pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click  Click <button className=" clickhere" onClick={openModal4}>here</button>to know more.</div>
-              <div className="duration"><span style={{color:'white',fontStyle:'italic'}}> Duration </span>: 4 Month  <span style={{color:'white',fontStyle:'italic'}}>  Skills</span> : CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently</div>
-
-              <div className="centerbuttonform" >
-
-                <div className="col-md-12 text-center">
-
-                  <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button>
-                </div>
-                <div className="deadline">
-                DeadLine : MMMM,DD,YYYY</div>
-              </div >
-
-
-            </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 portfolio-item filter-graphics">
-
-
-              <div className="topic">
-                Grip Controller optimisation for a coconut tree climbing robotic harvester<br /></div>
-              <div className="keywords">Keywords: <i>Robotics , CAD, Simulation, Controls</i></div>
-              <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click  Click <button className=" clickhere" onClick={openModal4}>here</button>to know more.</div>
-              <div className="duration"> <span style={{color:'white',fontStyle:'italic'}}> Duration</span> : 4 Month <span style={{color:'white',fontStyle:'italic'}}>Skills </span>: CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently</div>
-
-              <div className="centerbuttonform" >
-
-                <div className="col-md-12 text-center">
-
-                  <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button>
-                </div>
-                <div className="deadline">
-                DeadLine : MMMM,DD,YYYY</div>
-              </div >
-
-
-            </div>
-
-
-            <div className="col-lg-6 col-md-6 col-xs-12 portfolio-item filter-graphics">
-
-
-              <div className="topic">
-                Grip Controller optimisation for a coconut tree climbing robotic harvester<br /></div>
-              <div className="keywords">Keywords: <i>Robotics , CAD, Simulation, Controls</i></div>
-              <div className="jobdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official. Click  Click <button className=" clickhere" onClick={openModal4}>here</button>to know more.</div>
-              <div className="duration"> <span style={{color:'white',fontStyle:'italic'}}>Duration</span> : 4 Month <span style={{color:'white',fontStyle:'italic'}}>Skills </span>: CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently</div>
-
-              <div className="centerbuttonform" >
-
-                <div className="col-md-12 text-center">
-
-                  <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button>
-                </div>
-                <div className="deadline">
-                DeadLine : MMMM,DD,YYYY</div>
-              </div >
-    
-
-            </div>
-
+))}
+           
 
 </div>
 <br/>

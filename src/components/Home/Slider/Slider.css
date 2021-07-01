@@ -1,18 +1,23 @@
 .swiper-container  {
-    width: 1200px;
+    width: 80%;
+
     overflow:hidden;
   }
 
-
-  .wrapper div {
-  
-    padding: 10px;
- }
+.wrapper
+{
+  display: flex;
+ 
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+ 
 
  .heading{
   padding-bottom: 25px;
-  padding-left: 140px;
-  font-size: 35px;
+  padding-left: 17%;
+  font-size: 1.9vw;
   font-weight: 500;
   color: black;
   font-family: "Poppins", sans-serif;
@@ -42,9 +47,9 @@
 }
 img.responsive{
       
-  float: left;
-  height:320px;
-  width: 530px;
+
+  height:auto;
+  width: 100%;
   
   
   
@@ -64,24 +69,23 @@ img.responsive_mob{
  #column1 {
 
 
-  float:left; 
-  margin-right:20px;
-  width:550px;
+ 
+  margin-right:1%;
+  width:50%;
 
-  
 }
 
 #column2 { 
  
   overflow:hidden;
-  margin-left: 50px;
-padding-right: 30px;
+ margin-left: 2%;
+margin-right: 5%;
   min-height:170px;
-  width: 550px;
-  height: 330px;
+  
+  width:45%;
+ font-size:14px;
  text-align: justify;
- line-height: 1.7;
- padding-top: 18px
+ line-height: 1.60;
 
 
 }
@@ -102,7 +106,12 @@ padding-right: 30px;
 
 
 }
-
+@media (min-width: 1300px) and (max-width: 2560px)  {
+ #column2
+ {
+  font-size:1.1vw;
+ }
+}
 
 @media screen and (max-width: 1300px) {
  img.responsive{
@@ -141,50 +150,30 @@ padding-right: 30px;
 
 
 @media screen and (max-width: 1000px) {
+  .wrapper
+  {
+    flex-direction: column;
+   
+
+    
+  }
   img.responsive{
 padding-top: 0px;
     height:280px;
     width: 500px;
-    
-  
+    margin-left: -15%;
    }
 
-   #columnmid
-   {
-     display: block;
-    
-     line-height: 1.5;
-    
-   }
-   img.responsive{
-      
-   padding-left: 50px;
-    
-    
-    
-  }
-
-  #column1 { 
-   float: none;
-   height: 80px;
-   width: 700px;
-   margin-right: 0px;
-   margin-bottom: 0px;
-   padding-top: 2px;
-   
-      
-  }
-
-  #column2
-  {
-    padding-bottom: 0px;
- line-height: 1.5;
-  }
-
+#column2
+{
+  padding-top: 5%;
+  margin-left: -5%;
+}
  .heading
  {
+   font-size: 20px;
    padding-bottom: 0px;
-   padding-left: 140px;
+   padding-left: 180px;
   
  }  
 
@@ -200,6 +189,12 @@ padding-top: 0px;
 
 
 @media screen and (max-width: 700px) {
+  .wrapper
+{
+  display: block;
+  margin: auto;
+  
+}
   img.responsive{
 
     
@@ -208,10 +203,10 @@ padding-top: 0px;
    }
    img.responsive_mob{
 
-    height:230px;
-    width: 247px;
+    height:261px;
+    width: 280px;
     display: block;
-    padding-left: 5px;
+    padding-left: 16px;
     margin-left: 0px;
   
   
@@ -222,8 +217,7 @@ padding-top: 0px;
    margin-left:0px;
    width:326px;
   
-   padding-left: 0px;
-  
+
    
    
   }
@@ -232,28 +226,16 @@ padding-top: 0px;
   #column2{
     width: 340px;
     height: 500px;
-   margin-left: 0px;
+   margin-left: 10px;
   padding-top: 20px;
-   padding-right: 90px;
+   padding-right: 80px;
    font-size: 14px;
-   padding-left: 5px;
+   padding-left: 10px;
 
    }
 
    
-  #columnmid{
 
-  
-    width: 340px;
- 
-  
-padding-bottom: 20px;
-   margin-left: 0px;
-  
-   padding-right: 90px;
-   font-size: 14px;
-   padding-left: 5px;
-   }
    
 .heading
 {
@@ -268,8 +250,8 @@ padding-bottom: 20px;
 
   
   .swiper-container  {
-  width:280px;
-  height: 830px;
+  width:320px;
+  height: 100%;
  
 }
 

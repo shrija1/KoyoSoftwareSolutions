@@ -8,8 +8,6 @@ import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Home/Header/Header';
 import Home from './components/Home/Home';
-import PortfolioDetails from './components/PortfolioDetails/PortfolioDetails';
-import NavbarOfPortfolio from './components/PortfolioDetails/NavbarOfPortfolio';
 import Registration from './components/Registration/Registration';
 import BuyerServices from './components/Products/BuyerServices/BuyerServices';
 import SellerServices from './components/Products/SellerServices/SellerServices';
@@ -25,9 +23,8 @@ import HeaderForAll from './components/HeaderForAll/HeaderForAll';
 // import Admin from './components/Admin/Admin';
 import AdminDashboard from './components/Dashboard/AdminDashboard/AdminDashboard';
 import AdminDashboardLogin from './components/Dashboard/AdminDashboard/AdminDashboardLogin';
-import PortfolioPage from './components/PortfolioPage/PortfolioPage';
-import Join from './components/Join/Join';
 
+import Join from './components/Join/Join';
 // textData
 import WebText from './TextData'
 
@@ -141,15 +138,7 @@ function App() {
               <AboutPage/>
               <Footer/>
             </Route>
-            <Route path='/portfolio'>
-              <Navbar active="portfolio"/>
-              <HeaderForAll 
-                title={WebText.portfolio.header.title} 
-                description={WebText.portfolio.header.description}
-              />
-              <PortfolioPage/>
-              <Footer/>
-            </Route>
+         
             {/* <Route path='/cart'>
               <Cart/>
               <Footer />
@@ -182,11 +171,7 @@ function App() {
             </Route>
 
 
-            <Route path='/portfolioDetails'>
-              <NavbarOfPortfolio/>
-              <PortfolioDetails/>
-              <Footer />
-            </Route>
+           
 
             <Route path='/dashboard'>
               <AdminDashboard/>

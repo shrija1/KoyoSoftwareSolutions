@@ -200,7 +200,7 @@ const Navbar1 = (props) => {
                                 
                             </ul>
                         </li>
-                        <li id="portfolio"><Link to="/portfolio">{WebText.home.navbar.navItems.item3}</Link></li>
+                       
                         <li id="about"><Link to="/about">{WebText.home.navbar.navItems.item4}</Link></li>
                         <li id="contact"><Link to="/contact">{WebText.home.navbar.navItems.item5}</Link></li>
                     </ul>
@@ -265,17 +265,7 @@ const Navbar1 = (props) => {
                             </button>
                         </div>
                     </li>
-                    <li id="portfolio">
-                        <button
-                            className="navbar-toggler"
-                            data-toggle="collapse" 
-                            data-target="#navbarNav" 
-                            aria-controls="navbarNav" 
-                            onClick={nav2Deactive}
-                        >
-                            <Link to="/portfolio">{WebText.home.navbar.navItems.item3}</Link>
-                        </button>
-                    </li>
+                
                     <li id="about" className="nav-item">
                         <button
                             className="navbar-toggler"

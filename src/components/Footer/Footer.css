@@ -56,7 +56,7 @@
     color: #fff;
     font-size: 14px;
     text-align: center;
-    padding: 30px 0;
+    padding: 20px 0;
   }
   
   #footer h3 {
@@ -68,10 +68,23 @@
     margin: 0 0 15px 0;
   }
 
-  .priv{
-    padding:10px;
+  .priv1{
+    padding-bottom:5px;
+    margin-left: 3%;
   }
-  .priv:hover
+  .priv1:hover
+  {
+    
+      color:#ffb03b; 
+      cursor: pointer;
+     
+  }
+
+  .priv2{
+    margin-left: -5%;
+    padding-bottom:5px;
+  }
+  .priv2:hover
   {
       color:#ffb03b; 
       cursor: pointer;
@@ -85,7 +98,20 @@
   }
   
   #footer .social-links {
-    margin: 0 0 10px 0;
+    margin: 10px 0 10px 0;
+  }
+
+  #footer .social-links .twitter {
+    margin-left: 10px;
+  }
+  
+  #footer .social-links .phone {
+    margin-left: 10px;
+  }
+  
+    
+  #footer .social-links .linkedin {
+    margin-right: 10px;
   }
   
   #footer .social-links a {
@@ -128,14 +154,15 @@
     padding-left: 20%;
   }
   
-  .contact .info i {
+   .contact .info i {
     font-size: 20px;
-    color: #ffb03b;
+
     float: center;
-   margin-top: 10px;
+
     width: 44px;
     height: 44px;
-    background: #fff6e8;
+    background: #fff !important;
+    color: #ffb03b !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,8 +186,53 @@
     color: #7a7368;
   }
   
-  .contact .info:hover i {
-    background: #ffb03b;
-    color: #fff;
-  }
+ 
   
+  
+
+  @media only screen and (max-width: 450px) {
+ 
+    
+   
+    #footer .social-links a {
+      font-size: 22px;
+      display: inline-block;
+      background: #46423b;
+      color: #fff;
+      line-height: 1;
+      padding: 2px;
+     margin-right: 4px;
+     margin-bottom: 4px;
+      border-radius: 50%;
+      text-align: center;
+      width: 28px;
+      height: 28px;
+      transition: 0.3s;
+    }
+    #footer .social-links .twitter {
+      margin-left: 5px;
+    }
+    
+    #footer .social-links .phone {
+      margin-left: 5px;
+    }
+    
+      
+    #footer .social-links .linkedin {
+      margin-right: 5px;
+    }
+  
+    .contact .info i {
+      font-size: 30px;
+     
+      float: center;
+  
+      width: 44px;
+      height: 44px;
+     
+    }
+    .contact .info {
+      
+      padding-left: 2%;
+    }
+  }

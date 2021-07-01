@@ -3,17 +3,64 @@ import team1 from './components/Home/Images/ft1.jpg'
 import team2 from './components/Home/Images/ft2.jpg'
 import team3 from './components/Home/Images/ft3.jpg'
 // portfolio
-import portfolio1 from './img/portfolio/portfolio-1.jpg'
-import portfolio2 from './img/portfolio/portfolio-2.jpg'
-import portfolio3 from './img/portfolio/portfolio-3.jpg'
-import portfolio4 from './img/portfolio/portfolio-4.jpg'
-import portfolio5 from './img/portfolio/portfolio-5.jpg'
-import portfolio6 from './img/portfolio/portfolio-6.jpg'
-import portfolio7 from './img/portfolio/portfolio-7.jpg'
-import portfolio8 from './img/portfolio/portfolio-8.jpg'
-import portfolio9 from './img/portfolio/portfolio-9.jpg'
+import portfolio1 from './img/portfolio/portfolio1.jpg'
+import portfolio2 from './img/portfolio/portfolio2.jpg'
+import portfolio3 from './img/portfolio/portfolio3.jpg'
+import portfolio4 from './img/portfolio/portfolio4.jpg'
+import portfolio5 from './img/portfolio/portfolio5.jpg'
+import portfolio6 from './img/portfolio/portfolio6.jpg'
+import portfolio7 from './img/portfolio/portfolio7.jpg'
+
+//graphics portfolio
+import gportfolio1 from './img/graphicsportfolio/Banner/1.jpg'
+import gportfolio2 from './img/graphicsportfolio/Banner/2.jpg'
+import gportfolio3 from './img/graphicsportfolio/Banner/3.jpg'
+import gportfolio4 from './img/graphicsportfolio/Banner/4.jpg'
+import gportfolio5 from './img/graphicsportfolio/Banner/5.jpg'
+import gportfolio6 from './img/graphicsportfolio/Banner/6.jpg'
+import gportfolio7 from './img/graphicsportfolio/Banner/7.jpg'
+
+import gportfolio8 from './img/graphicsportfolio/MenuCard/1.jpg'
+import gportfolio9 from './img/graphicsportfolio/MenuCard/2.jpg'
+import gportfolio10 from './img/graphicsportfolio/MenuCard/3.jpg'
+import gportfolio11 from './img/graphicsportfolio/MenuCard/4.jpg'
+import gportfolio12 from './img/graphicsportfolio/MenuCard/5.jpg'
+import gportfolio13 from './img/graphicsportfolio/MenuCard/6.jpg'
+import gportfolio14 from './img/graphicsportfolio/MenuCard/7.jpg'
+import gportfolio15 from './img/graphicsportfolio/MenuCard/8.jpg'
+import gportfolio16 from './img/graphicsportfolio/MenuCard/9.jpg'
+import gportfolio17 from './img/graphicsportfolio/MenuCard/10.jpg'
+
+import gportfolio18 from './img/graphicsportfolio/Packaging/1.jpg'
+import gportfolio19 from './img/graphicsportfolio/Packaging/2.jpg'
+import gportfolio20 from './img/graphicsportfolio/Packaging/3.jpg'
+import gportfolio21 from './img/graphicsportfolio/Packaging/4.jpg'
+import gportfolio22 from './img/graphicsportfolio/Packaging/5.jpg'
+import gportfolio23 from './img/graphicsportfolio/Packaging/6.jpg'
+
+
+import gportfolio24 from './img/graphicsportfolio/Vinyl-Wrapper/1.jpg'
+import gportfolio25 from './img/graphicsportfolio/Vinyl-Wrapper/2.jpg'
+import gportfolio26 from './img/graphicsportfolio/Vinyl-Wrapper/3.jpg'
+import gportfolio27 from './img/graphicsportfolio/Vinyl-Wrapper/4.jpg'
+import gportfolio28 from './img/graphicsportfolio/Vinyl-Wrapper/5.jpg'
+import gportfolio29 from './img/graphicsportfolio/Vinyl-Wrapper/6.jpg'
+import gportfolio30 from './img/graphicsportfolio/Vinyl-Wrapper/7.jpg'
+import gportfolio31 from './img/graphicsportfolio/Vinyl-Wrapper/8.jpg'
+import gportfolio32 from './img/graphicsportfolio/Vinyl-Wrapper/9.jpg'
+import gportfolio33 from './img/graphicsportfolio/Vinyl-Wrapper/10.jpg'
+
+
+
+
+
+
+
 // buyer services
 import pychons from './img/BuyerServices/Morder pychons.png'
+
+
+
 
 let WebsiteText=null;
 if(WebsiteText===null){
@@ -229,7 +276,432 @@ if(WebsiteText===null){
                         description:'She holds a Bachelors in Artificial Intelligence from the University of Damascus. At TTS she leads product development for Learn and Code, manages projects in Optical Character Recognition for Latin and Arabic scripts and leads idea generation for Graphics Design projects. She likes cats, mattah and Artificial Intelligence.'
                     },
                 ]
-            }
+            },
+            portfolio:{
+              title:"Check Our Portfolio",
+              description:"Websites",
+              portfolioListData:[{
+                img : portfolio1,
+                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
+                technologies: "reactJS, BootStrap, JS, CSS",
+                hosting:" Antibes, France",
+                link:"https://desifirangifoods.web.app/",
+                category:"filter-restaurant app-item"
+              },
+              {
+                img : portfolio2,
+                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
+                technologies: "reactJS, BootStrap, JS, CSS",
+                hosting:" Antibes, France",
+                link:"https://eka.network/",
+                category:"filter-ecommerce app-item"
+              },
+              {
+                img : portfolio3,
+                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
+                technologies: "reactJS, BootStrap, JS, CSS",
+                hosting:" Antibes, France",
+                link:"https://ngo-website-tts.web.app/",
+                category:"filter-ngo app-item"
+              },
+              {
+                img : portfolio4,
+                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
+                technologies: "reactJS, BootStrap, JS, CSS",
+                hosting:" Antibes, France",
+                link:"https://grocery-website-tts.web.app",
+                category:"filter-ecommerce app-item"
+              },
+              {
+                img : portfolio5,
+                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
+                technologies: "reactJS, BootStrap, JS, CSS",
+                hosting:" Antibes, France",
+                link:"https://realestate-jk.web.app",
+                category:"filter-realestate app-item"
+              },
+              {
+                img : portfolio6,
+                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
+                technologies: "reactJS, BootStrap, JS, CSS",
+                hosting:" Antibes, France",
+                link:" https://samskrithi-goshala.web.app",
+                category:"filter-ngo app-item"
+
+              },
+              {
+                img : portfolio7,
+                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
+                technologies: "reactJS, BootStrap, JS, CSS",
+                hosting:" Antibes, France",
+                link:"https://www.sevencolors7.com",
+                category:"filter-portfolio app-item"
+              }
+             
+              ]
+            },
+            graphicsportfolio:{
+                title:"Check Our Portfolio",
+                description:"Branding Solutions",
+                graphicsportfolioListData:[{
+                    category:"Branding",
+                    galleryData:[
+                        {
+                            id:"1",  /*ratio 2:1*/
+                            img:gportfolio1,
+                            class:"myImg88 myImg" 
+
+                        },
+                        {
+                            id:"2", /* ratio 3:2*/
+                            img:gportfolio2,
+                            class:"myImg88 myImg1"
+
+                        },
+                        {
+                            id:"3",  /*ratio 3:4*/
+                            img:gportfolio3,
+                            class:"myImg88 myImg2"
+
+                        },
+                        {
+                            id:"4", /* ratio 5:3*/
+                            img:gportfolio4,
+                            class:"myImg88 myImg3"
+
+                        },
+                        {
+                            id:"5", /*ratio 1:1 */
+                            img:gportfolio5,
+                            class:"myImg88 myImg4"
+
+                        },
+                        {
+                            id:"6", /* ratio : 4:3*/
+                            img:gportfolio6,
+                            class:"myImg88 myImg5"
+
+                        },
+                        {
+                            id:"7", /*ration 16:9*/
+                            img:gportfolio7,
+                            class:"myImg88 myImg6"
+
+                        },
+                        {
+                            id:"8",  /*ratio : 2:3*/
+                            img:gportfolio7,
+                            class:"myImg88 myImg7"
+
+                        },
+                        {
+                            id:"9", /*ratio : 3:5*/
+                            img:gportfolio7,
+                            class:"myImg88 myImg8"
+
+                        },
+                        {
+                            id:"10",  /*ratio : 1:2*/
+                            img:gportfolio7,
+                            class:"myImg88 myImg9"
+
+                        },
+                        
+                    ]
+
+
+                },
+                {
+                    category:"Menu Card",
+                    galleryData:[
+                        {
+                            id:"11",
+                            img:gportfolio8,
+                            class:"myImg88 myImg"
+
+                        },
+                        {
+                            id:"12",
+                            img:gportfolio9,
+                            class:"myImg88 myImg1"
+
+                        },
+                        {
+                            id:"13",
+                            img:gportfolio10,
+                            class:"myImg88 myImg2"
+
+                        },
+                        {
+                            id:"14",
+                            img:gportfolio11,
+                            class:"myImg88 myImg3"
+
+                        },
+                        {
+                            id:"15",
+                            img:gportfolio12,
+                            class:"myImg88 myImg4"
+
+                        },
+                        {
+                            id:"16",
+                            img:gportfolio13,
+                            class:"myImg88 myImg5"
+
+                        },
+                        {
+                            id:"17",
+                            img:gportfolio14,
+                            class:"myImg88 myImg6"
+
+                        },
+                        {
+                            id:"18",
+                            img:gportfolio15,
+                            class:"myImg88 myImg7"
+
+                        },
+                        {
+                            id:"19",
+                            img:gportfolio16,
+                            class:"myImg88 myImg8"
+
+                        },
+                        {
+                            id:"20",
+                            img:gportfolio17,
+                            class:"myImg88 myImg9"
+
+                        },
+                        
+                    ]
+
+
+                
+                },
+                {
+                    category:"Vinyl-Wrapper",
+                    galleryData:[
+                        {
+                            id:"28",
+                            img:gportfolio24,
+                            class:"myImg88 myImg"
+
+                        },
+                        {
+                            id:"29",
+                            img:gportfolio25,
+                            class:"myImg88 myImg1"
+
+                        },
+                        {
+                            id:"30",
+                            img:gportfolio26,
+                            class:"myImg88 myImg2"
+
+                        },
+                        {
+                            id:"31",
+                            img:gportfolio27,
+                            class:"myImg88 myImg3"
+
+                        },
+                        {
+                            id:"32",
+                            img:gportfolio28,
+                            class:"myImg88 myImg4"
+
+                        },
+                        {
+                            id:"33",
+                            img:gportfolio29,
+                            class:"myImg88 myImg5"
+
+                        },
+                        {
+                            id:"34",
+                            img:gportfolio30,
+                            class:"myImg88 myImg6"
+
+                        },
+                        {
+                            id:"35",
+                            img:gportfolio31,
+                            class:"myImg88 myImg7"
+
+                        },
+                        {
+                            id:"36",
+                            img:gportfolio32,
+                            class:"myImg88 myImg8"
+
+                        },
+                        {
+                            id:"37",
+                            img:gportfolio33,
+                            class:"myImg88 myImg9"
+
+                        },
+                        
+                    ]
+
+
+                
+                },
+                {
+                    category:"Packaging",
+                    galleryData:[
+                        {
+                            id:"18",
+                            img:gportfolio18,
+                            class:"myImg88 myImg"
+
+                        },
+                        {
+                            id:"19",
+                            img:gportfolio19,
+                            class:"myImg88 myImg1"
+
+                        },
+                        {
+                            id:"20",
+                            img:gportfolio20,
+                            class:"myImg88 myImg2"
+
+                        },
+                        {
+                            id:"21",
+                            img:gportfolio21,
+                            class:"myImg88 myImg3"
+
+                        },
+                        {
+                            id:"22",
+                            img:gportfolio22,
+                            class:"myImg88 myImg4"
+
+                        },
+                        {
+                            id:"23",
+                            img:gportfolio23,
+                            class:"myImg88 myImg5"
+
+                        },
+                        {
+                            id:"24",
+                            img:gportfolio18,
+                            class:"myImg88 myImg6"
+
+                        },
+                        {
+                            id:"25",
+                            img:gportfolio19,
+                            class:"myImg88 myImg7"
+
+                        },
+                        {
+                            id:"26",
+                            img:gportfolio20,
+                            class:"myImg88 myImg8"
+
+                        },
+                        {
+                            id:"27",
+                            img:gportfolio21,
+                            class:"myImg88 myImg9"
+
+                        },
+                        
+                    ]
+
+
+                
+                },
+                
+                
+            ]
+            },
+            projects:{
+                title:"Jobs/Internships",
+                description:"Join Our Team",
+                projectListData:[
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY"
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY"
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY"
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY"
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY"
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY"
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY"
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY"
+
+                    }
+            ]
+
+            } 
+        
         },
         sellerServicesPage: {
             title: "Services",
@@ -255,76 +727,8 @@ if(WebsiteText===null){
             title: "Services",
             description: "Professionals Toolbox Page",
         },
-        portfolio: {
-            header: {
-                title: "Portfolio Page",
-                description: "We are team of talanted digital marketers"
-            },
-            title: "Portfolio",
-            description: "Check our Portfolio",
-            head: {
-                item1: "All",
-                item2: "App",
-                item3: "Card",
-                item4: "Web"
-            },
-            data : [
-                {
-                    category: 'filter-app',
-                    img: portfolio1,
-                    name: 'App 1',
-                    description: 'App'
-                },
-                {
-                    category: 'filter-web',
-                    img: portfolio2,
-                    name: 'Web 3',
-                    description: 'Web'
-                },
-                {
-                    category: 'filter-app',
-                    img: portfolio3,
-                    name: 'App 2',
-                    description: 'App'
-                },
-                {
-                    category: 'filter-card',
-                    img: portfolio4,
-                    name: 'Card 1',
-                    description: 'Card'
-                },
-                {
-                    category: 'filter-web',
-                    img: portfolio5,
-                    name: 'Web 2',
-                    description: 'Web'
-                },
-                {
-                    category: 'filter-app',
-                    img: portfolio6,
-                    name: 'App 3',
-                    description: 'App'
-                },
-                {
-                    category: 'filter-card',
-                    img: portfolio7,
-                    name: 'Card 1',
-                    description: 'Card'
-                },
-                {
-                    category: 'filter-card',
-                    img: portfolio8,
-                    name: 'Card 3',
-                    description: 'Card'
-                },
-                {
-                    category: 'filter-web',
-                    img: portfolio9,
-                    name: 'Web 3',
-                    description: 'Web'
-                }
-            ]
-        },
+       
+    
         aboutPage:{
             header: {
                 title: "About Us",

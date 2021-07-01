@@ -52,18 +52,14 @@ function Footer() {
 
     
           <div class="row ">
-            <div class="col-lg-6 info">
-              <i class="bi bi-geo-alt d-flex p-2 "></i>
+            <div class="col-lg-12  info">
+              <i class="bi bi-geo-alt d-flex p-2  "></i>
               
-              <p>1305, 6B, Whispering Palms<br/>Akurli Rd, Kandivali East<br/>Mumbai, Maharashtra, India</p>
+              <div style={{marginTop:'5px',fontSize:'15px' }}>1305, 6B, Whispering Palms ,Akurli Rd, Kandivali East, Mumbai, Maharashtra, India</div>
             </div>
            
 
-            <div class="col-lg-6 info mt-4 mt-lg-0">
-            <i class="bi bi-telephone"></i>
-            
-              <p><br/>+91 98679 10690</p>
-            </div>
+         
 
         
 </div>
@@ -74,24 +70,29 @@ function Footer() {
             <footer id="footer">
        
             <div className="row justify-content-md-center">
-    <div className="col col-lg-2  priv ">
+    <div className="col col-lg-2  priv1 ">
       Terms of Service
     </div>
-    <div className="col col-lg-2  priv">
+    <div className="col col-lg-2  priv2">
       Privacy Policy
     </div>
   
   </div>
       <div className="container">
    
-
-      <div className="social-links">
-        <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
-        <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
-        <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-        
       
-        <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+      <div className="social-links">
+      Follow Us
+        <a href="/#" className="twitter"> <i className="bx bxl-twitter"></i></a>
+        <a href="/#" className="facebook"><i className="bx bxl-facebook"></i></a>
+        <a href="/#" className="instagram"><i className="bx bxl-instagram"></i></a>
+        <a href="/#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+        <br class="d-md-none"></br>
+Contact Us 
+        <a href="/#" className="phone"> <i className="bx bxs-phone"></i></a>
+        <a href="/#" className="telegram"><i className="bx bxl-telegram"></i></a>
+        <a href="/#" className="whatsapp"><i className="bx bxl-whatsapp"></i></a>
+        <a href="/#" className="envelope"><i className="bx bxs-envelope"></i></a>
       </div>
       <div className="copyright">
         &copy; Copyright <strong><span>KoyoSoftwareSolutions</span></strong>. All Rights Reserved

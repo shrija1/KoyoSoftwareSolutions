@@ -33,24 +33,6 @@ elms2[0].onclick= function(){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 elms1[1].onclick= function(){
   elms3[1].classList.toggle('do-flip');
 }
@@ -88,6 +70,13 @@ elms1[5].onclick= function(){
 
 elms2[5].onclick= function(){
   elms3[5].classList.toggle('do-flip');
+}
+elms1[6].onclick= function(){
+  elms3[6].classList.toggle('do-flip');
+}
+
+elms2[6].onclick= function(){
+  elms3[6].classList.toggle('do-flip');
 }
 });
 
@@ -272,7 +261,7 @@ elms2[5].onclick= function(){
       portfolioIsotope.isotope({
         filter: $(this).data('filter')
       });
-      aos_init();
+     
     });
 
     // Initiate venobox (lightbox feature used in portofilo)
@@ -288,6 +277,50 @@ elms2[5].onclick= function(){
     delay: 10,
     time: 1000
   });
+
+
+
+
+  // Porfolio isotope and filter
+  $(window).on('load', function() {
+    var portfolioIsotope = $('.app-container').isotope({
+      itemSelector: '.app-item',
+      masonry: {
+        columnWidth: 40,
+        fitWidth: true
+      }
+    });
+
+    $('#app-flters li').on('click', function() {
+      $("#app-flters li").removeClass('filter-activee');
+      $(this).addClass('filter-activee');
+
+      portfolioIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+      aos_init();
+    });
+
+
+    // Initiate venobox (lightbox feature used in portofilo)
+    $(document).ready(function() {
+      $('.venobox').venobox({
+        'share': false
+      });
+    });
+  });
+
+  // jQuery counterUp
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 1000
+  });
+
+
+
+
+
+
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
