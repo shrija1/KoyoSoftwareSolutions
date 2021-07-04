@@ -60,7 +60,7 @@ function Portfolio() {
                            <br /><b>Find Out More:</b>
                           <img className="contactpic" src={WhatsApp} alt="" />  <img className="contactpic" src={Email} alt="" />   <img className="contactpic" src={Call} class="img-fluid" alt="" />
                           </div></p>
-                          <img src={port.img} style={{height:'100%',width:'100%',opacity:'0.3'}} alt=""/>
+                          <img src={port.img} style={{height:'100%',width:'100%',opacity:'0.3',borderRadius:'8px'}} alt=""/>
        
                           <button id="flip-card-btn-turn-to-front"> 
      

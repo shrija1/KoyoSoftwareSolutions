@@ -11,46 +11,166 @@ import portfolio5 from './img/portfolio/portfolio5.jpg'
 import portfolio6 from './img/portfolio/portfolio6.jpg'
 import portfolio7 from './img/portfolio/portfolio7.jpg'
 
-//graphics portfolio
-import gportfolio1 from './img/graphicsportfolio/Banner/1.jpg'
-import gportfolio2 from './img/graphicsportfolio/Banner/2.jpg'
-import gportfolio3 from './img/graphicsportfolio/Banner/3.jpg'
-import gportfolio4 from './img/graphicsportfolio/Banner/4.jpg'
-import gportfolio5 from './img/graphicsportfolio/Banner/5.jpg'
-import gportfolio6 from './img/graphicsportfolio/Banner/6.jpg'
-import gportfolio7 from './img/graphicsportfolio/Banner/7.jpg'
+//graphics portfolio banner
+import gportfolio1 from './img/graphicsportfolio/Banner_284px/1.jpg'
+import gportfolio2 from './img/graphicsportfolio/Banner_284px/2.jpg'
+import gportfolio3 from './img/graphicsportfolio/Banner_284px/3.jpg'
+import gportfolio4 from './img/graphicsportfolio/Banner_284px/4.jpg'
+import gportfolio5 from './img/graphicsportfolio/Banner_284px/5.jpg'
+import gportfolio6 from './img/graphicsportfolio/Banner_284px/6.jpg'
+import gportfolio7 from './img/graphicsportfolio/Banner_284px/7.jpg'
+import gportfolio8 from './img/graphicsportfolio/Banner_284px/8.jpg'
+import gportfolio9 from './img/graphicsportfolio/Banner_284px/9.jpg'
+import gportfolio10 from './img/graphicsportfolio/Banner_284px/10.jpg'
 
-import gportfolio8 from './img/graphicsportfolio/MenuCard/1.jpg'
-import gportfolio9 from './img/graphicsportfolio/MenuCard/2.jpg'
-import gportfolio10 from './img/graphicsportfolio/MenuCard/3.jpg'
-import gportfolio11 from './img/graphicsportfolio/MenuCard/4.jpg'
-import gportfolio12 from './img/graphicsportfolio/MenuCard/5.jpg'
-import gportfolio13 from './img/graphicsportfolio/MenuCard/6.jpg'
-import gportfolio14 from './img/graphicsportfolio/MenuCard/7.jpg'
-import gportfolio15 from './img/graphicsportfolio/MenuCard/8.jpg'
-import gportfolio16 from './img/graphicsportfolio/MenuCard/9.jpg'
-import gportfolio17 from './img/graphicsportfolio/MenuCard/10.jpg'
-
-import gportfolio18 from './img/graphicsportfolio/Packaging/1.jpg'
-import gportfolio19 from './img/graphicsportfolio/Packaging/2.jpg'
-import gportfolio20 from './img/graphicsportfolio/Packaging/3.jpg'
-import gportfolio21 from './img/graphicsportfolio/Packaging/4.jpg'
-import gportfolio22 from './img/graphicsportfolio/Packaging/5.jpg'
-import gportfolio23 from './img/graphicsportfolio/Packaging/6.jpg'
+import gportfolio1_max from './img/graphicsportfolio/Banner_2560px/1.jpg'
+import gportfolio2_max from './img/graphicsportfolio/Banner_2560px/2.jpg'
+import gportfolio3_max from './img/graphicsportfolio/Banner_2560px/3.jpg'
+import gportfolio4_max from './img/graphicsportfolio/Banner_2560px/4.jpg'
+import gportfolio5_max from './img/graphicsportfolio/Banner_2560px/5.jpg'
+import gportfolio6_max from './img/graphicsportfolio/Banner_2560px/6.jpg'
+import gportfolio7_max from './img/graphicsportfolio/Banner_2560px/7.jpg'
+import gportfolio8_max from './img/graphicsportfolio/Banner_2560px/8.jpg'
+import gportfolio9_max from './img/graphicsportfolio/Banner_2560px/9.jpg'
+import gportfolio10_max from './img/graphicsportfolio/Banner_2560px/10.jpg'
 
 
-import gportfolio24 from './img/graphicsportfolio/Vinyl-Wrapper/1.jpg'
-import gportfolio25 from './img/graphicsportfolio/Vinyl-Wrapper/2.jpg'
-import gportfolio26 from './img/graphicsportfolio/Vinyl-Wrapper/3.jpg'
-import gportfolio27 from './img/graphicsportfolio/Vinyl-Wrapper/4.jpg'
-import gportfolio28 from './img/graphicsportfolio/Vinyl-Wrapper/5.jpg'
-import gportfolio29 from './img/graphicsportfolio/Vinyl-Wrapper/6.jpg'
-import gportfolio30 from './img/graphicsportfolio/Vinyl-Wrapper/7.jpg'
-import gportfolio31 from './img/graphicsportfolio/Vinyl-Wrapper/8.jpg'
-import gportfolio32 from './img/graphicsportfolio/Vinyl-Wrapper/9.jpg'
-import gportfolio33 from './img/graphicsportfolio/Vinyl-Wrapper/10.jpg'
+//brochhure
+import gportfolio11 from './img/graphicsportfolio/Brochure_284px/1.jpg'
+import gportfolio12 from './img/graphicsportfolio/Brochure_284px/2.jpg'
+import gportfolio13 from './img/graphicsportfolio/Brochure_284px/3.jpg'
+import gportfolio14 from './img/graphicsportfolio/Brochure_284px/4.jpg'
+import gportfolio15 from './img/graphicsportfolio/Brochure_284px/5.jpg'
+import gportfolio16 from './img/graphicsportfolio/Brochure_284px/6.jpg'
+import gportfolio17 from './img/graphicsportfolio/Brochure_284px/7.jpg'
+import gportfolio18 from './img/graphicsportfolio/Brochure_284px/8.jpg'
+import gportfolio19 from './img/graphicsportfolio/Brochure_284px/9.jpg'
+import gportfolio20 from './img/graphicsportfolio/Brochure_284px/10.jpg'
+
+import gportfolio11_max from './img/graphicsportfolio/Brochure_2560px/1.jpg'
+import gportfolio12_max from './img/graphicsportfolio/Brochure_2560px/2.jpg'
+import gportfolio13_max from './img/graphicsportfolio/Brochure_2560px/3.jpg'
+import gportfolio14_max from './img/graphicsportfolio/Brochure_2560px/4.jpg'
+import gportfolio15_max from './img/graphicsportfolio/Brochure_2560px/5.jpg'
+import gportfolio16_max from './img/graphicsportfolio/Brochure_2560px/6.jpg'
+import gportfolio17_max from './img/graphicsportfolio/Brochure_2560px/7.jpg'
+import gportfolio18_max from './img/graphicsportfolio/Brochure_2560px/8.jpg'
+import gportfolio19_max from './img/graphicsportfolio/Brochure_2560px/9.jpg'
+import gportfolio20_max from './img/graphicsportfolio/Brochure_2560px/10.jpg'
+
+//Logo
 
 
+
+import gportfolio21 from './img/graphicsportfolio/Logo_284px/1.jpg'
+import gportfolio22 from './img/graphicsportfolio/Logo_284px/2.jpg'
+import gportfolio23 from './img/graphicsportfolio/Logo_284px/3.jpg'
+import gportfolio24 from './img/graphicsportfolio/Logo_284px/4.jpg'
+import gportfolio25 from './img/graphicsportfolio/Logo_284px/5.jpg'
+import gportfolio26 from './img/graphicsportfolio/Logo_284px/6.jpg'
+import gportfolio27 from './img/graphicsportfolio/Logo_284px/7.jpg'
+import gportfolio28 from './img/graphicsportfolio/Logo_284px/8.jpg'
+import gportfolio29 from './img/graphicsportfolio/Logo_284px/9.jpg'
+import gportfolio30 from './img/graphicsportfolio/Logo_284px/10.jpg'
+
+
+
+import gportfolio21_max from './img/graphicsportfolio/Logo_2560px/1.jpg'
+import gportfolio22_max from './img/graphicsportfolio/Logo_2560px/2.jpg'
+import gportfolio23_max from './img/graphicsportfolio/Logo_2560px/3.jpg'
+import gportfolio24_max from './img/graphicsportfolio/Logo_2560px/4.jpg'
+import gportfolio25_max from './img/graphicsportfolio/Logo_2560px/5.jpg'
+import gportfolio26_max from './img/graphicsportfolio/Logo_2560px/6.jpg'
+import gportfolio27_max from './img/graphicsportfolio/Logo_2560px/7.jpg'
+import gportfolio28_max from './img/graphicsportfolio/Logo_2560px/8.jpg'
+import gportfolio29_max from './img/graphicsportfolio/Logo_2560px/9.jpg'
+import gportfolio30_max from './img/graphicsportfolio/Logo_2560px/10.jpg'
+
+
+
+//merchandise
+
+
+
+import gportfolio31 from './img/graphicsportfolio/Merchandise Art_284px/1.jpg'
+import gportfolio32 from './img/graphicsportfolio/Merchandise Art_284px/2.jpg'
+import gportfolio33 from './img/graphicsportfolio/Merchandise Art_284px/3.jpg'
+import gportfolio34 from './img/graphicsportfolio/Merchandise Art_284px/4.jpg'
+import gportfolio35 from './img/graphicsportfolio/Merchandise Art_284px/5.jpg'
+import gportfolio36 from './img/graphicsportfolio/Merchandise Art_284px/6.jpg'
+import gportfolio37 from './img/graphicsportfolio/Merchandise Art_284px/7.jpg'
+import gportfolio38 from './img/graphicsportfolio/Merchandise Art_284px/8.jpg'
+import gportfolio39 from './img/graphicsportfolio/Merchandise Art_284px/9.jpg'
+import gportfolio40 from './img/graphicsportfolio/Merchandise Art_284px/10.jpg'
+
+
+
+import gportfolio31_max from './img/graphicsportfolio/Merchandise Art_2560px/1.jpg'
+import gportfolio32_max from './img/graphicsportfolio/Merchandise Art_2560px/2.jpg'
+import gportfolio33_max from './img/graphicsportfolio/Merchandise Art_2560px/3.jpg'
+import gportfolio34_max from './img/graphicsportfolio/Merchandise Art_2560px/4.jpg'
+import gportfolio35_max from './img/graphicsportfolio/Merchandise Art_2560px/5.jpg'
+import gportfolio36_max from './img/graphicsportfolio/Merchandise Art_2560px/6.jpg'
+import gportfolio37_max from './img/graphicsportfolio/Merchandise Art_2560px/7.jpg'
+import gportfolio38_max from './img/graphicsportfolio/Merchandise Art_2560px/8.jpg'
+import gportfolio39_max from './img/graphicsportfolio/Merchandise Art_2560px/9.jpg'
+import gportfolio40_max from './img/graphicsportfolio/Merchandise Art_2560px/10.jpg'
+
+
+//vinyl
+
+
+import gportfolio41 from './img/graphicsportfolio/Vehicle Vinyl Wrap_284px/1.jpg'
+import gportfolio42 from './img/graphicsportfolio/Vehicle Vinyl Wrap_284px/2.jpg'
+import gportfolio43 from './img/graphicsportfolio/Vehicle Vinyl Wrap_284px/3.jpg'
+import gportfolio44 from './img/graphicsportfolio/Vehicle Vinyl Wrap_284px/4.jpg'
+import gportfolio45 from './img/graphicsportfolio/Vehicle Vinyl Wrap_284px/5.jpg'
+import gportfolio46 from './img/graphicsportfolio/Vehicle Vinyl Wrap_284px/6.jpg'
+import gportfolio47 from './img/graphicsportfolio/Vehicle Vinyl Wrap_284px/7.jpg'
+import gportfolio48 from './img/graphicsportfolio/Vehicle Vinyl Wrap_284px/8.jpg'
+import gportfolio49 from './img/graphicsportfolio/Vehicle Vinyl Wrap_284px/9.jpg'
+import gportfolio50 from './img/graphicsportfolio/Vehicle Vinyl Wrap_284px/10.jpg'
+
+
+
+import gportfolio41_max from './img/graphicsportfolio/Vehicle Vinyl Wrap_2560px/1.jpg'
+import gportfolio42_max from './img/graphicsportfolio/Vehicle Vinyl Wrap_2560px/2.jpg'
+import gportfolio43_max from './img/graphicsportfolio/Vehicle Vinyl Wrap_2560px/3.jpg'
+import gportfolio44_max from './img/graphicsportfolio/Vehicle Vinyl Wrap_2560px/4.jpg'
+import gportfolio45_max from './img/graphicsportfolio/Vehicle Vinyl Wrap_2560px/5.jpg'
+import gportfolio46_max from './img/graphicsportfolio/Vehicle Vinyl Wrap_2560px/6.jpg'
+import gportfolio47_max from './img/graphicsportfolio/Vehicle Vinyl Wrap_2560px/7.jpg'
+import gportfolio48_max from './img/graphicsportfolio/Vehicle Vinyl Wrap_2560px/8.jpg'
+import gportfolio49_max from './img/graphicsportfolio/Vehicle Vinyl Wrap_2560px/9.jpg'
+import gportfolio50_max from './img/graphicsportfolio/Vehicle Vinyl Wrap_2560px/10.jpg'
+
+
+/*-------------------------------------------------------------*/
+//misc
+
+import gportfolio51 from './img/graphicsportfolio/Miscellaneous_284px/1.jpg'
+import gportfolio52 from './img/graphicsportfolio/Miscellaneous_284px/2.jpg'
+import gportfolio53 from './img/graphicsportfolio/Miscellaneous_284px/3.jpg'
+import gportfolio54 from './img/graphicsportfolio/Miscellaneous_284px/4.jpg'
+import gportfolio55 from './img/graphicsportfolio/Miscellaneous_284px/5.jpg'
+import gportfolio56 from './img/graphicsportfolio/Miscellaneous_284px/6.jpg'
+import gportfolio57 from './img/graphicsportfolio/Miscellaneous_284px/7.jpg'
+import gportfolio58 from './img/graphicsportfolio/Miscellaneous_284px/8.jpg'
+import gportfolio59 from './img/graphicsportfolio/Miscellaneous_284px/9.jpg'
+import gportfolio60 from './img/graphicsportfolio/Miscellaneous_284px/10.jpg'
+
+
+
+import gportfolio51_max from './img/graphicsportfolio/Miscellaneous_2560px/1.jpg'
+import gportfolio52_max from './img/graphicsportfolio/Miscellaneous_2560px/2.jpg'
+import gportfolio53_max from './img/graphicsportfolio/Miscellaneous_2560px/3.jpg'
+import gportfolio54_max from './img/graphicsportfolio/Miscellaneous_2560px/4.jpg'
+import gportfolio55_max from './img/graphicsportfolio/Miscellaneous_2560px/5.jpg'
+import gportfolio56_max from './img/graphicsportfolio/Miscellaneous_2560px/6.jpg'
+import gportfolio57_max from './img/graphicsportfolio/Miscellaneous_2560px/7.jpg'
+import gportfolio58_max from './img/graphicsportfolio/Miscellaneous_2560px/8.jpg'
+import gportfolio59_max from './img/graphicsportfolio/Miscellaneous_2560px/9.jpg'
+import gportfolio60_max from './img/graphicsportfolio/Miscellaneous_2560px/10.jpg'
 
 
 
@@ -344,66 +464,77 @@ if(WebsiteText===null){
                 title:"Check Our Portfolio",
                 description:"Branding Solutions",
                 graphicsportfolioListData:[{
-                    category:"Branding",
+                    category:"Banner",
+                    mobilefilter:"filter banner",
                     galleryData:[
                         {
                             id:"1",  /*ratio 2:1*/
                             img:gportfolio1,
-                            class:"myImg88 myImg" 
+                            class:"myImg88 myImg" ,
+                            altersrc:gportfolio1_max
 
                         },
                         {
                             id:"2", /* ratio 3:2*/
                             img:gportfolio2,
-                            class:"myImg88 myImg1"
+                            class:"myImg88 myImg1",
+                            altersrc:gportfolio2_max
 
                         },
                         {
                             id:"3",  /*ratio 3:4*/
                             img:gportfolio3,
-                            class:"myImg88 myImg2"
+                            class:"myImg88 myImg2",
+                            altersrc:gportfolio3_max
 
                         },
                         {
                             id:"4", /* ratio 5:3*/
                             img:gportfolio4,
-                            class:"myImg88 myImg3"
+                            class:"myImg88 myImg3",
+                            altersrc:gportfolio4_max
 
                         },
                         {
                             id:"5", /*ratio 1:1 */
                             img:gportfolio5,
-                            class:"myImg88 myImg4"
+                            class:"myImg88 myImg4",
+                            altersrc:gportfolio5_max
 
                         },
                         {
                             id:"6", /* ratio : 4:3*/
                             img:gportfolio6,
-                            class:"myImg88 myImg5"
+                            class:"myImg88 myImg5",
+                            altersrc:gportfolio6_max
 
                         },
                         {
                             id:"7", /*ration 16:9*/
                             img:gportfolio7,
-                            class:"myImg88 myImg6"
+                            class:"myImg88 myImg6",
+                            altersrc:gportfolio7_max
 
                         },
                         {
                             id:"8",  /*ratio : 2:3*/
-                            img:gportfolio7,
-                            class:"myImg88 myImg7"
+                            img:gportfolio8,
+                            class:"myImg88 myImg7",
+                            altersrc:gportfolio8_max
 
                         },
                         {
                             id:"9", /*ratio : 3:5*/
-                            img:gportfolio7,
-                            class:"myImg88 myImg8"
+                            img:gportfolio9,
+                            class:"myImg88 myImg8",
+                            altersrc:gportfolio9_max
 
                         },
                         {
                             id:"10",  /*ratio : 1:2*/
-                            img:gportfolio7,
-                            class:"myImg88 myImg9"
+                            img:gportfolio10,
+                            class:"myImg88 myImg9",
+                            altersrc:gportfolio10_max
 
                         },
                         
@@ -411,205 +542,405 @@ if(WebsiteText===null){
 
 
                 },
-                {
-                    category:"Menu Card",
+               {
+                    category:"Brochure",
+                    mobilefilter:"filter brochure",
                     galleryData:[
                         {
                             id:"11",
-                            img:gportfolio8,
-                            class:"myImg88 myImg"
+                            img:gportfolio11,
+                            class:"myImg88 myImg",
+                            altersrc:gportfolio11_max
 
                         },
                         {
                             id:"12",
-                            img:gportfolio9,
-                            class:"myImg88 myImg1"
+                            img:gportfolio12,
+                            class:"myImg88 myImg1",
+                            altersrc:gportfolio12_max
 
                         },
                         {
                             id:"13",
-                            img:gportfolio10,
-                            class:"myImg88 myImg2"
+                            img:gportfolio13,
+                            class:"myImg88 myImg2",
+                            altersrc:gportfolio13_max
 
                         },
                         {
                             id:"14",
-                            img:gportfolio11,
-                            class:"myImg88 myImg3"
+                            img:gportfolio14,
+                            class:"myImg88 myImg3",
+                            altersrc:gportfolio14_max
 
                         },
                         {
                             id:"15",
-                            img:gportfolio12,
-                            class:"myImg88 myImg4"
+                            img:gportfolio15,
+                            class:"myImg88 myImg4",
+                            altersrc:gportfolio15_max
 
                         },
                         {
                             id:"16",
-                            img:gportfolio13,
-                            class:"myImg88 myImg5"
+                            img:gportfolio16,
+                            class:"myImg88 myImg5",
+                            altersrc:gportfolio16_max
 
                         },
                         {
                             id:"17",
-                            img:gportfolio14,
-                            class:"myImg88 myImg6"
-
-                        },
-                        {
-                            id:"18",
-                            img:gportfolio15,
-                            class:"myImg88 myImg7"
-
-                        },
-                        {
-                            id:"19",
-                            img:gportfolio16,
-                            class:"myImg88 myImg8"
-
-                        },
-                        {
-                            id:"20",
                             img:gportfolio17,
-                            class:"myImg88 myImg9"
+                            class:"myImg88 myImg6",
+                            altersrc:gportfolio17_max
 
                         },
-                        
-                    ]
-
-
-                
-                },
-                {
-                    category:"Vinyl-Wrapper",
-                    galleryData:[
-                        {
-                            id:"28",
-                            img:gportfolio24,
-                            class:"myImg88 myImg"
-
-                        },
-                        {
-                            id:"29",
-                            img:gportfolio25,
-                            class:"myImg88 myImg1"
-
-                        },
-                        {
-                            id:"30",
-                            img:gportfolio26,
-                            class:"myImg88 myImg2"
-
-                        },
-                        {
-                            id:"31",
-                            img:gportfolio27,
-                            class:"myImg88 myImg3"
-
-                        },
-                        {
-                            id:"32",
-                            img:gportfolio28,
-                            class:"myImg88 myImg4"
-
-                        },
-                        {
-                            id:"33",
-                            img:gportfolio29,
-                            class:"myImg88 myImg5"
-
-                        },
-                        {
-                            id:"34",
-                            img:gportfolio30,
-                            class:"myImg88 myImg6"
-
-                        },
-                        {
-                            id:"35",
-                            img:gportfolio31,
-                            class:"myImg88 myImg7"
-
-                        },
-                        {
-                            id:"36",
-                            img:gportfolio32,
-                            class:"myImg88 myImg8"
-
-                        },
-                        {
-                            id:"37",
-                            img:gportfolio33,
-                            class:"myImg88 myImg9"
-
-                        },
-                        
-                    ]
-
-
-                
-                },
-                {
-                    category:"Packaging",
-                    galleryData:[
                         {
                             id:"18",
                             img:gportfolio18,
-                            class:"myImg88 myImg"
+                            class:"myImg88 myImg7",
+                            altersrc:gportfolio18_max
 
                         },
                         {
                             id:"19",
                             img:gportfolio19,
-                            class:"myImg88 myImg1"
+                            class:"myImg88 myImg8",
+                            altersrc:gportfolio19_max
 
                         },
                         {
                             id:"20",
                             img:gportfolio20,
-                            class:"myImg88 myImg2"
+                            class:"myImg88 myImg9",
+                            altersrc:gportfolio20_max
+
+                        },
+                        
+                    ]
+
+
+                
+                },
+               
+                {
+                    category:"Merchandise Art",
+                    mobilefilter:"merch",
+                    galleryData:[
+                        {
+                            id:"31",
+                            img:gportfolio31,
+                            class:"myImg88 myImg",
+                            altersrc:gportfolio31_max
 
                         },
                         {
+                            id:"32",
+                            img:gportfolio32,
+                            class:"myImg88 myImg1",
+                            altersrc:gportfolio32_max
+
+
+                        },
+                        {
+                            id:"33",
+                            img:gportfolio33,
+                            class:"myImg88 myImg2",
+                            altersrc:gportfolio33_max
+
+
+                        },
+                        {
+                            id:"34",
+                            img:gportfolio34,
+                            class:"myImg88 myImg3",
+                            altersrc:gportfolio34_max
+
+                        },
+                        {
+                            id:"35",
+                            img:gportfolio35,
+                            class:"myImg88 myImg4",
+                            altersrc:gportfolio35_max
+
+                        },
+                        {
+                            id:"36",
+                            img:gportfolio36,
+                            class:"myImg88 myImg5",
+                            altersrc:gportfolio36_max
+
+                        },
+                        {
+                            id:"37",
+                            img:gportfolio37,
+                            class:"myImg88 myImg6",
+                            altersrc:gportfolio37_max
+
+                        },
+                        {
+                            id:"38",
+                            img:gportfolio38,
+                            class:"myImg88 myImg7",
+                            altersrc:gportfolio38_max
+
+                        },
+                        {
+                            id:"39",
+                            img:gportfolio39,
+                            class:"myImg88 myImg8",
+                            altersrc:gportfolio39_max
+
+                        },
+                        {
+                            id:"40",
+                            img:gportfolio40,
+                            class:"myImg88 myImg9",
+                            altersrc:gportfolio40_max
+
+                        },
+                        
+                    ]
+
+
+                
+                },
+                {
+                    category:"Vehicle Vinyl Wrap",
+                    mobilefilter:"filter vinyl",
+                    galleryData:[
+                        {
+                            id:"41",
+                            img:gportfolio41,
+                            class:"myImg88 myImg",
+                            altersrc:gportfolio41_max
+
+                        },
+                        {
+                            id:"42",
+                            img:gportfolio42,
+                            class:"myImg88 myImg1",
+                            altersrc:gportfolio42_max
+
+
+                        },
+                        {
+                            id:"43",
+                            img:gportfolio43,
+                            class:"myImg88 myImg2",
+                            altersrc:gportfolio43_max
+
+
+                        },
+                        {
+                            id:"44",
+                            img:gportfolio44,
+                            class:"myImg88 myImg3",
+                            altersrc:gportfolio44_max
+
+                        },
+                        {
+                            id:"45",
+                            img:gportfolio45,
+                            class:"myImg88 myImg4",
+                            altersrc:gportfolio45_max
+
+                        },
+                        {
+                            id:"46",
+                            img:gportfolio46,
+                            class:"myImg88 myImg5",
+                            altersrc:gportfolio46_max
+
+                        },
+                        {
+                            id:"47",
+                            img:gportfolio47,
+                            class:"myImg88 myImg6",
+                            altersrc:gportfolio47_max
+
+                        },
+                        {
+                            id:"48",
+                            img:gportfolio48,
+                            class:"myImg88 myImg7",
+                            altersrc:gportfolio48_max
+
+                        },
+                        {
+                            id:"49",
+                            img:gportfolio49,
+                            class:"myImg88 myImg8",
+                            altersrc:gportfolio49_max
+
+                        },
+                        {
+                            id:"50",
+                            img:gportfolio50,
+                            class:"myImg88 myImg9",
+                            altersrc:gportfolio50_max
+
+                        },
+                        
+                    ]
+
+
+                
+                },
+                {
+                    category:"Logo",
+                    mobilefilter:"filter logo",
+                    galleryData:[
+                        {
                             id:"21",
                             img:gportfolio21,
-                            class:"myImg88 myImg3"
+                            class:"myImg88 myImg",
+                            altersrc:gportfolio21_max
 
                         },
                         {
                             id:"22",
                             img:gportfolio22,
-                            class:"myImg88 myImg4"
+                            class:"myImg88 myImg1",
+                            altersrc:gportfolio22_max
 
                         },
                         {
                             id:"23",
                             img:gportfolio23,
-                            class:"myImg88 myImg5"
+                            class:"myImg88 myImg2",
+                            altersrc:gportfolio23_max
 
                         },
                         {
                             id:"24",
-                            img:gportfolio18,
-                            class:"myImg88 myImg6"
+                            img:gportfolio24,
+                            class:"myImg88 myImg3",
+                            altersrc:gportfolio24_max
 
                         },
                         {
                             id:"25",
-                            img:gportfolio19,
-                            class:"myImg88 myImg7"
+                            img:gportfolio25,
+                            class:"myImg88 myImg4",
+                            altersrc:gportfolio25_max
 
                         },
                         {
                             id:"26",
-                            img:gportfolio20,
-                            class:"myImg88 myImg8"
+                            img:gportfolio26,
+                            class:"myImg88 myImg5",
+                            altersrc:gportfolio26_max
 
                         },
                         {
                             id:"27",
-                            img:gportfolio21,
-                            class:"myImg88 myImg9"
+                            img:gportfolio27,
+                            class:"myImg88 myImg6",
+                            altersrc:gportfolio27_max
+
+                        },
+                        {
+                            id:"28",
+                            img:gportfolio28,
+                            class:"myImg88 myImg7",
+                            altersrc:gportfolio28_max
+
+                        },
+                        {
+                            id:"29",
+                            img:gportfolio29,
+                            class:"myImg88 myImg8",
+                            altersrc:gportfolio29_max
+
+                        },
+                        {
+                            id:"30",
+                            img:gportfolio33,
+                            class:"myImg88 myImg9",
+                            altersrc:gportfolio30_max
+
+                        },
+                        
+                    ]
+
+
+                
+                },
+                {
+                    category:"Miscellaneous",
+                    mobilefilter:"filter misc",
+                    galleryData:[
+                        {
+                            id:"51",
+                            img:gportfolio51,
+                            class:"myImg88 myImg",
+                            altersrc:gportfolio51_max
+
+                        },
+                        {
+                            id:"52",
+                            img:gportfolio52,
+                            class:"myImg88 myImg1",
+                            altersrc:gportfolio52_max
+
+
+                        },
+                        {
+                            id:"53",
+                            img:gportfolio53,
+                            class:"myImg88 myImg2",
+                            altersrc:gportfolio53_max
+
+
+                        },
+                        {
+                            id:"54",
+                            img:gportfolio54,
+                            class:"myImg88 myImg3",
+                            altersrc:gportfolio54_max
+
+                        },
+                        {
+                            id:"55",
+                            img:gportfolio55,
+                            class:"myImg88 myImg4",
+                            altersrc:gportfolio55_max
+
+                        },
+                        {
+                            id:"56",
+                            img:gportfolio56,
+                            class:"myImg88 myImg5",
+                            altersrc:gportfolio56_max
+
+                        },
+                        {
+                            id:"57",
+                            img:gportfolio57,
+                            class:"myImg88 myImg6",
+                            altersrc:gportfolio57_max
+
+                        },
+                        {
+                            id:"58",
+                            img:gportfolio58,
+                            class:"myImg88 myImg7",
+                            altersrc:gportfolio58_max
+
+                        },
+                        {
+                            id:"59",
+                            img:gportfolio59,
+                            class:"myImg88 myImg8",
+                            altersrc:gportfolio59_max
+
+                        },
+                        {
+                            id:"60",
+                            img:gportfolio60,
+                            class:"myImg88 myImg9",
+                            altersrc:gportfolio60_max
 
                         },
                         
@@ -619,6 +950,7 @@ if(WebsiteText===null){
                 
                 },
                 
+            
                 
             ]
             },

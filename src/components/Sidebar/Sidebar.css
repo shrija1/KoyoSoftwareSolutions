@@ -117,7 +117,15 @@
 @media screen and (max-width: 480px) {
     .sidenav {
         padding-top: 15px;
+        display: none;
+
+
         
+    }
+
+    .sidebar
+    {
+        display: none;
     }
     .sidenav a {
         font-size: 20px;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './InputSkills.css';
-import star from '../Images/star_rating.png';
+import { useState } from "react";
+
 class InputSkills extends Component {
 
     constructor(props) {
@@ -11,6 +12,7 @@ class InputSkills extends Component {
         }
         this.inputRef = React.createRef()
     }
+   
 
     // remove skill
     removeSkill = i => {
@@ -23,7 +25,9 @@ class InputSkills extends Component {
 
     // add skill
     addSkill = e => {
+       
         const skills = this.state.skills
+        console.log(skills)
         const value = e.target.value
         if (e.key === "Enter" && value) {
             // check if duplicate skill
@@ -49,6 +53,7 @@ class InputSkills extends Component {
 
 
     render() {
+        
         const { skills } = this.state
         return (
             <>
@@ -61,7 +66,7 @@ class InputSkills extends Component {
                                 return (
                                     <li key={i}> {skill}
 
-                                        <select class="form-select bg-warning urvinegi" aria-label="Default select example">
+                                        <select class="form-select bg-warning urvinegi" aria-label="Default select example" >
                                             <option class="bg-warning" selected>Rate your skill</option>
                                             <option class="bg-light" value="1">⭐</option>
                                             <option class="bg-light" value="2">⭐⭐</option>
@@ -75,7 +80,8 @@ class InputSkills extends Component {
                                 )
                             })}
                             <li className="input-skill">
-                                <input onKeyDown={this.addSkill} type="text" size="4" ref={this.inputRef} />
+                                <input name="skill" onKeyDown={this.addSkill} type="text" size="4" ref={this.inputRef} placeholder="Add skill here" 
+/>
                             </li>
                         </ul>
 

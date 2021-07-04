@@ -5,6 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
 
+
+
+.formerror
+{
+  visibility: hidden;
+  font-style: italic;
+  font-size: 13px;
+  text-align: center;
+  padding: 0%;
+}
 #snackbar {
   visibility: hidden; /* Hidden by default. Visible on click */
   min-width: 250px; /* Set a default minimum width */
@@ -62,6 +72,18 @@ input[type=file]::before {
     padding-right:120px;
 }
 
+.vl{
+  border-right:1px solid  rgb(69,58,56);
+  border-left:1px solid  rgb(69,58,56);
+  border-bottom:1px solid  rgb(69,58,56);
+padding:4%;
+padding-bottom: 3%;
+}
+
+.padding-0{
+  padding-right:0;
+  padding-left:0;
+}
 .closeee {
   position:absolute;
   left:98.5%;
@@ -199,7 +221,7 @@ background-color: #fff;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color:rgba(191, 189, 189, 0.75);
+  background-color:rgba(3, 0, 0, 0.92);
 }
 
 
@@ -216,7 +238,7 @@ background-color: #fff;
     border-radius: 8px;
     width: 500px;
     padding: 25px;
-    height: 300px;
+    height: 330px;
     
   }
   
@@ -226,7 +248,8 @@ background-color: #fff;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:rgba(191, 189, 189, 0.75);
+    background-color:rgba(3, 0, 0, 0.92);
+
   }
   @media (min-width: 1920px) and (max-width: 2560px)  {
     .Modal {
@@ -502,8 +525,10 @@ cursor: pointer;
 background-color: #26201f;
 height:auto;
 width:100%;
+
 height: 70%;
-  
+margin: auto;
+
 }
 
 .long
@@ -511,11 +536,14 @@ height: 70%;
   height: 700px;
   overflow-y:auto;
   overflow-x:hidden;
-  background-color:#26201f;
-
   
+  background-color:#26201f;
+margin:auto;
+
+width: 100%;
+
 }
-.long::-webkit-scrollbar { width: 7px;height: 50px;background:transparent; border-radius: 8px;}
+.long::-webkit-scrollbar { width: 7px;height: 40px;background:transparent; border-radius: 8px;}
 
 
 .long::-webkit-scrollbar-thumb {  background: #ffc451 ;border-radius: 8px;border:1px solid black;}
@@ -553,7 +581,8 @@ font-size: 15px;
   line-height: 1.2;
   justify-content: center;
   font-family: 'Cabin', sans-serif;
-  margin-left:5%;
+margin: auto;
+
 }
 .hiringtext
 {
@@ -566,7 +595,7 @@ font-size: 15px;
 {
   color: white;
   font-size: 14px;
-   margin-left:5%;
+   
 
 }
 

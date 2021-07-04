@@ -78,8 +78,9 @@ elms1[6].onclick= function(){
 elms2[6].onclick= function(){
   elms3[6].classList.toggle('do-flip');
 }
-});
 
+
+});
 
 
 
@@ -286,7 +287,7 @@ elms2[6].onclick= function(){
     var portfolioIsotope = $('.app-container').isotope({
       itemSelector: '.app-item',
       masonry: {
-        columnWidth: 40,
+        columnWidth: 100,
         fitWidth: true
       }
     });
@@ -315,6 +316,51 @@ elms2[6].onclick= function(){
     delay: 10,
     time: 1000
   });
+
+
+
+
+  $(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+     
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+$('button[data-filter="banner"]').click();
+}
+
+
+
+
+);
+
+
+$(document).ready(function() {
+	$('.zoom-gallery').magnificPopup({
+
+		type: 'image'
+	
+	});
+});
+
+
+
+
+
+
+
 
 
 

@@ -9,29 +9,30 @@ import telegram from '../../../img/telegram_icon.png';
 
 
 
+function consolefunc()
+{
+  console.log("hi bb");
+}
 
-
-
-
-function bro(id){
-
-  var modal = document.getElementById("mydiv");
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img 
+function bro(id,alter) {
+  var img
   var modalImg = document.getElementById("img01");
+  img = document.getElementById(id);
 
-   img = document.getElementById(id);
+
+  modalImg.src = alter;
+  console.log(modalImg.src);
+  var modal = document.getElementById("mydiv");
+
   
-  modalImg.src = img.src;
-  
-  
-  modal.style.display = "block";
+
+  modal.style.display = "flex";
 
 }
 
 
-function Open(){
-  
+function Open() {
+
   var modal = document.getElementById("mydiv");
   modal.style.display = "none";
 
@@ -44,76 +45,110 @@ function GraphicsPortfolio() {
 
 
   return (
-<> 
+    <>
+
+      <div className="Graphics">
+
+        <div id="mydiv" className="mydivclass">
+          <div className="modalcontainer">
+           
+            <img className="modal-content" id="img01"  src={telegram} alt="" />
+      
+            <div className="overlaygraphics">
+              <div className="textgraphicstitle">Busy Morning Coffee <img className="graphicsocial" src={whatsapp}  alt="" /><img className="graphicsocial" src={telegram}  alt="" /><img className="graphicsocial" src={instagram}  alt="" /></div>
+              <div className="textgraphicsdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel\ erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,</div>
+            </div>
+          </div>
+          <img src={close} onClick={Open} className="closee" alt="" />
+        </div>
 
 
-<div className="Graphics">
-
-<div id="mydiv" className="mydivclass">
-  <div className="modalcontainer">
-      <img className="modal-content" id="img01" alt=""/>
-       <div class="overlaygraphics">
-          <div className="textgraphicstitle">Busy Morning Coffee <img src={whatsapp} style={{height:'38px',width:'38px'}} alt=""/><img src={telegram} style={{height:'32px',width:'32px'}} alt=""/><img src={instagram} style={{height:'35px',width:'35px'}} alt=""/></div>
-         <div className="textgraphicsdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel\ erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,</div>
-      </div>
-  </div>
-    <img src={close}  onClick={Open} className="closee" style={{height:'35px', width:'35px'}} alt=""/>
-</div>
-
-
-<div className="graphicscontainer"  data-aos="fade-up">
-   <div className="section-title">
-  
+        <div className="graphicscontainer " data-aos="fade-up">
+          <div className="section-title">
+       
             <h2>{WebText.home.graphicsportfolio.title}</h2>
             <p>{WebText.home.graphicsportfolio.description}</p>
+
+          </div>
+
+
+          <div className="desktopgraphics">
+            <div className="graphicsflexcontainer">
+
+              {WebText.home.graphicsportfolio.graphicsportfolioListData.map((graphics) => (
+
+                <div className=" first">
+                  <div className="left">
+                    <h2 className="category">{graphics.category}</h2>
+
+            
+                    {graphics.galleryData.map((gallery) => (
+                      <img className={gallery.class} id={gallery.id} src={gallery.img} onClick={(e) => bro(e.target.id,gallery.altersrc)} alt="" title="This is image" />
+
+                    ))}
+
+                  </div>
+                </div>
+              ))}
+
+            </div>
+
+          </div>
+          {/*
+<div id="maindiv">
+  <div id="div1">
+    &nbsp;Test-1 Test-2 Test-3 Test-4 Test-5 Test-6 Test-7 Test-8 Test-9 Test-10 Test-11
+  </div>
   
-   </div>
- 
-
-
-   <div className="graphicsflexcontainer">
-
-   {WebText.home.graphicsportfolio.graphicsportfolioListData.map((graphics) => ( 
-
-<div className=" first">
-<div className="left">
-<h2 className="category">{graphics.category}</h2>
-
-
-{graphics.galleryData.map((gallery) => ( 
-  <img className={gallery.class}  id={gallery.id} src={gallery.img} onClick={(e)=>bro(e.target.id)} alt="" title="This is image"/>
-
-))}
-
-
-
 </div>
+*/}
+          <div className="mobilegraphics"  onScroll={consolefunc} >
+          <div className="graphicsflexcontainer">
+           
+
+
+
+              <div align="center">
+                <button className="  filter-button" data-filter="banner">Banner</button>
+                <button className=" filter-button" data-filter="brochure">Brochure</button>
+                <button className=" filter-button" data-filter="logo">Logo</button>
+                <button className="  filter-button" data-filter="merch">Merchandise Art</button>
+                <button className="  filter-button" data-filter="vinyl">Vehicle Vinyl Wrap</button>
+                <button className="  filter-button" data-filter="misc">Miscellaneous</button>
+
+           
+
+
+            </div>
+
+            {WebText.home.graphicsportfolio.graphicsportfolioListData.map((graphics) => (
+              <div className={graphics.mobilefilter}>
+                <div className=" first">
+                  <div className="left">
+                    <h2 className="category">{graphics.category}</h2>
+
+
+                    {graphics.galleryData.map((gallery) => (
+                      <img className={gallery.class} id={gallery.id} src={gallery.img} onClick={(e) => bro(e.target.id,gallery.altersrc)} alt="" title="This is image" />
+                      
+                    ))}
+                  </div>
+
+                </div>
+              </div>
+            ))}
 </div>
 
+          </div>
 
+        </div>
 
+      </div>
 
-
-   ))}
-
-
-
-</div>
-
-
-    
-
-    
-    
-  
-   
-    </div>
-
-    </div>
 
 
     </>
-    );
+  );
 };
 
 
