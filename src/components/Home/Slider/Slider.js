@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Controller, Thumbs } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import './Slider.css';
-
+import WebText from '../../../TextData';
 import { Autoplay } from 'swiper';
 
 import AIML from '../../../img/AIML.webp';
@@ -30,159 +30,50 @@ function Slider() {
 
   const slides = [];
 
-  slides.push(
-    <SwiperSlide data-aos-delay="100" id="b" key={`slide-${1}`} tag="li" >
+  var i = 1
+  for (i = 0; i <4; i++) {
+    console.log(WebText.home.featuresListData[i].title);
 
+    slides.push(
 
+      <SwiperSlide data-aos-delay="100" id="b" key={`slide-${i}`} tag="li" >
 
-      <div className=" heading" >Web Services</div>
-      <div className="wrapper">
-       
-        <div id="column1" >
 
-          <img className="responsive"
 
-            src={WebDesign}
+        <div className=" heading" >{WebText.home.featuresListData[i].title}</div>
+        <div className="wrapper">
 
-            alt={`Slide ${1}`}
+          <div id="column1" >
 
+            <img className="responsive"
 
-          />
-          <img className="responsive_mob"
+              src={WebText.home.featuresListData[i].img}
 
-            src={WebDesignMob}
+              alt={`Slide ${i}`}
 
-            alt={`Slide ${1}`}
 
+            />
+            <img className="responsive_mob"
 
-          />
+              src={WebText.home.featuresListData[i].imgmob}
 
+              alt={`Slide ${i}`}
 
 
-        </div>
+            />
 
 
-        <div id="column2" >
-          Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit.ellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim lconsectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpi
-</div></div></SwiperSlide>
-  );
 
+          </div>
 
 
+          <div id="column2" >
+{WebText.home.featuresListData[i].description}
+          </div></div></SwiperSlide>
 
-
-  slides.push(
-    <SwiperSlide key={`slide-${2}`} tag="li" >
-
-
-
-      <div className=" heading" >Branding Sols</div>
-      <div className="wrapper">
-     
-        <div id="column1" >
-          <img className="responsive"
-
-            src={BrandingSols}
-
-            alt={`Slide ${2}`}
-
-
-          />
-          <img className="responsive_mob"
-
-            src={BrandingSolsMob}
-
-            alt={`Slide ${2}`}
-
-
-          />
-
-
-
-        </div>
-
-
-        <div id="column2" >
-          We make, consectetur adipiscing elit. SEO-friendly websites for static display and eCommerce. We can also convert your WordPress website into a cost-effective Anroid app. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpi
-</div></div></SwiperSlide>
-  );
-
-
-
-  slides.push(
-    <SwiperSlide key={`slide-${3}`} tag="li" >
-
-
-
-      <div className=" heading" >AI and ML</div>
-      <div className="wrapper">
-      
-        <div id="column1" >
-          <img className="responsive"
-
-            src={AIML}
-
-            alt={`Slide ${3}`}
-
-
-          />
-          <img className="responsive_mob"
-
-            src={AIMLMob}
-
-            alt={`Slide ${3}`}
-
-
-          />
-
-
-
-        </div>
-
-
-        <div id="column2" >
-          We make secure, efficient, SEO-friendly websites for static display and eCommerce. We can also convert your WordPress website into a cost-effective Anroid app. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpi
-</div></div></SwiperSlide>
-  );
-
-
-
-  slides.push(
-    <SwiperSlide key={`slide-${4}`} tag="li" >
-
-
-
-      <div className=" heading" >Coding Camp</div>
-      <div className="wrapper">
-      
-        <div id="column1" >
-          <img className="responsive"
-
-            src={CodeCamp}
-
-            alt={`Slide ${4}`}
-
-
-          />
-          <img className="responsive_mob"
-
-            src={CodeCampMob}
-
-            alt={`Slide ${4}`}
-
-
-          />
-
-
-
-        </div>
-
-
-        <div id="column2" >
-          We make secure, efficient, SEO-friendly websites for static display and eCommerce. We can also convert your WordPress website into a cost-effective Anroid app. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpi
-</div></div></SwiperSlide>
-  );
-
+    );
+  }
+  
 
 
 
@@ -190,6 +81,7 @@ function Slider() {
   return (
     <React.Fragment >
       <br />
+
       <Swiper
         data-aos="fade-up"
         className="box"
@@ -200,7 +92,7 @@ function Slider() {
         thumbs={{ swiper: thumbsSwiper }}
         controller={{ control: controlledSwiper }}
         tag="section"
-        wrapperTag="ul"
+      
         effect="fade"
         navigation
 

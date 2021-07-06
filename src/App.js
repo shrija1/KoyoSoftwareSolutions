@@ -45,7 +45,7 @@ function App() {
               <Navbar active="home"/>
               <Header/>
               <Home/>
-              <Footer /> 
+             
             </Route>
             <Route path='/account'>
               <Navbar active=""/>

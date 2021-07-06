@@ -1,3 +1,15 @@
+//slider
+import AIML from './img/AIML.webp';
+import WebDesign from './img/WebDesign.webp';
+import CodeCamp from './img/CodeCamp.webp';
+import BrandingSols from './img/BrandingSols.webp';
+
+
+import WebDesignMob from './img/WebDesignMob.webp';
+import AIMLMob from './img/AIMLMob.webp';
+import CodeCampMob from './img/CodeCampMob.webp';
+import BrandingSolsMob from './img/BrandingSolsMob.webp';
+
 // team
 import team1 from './components/Home/Images/ft1.jpg'
 import team2 from './components/Home/Images/ft2.jpg'
@@ -10,6 +22,7 @@ import portfolio4 from './img/portfolio/portfolio4.jpg'
 import portfolio5 from './img/portfolio/portfolio5.jpg'
 import portfolio6 from './img/portfolio/portfolio6.jpg'
 import portfolio7 from './img/portfolio/portfolio7.jpg'
+import portfolio8 from './img/portfolio/portfolio8.jpg'
 
 //graphics portfolio banner
 import gportfolio1 from './img/graphicsportfolio/Banner_284px/1.jpg'
@@ -253,42 +266,40 @@ if(WebsiteText===null){
                 {
                     classDiv: 'mt-lg-0',
                     icon: 'bx-receipt',
-                    title: 'Web Design Services',
-                    description: 'We make secure, efficient, SEO-friendly websites for static display and eCommerce. We can also convert your WordPress website into a cost-effective Anroid app.\
-                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel\
-                                 erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.\
-                                 In at libero sed nunc venenatis imperdiet sed ornare turpis',
-                    link: '/webDesign'
+                    title: 'Web Design',
+                    description: 'We make secure, efficient, SEO-friendly websites for static display and eCommerce. We can also convert your WordPress website into a cost-effective Anroid app.\ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.\ In at libero sed nunc venenatis imperdiet sed ornare turpis',
+                    link: '/webDesign',
+                    img: WebDesign,
+                    imgmob:WebDesignMob
 
                 },
                 {
                     classDiv: '',
                     icon: 'bx-cube-alt',
-                    title: 'AI and Machine Learning',
-                    description: 'We deliver bespoke solutions for chatbots, OCR for English and Arabic ID cards, OCR for accountants, Automated vehicle number plate reading, AI-driven user-adapted landing pages, pop-ups and loading time optimization.\
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel\
-                                  erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.\
-                                   In at libero sed nunc venenatis imperdiet sed ornare turpis',
-                    link: '/aiAndml'
+                    title: 'AI ML',
+                    description: 'We deliver bespoke solutions for chatbots, OCR for English and Arabic ID cards, OCR for accountants, Automated vehicle number plate reading, AI-driven user-adapted landing pages, pop-ups and loading time optimization.\ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel risque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissi  In at libero sed nunc venenatis imperdiet sed ornare turpis',
+                    link: '/aiAndml',
+                    img: AIML,
+                    imgmob:AIMLMob
                 },
                 {
                     classDiv: '',
                     icon: 'bx-images',
-                    title: 'Learn and Code',
-                    description: 'We deliver short-duration courses of 1-6 week duration. we focus on two segments: 11-14 year olds with no prior experience and, professionals or university students who are keen on acquiring hands-on experience using real-life data in AI, machine learning and image processing. We focus on learning-by-doing with 80% project work and 20% theory.\
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel\
-                                erisque enim ligula venenatis dolor. Maecenas nisl est, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet',
-                    link:'/learnAndCode'
+                    title: 'Coding Camp',
+                    description: 'We deliver short-duration courses of 1-6 week duration. we focus on two segments: 11-14 year olds with no prior experience and, professionals or university students who are keen on acquiring hands-on experience using real-life data in AI, machine learning and image processing. We focus on learning-by-doing with 80% project work and 20% theory.\ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel\ erisque enim ligula venenatis dolor. Maecenas nisl est, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet',
+                    link:'/learnAndCode',
+                    img: CodeCamp,
+                    imgmob:CodeCampMob
+
                 },
                 {
                     classDiv: '',
                     icon: 'bx-shield',
-                    title: 'Branding Solutions',
-                    description: 'We help you build your corporate identity by designing cover pages and display pictures for your social media platforms, visiting cards, logos, stickers or mock-ups for product packaging that resonate with your corporate strategy, have a high recall value and are unique.\
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel\
-                                erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum\
-                                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nun sed ullamcorper ipsum',
-                    link:'/brandingSolutions'
+                    title: 'Branding Sols',
+                    description: 'We help you build your corporate identity by designing cover pages and display pictures for your social media platforms, visiting cards, logos, stickers or mock-ups for product packaging that resonate with your corporate strategy, have a high recall value and are unique.\ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel\ erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum\  Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nun sed ullamcorper ipsum',
+                    link:'/brandingSolutions',
+                    img: BrandingSols,
+                    imgmob:BrandingSolsMob
                 },
             ],
             servicesListData: [
@@ -406,7 +417,7 @@ if(WebsiteText===null){
                 technologies: "reactJS, BootStrap, JS, CSS",
                 hosting:" Antibes, France",
                 link:"https://desifirangifoods.web.app/",
-                category:"filter-restaurant app-item"
+                category:"filter-restaurant filter-latest app-item"
               },
               {
                 img : portfolio2,
@@ -414,7 +425,7 @@ if(WebsiteText===null){
                 technologies: "reactJS, BootStrap, JS, CSS",
                 hosting:" Antibes, France",
                 link:"https://eka.network/",
-                category:"filter-ecommerce app-item"
+                category:"filter-ecommerce filter-latest app-item"
               },
               {
                 img : portfolio3,
@@ -446,7 +457,7 @@ if(WebsiteText===null){
                 technologies: "reactJS, BootStrap, JS, CSS",
                 hosting:" Antibes, France",
                 link:" https://samskrithi-goshala.web.app",
-                category:"filter-ngo app-item"
+                category:"filter-ngo filter-latest app-item"
 
               },
               {
@@ -455,7 +466,15 @@ if(WebsiteText===null){
                 technologies: "reactJS, BootStrap, JS, CSS",
                 hosting:" Antibes, France",
                 link:"https://www.sevencolors7.com",
-                category:"filter-portfolio app-item"
+                category:"filter-portfolio  app-item"
+              },
+              {
+                img : portfolio8,
+                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
+                technologies: "reactJS, BootStrap, JS, CSS",
+                hosting:" Antibes, France",
+                link:"https://koyoaccountassistant.web.app",
+                category:"filter-latest filter-professional app-item"
               }
              
               ]
@@ -625,7 +644,7 @@ if(WebsiteText===null){
                
                 {
                     category:"Merchandise Art",
-                    mobilefilter:"merch",
+                    mobilefilter:"filter merch",
                     galleryData:[
                         {
                             id:"31",

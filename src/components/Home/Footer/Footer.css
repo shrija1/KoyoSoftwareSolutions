@@ -1,57 +1,14 @@
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-    overflow: hidden;
-    background: #3a3a3a;
-  }
-  
-  #preloader:before {
-    content: "";
-    position: fixed;
-    top: calc(50% - 0px);
-    left: calc(50% - 30px);
-    border: 6px solid #ffc451;
-    border-top-color: #3a3a3a;
-    border-bottom-color: #3a3a3a;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    -webkit-animation: animate-preloader 1s linear infinite;
-    animation: animate-preloader 1s linear infinite;
-  }
-  
-  @-webkit-keyframes animate-preloader {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes animate-preloader {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
 
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
+.footercontainer
+{
+    width: 100%;
+}
+#footerpage {
     background: black;
     color: #fff;
     font-size: 14px;
@@ -59,13 +16,13 @@
     padding: 20px 0;
   }
   
-  #footer h3 {
+  #footerpage h3 {
     font-size: 36px;
     font-weight: 700;
     color: #ffb03b;
     position: relative;
     padding: 0;
-  
+    margin: 0 0 15px 0;
   }
 
   .priv1{
@@ -90,31 +47,31 @@
       cursor: pointer;
      
   }
-  #footer p {
+  #footerpage p {
     font-size: 15;
     font-style: italic;
     padding: 0;
-    margin: 0 0 40px 0;
+   
   }
   
-  #footer .social-links {
+  #footerpage .social-links {
     margin: 10px 0 10px 0;
   }
 
-  #footer .social-links .twitter {
+  #footerpage .social-links .twitter {
     margin-left: 10px;
   }
   
-  #footer .social-links .phone {
+  #footerpage .social-links .phone {
     margin-left: 10px;
   }
   
     
-  #footer .social-links .linkedin {
+  #footerpage .social-links .linkedin {
     margin-right: 10px;
   }
   
-  #footer .social-links a {
+  #footerpage .social-links a {
     font-size: 18px;
     display: inline-block;
     background: #46423b;
@@ -129,16 +86,16 @@
     transition: 0.3s;
   }
   
-  #footer .social-links a:hover {
+  #footerpage .social-links a:hover {
     background: #ffb03b;
   }
   
-  #footer .copyright {
+  #footerpage .copyright {
     margin: 0 0 3px 0;
     font-size: 13px;
   }
   
-  #footer .credits {
+  #footerpage .credits {
     font-size: 11px;
   }
 
@@ -194,7 +151,7 @@
  
     
    
-    #footer .social-links a {
+    #footerpage .social-links a {
       font-size: 22px;
       display: inline-block;
       background: #46423b;
@@ -209,16 +166,16 @@
       height: 28px;
       transition: 0.3s;
     }
-    #footer .social-links .twitter {
+    #footerpage .social-links .twitter {
       margin-left: 5px;
     }
     
-    #footer .social-links .phone {
+    #footerpage .social-links .phone {
       margin-left: 5px;
     }
     
       
-    #footer .social-links .linkedin {
+    #footerpage .social-links .linkedin {
       margin-right: 5px;
     }
   .contact

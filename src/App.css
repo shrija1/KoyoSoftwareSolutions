@@ -12,6 +12,8 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
   overflow-x: hidden;
+  margin: auto;
+  width: 100%;
 
   
 }

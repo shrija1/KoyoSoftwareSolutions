@@ -195,8 +195,11 @@ padding-top: 0px;
 @media screen and (max-width: 700px) {
   .wrapper
 {
+  padding: 0%;
   display: block;
   margin: auto;
+  margin-left: 0%;
+  height: 770px;
   
 }
   img.responsive{
@@ -207,10 +210,10 @@ padding-top: 0px;
    }
    img.responsive_mob{
 
-    height:261px;
-    width: 280px;
+    height:auto;
+    width: 100%;
     display: block;
-    padding-left: 16px;
+ 
     margin-left: 0px;
   
   
@@ -218,9 +221,9 @@ padding-top: 0px;
 
   #column1 { 
    float: center;
-   margin-left:0px;
-   width:326px;
-  
+   margin-left:-5%;
+   width:320px;
+
 
    
    

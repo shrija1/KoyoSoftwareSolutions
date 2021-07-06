@@ -14,6 +14,7 @@ import Portfolio from './Portfolio/Portfolio'
 import GraphicsPortfolio from './GraphicsPortfolio/GraphicsPortfolio'
 import ApplicationForm from './ApplicationForm/ApplicationForm'
 import InputSkills from './ApplicationForm/InputSkills'
+import Footer from './Footer/Footer'
 
 
 
@@ -22,8 +23,8 @@ function Home() {
     
     return (
         <main id="main">
-           
-            <Slider/>
+          
+              <Slider/>
             <Portfolio/>
             <GraphicsPortfolio/>
             <ApplicationForm/>
@@ -31,12 +32,12 @@ function Home() {
            
             
             
-            {/* <Services/> */}
+            {/*<Services/> */}
             {/* <Portfolio/> */}
-           
             {/* <Counts/> */}
-            {/* <Testimonials/> */}
-            <Team/>
+            {/* <Testimonials/>*/}
+            <Team/> 
+            <Footer/>
         </main>
     )
 }

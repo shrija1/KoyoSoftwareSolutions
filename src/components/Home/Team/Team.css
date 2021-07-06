@@ -3,13 +3,24 @@
 # Team
 --------------------------------------------------------------*/
 
+.team .teamwrapper
+{
+margin:auto;
+overflow: hidden;
+height: 550px;
+padding: 0%;
+}
 .checkteam-container
 {
     width: 80%;
     margin:auto;
+    margin-bottom: -8%;
+    
+   
 }
 .team{
     margin-top: 40px;
+    margin: auto;
 }
 .team .member {
     margin-bottom: 10px;
@@ -26,15 +37,17 @@
 }
 .team .card
 {
-   background-color:  rgba(255,255,255,0.2);
-   height: 40%;
-
-
-
+    background-color:  rgba(255,255,255,0.2);
+    height: 33%;
+    bottom: 11%;
+    width: 84%;
+    margin: auto;
+    border-top: none !important;
 }
+
 .team .card-body
 {
-   
+ 
 /* box-shadow: 12px 0 15px -4px #888;*/
  box-shadow: 1px 9px 13px 1px rgba(0,0,0,0.75);
 -webkit-box-shadow: 1px 9px 13px 1px rgba(0,0,0,0.75);
@@ -50,7 +63,7 @@
 
 .team .card-subtitle
 {
-    color: rgb(70,70,70);
+    color: rgb(19, 16, 16);
     font-size: 13px;
 }
 .team .card-text
@@ -85,9 +98,16 @@
 
 
 
+  .team .teamdesktop
+  {
+      display: block;
+  }
 
 
-
+  .team .teammobile
+  {
+      display: none;
+  }
 
 
   
@@ -110,12 +130,7 @@
 .team  .teamim {
     box-shadow: 10px 0 11px -4px #888;
 }
-.team .card{
- 
-    bottom: 13%;
-    width: 84%;
-    margin: auto;
-}
+
 .team  .card-text{
    
     font-size: 12px;
@@ -203,6 +218,8 @@
     background-color: #151515;
 }
 
+
+
 @media (min-width: 1500px) and (max-width: 2560px)  {
     .team .card-title 
     {
@@ -222,5 +239,57 @@
     }
    }
 
-
+   .teammobile
+   {
+       display: block;
+      
+   }
   
+@media only screen and (max-width: 600px) {
+
+.team .teammobile
+{
+    display: block;
+  
+
+}
+
+.team .card
+{
+height: 250px;
+bottom: 15%;
+}
+.team .swiper-slide {
+   background-color: transparent;
+    padding: 0%;
+    margin: auto;
+  }
+  .team .checkteam-container
+  {
+      margin: auto;
+      width: 90%;
+
+   
+    margin-bottom: -11%;
+    
+  
+  }
+  .team .teamdesktop
+  {
+      display: none;
+  }
+  .team .card-title 
+{
+    padding: -10px;
+    font-size: 14px;
+}
+.team .card-body
+{
+    padding:5%;
+}
+.team .card-subtitle
+{
+    color: rgb(19, 16, 16);
+    font-size: 13px;
+}
+}

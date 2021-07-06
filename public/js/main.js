@@ -79,7 +79,13 @@ elms2[6].onclick= function(){
   elms3[6].classList.toggle('do-flip');
 }
 
+elms1[7].onclick= function(){
+  elms3[7].classList.toggle('do-flip');
+}
 
+elms2[7].onclick= function(){
+  elms3[7].classList.toggle('do-flip');
+}
 });
 
 
@@ -286,6 +292,8 @@ elms2[6].onclick= function(){
   $(window).on('load', function() {
     var portfolioIsotope = $('.app-container').isotope({
       itemSelector: '.app-item',
+    
+      filter:'.filter-latest',
       masonry: {
         columnWidth: 100,
         fitWidth: true
@@ -299,6 +307,7 @@ elms2[6].onclick= function(){
       portfolioIsotope.isotope({
         filter: $(this).data('filter')
       });
+      
       aos_init();
     });
 

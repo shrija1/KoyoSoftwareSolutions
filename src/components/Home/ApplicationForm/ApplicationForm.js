@@ -18,11 +18,7 @@ import './modal-video.scss';
 function nofile() {
   // Get the snackbar DIV
   var x = document.getElementById("snackbar");
-
-  // Add the "show" class to DIV
   x.className = "show";
-
-  // After 3 seconds, remove the show class from DIV
   setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
 }
 function ApplicationForm() {
@@ -531,7 +527,8 @@ function ApplicationForm() {
         <br /><br />
       </Modal>
 
-
+<div className="videomodal">
+        {/* <img src={cross} className="closeee" alt="close" onClick={closeModal4} />*/}
       <Modal
         isOpen={modalIsOpen4}
         onRequestClose={closeModal4}
@@ -548,7 +545,7 @@ function ApplicationForm() {
           videoId="L61p2uyiMSo"
           onClose={() => setOpen5(false)}
           className="ModalVid" />
-        <img src={cross} className="closeee" alt="close" onClick={closeModal4} />
+
         <div id="carouselExampleIndicators" className="carousel slide" data-ride="false">
           <ol className="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -605,14 +602,14 @@ function ApplicationForm() {
           <br /><br /><b>Project Brief:</b> Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally.
           Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard.
           Globally, c40 billion coconuts are harvested annually.
-
+          
 
           
 
         </div>
 
       </Modal>
-
+</div>
 
 
 
