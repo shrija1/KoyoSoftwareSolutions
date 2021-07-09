@@ -12,7 +12,33 @@ import 'swiper/swiper-bundle.css';
 import Marquee from "react-fast-marquee";
 
 import { Autoplay } from 'swiper';
+/* eslint-env jquery */
 
+$(document).ready(function(){
+
+  $(".filter-button").click(function(){
+      var value = $(this).attr('data-filter');
+      
+      
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+          $(".filter").not('.'+value).hide('3000');
+          $('.filter').filter('.'+value).show('3000');
+          
+   
+  });
+  
+  if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+$('button[data-filter="banner"]').click();
+}
+
+
+
+
+);
 SwiperCore.use([Navigation, Pagination, Controller, Thumbs]);
 
 
@@ -102,28 +128,19 @@ function GraphicsPortfolio() {
 
 
 
-              <Marquee pauseOnClick={true} gradient={false} speed={'50'} style={{paddingBottom:'3%'}}>
+              <Marquee pauseOnClick={true} gradient={false} speed={'30'} style={{paddingBottom:'3%'}}>
 
-                <div align="center">
+                <div align="center" className="marqueefilters">
                   
-                  <button className="  filter-button" data-filter="banner">Banner</button>
-                  <button className=" filter-button" data-filter="brochure">Brochure</button>
-                  <button className=" filter-button" data-filter="logo">Logo</button>
-                  <button className="  filter-button" data-filter="merch">Merchandise Art</button>
-                  <button className="  filter-button" data-filter="vinyl">Vehicle Vinyl Wrap</button>
-                  <button className="  filter-button" data-filter="misc">Miscellaneous</button>
+                  <button className="  filter-button" data-filter="banner">Banner </button>●
+                  <button className=" filter-button" data-filter="brochure">Brochure </button>●
+                  <button className=" filter-button" data-filter="logo">Logo </button>●
+                  <button className="  filter-button" data-filter="merch">Merchandise Art </button>●
+                  <button className="  filter-button" data-filter="vinyl">Vehicle Vinyl Wrap </button>●
+                  <button className="  filter-button" data-filter="misc">Miscellaneous </button>●
                 </div>
 
               </Marquee>
-
-
-
-
-
-
-
-
-
 
 
               {WebText.home.graphicsportfolio.graphicsportfolioListData.map((graphics) => (
@@ -148,7 +165,7 @@ function GraphicsPortfolio() {
           </div>
 
         </div>
-
+                     
       </div>
 
 

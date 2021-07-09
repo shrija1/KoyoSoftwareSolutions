@@ -22,11 +22,7 @@ function PortfolioCard(props)
   
 
     return(
-
-        <SwiperSlide data-aos-delay="100" id="b" key={`slide-${props.i}`} tag="li" >
-
-
-          <div className=" app-container " data-aos="fade-up" data-aos-delay="200">
+           <div className=" app-container " data-aos="fade-up" data-aos-delay="200">
             <div className={category}>
               <div id="flip-card">
                 <div className="flip-card-front"><img src={img} style={{ height: '100%', width: '100%', borderRadius: '8px' }} alt="" />
@@ -54,9 +50,6 @@ function PortfolioCard(props)
           </div>
 
 
-
-        </SwiperSlide>
-        
     )
 }
 

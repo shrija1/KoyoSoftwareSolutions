@@ -5,7 +5,7 @@ import WebText from '../../../TextData';
 import { HashLink } from 'react-router-hash-link';
 
 import WebDesignIcon from '../Images/Web Icon/Web Design icon.svg'
-import AIMLIcon from '../Images/Web Icon/AI&ML2.svg'
+import AIMLIcon from '../Images/Web Icon/AI&ML.svg'
 import CodeCampIcon from '../Images/Web Icon/Code Camp icon.svg'
 import BrandingSolsIcon from '../Images/Web Icon/Branding Solutions icon.svg'
 

@@ -27,7 +27,7 @@ function Team() {
 
         slidesteam.push(
 
-            <SwiperSlide data-aos-delay="100" id="b" key={`slidesteam-${i}`} tag="li" >
+            <SwiperSlide data-aos-delay="100" id="c" key={`slidesteam-${i}`} tag="li" >
 
                 <div className="col-lg-4 col-md-6 mt-4 d-flex align-items-stretch teamm">
 
@@ -79,7 +79,7 @@ function Team() {
 
     return (
         <section id="team" className="team">
-            <div className="checkteam-container" data-aos="fade-up">
+            <div id="c" className="checkteam-container" data-aos="fade-up">
 
                 <div className="section-title">
                     <h2>{WebText.home.team.title}</h2>

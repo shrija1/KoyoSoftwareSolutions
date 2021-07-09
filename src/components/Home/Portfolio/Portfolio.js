@@ -1,5 +1,6 @@
 import React from 'react';
 import './Portfolio.css';
+import { HashLink as Link } from 'react-router-hash-link';
 import { useState } from 'react';
 import Flip from '../Images/flip.png';
 import WhatsApp from '../Images/whatsapp.svg';
@@ -11,6 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Controller, Thumbs } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import { Autoplay } from 'swiper';
+
 
 
 SwiperCore.use([Navigation, Pagination, Controller, Thumbs]);
@@ -25,30 +27,64 @@ function Portfolio() {
 
   const slideswebsite1 = [];
   const slideswebsite2 = [];
+  const slideswebsite3 = [];
+  const slideswebsite4 = [];
+  const slideswebsite5 = [];
+  const slideswebsite6 = [];
   var i
-  for (i = 0; i < 6; i++) {
+  for (i = 0; i < WebText.home.portfolio.portfolioListData.length; i++) {
     console.log(WebText.home.portfolio.portfolioListData[i].title);
     console.log(WebText.home.portfolio.portfolioListData[i].category);
-    if (WebText.home.portfolio.portfolioListData[i].category === "filter-restaurant app-item") {
+
+    if (WebText.home.portfolio.portfolioListData[i].category === "filter-latest app-item") {
 
       slideswebsite1.push(
 
 
-<SwiperSlide data-aos-delay="100" id="b" key={`slide-${i}`} tag="li" >
-
-       <PortfolioCard i={i}></PortfolioCard>
-
-
+        <SwiperSlide data-aos-delay="100" id="b" key={`slide-${i}`} tag="li" >
+          <PortfolioCard i={i} />
         </SwiperSlide>
-    
+
+
+      );
+    }
+    else if (WebText.home.portfolio.portfolioListData[i].category === "filter-restaurant app-item") {
+      slideswebsite2.push(
+
+
+        <SwiperSlide data-aos-delay="100" id="b" key={`slide-${i}`} tag="li" >
+          <PortfolioCard i={i} />
+        </SwiperSlide>
+
+
+      );
+    }
+    else if (WebText.home.portfolio.portfolioListData[i].category === "filter-realestate app-item") {
+      slideswebsite3.push(
+
+
+        <SwiperSlide data-aos-delay="100" id="b" key={`slide-${i}`} tag="li" >
+          <PortfolioCard i={i} />
+        </SwiperSlide>
+
+
+      );
+    }
+    else if (WebText.home.portfolio.portfolioListData[i].category === "filter-ngo app-item") {
+      slideswebsite4.push(
+
+
+        <SwiperSlide data-aos-delay="100" id="b" key={`slide-${i}`} tag="li" >
+          <PortfolioCard i={i} />
+        </SwiperSlide>
+
 
       );
     }
 
 
-    
-    }
-  
+  }
+
 
 
 
@@ -61,6 +97,7 @@ function Portfolio() {
     <>
 
       <section className="portfolio">
+
         <div className="port-container" data-aos="fade-up">
 
           <div className="section-title">
@@ -69,11 +106,10 @@ function Portfolio() {
           </div>
 
 
-
           <div className="row" data-aos="fade-up" data-aos-delay="100">
             <div className="col-lg-12 d-flex justify-content-center">
               <ul id="app-flters">
-              <li data-filter=".filter-latest" className="filter-activee" >Latest</li>
+                <li data-filter=".filter-latest" className="filter-activee" >Latest</li>
                 <li data-filter=".filter-restaurant" title="Bakery, Cafe, Catering, Food Trucks, Restaurant">Restaurant</li>
                 <li data-filter=".filter-realestate" title="Construction, Modular housing, Turnkey Projects">Real Estate</li>
                 <li data-filter=".filter-ngo" title="Animal Care, Environment, Poverty Alleviation, Human Rights">NGO</li>
@@ -85,81 +121,161 @@ function Portfolio() {
               </ul>
             </div>
           </div>
-         
-          <div className=" app-container " data-aos="fade-up" data-aos-delay="200">
+          <div className="desktopportfolio">
+            <div className=" app-container " data-aos="fade-up" data-aos-delay="200">
 
 
-          {WebText.home.portfolio.portfolioListData.map((port) => ( 
+              {WebText.home.portfolio.portfolioListData.map((port) => (
 
-          <div className={port.category}>
-               
-               <div id="flip-card">
-                     <div className="flip-card-front"><img src={port.img} style={{height:'100%',width:'100%',borderRadius:'8px'}} alt="" />
-                     <a href={port.link} rel="noopener noreferrer" target="_blank"><button type="button" id="flip-btn-load1" className="btn" >Demo</button></a>
-                       <button id="flip-card-btn-turn-to-back"> <img src={Flip} class="img-fluid" alt="" /></button></div>
-     
-                          <div className="flip-card-back"><p>{port.description}<div id="downn" ><br /><b>
-                           Technologies:</b>{port.technologies}
-                           <br /><b>Hosting:</b>{port.hosting}
-                           <br /><b>Find Out More:</b>
-                          <img className="contactpic" src={WhatsApp} alt="" />  <img className="contactpic" src={Email} alt="" />   <img className="contactpic" src={Call} class="img-fluid" alt="" />
-                          </div></p>
-                          <img src={port.img} style={{height:'100%',width:'100%',opacity:'0.3',borderRadius:'8px'}} alt=""/>
-       
-                          <button id="flip-card-btn-turn-to-front"> 
-     
-                          <img src={Flip} class="img-fluid" alt="" />
-                          </button>
-     
-                          
-                       </div>
-                     
-                     </div>
-               </div>
-               ))}
+                <div className={port.category}>
 
-        </div>
+                  <div id="flip-card">
+                    <div className="flip-card-front"><img src={port.img} style={{ height: '100%', width: '100%', borderRadius: '8px' }} alt="" />
+                      <a href={port.link} rel="noopener noreferrer" target="_blank"><button type="button" id="flip-btn-load1" className="btn" >Demo</button></a>
+                      <button id="flip-card-btn-turn-to-back"> <img src={Flip} class="img-fluid" alt="" /></button></div>
 
-      
+                    <div className="flip-card-back"><p>{port.description}<div id="downn" ><br /><b>
+                      Technologies:</b>{port.technologies}
+                      <br /><b>Hosting:</b>{port.hosting}
+                      <br /><b>Find Out More:</b>
+                      <img className="contactpic" src={WhatsApp} alt="" />  <img className="contactpic" src={Email} alt="" />   <img className="contactpic" src={Call} class="img-fluid" alt="" />
+                    </div></p>
+                      <img src={port.img} style={{ height: '100%', width: '100%', opacity: '0.3', borderRadius: '8px' }} alt="" />
 
-       {/*  <div className=" app-container " data-aos="fade-up" data-aos-delay="200">
-            <Swiper
-              data-aos="fade-up"
-              className="box filter-restaurant app-item"
+                      <button id="flip-card-btn-turn-to-front">
+
+                        <img src={Flip} class="img-fluid" alt="" />
+                      </button>
 
 
-              autoplay={{ delay: 4000 }}
-              id="main"
-              thumbs={{ swiper: thumbsSwiper }}
-              controller={{ control: controlledSwiper }}
-              tag="section"
-              wrapperTag="ul"
-              effect="fade"
-            
+                    </div>
 
-              pagination
-              spaceBetween={10}
+                  </div>
+                </div>
+              ))}
 
-              speed={1000}
-              onInit={(swiper) => console.log('Swiper initialized!', swiper)}
-              onSlideChange={(swiper) => {
-                console.log('Slide index changed to: ', swiper.activeIndex);
-              }}
-              onReachEnd={() => console.log('Swiper end reached')}
-            >
-              {slideswebsite1}
-
-            </Swiper>
+            </div>
 
           </div>
-         
-        
 
-        */}
+
+
+
+          <div className="mobileportfolio">
+            <div className=" app-container " data-aos="fade-up" data-aos-delay="200">
+              <Swiper
+                data-aos="fade-up"
+                className="box filter-latest app-item"
+                autoplay={{ delay: 2000, disableOnInteraction: false  }}
+                id="main"
+                thumbs={{ swiper: thumbsSwiper }}
+                controller={{ control: controlledSwiper }}
+
+                effect="fade"
+
+
+                
+
+                spaceBetween={10}
+
+                speed={1000}
+                onInit={(swiper) => console.log('Swiper initialized!', swiper)}
+                onSlideChange={(swiper) => {
+                  console.log('Slide index changed to: ', swiper.activeIndex);
+                }}
+                onReachEnd={() => console.log('Swiper end reached')}
+              >
+                {slideswebsite1}
+
+              </Swiper>
+
+
+
+              <Swiper
+                data-aos="fade-up"
+                className="box filter-restaurant app-item"
+                autoplay={{ delay: 2000, disableOnInteraction: false  }}
+                id="main"
+                thumbs={{ swiper: thumbsSwiper }}
+                controller={{ control: controlledSwiper }}
+
+                effect="fade"
+
+
+               
+                spaceBetween={10}
+
+                speed={1000}
+                onInit={(swiper) => console.log('Swiper initialized!', swiper)}
+                onSlideChange={(swiper) => {
+                  console.log('Slide index changed to: ', swiper.activeIndex);
+                }}
+                onReachEnd={() => console.log('Swiper end reached')}
+              >
+                {slideswebsite2}
+
+              </Swiper>
+
+
+
+              <Swiper
+                data-aos="fade-up"
+                className="box filter-realestate app-item"
+                autoplay={{ delay: 2000 , disableOnInteraction: false }}
+                id="main"
+                thumbs={{ swiper: thumbsSwiper }}
+                controller={{ control: controlledSwiper }}
+
+                effect="fade"
+
+
+            
+                spaceBetween={10}
+
+                speed={1000}
+                onInit={(swiper) => console.log('Swiper initialized!', swiper)}
+                onSlideChange={(swiper) => {
+                  console.log('Slide index changed to: ', swiper.activeIndex);
+                }}
+                onReachEnd={() => console.log('Swiper end reached')}
+              >
+                {slideswebsite3}
+
+              </Swiper>
+
+
+
+              <Swiper
+                data-aos="fade-up"
+                className="box filter-ngo app-item"
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
+                id="main"
+                thumbs={{ swiper: thumbsSwiper }}
+                controller={{ control: controlledSwiper }}
+
+                effect="fade"
+
+
+           
+                spaceBetween={10}
+
+                speed={1000}
+                onInit={(swiper) => console.log('Swiper initialized!', swiper)}
+                onSlideChange={(swiper) => {
+                  console.log('Slide index changed to: ', swiper.activeIndex);
+                }}
+                onReachEnd={() => console.log('Swiper end reached')}
+              >
+                {slideswebsite4}
+
+              </Swiper>
+
+
+
+            </div>
+          </div>
 
         </div>
-
-
       </section>
     </>
 

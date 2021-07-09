@@ -42,7 +42,7 @@ function App() {
         <Router>
           <Switch>
             <Route exact path='/'>
-              <Navbar active="home"/>
+           
               <Header/>
               <Home/>
              

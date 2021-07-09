@@ -1,9 +1,3 @@
-/**
-* Template Name: Gp - v2.2.1
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 
 document.addEventListener('DOMContentLoaded', function(event) {
@@ -86,9 +80,77 @@ elms1[7].onclick= function(){
 elms2[7].onclick= function(){
   elms3[7].classList.toggle('do-flip');
 }
+
+
+elms1[8].onclick= function(){
+  elms3[8].classList.toggle('do-flip');
+}
+
+elms2[8].onclick= function(){
+  elms3[8].classList.toggle('do-flip');
+}
+
+
+elms1[9].onclick= function(){
+  elms3[9].classList.toggle('do-flip');
+}
+
+elms2[9].onclick= function(){
+  elms3[9].classList.toggle('do-flip');
+}
+
+
+elms1[10].onclick= function(){
+  elms3[10].classList.toggle('do-flip');
+}
+
+elms2[10].onclick= function(){
+  elms3[10].classList.toggle('do-flip');
+}
+
+
+elms1[11].onclick= function(){
+  elms3[11].classList.toggle('do-flip');
+}
+
+elms2[11].onclick= function(){
+  elms3[11].classList.toggle('do-flip');
+}
+
+
+elms1[12].onclick= function(){
+  elms3[12].classList.toggle('do-flip');
+}
+
+elms2[13].onclick= function(){
+  elms3[13].classList.toggle('do-flip');
+}
+
+
+elms1[13].onclick= function(){
+  elms3[13].classList.toggle('do-flip');
+}
+
+elms2[14].onclick= function(){
+  elms3[14].classList.toggle('do-flip');
+}
+
+
+elms1[14].onclick= function(){
+  elms3[14].classList.toggle('do-flip');
+}
+
+elms2[14].onclick= function(){
+  elms3[14].classList.toggle('do-flip');
+}
+function concatValues( obj ) {
+  var value = '';
+  for ( var prop in obj ) {
+    value += obj[ prop ];
+  }
+  return value;
+}
 });
-
-
 
 !(function($) {
   "use strict";
@@ -258,6 +320,7 @@ elms2[7].onclick= function(){
   // Porfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
+      filter:'.filter-webdesign',
       itemSelector: '.portfolio-item'
     });
 
@@ -288,6 +351,11 @@ elms2[7].onclick= function(){
 
 
 
+
+
+
+
+  
   // Porfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.app-container').isotope({
@@ -329,32 +397,6 @@ elms2[7].onclick= function(){
 
 
 
-  $(document).ready(function(){
-
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-        
-        
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-            
-     
-    });
-    
-    if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
-$('button[data-filter="banner"]').click();
-}
-
-
-
-
-);
-
 
 $(document).ready(function() {
 	$('.zoom-gallery').magnificPopup({
@@ -363,16 +405,6 @@ $(document).ready(function() {
 	
 	});
 });
-
-
-
-
-
-
-
-
-
-
 
 
 

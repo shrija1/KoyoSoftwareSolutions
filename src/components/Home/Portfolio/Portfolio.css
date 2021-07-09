@@ -3,7 +3,15 @@
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.mobileportfolio
+{
+  display: none;
+}
 
+.desktopportfolio
+{
+  display: block;
+}
 .port-container
 {
   width: 85%;
@@ -133,7 +141,7 @@ border-radius: 8px;
   border: none;
  
   border-radius:  50%;
-  z-index: 100;
+  z-index:9999;
   margin-bottom: 0px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
@@ -189,7 +197,7 @@ color: rgba(170,170,170);
   
 }
 #flip-card .flip-card-back {
-    background: transparent;
+   
   
     -o-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
@@ -294,7 +302,27 @@ position: relative;
 
   
 @media only screen and (max-width: 600px) {
+.mobileportfolio
+{
+  display: block;
+}
+.portfolio .app-container
+{
 
+  height: 0px;
+  margin-bottom: 0%;
+}
+
+.portfolio .port-container
+{
+ 
+  height:450px;
+  margin-bottom: -10%;
+}
+.desktopportfolio
+{
+  display: none;
+}
   .portfolio #app-flters li {
     cursor: pointer;
     display: inline-block;
@@ -328,13 +356,14 @@ position: relative;
   font-weight: 500;
   color:white;
   animation: color-change 2s infinite;
+  z-index: 9999;
   }
   
 
   #flip-card {
   
     width: 100%;
-    height:100%;
+    height:180px;
     text-align: center;
     position: relative;
     background-color: rgb(63, 47, 50);
@@ -342,13 +371,19 @@ position: relative;
     margin-left: 0%;
     margin-bottom: 0px;
     border-radius: 8px;
-
+    margin-left: -19%;
+z-index: 9999;
    
+  }
+
+  .portfolio .swiper-slide
+  {
+    background-color: transparent;
   }
   .portfolio .app-item{
     width: 300px;
    height: 180px; 
-   
+   background-color: transparent;
    margin-bottom:45px;
    
    

@@ -40,7 +40,7 @@ function Slider() {
 
 
 
-        <div className=" heading" >{WebText.home.featuresListData[i].title}</div>
+        <div className=" sliderheading" >{WebText.home.featuresListData[i].title}</div>
         <div className="wrapper">
 
           <div id="column1" >
@@ -81,7 +81,7 @@ function Slider() {
   return (
     <React.Fragment >
       <br />
-
+<div className="slider">
       <Swiper
         data-aos="fade-up"
         className="box"
@@ -95,7 +95,7 @@ function Slider() {
       
         effect="fade"
         navigation
-
+        
         pagination
         spaceBetween={10}
 
@@ -115,7 +115,7 @@ function Slider() {
       </Swiper>
 
 
-
+      </div>
 
 
     </React.Fragment>

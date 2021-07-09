@@ -53,12 +53,16 @@
   animation-play-state: paused;
 }
 
-
+.marqueefilters
+{
+  font-size: 10px;
+background-color: white;
+}
 
 .filter-button
 {
     font-size: 15px;
-
+background-color: white;
     text-align: center;
  padding-right: 2%;
 font-weight: 500;
@@ -449,6 +453,12 @@ margin: auto;
 
 
 @media only screen and (max-width: 600px) {
+
+  .filter-button:focus
+{
+  background-color: whitesmoke;
+  color: rgba(255,94,19);
+}
   .modalcontainer:hover  .overlaygraphics
   {
     height: 100px;
@@ -458,6 +468,7 @@ margin: auto;
 
  {
    position: absolute;
+   
  }
   #mydiv
   {

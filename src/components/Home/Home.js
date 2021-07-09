@@ -15,7 +15,8 @@ import GraphicsPortfolio from './GraphicsPortfolio/GraphicsPortfolio'
 import ApplicationForm from './ApplicationForm/ApplicationForm'
 import InputSkills from './ApplicationForm/InputSkills'
 import Footer from './Footer/Footer'
-
+import Navbar from './Navbar/Navbar'
+import LazyLoad from 'react-lazyload';
 
 
 
@@ -23,10 +24,14 @@ function Home() {
     
     return (
         <main id="main">
-          
+          <Navbar/>
               <Slider/>
+             
             <Portfolio/>
+      
             <GraphicsPortfolio/>
+           
+         
             <ApplicationForm/>
             
            
@@ -37,7 +42,9 @@ function Home() {
             {/* <Counts/> */}
             {/* <Testimonials/>*/}
             <Team/> 
+           
             <Footer/>
+         
         </main>
     )
 }

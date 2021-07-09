@@ -12,7 +12,8 @@ class InputSkills extends Component {
         }
         this.inputRef = React.createRef()
     }
-   
+  
+
 
     // remove skill
     removeSkill = i => {
@@ -21,13 +22,14 @@ class InputSkills extends Component {
         this.setState({
             skills: skills
         })
+        console.log(skills)
     }
 
     // add skill
     addSkill = e => {
        
         const skills = this.state.skills
-        console.log(skills)
+    
         const value = e.target.value
         if (e.key === "Enter" && value) {
             // check if duplicate skill
@@ -80,7 +82,7 @@ class InputSkills extends Component {
                                 )
                             })}
                             <li className="input-skill">
-                                <input name="skill" onKeyDown={this.addSkill} type="text" size="4" ref={this.inputRef} placeholder="Add skill here" 
+                                <input name="skill" onKeyDown={this.addSkill} type="text" size="4" ref={this.inputRef} placeholder="Add skill here" value={this.state.value} 
 />
                             </li>
                         </ul>

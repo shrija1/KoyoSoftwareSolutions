@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import './Navbar.css'
-import logo from '../../img/logo/KoyoLogo.png'
 import { Button, Modal, Nav } from 'react-bootstrap'
 import * as firebase from "firebase/app";
 import "firebase/auth";
 // import firebaseConfig from '../../firebase.config';
-import facebook from '../../img/social/facebook.png'
-import google from '../../img/social/google.png'
-import twitter from '../../img/social/twitter.png'
-import linkedIn from '../../img/social/linkedin.png'
+import logo from '../../../img/logo/KoyoLogo.png'
+import facebook from '../../../img/social/facebook.png'
+import google from '../../../img/social/google.png'
+import twitter from '../../../img/social/twitter.png'
+import linkedIn from '../../../img/social/linkedin.png'
 // import logout from '../../img/social/logout.png'
-import WebText from '../../TextData'
+import WebText from '../../../TextData'
 // import { NavItem } from "react-bootstrap";
-import './../Home/Slider/Slider.css';
+
 import { Link } from  'react-router-dom';
 
-import { NavHashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 const scrollWidthOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = 0; 
@@ -105,11 +105,7 @@ const Navbar1 = (props) => {
 
 
 
-    useEffect(() => {
-        if (props.active !== '') {
-            document.getElementById(props.active).className = "active"
-        }
-    })
+  
 
     const handleModel = () => {
         setShow(!show)
@@ -157,7 +153,7 @@ const Navbar1 = (props) => {
     //     // setIsHideNav(false)
     // } else {
     //     document.getElementById('navbarNav').style.display = 'block';
-    // }
+    // }bbb
 
 
     return (
@@ -189,37 +185,12 @@ const Navbar1 = (props) => {
                 </div>
 
                 {/* desktop nav */}
-                <nav className="nav-menu d-none d-lg-block collapse navbar-collapse" id="navbarNav1">
-                    <ul>
-                        <li id="home"><Link to="/">{WebText.home.navbar.navItems.item1}</Link></li>
-                        <li className="drop-down" id="services">
-                            <Link to="/services">{WebText.home.navbar.navItems.item2.main}</Link>
-                            <ul>
-                                {/* <li className="drop-down"><Link to="#">{WebText.home.navbar.navItems.item2.item1.main}</Link>
-                                    <ul>
-                                        <li><Link to="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</Link></li>
-                                        <li><Link to="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</Link></li>
-                                    </ul>
-                                </li> */}
-                                <li><NavHashLink  to="/" >{WebText.home.navbar.navItems.item2.item2}</NavHashLink></li>
-           
-
-
-
-
-                                <li><Link to="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</Link></li>
-                                <li><Link to="/businessPS">{WebText.home.navbar.navItems.item2.item4}</Link></li>
-                                <li><Link to="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</Link></li>
-                                
-                            </ul>
-                        </li>
-                        
-                        <li id="about"><NavHashLink  to="/" >{WebText.home.navbar.navItems.item3}</NavHashLink></li>
-                        <li id="jobs"><Link to="/about">{WebText.home.navbar.navItems.item4}</Link></li>
-                        <li id="contact"><Link to="/#b">{WebText.home.navbar.navItems.item5}</Link></li>
-                    </ul>
-                </nav>
-
+                <div className="navbarcontainer">
+                <HashLink className="navbarlinks" smooth to="/" >{WebText.home.navbar.navItems.item1}</HashLink>
+                <HashLink className="navbarlinks" smooth to="#d" >Services</HashLink>
+                <HashLink className="navbarlinks" smooth to="#jobs" >{WebText.home.navbar.navItems.item4}</HashLink>
+                <HashLink className="navbarlinks" smooth to="#contactt" >{WebText.home.navbar.navItems.item5}</HashLink>
+                </div>
                 {/* button */}
                 <p>
                     {
@@ -261,6 +232,7 @@ const Navbar1 = (props) => {
                                     <Link className="dropdown-item" to="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</Link>
                                 </div>
                             </Link> */}
+                          
                             <button
                                 className="navbar-toggler"
                                 data-toggle="collapse" 
@@ -268,15 +240,15 @@ const Navbar1 = (props) => {
                                 aria-controls="navbarNav" 
                                 style={{textAlign: 'left'}}
                                 onClick={nav2Deactive}
-                            >
+                            ></button>
                                 {/* <Link className="dropdown-item" to="/BuyerServices">{WebText.home.navbar.navItems.item2.item1.item1}</Link> */}
                                 {/* <Link className="dropdown-item" to="/SellerServices">{WebText.home.navbar.navItems.item2.item1.item2}</Link> */}
-                                <Link className="dropdown-item" to="/webDevelopment">{WebText.home.navbar.navItems.item2.item2}</Link>
+                                <HashLink  smooth to="#b" className="dropdown-item" >{WebText.home.navbar.navItems.item1}</HashLink>
                                 <Link className="dropdown-item" to="/e-marketing">{WebText.home.navbar.navItems.item2.item3}</Link>
                                 <Link className="dropdown-item" to="/businessPS">{WebText.home.navbar.navItems.item2.item4}</Link>
                                 <Link className="dropdown-item" to="/machineLearning">{WebText.home.navbar.navItems.item2.item5}</Link>
                                 {/* <Link className="dropdown-item" to="/professionalsToolbox">{WebText.home.navbar.navItems.item2.item6}</Link> */}
-                            </button>
+                            
                         </div>
                     </li>
                 

@@ -215,7 +215,8 @@ if(WebsiteText===null){
                         item5: "Branding Solutions",
                     },
                     item3: "About",
-                    item4: "Contact",
+                    item4: "Jobs",
+                    item5: "Contact",
                 },
                 greeting: "Hi, ",
                 btn: {
@@ -232,23 +233,23 @@ if(WebsiteText===null){
                 headerText:"Problem Solvers. Bespoke Software Solutions Engineers",
                 headerCardsData: [
                     {
-                        classBox: '',
-                        icon: '../Images/Web Icon/Web Design icon.svg',
+                        classBox: 'mt-4',
+                        icon: '../Images/Web Icon/Web Design icon.png',
                         name: 'Web Design'
                     },
                     {
-                        classBox: '',
-                        icon: '../Images/Web Icon/AI&ML.svg',
+                        classBox: 'mt-4',
+                        icon: '../Images/Web Icon/AI&ML.png',
                         name: 'AI and ML'
                     },
                     {
-                        classBox: 'mt-4 mt-xl-0',
-                        icon: '../Images/Web Icon/Code Camp icon.svg',
+                        classBox: 'mt-4',
+                        icon: '../Images/Web Icon/Code Camp icon.png',
                         name: 'Learn and Code'
                     },
                     {
-                        classBox: 'mt-4 mt-xl-0',
-                        icon: '../Images/Web Icon/Branding Solutions icon.svg',
+                        classBox: 'mt-4',
+                        icon: '../Images/Web Icon/Branding Solutions icon.png',
                         name: 'Branding Solutions'
                     } 
                 ]
@@ -417,7 +418,7 @@ if(WebsiteText===null){
                 technologies: "reactJS, BootStrap, JS, CSS",
                 hosting:" Antibes, France",
                 link:"https://desifirangifoods.web.app/",
-                category:"filter-restaurant filter-latest app-item"
+                category:"filter-restaurant app-item"
               },
               {
                 img : portfolio2,
@@ -425,16 +426,9 @@ if(WebsiteText===null){
                 technologies: "reactJS, BootStrap, JS, CSS",
                 hosting:" Antibes, France",
                 link:"https://eka.network/",
-                category:"filter-ecommerce filter-latest app-item"
+                category:"filter-latest app-item"
               },
-              {
-                img : portfolio3,
-                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
-                technologies: "reactJS, BootStrap, JS, CSS",
-                hosting:" Antibes, France",
-                link:"https://ngo-website-tts.web.app/",
-                category:"filter-ngo app-item"
-              },
+          
               {
                 img : portfolio4,
                 description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
@@ -451,15 +445,7 @@ if(WebsiteText===null){
                 link:"https://realestate-jk.web.app",
                 category:"filter-realestate app-item"
               },
-              {
-                img : portfolio6,
-                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
-                technologies: "reactJS, BootStrap, JS, CSS",
-                hosting:" Antibes, France",
-                link:" https://samskrithi-goshala.web.app",
-                category:"filter-ngo filter-latest app-item"
-
-              },
+           
               {
                 img : portfolio7,
                 description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
@@ -474,8 +460,43 @@ if(WebsiteText===null){
                 technologies: "reactJS, BootStrap, JS, CSS",
                 hosting:" Antibes, France",
                 link:"https://koyoaccountassistant.web.app",
-                category:"filter-latest filter-professional app-item"
+                category:"filter-latest app-item"
+              },
+              {
+                img : portfolio6,
+                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
+                technologies: "reactJS, BootStrap, JS, CSS",
+                hosting:" Antibes, France",
+                link:" https://samskrithi-goshala.web.app",
+                category:"filter-latest app-item"
+
+              },
+              {
+                img : portfolio3,
+                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
+                technologies: "reactJS, BootStrap, JS, CSS",
+                hosting:" Antibes, France",
+                link:"https://ngo-website-tts.web.app/",
+                category:"filter-ngo app-item"
+              },
+              {
+                img : portfolio6,
+                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
+                technologies: "reactJS, BootStrap, JS, CSS",
+                hosting:" Antibes, France",
+                link:" https://samskrithi-goshala.web.app",
+                category:"filter-ngo app-item"
+
+              },
+              {
+                img : portfolio1,
+                description:"desiFirangi is a modern, dark theme, multilingual food truck website that looks great both on phone and mobile devices.  With prominently displayed and apropriately placed call-to-action buttons  is designed  also help be used by cloud kitchens that wish to manage their bottomlines via direct access to clients as opposed to routing their entire traffic via expensive food delivery platforms.",
+                technologies: "reactJS, BootStrap, JS, CSS",
+                hosting:" Antibes, France",
+                link:"https://desifirangifoods.web.app/",
+                category:"filter-latest app-item"
               }
+
              
               ]
             },
@@ -983,7 +1004,8 @@ if(WebsiteText===null){
                         projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
                         duration:"4 Month",
                         skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
-                        deadline:"MMMM,DD,YYYY"
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'graphics internship'
 
                     },
                     {
@@ -992,7 +1014,8 @@ if(WebsiteText===null){
                         projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
                         duration:"4 Month",
                         skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
-                        deadline:"MMMM,DD,YYYY"
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'webdesign internship'
 
                     },
                     {
@@ -1001,7 +1024,8 @@ if(WebsiteText===null){
                         projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
                         duration:"4 Month",
                         skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
-                        deadline:"MMMM,DD,YYYY"
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'robotics permanent'
 
                     },
                     {
@@ -1010,7 +1034,8 @@ if(WebsiteText===null){
                         projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
                         duration:"4 Month",
                         skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
-                        deadline:"MMMM,DD,YYYY"
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'robotics permanent'
 
                     },
                     {
@@ -1019,7 +1044,8 @@ if(WebsiteText===null){
                         projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
                         duration:"4 Month",
                         skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
-                        deadline:"MMMM,DD,YYYY"
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'webdesign permanent'
 
                     },
                     {
@@ -1028,7 +1054,9 @@ if(WebsiteText===null){
                         projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
                         duration:"4 Month",
                         skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
-                        deadline:"MMMM,DD,YYYY"
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'webdesign internship'
+                        
 
                     },
                     {
@@ -1037,7 +1065,8 @@ if(WebsiteText===null){
                         projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
                         duration:"4 Month",
                         skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
-                        deadline:"MMMM,DD,YYYY"
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'aiml internship'
 
                     },
                     {
@@ -1046,9 +1075,116 @@ if(WebsiteText===null){
                         projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
                         duration:"4 Month",
                         skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
-                        deadline:"MMMM,DD,YYYY"
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'aiml internship'
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'graphics internship'
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'graphics internship'
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'graphics internship'
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'webdesign permanent'
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'webdesign permanent'
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'webdesign permanent'
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'webdesign permanent'
+
+                    },
+                    {
+                        topic:"Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                        keywords:"Robotics , CAD, Simulation, Controls",
+                        projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                        duration:"4 Month",
+                        skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                        deadline:"MMMM,DD,YYYY",
+                        filter:'webdesign permanent'
 
                     }
+            ],
+            internshipListData: [
+                {
+                    topic:"Internship Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                    keywords:"Robotics , CAD, Simulation, Controls",
+                    projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                    duration:"4 Month",
+                    skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                    deadline:"MMMM,DD,YYYY"
+                },
+                {
+                    topic:"Internship Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                    keywords:"Robotics , CAD, Simulation, Controls",
+                    projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                    duration:"4 Month",
+                    skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                    deadline:"MMMM,DD,YYYY"
+                },
+                {
+                    topic:"Internship Grip Controller optimisation for a coconut tree climbing robotic harvester",
+                    keywords:"Robotics , CAD, Simulation, Controls",
+                    projectdescription:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+                    duration:"4 Month",
+                    skills:"CAD , Machine Design, Simulink,Locomotion Design, Ability to work independently",
+                    deadline:"MMMM,DD,YYYY"
+                }
             ]
 
             } 

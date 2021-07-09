@@ -8,8 +8,68 @@ import downloadfile from '../../../img/java.pdf';
 import cross from '../Images/cross.png';
 import ModalVideo from 'react-modal-video'
 import './modal-video.scss';
+/* eslint-env jquery */
+// external js: isotope.pkgd.js
+
+// init Isotope
+
+$(document).ready(function () {
+  //your code here
+  // external js: isotope.pkgd.js
+
+  // init Isotope
+  var $grid = $('.grid').isotope({
+    itemSelector: '.job-type',
+    filter: '.permanent.webdesign'
+  });
+
+  // store filter for each group
+  var filters = {};
+
+  $('.filters').on('click', '.button', function (event) {
+    var $button = $(event.currentTarget);
+    // get group key
+    var $buttonGroup = $button.parents('.button-group');
+    var filterGroup = $buttonGroup.attr('data-filter-group');
+    // set filter for group
+    filters[filterGroup] = $button.attr('data-filter');
+    // combine filters
+    var filterValue = concatValues(filters);
+    // set filter for Isotope
+    $grid.isotope({ filter: filterValue });
+  });
+
+  // change is-checked class on buttons
+  $('.button-group').each(function (i, buttonGroup) {
+    var $buttonGroup = $(buttonGroup);
+    $buttonGroup.on('click', 'button', function (event) {
+      $buttonGroup.find('.is-checked').removeClass('is-checked');
+      var $button = $(event.currentTarget);
+      $button.addClass('is-checked');
+    });
+  });
+
+  // flatten object by concatting values
+  function concatValues(obj) {
+    var value = '';
+    for (var prop in obj) {
+      value += obj[prop];
+    }
+    return value;
+  }
+
+});
 
 
+
+// flatten object by concatting values
+function concatValues(obj) {
+  var value = '';
+  for (var prop in obj) {
+    value += obj[prop];
+  }
+  return value;
+}
 
 
 
@@ -80,8 +140,8 @@ function ApplicationForm() {
   }
 
   const handleSubmit = (e) => {
-    if (applicationDetails.applicantname !== "" && applicationDetails.applicantemail !== "" && applicationDetails.available_inhours !== "" && 
-    applicationDetails.available_inmonths !== "") {
+    if (applicationDetails.applicantname !== "" && applicationDetails.applicantemail !== "" && applicationDetails.available_inhours !== "" &&
+      applicationDetails.available_inmonths !== "") {
       e.preventDefault()
 
 
@@ -109,14 +169,13 @@ function ApplicationForm() {
 
     else {
       console.log(applicationDetails.available_inhours + "in hours")
-      if (applicationDetails.applicantname === "" ||applicationDetails.applicantemail === ""  || applicationDetails.available_inhours === "" || applicationDetails.available_inmonths=== "" ||applicationDetails.skill1 === "" 
-       ||applicationDetails.skill2 ===""||applicationDetails.skill3 ===""||applicationDetails.skill4==="" || applicationDetails.CVFile===null)
-          {
-            document.getElementById("formerror").style.visibility="visible";
-            
-          }
-         
-      
+      if (applicationDetails.applicantname === "" || applicationDetails.applicantemail === "" || applicationDetails.available_inhours === "" || applicationDetails.available_inmonths === "" || applicationDetails.skill1 === ""
+        || applicationDetails.skill2 === "" || applicationDetails.skill3 === "" || applicationDetails.skill4 === "" || applicationDetails.CVFile === null) {
+        document.getElementById("formerror").style.visibility = "visible";
+
+      }
+
+
       setApplicationDetails({
         applicantname: "",
         applicantemail: "",
@@ -138,11 +197,25 @@ function ApplicationForm() {
 
 
     setIsOpen2(true);
-    setIsOpen1(false);
+
     setIsOpen3(false);
     console.log(modalIsOpen2);
     console.log("submitted");
   }
+
+
+function openModal22()
+{
+  setIsOpen2(true);
+document.getElementById("modal1").style.display="none";
+}
+function openModal33()
+{
+  setIsOpen3(true);
+document.getElementById("modal1").style.display="none";
+document.getElementById("modal1").overlayClassName="Overlay1";
+}
+
 
   function afterOpenModal2() {
     // references are now sync'd and can be accessed.
@@ -187,7 +260,7 @@ function ApplicationForm() {
 
 
     setIsOpen3(true);
-    setIsOpen1(false);
+
     setIsOpen2(false);
     console.log(modalIsOpen2);
     console.log("submitted");
@@ -226,6 +299,7 @@ function ApplicationForm() {
         className="Modal"
         overlayClassName="Overlay"
         contentLabel="Example Modal1"
+        id="modal1"
 
       >
 
@@ -281,6 +355,7 @@ function ApplicationForm() {
 
         className="Modal2"
         overlayClassName="Overlay2"
+        id="modal3"
       >
         <button type="button" className="close" data-dismiss="modal" aria-hidden="true" onClick={closeModal3}>x</button>
         <div className="md-stepper-horizontal yellow">
@@ -308,7 +383,7 @@ function ApplicationForm() {
         <div className="notice">Information in<span style={{ color: 'red' }}> red </span>is mandatory<span style={{ color: 'red' }}> * </span></div><br />
         <div className="form-group">
 
-          <input type="file" name="CVFile" className="form-control-file border border-danger rounded" id="CVFile"  onChange={handleInput} value={applicationDetails.CVFile} 
+          <input type="file" name="CVFile" className="form-control-file border border-danger rounded" id="CVFile" onChange={handleInput} value={applicationDetails.CVFile}
           />
         </div>
         <div className="formerror" id="formerror"><span style={{ color: 'red' }}>Please fill all the required* details</span></div><br />
@@ -328,7 +403,7 @@ function ApplicationForm() {
         contentLabel="Example Modal2"
         className="Modal"
         overlayClassName="Overlay"
-
+id="modal2"
 
       >
 
@@ -527,103 +602,92 @@ function ApplicationForm() {
         <br /><br />
       </Modal>
 
-<div className="videomodal">
+      <div className="videomodal">
         {/* <img src={cross} className="closeee" alt="close" onClick={closeModal4} />*/}
-      <Modal
-        isOpen={modalIsOpen4}
-        onRequestClose={closeModal4}
-        contentLabel="Example Modal4"
+        <Modal
+          isOpen={modalIsOpen4}
+          onRequestClose={closeModal4}
+          contentLabel="Example Modal4"
 
-        className="Modal4"
-        overlayClassName="Overlay4"
-      >
-
-
-        <ModalVideo channel='youtube'
-
-          isOpen={isOpen5}
-          videoId="L61p2uyiMSo"
-          onClose={() => setOpen5(false)}
-          className="ModalVid" />
-
-        <div id="carouselExampleIndicators" className="carousel slide" data-ride="false">
-          <ol className="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              {/**/}
+          className="Modal4"
+          overlayClassName="Overlay4"
+        >
 
 
+          <ModalVideo channel='youtube'
 
-              <img className="d-block  curimage  " src="https://source.unsplash.com/t4wI_Wv6g_k" alt="First slide" />
+            isOpen={isOpen5}
+            videoId="L61p2uyiMSo"
+            onClose={() => setOpen5(false)}
+            className="ModalVid" />
 
-              <button id="play-video" className="video-play-button" onClick={() => setOpen5(true)}><span></span></button>
+          <div id="carouselExampleIndicators" className="carousel slide" data-ride="false">
+            <ol className="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                {/**/}
+
+
+
+                <img className="d-block  curimage  " src="https://source.unsplash.com/t4wI_Wv6g_k" alt="First slide" />
+
+                <button id="play-video" className="video-play-button" onClick={() => setOpen5(true)}><span></span></button>
+              </div>
+              <div className="carousel-item">
+                <img className="d-block curimage " src="https://source.unsplash.com/BG1WfIjx1f4" alt="Second slide" />
+                <a id="play-video" className="video-play-button" href="www.youtube.com"> <span></span></a>
+              </div>
+              <div className="carousel-item">
+                <img className="d-block  curimage  " src="https://source.unsplash.com/u1edt5V0ruU" alt="Third slide" />
+                <a id="play-video" className="video-play-button" href="www.youtube.com"> <span></span></a>
+              </div>
             </div>
-            <div className="carousel-item">
-              <img className="d-block curimage " src="https://source.unsplash.com/BG1WfIjx1f4" alt="Second slide" />
-              <a id="play-video" className="video-play-button" href="www.youtube.com"> <span></span></a>
-            </div>
-            <div className="carousel-item">
-              <img className="d-block  curimage  " src="https://source.unsplash.com/u1edt5V0ruU" alt="Third slide" />
-              <a id="play-video" className="video-play-button" href="www.youtube.com"> <span></span></a>
-            </div>
-          </div>
-          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="sr-only">Previous</span>
-          </a>
-          <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="sr-only">Next</span>
-          </a>
-        </div>
-
-        <br />
-        <div id="snackbar" className="snackk">The background is simply the text shown.</div>
-
-
-
-        <div className="projdesc">
-          <div className="projtit">
-            <b>Grip Controller optimisation for a coconut tree climbing robotic harvester</b>
-          </div>
-          <div className="projkey">
-            <span style={{ color: 'black' }}><b>Keywords:</b></span> <b><i>#Robotics , #CAD, #Simulation, #Controls</i></b>
+            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="sr-only">Previous</span>
+            </a>
+            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="sr-only">Next</span>
+            </a>
           </div>
 
-          <b>Project Background</b>: Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally.
-          Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard.
-          Globally, c40 billion coconuts are harvested annually.  This translates into c2 billion climb operations.  Some solutions such a tree climber scooter with an integral human capsule and remotely piloted climbers are available.
-          Click<a href={downloadfile}  target="_blank" rel="noreferrer" ><button  className=" clickhere2" ><i style={{ color: '#F19A1E', fontWeight: 'bold' }}>here</i></button></a>to know more
-          <br /><br /><b>Project Brief:</b> Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally.
-          Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard.
-          Globally, c40 billion coconuts are harvested annually.
-          
-
-          
-
-        </div>
-
-      </Modal>
-</div>
+          <br />
+          <div id="snackbar" className="snackk">The background is simply the text shown.</div>
 
 
 
+          <div className="projdesc">
+            <div className="projtit">
+              <b>Grip Controller optimisation for a coconut tree climbing robotic harvester</b>
+            </div>
+            <div className="projkey">
+              <span style={{ color: 'black' }}><b>Keywords:</b></span> <b><i>#Robotics , #CAD, #Simulation, #Controls</i></b>
+            </div>
 
-
-
-
+            <b>Project Background</b>: Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally.
+            Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard.
+            Globally, c40 billion coconuts are harvested annually.  This translates into c2 billion climb operations.  Some solutions such a tree climber scooter with an integral human capsule and remotely piloted climbers are available.
+            Click<a href={downloadfile} target="_blank" rel="noreferrer" ><button className=" clickhere2" ><i style={{ color: '#F19A1E', fontWeight: 'bold' }}>here</i></button></a>to know more
+            <br /><br /><b>Project Brief:</b> Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally.
+            Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard.
+            Globally, c40 billion coconuts are harvested annually.
 
 
 
 
+          </div>
+
+        </Modal>
+      </div>
 
 
-      <section className="portfolio">
+      <section className="portfolio" id="jobs">
         <div className="application-container " data-aos="fade-up">
 
           <div className="section-title">
@@ -635,73 +699,76 @@ function ApplicationForm() {
           </div>
 
 
+          <div class=" row filters categoryone">
 
+            <div class="ui-group">
 
+              <div class="button-group " id="categoryone" data-filter-group="color">
 
+                <button class="button" data-filter=".permanent">Permanent</button>
+                <button class="button" data-filter=".internship">Internship</button>
 
-
-
-
-          <div className="row" data-aos="fade-up" data-aos-delay="100">
-            <div className="col-lg-12  justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter=".filter-webdesign" className="filter-active">Web Design</li>
-                <li data-filter=".filter-graphics">Graphics</li>
-                <li data-filter=".filter-videoediting">Video Editing</li>
-                <li data-filter=".filter-robotics">Robotics</li>
-                <li data-filter=".filter-aiml"> AI ML</li>
-              </ul>
+              </div>
             </div>
+
+          </div>
+
+
+          <div class=" row filters categorytwo">
+
+            <div class="button-group " id="categorytwo" data-filter-group="size">
+
+              <button class="button" data-filter=".webdesign">Web Design</button>
+              <button class="button" data-filter=".graphics">Graphics</button>
+              <button class="button" data-filter=".videoediting">Video Editing</button>
+              <button class="button" data-filter=".robotics">Robotics</button>
+              <button class="button" data-filter=".aiml">AI ML</button>
+            </div>
+
+
+
           </div>
 
           <div className="long no-gutters ">
+            <div class="grid">
 
-            <div className="row portfolio-container joinourteam   no-gutters" data-aos="fade-up" data-aos-delay="200">
+              <div className="row portfolio-container  joinourteam   no-gutters" data-aos="fade-up" data-aos-delay="200">
 
+                {WebText.home.projects.projectListData.map((proj) => (
 
-              {WebText.home.projects.projectListData.map((proj) => (
+                  <div className={`col-lg-6 col-sm-12 col-xl-6 no-gutters padding-0 job-type ${proj.filter}`} >
 
-                <div className="col-lg-6 col-sm-12 col-xl-6 no-gutters padding-0 portfolio-item filter-webdesign">
-                
-                <div className="vl">
-                  <div className="topic">
-                    {proj.topic}<br /></div>
-                  <div className="keywords">Keywords: <i>{proj.keywords}</i></div>
-                  <div className="jobdescription">{proj.projectdescription} Click <button className=" clickhere" onClick={openModal4}>here</button> to know more.</div>
-                  <div className="duration"><span style={{ color: '#ffc451' }}> Duration</span> : {proj.duration}<span style={{ color: '#ffc451' }}>  Skills :</span>{proj.skills}</div>
+                    <div className="vl">
+                      <div className="topic">
+                        {proj.topic}<br /></div>
+                      <div className="keywords">Keywords: <i>{proj.keywords}</i></div>
+                      <div className="jobdescription">{proj.projectdescription} Click <button className=" clickhere" onClick={openModal4}>here</button> to know more.</div>
+                      <div className="duration"><span style={{ color: '#ffc451' }}> Duration</span> : {proj.duration}<span style={{ color: '#ffc451' }}>  Skills :</span>{proj.skills}</div>
 
-                  <div className="centerbuttonform" >
+                      <div className="centerbuttonform" >
 
-                    <div className="col-md-12 text-center">
+                        <div className="col-md-12 text-center">
 
-                      <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button><div className="deadline">
-                      DeadLine : {proj.deadline}</div>
+                          <button type="button" className="btn btn-warning btn-sm" onClick={openModal2}>Apply</button><div className="deadline">
+                            DeadLine : {proj.deadline}</div>
 
+                        </div>
+
+                      </div>
                     </div>
-                    
                   </div>
-                  </div>
-                </div>
 
-
-
-
-
-
-
-              ))}
-
+                ))}
+              </div>
 
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-
 
           </div>
+
+
+
+
+
 
         </div>
 

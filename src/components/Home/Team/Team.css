@@ -9,7 +9,21 @@ margin:auto;
 overflow: hidden;
 height: 550px;
 padding: 0%;
+
+width: 100%;
 }
+
+.team .swiper-slide {
+ 
+    font-size: 18px;
+    line-height: 1.8;
+    box-sizing: border-box;
+    
+    padding-top: 1%;
+    padding-bottom: 5%;
+  padding:0px;
+  margin: auto;
+  }
 .checkteam-container
 {
     width: 80%;
@@ -292,4 +306,4 @@ bottom: 15%;
     color: rgb(19, 16, 16);
     font-size: 13px;
 }
-}
+} 
