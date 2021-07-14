@@ -421,7 +421,7 @@ background-color: #fff;
   position: relative;
   line-height: 1.2;
  
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   text-align: justify;
   line-height: 1.25;

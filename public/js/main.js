@@ -122,27 +122,56 @@ elms1[12].onclick= function(){
   elms3[12].classList.toggle('do-flip');
 }
 
-elms2[13].onclick= function(){
-  elms3[13].classList.toggle('do-flip');
+elms2[12].onclick= function(){
+  elms3[12].classList.toggle('do-flip');
 }
 
 
 elms1[13].onclick= function(){
   elms3[13].classList.toggle('do-flip');
 }
-
-elms2[14].onclick= function(){
-  elms3[14].classList.toggle('do-flip');
+elms2[13].onclick= function(){
+  elms3[13].classList.toggle('do-flip');
 }
-
-
 elms1[14].onclick= function(){
   elms3[14].classList.toggle('do-flip');
 }
-
 elms2[14].onclick= function(){
   elms3[14].classList.toggle('do-flip');
 }
+
+
+
+elms1[15].onclick= function(){
+  elms3[15].classList.toggle('do-flip');
+}
+elms2[15].onclick= function(){
+  elms3[15].classList.toggle('do-flip');
+}
+
+elms1[16].onclick= function(){
+  elms3[16].classList.toggle('do-flip');
+}
+elms2[16].onclick= function(){
+  elms3[16].classList.toggle('do-flip');
+}
+
+elms1[17].onclick= function(){
+  elms3[17].classList.toggle('do-flip');
+}
+elms2[17].onclick= function(){
+  elms3[17].classList.toggle('do-flip');
+}
+elms1[18].onclick= function(){
+  elms3[18].classList.toggle('do-flip');
+}
+
+elms2[18].onclick= function(){
+  elms3[18].classList.toggle('do-flip');
+}
+
+
+
 function concatValues( obj ) {
   var value = '';
   for ( var prop in obj ) {
@@ -316,7 +345,31 @@ function concatValues( obj ) {
       }
     }
   });
+  $(document).ready(function(){
 
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        
+  //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+  //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+     
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+  $(this).removeClass("active");
+  }
+  $(this).addClass("active");
+  $('button[data-filter="banner"]').click();
+  }
+  
+  
+  
+  
+  );
   // Porfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
@@ -347,6 +400,53 @@ function concatValues( obj ) {
     delay: 10,
     time: 1000
   });
+
+
+
+
+
+  // Porfolio isotope and filter for mobile view
+  $(window).on('load', function() {
+    var mobportfolioIsotope = $('.mobapp-container').isotope({
+      itemSelector: '.mobapp-item',
+    
+      filter:'.filter-latest',
+     
+    });
+
+    $('#app-flters li').on('click', function() {
+      $("#app-flters li").removeClass('filter-activee');
+      $(this).addClass('filter-activee');
+
+      mobportfolioIsotope.isotope({
+        filter: $(this).data('filter')
+      });
+      
+      aos_init();
+    });
+
+
+    // Initiate venobox (lightbox feature used in portofilo)
+    $(document).ready(function() {
+      $('.venobox').venobox({
+        'share': false
+      });
+    });
+  });
+
+  // jQuery counterUp
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 1000
+  });
+
+
+
+
+
+
+
+
 
 
 

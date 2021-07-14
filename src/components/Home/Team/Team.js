@@ -85,14 +85,14 @@ function Team() {
                     <h2>{WebText.home.team.title}</h2>
                     <p>{WebText.home.team.description}</p>
                 </div>
-     <div className="teamdesktop">
-     <div className="row">
+                <div className="teamdesktop">
+                    <div className="row">
 
-{
-    WebText.home.team.teamListData.map(member => <TeamMember key={member.title} member={member} />)
-}
-</div>
-     </div>
+                        {
+                            WebText.home.team.teamListData.map(member => <TeamMember key={member.title} member={member} />)
+                        }
+                    </div>
+                </div>
                 <div className="teammobile">
                     <Swiper
                         data-aos="fade-up"
@@ -104,7 +104,7 @@ function Team() {
                         effect="fade"
                         spaceBetween={10}
                         speed={1000}
-                   
+
                     >
                         {slidesteam}
                     </Swiper>

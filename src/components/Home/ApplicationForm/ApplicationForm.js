@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 import './ApplicationForm.css';
 import { useState } from "react";
 import InputSkills from './InputSkills'
+
 import downloadfile from '../../../img/java.pdf';
 import cross from '../Images/cross.png';
 import ModalVideo from 'react-modal-video'
@@ -195,7 +196,7 @@ function ApplicationForm() {
 
   function openModal2() {
 
-
+    setIsOpen1(false);
     setIsOpen2(true);
 
     setIsOpen3(false);
@@ -204,17 +205,7 @@ function ApplicationForm() {
   }
 
 
-function openModal22()
-{
-  setIsOpen2(true);
-document.getElementById("modal1").style.display="none";
-}
-function openModal33()
-{
-  setIsOpen3(true);
-document.getElementById("modal1").style.display="none";
-document.getElementById("modal1").overlayClassName="Overlay1";
-}
+
 
 
   function afterOpenModal2() {
@@ -251,16 +242,11 @@ document.getElementById("modal1").overlayClassName="Overlay1";
   }
 
 
-
-
-
-
-
   function openModal3() {
 
 
     setIsOpen3(true);
-
+    setIsOpen1(false);
     setIsOpen2(false);
     console.log(modalIsOpen2);
     console.log("submitted");
@@ -399,11 +385,10 @@ document.getElementById("modal1").overlayClassName="Overlay1";
         isOpen={modalIsOpen2}
         onAfterOpen={afterOpenModal2}
         onRequestClose={closeModal2}
-
         contentLabel="Example Modal2"
         className="Modal"
         overlayClassName="Overlay"
-id="modal2"
+        id="modal2"
 
       >
 
@@ -602,90 +587,6 @@ id="modal2"
         <br /><br />
       </Modal>
 
-      <div className="videomodal">
-        {/* <img src={cross} className="closeee" alt="close" onClick={closeModal4} />*/}
-        <Modal
-          isOpen={modalIsOpen4}
-          onRequestClose={closeModal4}
-          contentLabel="Example Modal4"
-
-          className="Modal4"
-          overlayClassName="Overlay4"
-        >
-
-
-          <ModalVideo channel='youtube'
-
-            isOpen={isOpen5}
-            videoId="L61p2uyiMSo"
-            onClose={() => setOpen5(false)}
-            className="ModalVid" />
-
-          <div id="carouselExampleIndicators" className="carousel slide" data-ride="false">
-            <ol className="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                {/**/}
-
-
-
-                <img className="d-block  curimage  " src="https://source.unsplash.com/t4wI_Wv6g_k" alt="First slide" />
-
-                <button id="play-video" className="video-play-button" onClick={() => setOpen5(true)}><span></span></button>
-              </div>
-              <div className="carousel-item">
-                <img className="d-block curimage " src="https://source.unsplash.com/BG1WfIjx1f4" alt="Second slide" />
-                <a id="play-video" className="video-play-button" href="www.youtube.com"> <span></span></a>
-              </div>
-              <div className="carousel-item">
-                <img className="d-block  curimage  " src="https://source.unsplash.com/u1edt5V0ruU" alt="Third slide" />
-                <a id="play-video" className="video-play-button" href="www.youtube.com"> <span></span></a>
-              </div>
-            </div>
-            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="sr-only">Next</span>
-            </a>
-          </div>
-
-          <br />
-          <div id="snackbar" className="snackk">The background is simply the text shown.</div>
-
-
-
-          <div className="projdesc">
-            <div className="projtit">
-              <b>Grip Controller optimisation for a coconut tree climbing robotic harvester</b>
-            </div>
-            <div className="projkey">
-              <span style={{ color: 'black' }}><b>Keywords:</b></span> <b><i>#Robotics , #CAD, #Simulation, #Controls</i></b>
-            </div>
-
-            <b>Project Background</b>: Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally.
-            Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard.
-            Globally, c40 billion coconuts are harvested annually.  This translates into c2 billion climb operations.  Some solutions such a tree climber scooter with an integral human capsule and remotely piloted climbers are available.
-            Click<a href={downloadfile} target="_blank" rel="noreferrer" ><button className=" clickhere2" ><i style={{ color: '#F19A1E', fontWeight: 'bold' }}>here</i></button></a>to know more
-            <br /><br /><b>Project Brief:</b> Coconut trees are pantropical.  They grow to up to 30 meters.  They are mono trunk.  Their trunk diameter can vary from 110 cm at the base to 25 cm at the crown.  Ornamental varieties such as those in Australia tend to grow straight while others, tend to often have curve trunks.  A single tree yields 40-100 coconuts and 300-400 liters of flower nectar annually. The nectar value is much higher than that of the fruit.  Dwarf varieties found in Thailand, Malaysia, Indonesia, Fiji can be harvested using a ladder.  In addition to harvesting coconuts, a tree climber must clean the crown of the dead leaves and insect nests, spray protective solutions, slice the tip of coconut flowers to tap the nectar and harness collection vessels.  These harvest life cycle tasks are mostly done manually, globally.
-            Carrying out these tasks on tall trees whose nuts are most suitable for coconut oil production is risky.  Accidental falls can be fatal.  Occupational dermatosis on the ankle, palm and forearm regions are common amongst climbers.  Even without full automation, a robotic or a robot-assisted climbing or harvesting can raise efficiency and mitigate occupational hazard.
-            Globally, c40 billion coconuts are harvested annually.
-
-
-
-
-          </div>
-
-        </Modal>
-      </div>
-
 
       <section className="portfolio" id="jobs">
         <div className="application-container " data-aos="fade-up">
@@ -756,19 +657,96 @@ id="modal2"
 
                       </div>
                     </div>
+
+                    <div className="videomodal">
+                      {/* <img src={cross} className="closeee" alt="close" onClick={closeModal4} />*/}
+                      <Modal
+                        isOpen={modalIsOpen4}
+                        onRequestClose={closeModal4}
+                        contentLabel="Example Modal4"
+
+                        className="Modal4"
+                        overlayClassName="Overlay4"
+                      >
+
+
+                        <ModalVideo channel='youtube'
+
+                          isOpen={isOpen5}
+                          videoId={proj.videourl}
+                          onClose={() => setOpen5(false)}
+                          className="ModalVid" />
+
+                        <div id="carouselExampleIndicators" className="carousel slide" data-ride="false">
+                          <ol className="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+                          </ol>
+
+                          <div className="carousel-inner">
+                            <div className="carousel-item active">
+                              {/**/}
+
+
+
+                              <img className="d-block  curimage  " src={proj.slideonepicture} alt="First slide" />
+
+                              <button id="play-video" className="video-play-button" onClick={() => setOpen5(true)}><span></span></button>
+                            </div>
+                            <div className="carousel-item">
+                              <img className="d-block curimage " src={proj.slidetwopicture} alt="Second slide" />
+                              <button id="play-video" className="video-play-button" onClick={() => setOpen5(true)}><span></span></button>
+                            </div>
+
+                          </div>
+                          <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Previous</span>
+                          </a>
+                          <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Next</span>
+                          </a>
+                        </div>
+
+                        <br />
+                        <div id="snackbar" className="snackk">The background is simply the text shown.</div>
+
+
+
+                        <div className="projdesc">
+                          <div className="projtit">
+                            <b>{proj.projecttitle}</b>
+                          </div>
+                          <div className="projkey">
+                            <span style={{ color: 'black' }}><b>Keywords:</b></span> <b><i>#Robotics , #CAD, #Simulation, #Controls</i></b>
+                          </div>
+
+                          <b>Project Background</b>: {proj.projectbackground}Click<a href={downloadfile} target="_blank" rel="noreferrer" ><button className=" clickhere2" ><i style={{ color: '#F19A1E', fontWeight: 'bold' }}>here</i></button></a>to know more
+                          <br /><br /><b>Project Brief:</b> {proj.projectbrief}.
+
+
+
+
+                        </div>
+
+                      </Modal>
+                    </div>
+
+
+
+
                   </div>
 
                 ))}
+
+
               </div>
 
             </div>
 
           </div>
-
-
-
-
-
 
         </div>
 

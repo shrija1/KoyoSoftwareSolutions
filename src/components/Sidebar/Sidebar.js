@@ -27,12 +27,7 @@ const Sidebar = () => {
 
     return (
         <div className="sidenav sidebar">
-            <button className="socialIcons">
-                <a href="https://wa.me/9867910690" target="_blank">
-                    {/* <FontAwesomeIcon icon={faCoffee} /> */}
-                    <i className="fa fa-whatsapp" aria-hidden="true"></i>
-                </a>
-            </button>
+         
             <br/>
             {/* <button className="socialIcons">
                 <a href="#">
@@ -52,11 +47,7 @@ const Sidebar = () => {
                 </a>
             </button>
             <br/> */}
-            <button className="socialIcons">
-                <a href="mailto:ttsjk.kjstt@gmail.com" target="_blank">
-                    <i className="fa fa-envelope" aria-hidden="true"></i>
-                </a>
-            </button>
+           
             <br/>
             <br/><br/>
             <br/>

@@ -293,7 +293,7 @@ bottom: 15%;
       display: none;
   }
   .team .card-title 
-{
+{color: rgb(19, 16, 16);
     padding: -10px;
     font-size: 14px;
 }
@@ -303,7 +303,7 @@ bottom: 15%;
 }
 .team .card-subtitle
 {
-    color: rgb(19, 16, 16);
+    
     font-size: 13px;
 }
 } 

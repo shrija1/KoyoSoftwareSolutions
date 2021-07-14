@@ -17,7 +17,7 @@ function Footer() {
 
 
     return (
-        <div className="footercontainer" id="contactt">
+        <div className="footercontainer" id="contact">
             <div className="contact">
                 <div className="container " >
                     <div className="section-title">

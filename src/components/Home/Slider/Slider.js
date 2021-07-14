@@ -31,7 +31,7 @@ function Slider() {
   const slides = [];
 
   var i = 1
-  for (i = 0; i <4; i++) {
+  for (i = 0; i < 4; i++) {
     console.log(WebText.home.featuresListData[i].title);
 
     slides.push(
@@ -68,12 +68,12 @@ function Slider() {
 
 
           <div id="column2" >
-{WebText.home.featuresListData[i].description}
+            {WebText.home.featuresListData[i].description}
           </div></div></SwiperSlide>
 
     );
   }
-  
+
 
 
 
@@ -81,38 +81,38 @@ function Slider() {
   return (
     <React.Fragment >
       <br />
-<div className="slider">
-      <Swiper
-        data-aos="fade-up"
-        className="box"
+      <div className="slider">
+        <Swiper
+          data-aos="fade-up"
+          className="box"
 
 
-        autoplay={{ delay: 4000 }}
-        id="main"
-        thumbs={{ swiper: thumbsSwiper }}
-        controller={{ control: controlledSwiper }}
-        tag="section"
-      
-        effect="fade"
-        navigation
-        
-        pagination
-        spaceBetween={10}
+          autoplay={{ delay: 4000 }}
+          id="main"
+          thumbs={{ swiper: thumbsSwiper }}
+          controller={{ control: controlledSwiper }}
+          tag="section"
 
-        speed={1000}
-        onInit={(swiper) => console.log('Swiper initialized!', swiper)}
-        onSlideChange={(swiper) => {
-          console.log('Slide index changed to: ', swiper.activeIndex);
-        }}
-        onReachEnd={() => console.log('Swiper end reached')}
+          effect="fade"
+          navigation
 
+          pagination
+          spaceBetween={10}
 
+          speed={1000}
+          onInit={(swiper) => console.log('Swiper initialized!', swiper)}
+          onSlideChange={(swiper) => {
+            console.log('Slide index changed to: ', swiper.activeIndex);
+          }}
+          onReachEnd={() => console.log('Swiper end reached')}
 
 
 
-      >
-        {slides}
-      </Swiper>
+
+
+        >
+          {slides}
+        </Swiper>
 
 
       </div>

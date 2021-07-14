@@ -456,7 +456,7 @@ margin: auto;
 
   .filter-button:focus
 {
-  background-color: whitesmoke;
+  background-color: white;
   color: rgba(255,94,19);
 }
   .modalcontainer:hover  .overlaygraphics
