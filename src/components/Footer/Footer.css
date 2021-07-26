@@ -1,14 +1,55 @@
 
 /*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #3a3a3a;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 0px);
+  left: calc(50% - 30px);
+  border: 6px solid #ffc451;
+  border-top-color: #3a3a3a;
+  border-bottom-color: #3a3a3a;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-.footercontainer {
-  width: 100%;
-}
-#footer .container {
-  font-size: 18px;
-}
-#footerpage {
+#footer {
   background: black;
   color: #fff;
   font-size: 14px;
@@ -16,13 +57,12 @@
   padding: 20px 0;
 }
 
-#footerpage h3 {
+#footer h3 {
   font-size: 36px;
   font-weight: 700;
   color: #ffb03b;
   position: relative;
   padding: 0;
-  margin: 0 0 15px 0;
 }
 
 .priv1 {
@@ -42,29 +82,30 @@
   color: #ffb03b;
   cursor: pointer;
 }
-#footerpage p {
+#footer p {
   font-size: 15;
   font-style: italic;
   padding: 0;
+  margin: 0 0 40px 0;
 }
 
-#footerpage .social-links {
+#footer .social-links {
   margin: 10px 0 10px 0;
 }
 
-#footerpage .social-links .twitter {
+#footer .social-links .twitter {
   margin-left: 10px;
 }
 
-#footerpage .social-links .phone {
+#footer .social-links .phone {
   margin-left: 10px;
 }
 
-#footerpage .social-links .linkedin {
+#footer .social-links .linkedin {
   margin-right: 10px;
 }
 
-#footerpage .social-links a {
+#footer .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #46423b;
@@ -79,17 +120,17 @@
   transition: 0.3s;
 }
 
-.social-links a:hover {
+#footer .social-links a:hover {
   background: #ffb03b;
 }
 
-.copyright {
+#footer .copyright {
   margin: 0 0 3px 0;
-  font-size: 15px;
+  font-size: 13px;
 }
 
-.credits {
-  font-size: 13px;
+#footer .credits {
+  font-size: 11px;
 }
 
 .contact .info-wrap {
@@ -135,7 +176,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-  #footerpage .social-links a {
+  #footer .social-links a {
     font-size: 22px;
     display: inline-block;
     background: #46423b;
@@ -150,15 +191,15 @@
     height: 28px;
     transition: 0.3s;
   }
-  #footerpage .social-links .twitter {
+  #footer .social-links .twitter {
     margin-left: 5px;
   }
 
-  #footerpage .social-links .phone {
+  #footer .social-links .phone {
     margin-left: 5px;
   }
 
-  #footerpage .social-links .linkedin {
+  #footer .social-links .linkedin {
     margin-right: 5px;
   }
   .contact {
@@ -176,3 +217,4 @@
     padding-left: 2%;
   }
 }
+
