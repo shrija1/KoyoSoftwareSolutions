@@ -229,31 +229,33 @@ if(WebsiteText===null){
                 }
             },
             header: {
-                heading:"Koyo Software Solutions",
-                headerText:"Problem Solvers. Bespoke Software Solutions Engineers",
-                headerCardsData: [
-                    {
-                        classBox: 'mt-4',
-                        icon: '../Images/Web Icon/Web Design icon.png',
-                        name: 'Web Design'
-                    },
-                    {
-                        classBox: 'mt-4',
-                        icon: '../Images/Web Icon/AI&ML.png',
-                        name: 'AI and ML'
-                    },
-                    {
-                        classBox: 'mt-4',
-                        icon: '../Images/Web Icon/Code Camp icon.png',
-                        name: 'Learn and Code'
-                    },
-                    {
-                        classBox: 'mt-4',
-                        icon: '../Images/Web Icon/Branding Solutions icon.png',
-                        name: 'Branding Solutions'
-                    } 
-                ]
-            },
+        heading: "Koyo Software Solutions",
+        headerText: "Problem Solvers. Bespoke Software Solutions Engineers",
+        headerCardsData: [
+          {
+            classBox: "mt-4",
+            icon: "../Images/Web Icon/Web Design icon.png",
+            name: "Web Design",
+            smooth: "#webportfolio",
+          },
+          {
+            classBox: "mt-4",
+            icon: "../Images/Web Icon/AI&ML.png",
+            name: "AI and ML",
+          },
+          {
+            classBox: "mt-4",
+            icon: "../Images/Web Icon/Code Camp icon.png",
+            name: "Learn and Code",
+          },
+          {
+            classBox: "mt-4",
+            icon: "../Images/Web Icon/Branding Solutions icon.png",
+            name: "Branding Solutions",
+            smooth: "#brandingsols",
+          },
+        ],
+      },
             about: {
                 introductionHeading:"About Us",
                 introductionText:"We make secure, efficient, SEO-friendly websites for information ans e-Commerce.",
